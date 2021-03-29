@@ -5,6 +5,8 @@ var router = express.Router();
 router.route("/get_evangile").get(return_evangile_API);
 router.route("/get_saint").get(return_saint_API);
 router.route("/send_notifs").get(send_notifs);
+
+
 const firebase = require("firebase");
 const webpush = require("web-push");
 const rp = require("request-promise");
