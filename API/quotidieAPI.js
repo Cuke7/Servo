@@ -136,13 +136,15 @@ function get_saint_promise() {
     let url = "https://fr.aleteia.org/daily-prayer/" + url2 + "/";
 
     return new Promise(function (resolve, reject) {
+        console.log(url)
         rp(url)
             .then(function (body) {
                 const $ = cheerio.load(body);
+                console.log($(".css-1tmjk0q")["0"])
                 let saint = {};
-                saint.title = $(".css-1tmjk0q")["0"].children[0].data;
-                saint.subtitle = $(".css-al50z9")["0"].children[0].data;
-                saint.image_url = $(".css-tefugr")["0"].attribs.src;
+                saint.title = $(".css-18agi3i")["0"].children[0].data;
+                saint.subtitle = $(".css-ygkx0p")["0"].children[0].data;
+                saint.image_url = $(".css-7rn6ci")["0"].attribs.src;
                 resolve(saint);
             })
             .catch(function (err) {
