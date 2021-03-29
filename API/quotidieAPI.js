@@ -15,7 +15,7 @@ const request = require("request");
 const Parser = require("rss-parser");
 let parser = new Parser();
 
-const allowedOrigins = ["http://127.0.0.1:8000", "https://quotidie.netlify.app"];
+const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app"];
 
 // Firebase config
 let config = {

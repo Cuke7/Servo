@@ -6,12 +6,22 @@ const request = require("request");
 const ytdl = require("ytdl-core");
 const sendSeekable = require("send-seekable");
 
+const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app"];
+
 // Endpoints
 router.route("/get_playlist").get(get_playlist);
 router.route("/get_audio").get(get_audio);
 
 // Get playlist object from playlist url
 async function get_playlist(req, resp) {
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        resp.setHeader("Access-Control-Allow-Origin", origin);
+    }
+    resp.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
+    resp.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type");
+    resp.setHeader("Access-Control-Allow-Credentials", true);
+
     if (decodeURI(req.query.url.length) > 0) {
         //console.log(decodeURI(req.query.url));
 
@@ -57,6 +67,13 @@ function getFirefoxUserAgent() {
 }
 
 async function get_audio(req, resp) {
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        resp.setHeader("Access-Control-Allow-Origin", origin);
+    }
+    resp.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
+    resp.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type");
+    resp.setHeader("Access-Control-Allow-Credentials", true);
     let id = decodeURI(req.query.id);
     let url = "https://www.youtube.com/watch?v=" + id;
 
