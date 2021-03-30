@@ -3,6 +3,8 @@ var router = express.Router();
 const { NlpManager, ConversationContext } = require("node-nlp");
 const context = new ConversationContext();
 
+const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app"];
+
 // Endpoints
 router.route("/train").get(train);
 router.route("/get").get(get);
@@ -42,6 +44,15 @@ function train(req, resp) {
 }
 
 async function get(req, resp) {
+    // Allow CORS stuff
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        resp.setHeader("Access-Control-Allow-Origin", origin);
+    }
+    resp.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
+    resp.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type");
+    resp.setHeader("Access-Control-Allow-Credentials", true);
+
     const manager = new NlpManager({ languages: ["fr"], forceNer: true });
 
     let input = req.query.input;
