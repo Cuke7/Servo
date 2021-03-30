@@ -1,0 +1,420 @@
+{
+  "settings": {
+    "languages": [
+      "fr"
+    ],
+    "autoSave": false
+  },
+  "nluManager": {
+    "settings": {},
+    "languages": [
+      "fr"
+    ],
+    "intentDomains": {},
+    "domainManagers": {
+      "fr": {
+        "settings": {
+          "language": "fr",
+          "useNoneFeature": true,
+          "config": {
+            "activation": "leaky-relu",
+            "hiddenLayers": [],
+            "iterations": 20000,
+            "learningRate": 0.7,
+            "errorThresh": 0.00005,
+            "momentum": 0.5,
+            "deltaErrorThresh": 0.000001,
+            "maxDecimals": 9,
+            "leakyReluAlpha": 0.08,
+            "timeout": 120000
+          }
+        },
+        "language": "fr",
+        "nluClassName": "BrainNLU",
+        "useMasterDomain": true,
+        "trainByDomain": false,
+        "keepStopwords": true,
+        "stemDict": {
+          "a,arriv,le,quand,station,tram,tram": {
+            "domain": "default",
+            "intent": "tram.get_station"
+          },
+          "a,don,du,horair,le,moi,station,tram,tram": {
+            "domain": "default",
+            "intent": "tram.get_station"
+          },
+          "don,du,horair,le,moi,pour,station,tram,tram": {
+            "domain": "default",
+            "intent": "tram.get_station"
+          },
+          "a,arriv,direct,direct,le,quand,station,tram,tram": {
+            "domain": "default",
+            "intent": "tram.get_station"
+          },
+          "a,arriv,direct,le,pour,quand,station,tram,tram": {
+            "domain": "default",
+            "intent": "tram.get_station"
+          },
+          "a,direct,direct,don,du,horair,le,moi,station,tram,tram": {
+            "domain": "default",
+            "intent": "tram.get_station"
+          },
+          "a,direct,don,du,horair,le,moi,pour,station,tram,tram": {
+            "domain": "default",
+            "intent": "tram.get_station"
+          }
+        },
+        "intentDict": {
+          "tram.get_station": "default"
+        },
+        "useStemDict": true,
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "language": "fr",
+              "useNoneFeature": true,
+              "config": {
+                "activation": "leaky-relu",
+                "hiddenLayers": [],
+                "iterations": 20000,
+                "learningRate": 0.7,
+                "errorThresh": 0.00005,
+                "momentum": 0.5,
+                "deltaErrorThresh": 0.000001,
+                "maxDecimals": 9,
+                "leakyReluAlpha": 0.08,
+                "timeout": 120000
+              }
+            },
+            "language": "fr",
+            "keepStopwords": true,
+            "docs": [
+              {
+                "intent": "tram.get_station",
+                "tokens": [
+                  "quand",
+                  "arriv",
+                  "le",
+                  "tram",
+                  "a",
+                  "tram",
+                  "station"
+                ]
+              },
+              {
+                "intent": "tram.get_station",
+                "tokens": [
+                  "don",
+                  "moi",
+                  "le",
+                  "horair",
+                  "du",
+                  "tram",
+                  "a",
+                  "tram",
+                  "station"
+                ]
+              },
+              {
+                "intent": "tram.get_station",
+                "tokens": [
+                  "don",
+                  "moi",
+                  "le",
+                  "horair",
+                  "du",
+                  "tram",
+                  "pour",
+                  "tram",
+                  "station"
+                ]
+              },
+              {
+                "intent": "tram.get_station",
+                "tokens": [
+                  "quand",
+                  "arriv",
+                  "le",
+                  "tram",
+                  "a",
+                  "tram",
+                  "station",
+                  "direct",
+                  "direct"
+                ]
+              },
+              {
+                "intent": "tram.get_station",
+                "tokens": [
+                  "quand",
+                  "arriv",
+                  "le",
+                  "tram",
+                  "a",
+                  "tram",
+                  "station",
+                  "pour",
+                  "direct"
+                ]
+              },
+              {
+                "intent": "tram.get_station",
+                "tokens": [
+                  "don",
+                  "moi",
+                  "le",
+                  "horair",
+                  "du",
+                  "tram",
+                  "a",
+                  "tram",
+                  "station",
+                  "direct",
+                  "direct"
+                ]
+              },
+              {
+                "intent": "tram.get_station",
+                "tokens": [
+                  "don",
+                  "moi",
+                  "le",
+                  "horair",
+                  "du",
+                  "tram",
+                  "a",
+                  "tram",
+                  "station",
+                  "pour",
+                  "direct"
+                ]
+              }
+            ],
+            "features": {
+              "quand": 3,
+              "arriv": 3,
+              "le": 7,
+              "tram": 14,
+              "a": 6,
+              "station": 7,
+              "don": 4,
+              "moi": 4,
+              "horair": 4,
+              "du": 4,
+              "pour": 3,
+              "direct": 6
+            },
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "language": "fr",
+                "useNoneFeature": true,
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.7,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 0.000001,
+                  "maxDecimals": 9,
+                  "leakyReluAlpha": 0.08,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "sizes": [
+                  13,
+                  2
+                ],
+                "layers": [
+                  {
+                    "quand": {},
+                    "arriv": {},
+                    "le": {},
+                    "tram": {},
+                    "a": {},
+                    "station": {},
+                    "don": {},
+                    "moi": {},
+                    "horair": {},
+                    "du": {},
+                    "pour": {},
+                    "direct": {},
+                    "nonefeature": {}
+                  },
+                  {
+                    "tram.get_station": {
+                      "bias": 0.879579338,
+                      "weights": {
+                        "quand": 1.754451036,
+                        "arriv": 1.754451036,
+                        "le": 2.632168293,
+                        "tram": 2.632168293,
+                        "a": 0.33888948,
+                        "station": 2.632168293,
+                        "don": 0.877719045,
+                        "moi": 0.877719045,
+                        "horair": 0.877719045,
+                        "du": 0.877719045,
+                        "pour": 0.162105918,
+                        "direct": -0.230782777,
+                        "nonefeature": -0.870202422
+                      }
+                    },
+                    "None": {
+                      "bias": 3.893723971,
+                      "weights": {
+                        "quand": -0.474184394,
+                        "arriv": -0.474184394,
+                        "le": -0.793862581,
+                        "tram": -0.793862581,
+                        "a": -0.5619964,
+                        "station": -0.793862581,
+                        "don": -0.319678694,
+                        "moi": -0.319678694,
+                        "horair": -0.319678694,
+                        "du": -0.319678694,
+                        "pour": -0.231866345,
+                        "direct": -0.027645111,
+                        "nonefeature": 8.579452515
+                      }
+                    }
+                  }
+                ],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "fixedError": false,
+                  "deltaErrorThresh": 0.000001,
+                  "learningRate": 0.7,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.08,
+                  "maxDecimals": 9,
+                  "log": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraSentences": [
+      [
+        "fr",
+        "Quand arrive le tram à %tram_station%?"
+      ],
+      [
+        "fr",
+        "Donne moi les horaires du tram à %tram_station%?"
+      ],
+      [
+        "fr",
+        "Donne moi les horaires du tram pour %tram_station%?"
+      ],
+      [
+        "fr",
+        "Quand arrive le tram à %tram_station% direction %direction% ?"
+      ],
+      [
+        "fr",
+        "Quand arrive le tram à %tram_station% pour %direction% ?"
+      ],
+      [
+        "fr",
+        "Donne moi les horaires du tram à %tram_station% direction %direction% ?"
+      ],
+      [
+        "fr",
+        "Donne moi les horaires du tram à %tram_station% pour %direction% ?"
+      ]
+    ]
+  },
+  "nerManager": {
+    "settings": {},
+    "threshold": 0.8,
+    "builtins": [
+      "Number",
+      "Ordinal",
+      "Percentage",
+      "Age",
+      "Currency",
+      "Dimension",
+      "Temperature",
+      "DateTime",
+      "PhoneNumber",
+      "IpAddress",
+      "Boolean",
+      "Email",
+      "Hashtag",
+      "URL"
+    ],
+    "namedEntities": {
+      "tram_station": {
+        "type": "enum",
+        "name": "tram_station",
+        "localeFallback": {
+          "*": "en"
+        },
+        "locales": {
+          "fr": {
+            "Roustaing": [
+              "Roustaing"
+            ]
+          }
+        }
+      },
+      "direction": {
+        "type": "enum",
+        "name": "direction",
+        "localeFallback": {
+          "*": "en"
+        },
+        "locales": {
+          "fr": {
+            "Bordeaux": [
+              "Bordeaux",
+              "Bordeaux centre"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "slotManager": {
+    "tram.get_station": {
+      "tram_station": {
+        "intent": "tram.get_station",
+        "entity": "tram_station",
+        "mandatory": true,
+        "locales": {
+          "fr": "Pour quelle station ?"
+        }
+      },
+      "direction": {
+        "intent": "tram.get_station",
+        "entity": "direction",
+        "mandatory": true,
+        "locales": {
+          "fr": "Pour quelle direction ?"
+        }
+      }
+    }
+  },
+  "responses": {
+    "fr": {
+      "tram.get_station": [
+        {
+          "response": "OK, voici les horaires du tram à {{tram_station}}, direction {{direction}}"
+        }
+      ]
+    }
+  },
+  "actions": {},
+  "utteranceDict": {
+    "?": "help"
+  }
+}
