@@ -7,11 +7,22 @@ const autocorrect = require("autocorrect")({
     words: tram_data.dictionary,
 });
 
+const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app"];
+
 // Endpoints
 router.route("/get_station_times").get(get_station_times);
 
 // Get playlist object from playlist url
 async function get_station_times(req, res) {
+    // Allow CORS stuff
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        resp.setHeader("Access-Control-Allow-Origin", origin);
+    }
+    resp.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
+    resp.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type");
+    resp.setHeader("Access-Control-Allow-Credentials", true);
+
     var station = req.query.station;
 
     let info = get_url(station);
