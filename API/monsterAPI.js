@@ -5,13 +5,21 @@ var data = require("../Data/monstersData.js");
 
 let monsters = data.monsters;
 
+const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app"];
+
 // Endpoints
 router.route("/get_rencontre").get(get_rencontre);
 
-let demo = "http://192.168.1.18:8000/monsterAPI/get_rencontre?FP=12";
-
 // Get playlist object from playlist url
 async function get_rencontre(req, resp) {
+    // CORS STUFF
+    if (allowedOrigins.includes(origin)) {
+        resp.setHeader("Access-Control-Allow-Origin", origin);
+    }
+    resp.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
+    resp.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type");
+    resp.setHeader("Access-Control-Allow-Credentials", true);
+
     let FPmin = Number(req.query.FPmin == undefined ? 0 : req.query.FPmin);
     let FPmax = Number(req.query.FPmax == undefined ? 30 : req.query.FPmax);
     let number = Number(req.query.number == undefined ? 3 : req.query.number);
