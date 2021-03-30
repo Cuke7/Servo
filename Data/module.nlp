@@ -43,19 +43,36 @@
             "domain": "default",
             "intent": "get_tram"
           },
-          "ma,met,nam,playlist,playlist": {
-            "domain": "default",
-            "intent": "get_playlist"
-          },
           "de,met,musiqu,peu,un": {
             "domain": "default",
             "intent": "launch_music"
+          },
+          "chang,la,musiqu": {
+            "domain": "default",
+            "intent": "launch_music"
+          },
+          "en,met,paus": {
+            "domain": "default",
+            "intent": "pause_music"
+          },
+          "paus": {
+            "domain": "default",
+            "intent": "pause_music"
+          },
+          "lectur": {
+            "domain": "default",
+            "intent": "play_music"
+          },
+          "la,musiqu,remet": {
+            "domain": "default",
+            "intent": "play_music"
           }
         },
         "intentDict": {
           "get_tram": "default",
-          "get_playlist": "default",
-          "launch_music": "default"
+          "launch_music": "default",
+          "pause_music": "default",
+          "play_music": "default"
         },
         "useStemDict": true,
         "domains": {
@@ -106,22 +123,48 @@
                 ]
               },
               {
-                "intent": "get_playlist",
-                "tokens": [
-                  "met",
-                  "ma",
-                  "playlist",
-                  "playlist",
-                  "nam"
-                ]
-              },
-              {
                 "intent": "launch_music",
                 "tokens": [
                   "met",
                   "un",
                   "peu",
                   "de",
+                  "musiqu"
+                ]
+              },
+              {
+                "intent": "launch_music",
+                "tokens": [
+                  "chang",
+                  "la",
+                  "musiqu"
+                ]
+              },
+              {
+                "intent": "pause_music",
+                "tokens": [
+                  "met",
+                  "en",
+                  "paus"
+                ]
+              },
+              {
+                "intent": "pause_music",
+                "tokens": [
+                  "paus"
+                ]
+              },
+              {
+                "intent": "play_music",
+                "tokens": [
+                  "lectur"
+                ]
+              },
+              {
+                "intent": "play_music",
+                "tokens": [
+                  "remet",
+                  "la",
                   "musiqu"
                 ]
               }
@@ -138,13 +181,16 @@
               "quand": 1,
               "arriv": 1,
               "met": 2,
-              "ma": 1,
-              "playlist": 2,
-              "nam": 1,
               "un": 1,
               "peu": 1,
               "de": 1,
-              "musiqu": 1
+              "musiqu": 3,
+              "chang": 1,
+              "la": 2,
+              "en": 1,
+              "paus": 2,
+              "lectur": 1,
+              "remet": 1
             },
             "isEditing": false,
             "className": "BrainNLU",
@@ -169,8 +215,8 @@
               "labels": [],
               "network": {
                 "sizes": [
-                  19,
-                  4
+                  22,
+                  5
                 ],
                 "layers": [
                   {
@@ -185,110 +231,152 @@
                     "quand": {},
                     "arriv": {},
                     "met": {},
-                    "ma": {},
-                    "playlist": {},
-                    "nam": {},
                     "un": {},
                     "peu": {},
                     "de": {},
                     "musiqu": {},
+                    "chang": {},
+                    "la": {},
+                    "en": {},
+                    "paus": {},
+                    "lectur": {},
+                    "remet": {},
                     "nonefeature": {}
                   },
                   {
                     "get_tram": {
-                      "bias": 0.643539358,
+                      "bias": 0.384475545,
                       "weights": {
-                        "don": 0.741187513,
-                        "moi": 0.741187513,
-                        "le": 2.222876072,
-                        "horair": 0.741187513,
-                        "du": 0.741187513,
-                        "tram": 2.222876072,
-                        "a": 2.222876072,
-                        "station": 2.222876072,
-                        "quand": 1.481688023,
-                        "arriv": 1.481688023,
-                        "met": -0.307745665,
-                        "ma": -0.16984266,
-                        "playlist": -0.16984266,
-                        "nam": -0.16984266,
-                        "un": -0.13790302,
-                        "peu": -0.13790302,
-                        "de": -0.13790302,
-                        "musiqu": -0.13790302,
-                        "nonefeature": -0.6268906
-                      }
-                    },
-                    "get_playlist": {
-                      "bias": 0.738063211,
-                      "weights": {
-                        "don": -0.073248312,
-                        "moi": -0.073248312,
-                        "le": -0.164285108,
-                        "horair": -0.073248312,
-                        "du": -0.073248312,
-                        "tram": -0.164285108,
-                        "a": -0.164285108,
-                        "station": -0.164285108,
-                        "quand": -0.091036804,
-                        "arriv": -0.091036804,
-                        "met": 2.353426695,
-                        "ma": 3.134832621,
-                        "playlist": 3.134832621,
-                        "nam": 3.134832621,
-                        "un": -0.781405687,
-                        "peu": -0.781405687,
-                        "de": -0.781405687,
-                        "musiqu": -0.781405687,
-                        "nonefeature": -0.710738599
+                        "don": 0.757225871,
+                        "moi": 0.757225871,
+                        "le": 2.271653652,
+                        "horair": 0.757225871,
+                        "du": 0.757225871,
+                        "tram": 2.271653652,
+                        "a": 2.271653652,
+                        "station": 2.271653652,
+                        "quand": 1.514427185,
+                        "arriv": 1.514427185,
+                        "met": -0.247439712,
+                        "un": -0.120527305,
+                        "peu": -0.120527305,
+                        "de": -0.120527305,
+                        "musiqu": -0.325550497,
+                        "chang": -0.132885471,
+                        "la": -0.205023199,
+                        "en": -0.126912385,
+                        "paus": -0.408419937,
+                        "lectur": -0.384785056,
+                        "remet": -0.072137736,
+                        "nonefeature": -0.383907229
                       }
                     },
                     "launch_music": {
-                      "bias": 0.545204169,
+                      "bias": 0.568325173,
                       "weights": {
-                        "don": -0.073460132,
-                        "moi": -0.073460132,
-                        "le": -0.146943137,
-                        "horair": -0.073460132,
-                        "du": -0.073460132,
-                        "tram": -0.146943137,
-                        "a": -0.146943137,
-                        "station": -0.146943137,
-                        "quand": -0.073483013,
-                        "arriv": -0.073483013,
-                        "met": 1.768782496,
-                        "ma": -0.777303815,
-                        "playlist": -0.777303815,
-                        "nam": -0.777303815,
-                        "un": 2.546085835,
-                        "peu": 2.546085835,
-                        "de": 2.546085835,
-                        "musiqu": 2.546085835,
-                        "nonefeature": -0.530150652
+                        "don": -0.078701399,
+                        "moi": -0.078701399,
+                        "le": -0.15261735,
+                        "horair": -0.078701399,
+                        "du": -0.078701399,
+                        "tram": -0.15261735,
+                        "a": -0.15261735,
+                        "station": -0.15261735,
+                        "quand": -0.073915951,
+                        "arriv": -0.073915951,
+                        "met": 1.395412087,
+                        "un": 2.296293736,
+                        "peu": 2.296293736,
+                        "de": 2.296293736,
+                        "musiqu": 3.648044109,
+                        "chang": 6.861201763,
+                        "la": 1.351749778,
+                        "en": -0.900881767,
+                        "paus": -1.174980998,
+                        "lectur": -0.618875444,
+                        "remet": -5.509452343,
+                        "nonefeature": -0.563566685
+                      }
+                    },
+                    "pause_music": {
+                      "bias": 2.111427056,
+                      "weights": {
+                        "don": -0.14607735,
+                        "moi": -0.14607735,
+                        "le": -0.399730563,
+                        "horair": -0.14607735,
+                        "du": -0.14607735,
+                        "tram": -0.399730563,
+                        "a": -0.399730563,
+                        "station": -0.399730563,
+                        "quand": -0.253653228,
+                        "arriv": -0.253653228,
+                        "met": -0.086275242,
+                        "un": -0.725794435,
+                        "peu": -0.725794435,
+                        "de": -0.725794435,
+                        "musiqu": -1.294389129,
+                        "chang": -0.236444935,
+                        "la": -0.568594635,
+                        "en": 0.639519036,
+                        "paus": 10.013367653,
+                        "lectur": -2.053757668,
+                        "remet": -0.332149565,
+                        "nonefeature": -2.040714979
+                      }
+                    },
+                    "play_music": {
+                      "bias": 2.596136367,
+                      "weights": {
+                        "don": -0.164547041,
+                        "moi": -0.164547041,
+                        "le": -0.488378942,
+                        "horair": -0.164547041,
+                        "du": -0.164547041,
+                        "tram": -0.488378942,
+                        "a": -0.488378942,
+                        "station": -0.488378942,
+                        "quand": -0.323831975,
+                        "arriv": -0.323831975,
+                        "met": -1.049856544,
+                        "un": -0.849921346,
+                        "peu": -0.849921346,
+                        "de": -0.849921346,
+                        "musiqu": 0.954583168,
+                        "chang": -5.277688503,
+                        "la": 1.804504037,
+                        "en": -0.199935228,
+                        "paus": -2.506917953,
+                        "lectur": 9.777007103,
+                        "remet": 7.082195759,
+                        "nonefeature": -2.544223309
                       }
                     },
                     "None": {
-                      "bias": 3.433454289,
+                      "bias": 2.213911063,
                       "weights": {
-                        "don": -0.216672853,
-                        "moi": -0.216672853,
-                        "le": -0.64064163,
-                        "horair": -0.216672853,
-                        "du": -0.216672853,
-                        "tram": -0.64064163,
-                        "a": -0.64064163,
-                        "station": -0.64064163,
-                        "quand": -0.423968792,
-                        "arriv": -0.423968792,
-                        "met": -1.251633167,
-                        "ma": -0.714397311,
-                        "playlist": -0.714397311,
-                        "nam": -0.714397311,
-                        "un": -0.537235916,
-                        "peu": -0.537235916,
-                        "de": -0.537235916,
-                        "musiqu": -0.537235916,
-                        "nonefeature": 8.73985672
+                        "don": -0.14001593,
+                        "moi": -0.14001593,
+                        "le": -0.416354477,
+                        "horair": -0.14001593,
+                        "du": -0.14001593,
+                        "tram": -0.416354477,
+                        "a": -0.416354477,
+                        "station": -0.416354477,
+                        "quand": -0.276338577,
+                        "arriv": -0.276338577,
+                        "met": -0.55764389,
+                        "un": -0.218710035,
+                        "peu": -0.218710035,
+                        "de": -0.218710035,
+                        "musiqu": -1.02892673,
+                        "chang": -0.44627738,
+                        "la": -0.810216427,
+                        "en": -0.338933885,
+                        "paus": -2.151293039,
+                        "lectur": -2.127953529,
+                        "remet": -0.363938987,
+                        "nonefeature": 10.145046234
                       }
                     }
                   }
@@ -321,11 +409,27 @@
       ],
       [
         "fr",
-        "Mets ma playlist %playlist_name%"
+        "Mets un peu de musique"
       ],
       [
         "fr",
-        "Mets un peu de musique"
+        "Change la musique"
+      ],
+      [
+        "fr",
+        "Mets en pause"
+      ],
+      [
+        "fr",
+        "Pause"
+      ],
+      [
+        "fr",
+        "Lecture"
+      ],
+      [
+        "fr",
+        "Remet la musique"
       ]
     ]
   },
@@ -369,27 +473,6 @@
             ]
           }
         }
-      },
-      "playlist_name": {
-        "type": "enum",
-        "name": "playlist_name",
-        "localeFallback": {
-          "*": "en"
-        },
-        "locales": {
-          "fr": {
-            "2000": [
-              "2000",
-              "Années 2000"
-            ],
-            "Guitares": [
-              "Guitares"
-            ],
-            "épique": [
-              "epique"
-            ]
-          }
-        }
       }
     }
   },
@@ -403,16 +486,6 @@
           "fr": "Pour quelle station ?"
         }
       }
-    },
-    "get_playlist": {
-      "playlist_name": {
-        "intent": "get_playlist",
-        "entity": "playlist_name",
-        "mandatory": true,
-        "locales": {
-          "fr": "Quelle playlist dois-je mettre ?"
-        }
-      }
     }
   },
   "responses": {
@@ -422,9 +495,14 @@
           "response": "Entendu, laissez moi chercher ça."
         }
       ],
-      "get_playlist": [
+      "pause_music": [
         {
-          "response": "C'est parti !"
+          "response": "Je met en pause."
+        }
+      ],
+      "play_music": [
+        {
+          "response": "Je remet la musique."
         }
       ],
       "launch_music": [
