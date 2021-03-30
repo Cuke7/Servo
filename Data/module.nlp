@@ -35,37 +35,27 @@
         "trainByDomain": false,
         "keepStopwords": true,
         "stemDict": {
-          "a,arriv,le,quand,station,tram,tram": {
-            "domain": "default",
-            "intent": "tram.get_station"
-          },
           "a,don,du,horair,le,moi,station,tram,tram": {
             "domain": "default",
-            "intent": "tram.get_station"
+            "intent": "get_tram"
           },
-          "don,du,horair,le,moi,pour,station,tram,tram": {
+          "a,arriv,le,quand,station,tram,tram": {
             "domain": "default",
-            "intent": "tram.get_station"
+            "intent": "get_tram"
           },
-          "a,arriv,direct,direct,le,quand,station,tram,tram": {
+          "ma,met,nam,playlist,playlist": {
             "domain": "default",
-            "intent": "tram.get_station"
+            "intent": "get_playlist"
           },
-          "a,arriv,direct,le,pour,quand,station,tram,tram": {
+          "de,met,musiqu,peu,un": {
             "domain": "default",
-            "intent": "tram.get_station"
-          },
-          "a,direct,direct,don,du,horair,le,moi,station,tram,tram": {
-            "domain": "default",
-            "intent": "tram.get_station"
-          },
-          "a,direct,don,du,horair,le,moi,pour,station,tram,tram": {
-            "domain": "default",
-            "intent": "tram.get_station"
+            "intent": "launch_music"
           }
         },
         "intentDict": {
-          "tram.get_station": "default"
+          "get_tram": "default",
+          "get_playlist": "default",
+          "launch_music": "default"
         },
         "useStemDict": true,
         "domains": {
@@ -90,19 +80,7 @@
             "keepStopwords": true,
             "docs": [
               {
-                "intent": "tram.get_station",
-                "tokens": [
-                  "quand",
-                  "arriv",
-                  "le",
-                  "tram",
-                  "a",
-                  "tram",
-                  "station"
-                ]
-              },
-              {
-                "intent": "tram.get_station",
+                "intent": "get_tram",
                 "tokens": [
                   "don",
                   "moi",
@@ -116,93 +94,57 @@
                 ]
               },
               {
-                "intent": "tram.get_station",
+                "intent": "get_tram",
                 "tokens": [
-                  "don",
-                  "moi",
+                  "quand",
+                  "arriv",
                   "le",
-                  "horair",
-                  "du",
                   "tram",
-                  "pour",
+                  "a",
                   "tram",
                   "station"
                 ]
               },
               {
-                "intent": "tram.get_station",
+                "intent": "get_playlist",
                 "tokens": [
-                  "quand",
-                  "arriv",
-                  "le",
-                  "tram",
-                  "a",
-                  "tram",
-                  "station",
-                  "direct",
-                  "direct"
+                  "met",
+                  "ma",
+                  "playlist",
+                  "playlist",
+                  "nam"
                 ]
               },
               {
-                "intent": "tram.get_station",
+                "intent": "launch_music",
                 "tokens": [
-                  "quand",
-                  "arriv",
-                  "le",
-                  "tram",
-                  "a",
-                  "tram",
-                  "station",
-                  "pour",
-                  "direct"
-                ]
-              },
-              {
-                "intent": "tram.get_station",
-                "tokens": [
-                  "don",
-                  "moi",
-                  "le",
-                  "horair",
-                  "du",
-                  "tram",
-                  "a",
-                  "tram",
-                  "station",
-                  "direct",
-                  "direct"
-                ]
-              },
-              {
-                "intent": "tram.get_station",
-                "tokens": [
-                  "don",
-                  "moi",
-                  "le",
-                  "horair",
-                  "du",
-                  "tram",
-                  "a",
-                  "tram",
-                  "station",
-                  "pour",
-                  "direct"
+                  "met",
+                  "un",
+                  "peu",
+                  "de",
+                  "musiqu"
                 ]
               }
             ],
             "features": {
-              "quand": 3,
-              "arriv": 3,
-              "le": 7,
-              "tram": 14,
-              "a": 6,
-              "station": 7,
-              "don": 4,
-              "moi": 4,
-              "horair": 4,
-              "du": 4,
-              "pour": 3,
-              "direct": 6
+              "don": 1,
+              "moi": 1,
+              "le": 2,
+              "horair": 1,
+              "du": 1,
+              "tram": 4,
+              "a": 2,
+              "station": 2,
+              "quand": 1,
+              "arriv": 1,
+              "met": 2,
+              "ma": 1,
+              "playlist": 2,
+              "nam": 1,
+              "un": 1,
+              "peu": 1,
+              "de": 1,
+              "musiqu": 1
             },
             "isEditing": false,
             "className": "BrainNLU",
@@ -227,60 +169,126 @@
               "labels": [],
               "network": {
                 "sizes": [
-                  13,
-                  2
+                  19,
+                  4
                 ],
                 "layers": [
                   {
-                    "quand": {},
-                    "arriv": {},
+                    "don": {},
+                    "moi": {},
                     "le": {},
+                    "horair": {},
+                    "du": {},
                     "tram": {},
                     "a": {},
                     "station": {},
-                    "don": {},
-                    "moi": {},
-                    "horair": {},
-                    "du": {},
-                    "pour": {},
-                    "direct": {},
+                    "quand": {},
+                    "arriv": {},
+                    "met": {},
+                    "ma": {},
+                    "playlist": {},
+                    "nam": {},
+                    "un": {},
+                    "peu": {},
+                    "de": {},
+                    "musiqu": {},
                     "nonefeature": {}
                   },
                   {
-                    "tram.get_station": {
-                      "bias": 0.879579338,
+                    "get_tram": {
+                      "bias": 0.643539358,
                       "weights": {
-                        "quand": 1.754451036,
-                        "arriv": 1.754451036,
-                        "le": 2.632168293,
-                        "tram": 2.632168293,
-                        "a": 0.33888948,
-                        "station": 2.632168293,
-                        "don": 0.877719045,
-                        "moi": 0.877719045,
-                        "horair": 0.877719045,
-                        "du": 0.877719045,
-                        "pour": 0.162105918,
-                        "direct": -0.230782777,
-                        "nonefeature": -0.870202422
+                        "don": 0.741187513,
+                        "moi": 0.741187513,
+                        "le": 2.222876072,
+                        "horair": 0.741187513,
+                        "du": 0.741187513,
+                        "tram": 2.222876072,
+                        "a": 2.222876072,
+                        "station": 2.222876072,
+                        "quand": 1.481688023,
+                        "arriv": 1.481688023,
+                        "met": -0.307745665,
+                        "ma": -0.16984266,
+                        "playlist": -0.16984266,
+                        "nam": -0.16984266,
+                        "un": -0.13790302,
+                        "peu": -0.13790302,
+                        "de": -0.13790302,
+                        "musiqu": -0.13790302,
+                        "nonefeature": -0.6268906
+                      }
+                    },
+                    "get_playlist": {
+                      "bias": 0.738063211,
+                      "weights": {
+                        "don": -0.073248312,
+                        "moi": -0.073248312,
+                        "le": -0.164285108,
+                        "horair": -0.073248312,
+                        "du": -0.073248312,
+                        "tram": -0.164285108,
+                        "a": -0.164285108,
+                        "station": -0.164285108,
+                        "quand": -0.091036804,
+                        "arriv": -0.091036804,
+                        "met": 2.353426695,
+                        "ma": 3.134832621,
+                        "playlist": 3.134832621,
+                        "nam": 3.134832621,
+                        "un": -0.781405687,
+                        "peu": -0.781405687,
+                        "de": -0.781405687,
+                        "musiqu": -0.781405687,
+                        "nonefeature": -0.710738599
+                      }
+                    },
+                    "launch_music": {
+                      "bias": 0.545204169,
+                      "weights": {
+                        "don": -0.073460132,
+                        "moi": -0.073460132,
+                        "le": -0.146943137,
+                        "horair": -0.073460132,
+                        "du": -0.073460132,
+                        "tram": -0.146943137,
+                        "a": -0.146943137,
+                        "station": -0.146943137,
+                        "quand": -0.073483013,
+                        "arriv": -0.073483013,
+                        "met": 1.768782496,
+                        "ma": -0.777303815,
+                        "playlist": -0.777303815,
+                        "nam": -0.777303815,
+                        "un": 2.546085835,
+                        "peu": 2.546085835,
+                        "de": 2.546085835,
+                        "musiqu": 2.546085835,
+                        "nonefeature": -0.530150652
                       }
                     },
                     "None": {
-                      "bias": 3.893723971,
+                      "bias": 3.433454289,
                       "weights": {
-                        "quand": -0.474184394,
-                        "arriv": -0.474184394,
-                        "le": -0.793862581,
-                        "tram": -0.793862581,
-                        "a": -0.5619964,
-                        "station": -0.793862581,
-                        "don": -0.319678694,
-                        "moi": -0.319678694,
-                        "horair": -0.319678694,
-                        "du": -0.319678694,
-                        "pour": -0.231866345,
-                        "direct": -0.027645111,
-                        "nonefeature": 8.579452515
+                        "don": -0.216672853,
+                        "moi": -0.216672853,
+                        "le": -0.64064163,
+                        "horair": -0.216672853,
+                        "du": -0.216672853,
+                        "tram": -0.64064163,
+                        "a": -0.64064163,
+                        "station": -0.64064163,
+                        "quand": -0.423968792,
+                        "arriv": -0.423968792,
+                        "met": -1.251633167,
+                        "ma": -0.714397311,
+                        "playlist": -0.714397311,
+                        "nam": -0.714397311,
+                        "un": -0.537235916,
+                        "peu": -0.537235916,
+                        "de": -0.537235916,
+                        "musiqu": -0.537235916,
+                        "nonefeature": 8.73985672
                       }
                     }
                   }
@@ -305,31 +313,19 @@
     "extraSentences": [
       [
         "fr",
-        "Quand arrive le tram à %tram_station%?"
+        "Donne moi les horaires du tram à  %tram_station%"
       ],
       [
         "fr",
-        "Donne moi les horaires du tram à %tram_station%?"
+        "Quand arrive le tram à %tram_station%"
       ],
       [
         "fr",
-        "Donne moi les horaires du tram pour %tram_station%?"
+        "Mets ma playlist %playlist_name%"
       ],
       [
         "fr",
-        "Quand arrive le tram à %tram_station% direction %direction% ?"
-      ],
-      [
-        "fr",
-        "Quand arrive le tram à %tram_station% pour %direction% ?"
-      ],
-      [
-        "fr",
-        "Donne moi les horaires du tram à %tram_station% direction %direction% ?"
-      ],
-      [
-        "fr",
-        "Donne moi les horaires du tram à %tram_station% pour %direction% ?"
+        "Mets un peu de musique"
       ]
     ]
   },
@@ -363,21 +359,34 @@
           "fr": {
             "Roustaing": [
               "Roustaing"
+            ],
+            "Forum": [
+              "Forum"
+            ],
+            "Saint Genès": [
+              "Saint Genes",
+              "Saint-Genes"
             ]
           }
         }
       },
-      "direction": {
+      "playlist_name": {
         "type": "enum",
-        "name": "direction",
+        "name": "playlist_name",
         "localeFallback": {
           "*": "en"
         },
         "locales": {
           "fr": {
-            "Bordeaux": [
-              "Bordeaux",
-              "Bordeaux centre"
+            "2000": [
+              "2000",
+              "Années 2000"
+            ],
+            "Guitares": [
+              "Guitares"
+            ],
+            "épique": [
+              "epique"
             ]
           }
         }
@@ -385,30 +394,45 @@
     }
   },
   "slotManager": {
-    "tram.get_station": {
+    "get_tram": {
       "tram_station": {
-        "intent": "tram.get_station",
+        "intent": "get_tram",
         "entity": "tram_station",
         "mandatory": true,
         "locales": {
           "fr": "Pour quelle station ?"
         }
-      },
-      "direction": {
-        "intent": "tram.get_station",
-        "entity": "direction",
+      }
+    },
+    "get_playlist": {
+      "playlist_name": {
+        "intent": "get_playlist",
+        "entity": "playlist_name",
         "mandatory": true,
         "locales": {
-          "fr": "Pour quelle direction ?"
+          "fr": "Quelle playlist dois-je mettre ?"
         }
       }
     }
   },
   "responses": {
     "fr": {
-      "tram.get_station": [
+      "get_tram": [
         {
-          "response": "OK, voici les horaires du tram à {{tram_station}}, direction {{direction}}"
+          "response": "Entendu, laissez moi chercher ça."
+        }
+      ],
+      "get_playlist": [
+        {
+          "response": "C'est parti !"
+        }
+      ],
+      "launch_music": [
+        {
+          "response": "C'est parti !"
+        },
+        {
+          "response": "Ça marche."
         }
       ]
     }
