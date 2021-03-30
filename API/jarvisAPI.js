@@ -57,19 +57,20 @@ async function get(req, resp) {
 
     let input = req.query.input;
 
-    manager.addDocument("fr", "Donne moi les horaires du tram à  %tram_station%, direction %direction%", "get_tram");
+    manager.addDocument("fr", "Donne moi les horaires du tram à  %tram_station%", "get_tram");
+    manager.addDocument("fr", "Quand arrive le tram à %tram_station%", "get_tram");
 
     manager.addNamedEntityText("tram_station", "Roustaing", ["fr"], ["Roustaing"]);
     manager.addNamedEntityText("tram_station", "Forum", ["fr"], ["Forum"]);
     manager.addNamedEntityText("tram_station", "Saint Genès", ["fr"], ["Saint Genes", "Saint-Genes"]);
 
-    manager.addNamedEntityText("direction", "Bordeaux", ["fr"], ["Bordeaux", "Bordeaux centre"]);
-    manager.addNamedEntityText("direction", "Pessac", ["fr"], ["Pessac", "Pessac centre"]);
+    //manager.addNamedEntityText("direction", "Bordeaux", ["fr"], ["Bordeaux", "Bordeaux centre"]);
+    //manager.addNamedEntityText("direction", "Pessac", ["fr"], ["Pessac", "Pessac centre"]);
 
-    manager.slotManager.addSlot("get_tram", "tram_station", true, { fr: "Quelle station ?" });
-    manager.slotManager.addSlot("get_tram", "direction", true, { fr: "Quelle direction ?" });
+    manager.slotManager.addSlot("get_tram", "tram_station", true, { fr: "Pour quelle station ?" });
+    //manager.slotManager.addSlot("get_tram", "direction", true, { fr: "Quelle direction ?" });
 
-    manager.addAnswer("fr", "get_tram", "Ça marche, laissez moi chercher ça");
+    manager.addAnswer("fr", "get_tram", "Entendu, laissez moi chercher ça");
 
     await manager.train();
 
