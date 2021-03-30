@@ -63,14 +63,8 @@ async function get(req, resp) {
     await manager.train();
 
     const result1 = await manager.process("fr", input, context);
-    //console.log(result1.answer);
-    console.log("------------------");
-    console.log("------------------");
-    console.log("------------------");
-    resp.json(result1.answer);
-    console.log(result1);
-    console.log("------------------");
-    console.log(context);
+
+    resp.json({ text: result1.answer, result: result1, context: context });
 }
 
 module.exports = router;
