@@ -34,16 +34,17 @@ async function train(req, resp) {
     manager.addAnswer("fr", "get_tram", "Entendu, laissez moi chercher ça.");
 
     // MUSIC STUFF
-    manager.addDocument("fr", "Mets ma playlist %playlist_name%", "get_playlist");
     manager.addDocument("fr", "Mets un peu de musique", "launch_music");
+    manager.addDocument("fr", "Change la musique", "launch_music");
 
-    manager.addNamedEntityText("playlist_name", "Guitares", ["fr"], ["Guitares"]);
-    manager.addNamedEntityText("playlist_name", "2000", ["fr"], ["2000", "Années 2000"]);
-    manager.addNamedEntityText("playlist_name", "épique", ["fr"], ["epique"]);
+    manager.addDocument("fr", "Mets en pause", "pause_music");
+    manager.addDocument("fr", "Pause", "pause_music");
 
-    manager.slotManager.addSlot("get_playlist", "playlist_name", true, { fr: "Quelle playlist dois-je mettre ?" });
+    manager.addDocument("fr", "Lecture", "play_music");
+    manager.addDocument("fr", "Remet la musique", "play_music");
 
-    manager.addAnswer("fr", "get_playlist", "C'est parti !");
+    manager.addAnswer("fr", "pause_music", "Je met en pause.");
+    manager.addAnswer("fr", "play_music", "Je remet la musique.");
     manager.addAnswer("fr", "launch_music", "C'est parti !");
     manager.addAnswer("fr", "launch_music", "Ça marche.");
 
