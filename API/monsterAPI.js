@@ -32,8 +32,8 @@ async function get_rencontre(req, resp) {
     console.log(FPmin, FPmax, number, alignement, ident);
 
     for (const monster of monsters) {
-        if (monster.FP < FPmax) {
-            if (Number(monster.FP) > Number(FPmin)) {
+        if (monster.FP <= FPmax) {
+            if (Number(monster.FP) >= Number(FPmin)) {
                 if (alignement[0] == monster.alignement[0] || alignement[0] == "A") {
                     if (alignement[1] == monster.alignement[1] || alignement[1] == "A") {
                         candidates.push(monster);
