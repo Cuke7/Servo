@@ -25,10 +25,12 @@ async function get_rencontre(req, resp) {
     let FPmax = Number(req.query.FPmax == undefined ? 30 : req.query.FPmax);
     let number = Number(req.query.number == undefined ? 3 : req.query.number);
     let alignement = req.query.alignement == undefined ? "NN" : req.query.alignement;
+    let ident = req.query.ident == undefined ? "true" : req.query.ident;
 
     let candidates = [];
 
-    console.log(FPmin, FPmax, number, alignement);
+    console.log(FPmin, FPmax, number, alignement, ident);
+    console.log(ident);
 
     for (const monster of monsters) {
         if (monster.FP < FPmax) {
@@ -44,11 +46,19 @@ async function get_rencontre(req, resp) {
 
     let selected = [];
 
-    var monster = candidates[Math.floor(Math.random() * candidates.length)];
-    for (let i = 0; i < number; i++) {
-        selected.push(monster);
-    }
+    if (ident == "true") {
+        var monster = candidates[Math.floor(Math.random() * candidates.length)];
+        for (let i = 0; i < number; i++) {
+            selected.push(monster);
+        }
+    } else {
+        for (let i = 0; i < number; i++) {
+            let n = Math.floor(Math.random() * candidates.length);
 
+            var monster = candidates[n];
+            selected.push(monster);
+        }
+    }
     resp.json(selected);
 }
 
