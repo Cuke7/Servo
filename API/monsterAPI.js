@@ -13,6 +13,7 @@ router.route("/get_rencontre").get(get_rencontre);
 // Get playlist object from playlist url
 async function get_rencontre(req, resp) {
     // CORS STUFF
+    const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
         resp.setHeader("Access-Control-Allow-Origin", origin);
     }
