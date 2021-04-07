@@ -34,6 +34,9 @@ async function get_rencontre(req, resp) {
     let ident = decodeURI(req.query.ident) == "undefined" ? "false" : decodeURI(req.query.ident);
     let types = decodeURI(req.query.types) == "undefined" ? [] : decodeURI(req.query.types);
     types = types.split(",");
+    if(types[0] === ''){
+        types = [];
+    }
 
     let candidates = [];
 
@@ -48,6 +51,8 @@ async function get_rencontre(req, resp) {
                             if (types.includes(monster.type)) {
                                 candidates.push(monster);
                             }
+                        } else {
+                            candidates.push(monster);
                         }
                     }
                 }
