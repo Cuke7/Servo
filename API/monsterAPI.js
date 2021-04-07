@@ -12,6 +12,8 @@ router.route("/get_rencontre").get(get_rencontre);
 
 // Get playlist object from playlist url
 async function get_rencontre(req, resp) {
+    // http://192.168.1.18:8000/monsterAPI/get_rencontre?FPmin=0&FPmax=30&alignement=AA&number=5&types=Aberration,Aberration%20(m%C3%A9tamorphe),B%C3%AAte
+
     // CORS STUFF
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
@@ -21,22 +23,32 @@ async function get_rencontre(req, resp) {
     resp.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type");
     resp.setHeader("Access-Control-Allow-Credentials", true);
 
-    let FPmin = Number(req.query.FPmin == undefined ? 0 : req.query.FPmin);
-    let FPmax = Number(req.query.FPmax == undefined ? 30 : req.query.FPmax);
-    let number = Number(req.query.number == undefined ? 3 : req.query.number);
-    let alignement = req.query.alignement == undefined ? "NN" : req.query.alignement;
-    let ident = req.query.ident == undefined ? "true" : req.query.ident;
+    console.log("--------------------------");
+    console.log("--------------------------");
+    console.log("--------------------------");
+
+    let FPmin = eval(decodeURI(req.query.FPmin) == "undefined" ? 0 : decodeURI(req.query.FPmin));
+    let FPmax = eval(req.query.FPmax == "undefined" ? 30 : decodeURI(req.query.FPmax));
+    let number = parseInt(req.query.number == "undefined" ? 3 : decodeURI(req.query.number));
+    let alignement = decodeURI(req.query.alignement) == "undefined" ? "NN" : decodeURI(req.query.alignement);
+    let ident = decodeURI(req.query.ident) == "undefined" ? "false" : decodeURI(req.query.ident);
+    let types = decodeURI(req.query.types) == "undefined" ? [] : decodeURI(req.query.types);
+    types = types.split(",");
 
     let candidates = [];
 
-    console.log(FPmin, FPmax, number, alignement, ident);
+    console.log(FPmin, FPmax, number, alignement, ident, types);
 
     for (const monster of monsters) {
-        if (monster.FP <= FPmax) {
-            if (Number(monster.FP) >= Number(FPmin)) {
+        if (eval(monster.FP) <= FPmax) {
+            if (eval(monster.FP) >= FPmin) {
                 if (alignement[0] == monster.alignement[0] || alignement[0] == "A") {
                     if (alignement[1] == monster.alignement[1] || alignement[1] == "A") {
-                        candidates.push(monster);
+                        if (types.length > 0) {
+                            if (types.includes(monster.type)) {
+                                candidates.push([monster.nom, monster.FP, monster.type]);
+                            }
+                        }
                     }
                 }
             }
