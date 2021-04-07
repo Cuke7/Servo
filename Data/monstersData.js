@@ -26,9 +26,9 @@ let monsters = [
         attributs:
             "Attaque en piquée. Si l'aarakocra vole sur au moins 9 mètres en ligne droite vers une cible, puis la touche lors d'une attaque au corps à corps avec une arme, l'attaque inflige 3 (1d6) dégâts supplémentaires à la cible.",
         actions: [
-            { nom: "Serres.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts tranchants.", attaque: 4, degats: "1d4 + 2" },
+            { nom: "Serres", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts tranchants.", attaque: 4, degats: "1d4 + 2" },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action: "Attaque au corps à corps ou à distance avec une arme : +4 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.",
                 attaque: 4,
                 degats: "1d6 + 2",
@@ -71,29 +71,29 @@ let monsters = [
         attributs:
             "Amphibien. L'aboleth peut respirer aussi bien dans l'air que sous l'eau.Nuage de mucus. Lorsqu'il est sous l'eau, l'aboleth est entouré d'un mucus altérant. Une créature qui touche l'aboleth ou qui le frappe lors d'une attaque au corps à corps en se trouvant à 1,50 mètre ou moins de lui, doit effectuer un jet de sauvegarde de Constitution DD 14. Si elle l'échoue, la créature tombe malade pour les 1d4 prochaines heures. Une créature malade ne peut respirer que sous l'eau.Pénétration télépathique. Si une créature communique par télépathie avec l'aboleth, l'aboleth découvre les plus grands désirs de la créature, à condition qu'il puisse voir la créature.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'aboleth effectue trois attaques avec ses tentacules." },
+            { nom: "Attaques multiples", action: "L'aboleth effectue trois attaques avec ses tentacules." },
             {
-                nom: "Tentacule.",
+                nom: "Tentacule",
                 action:
                     "Attaque au corps à corps avec une arme : +9 au toucher, allonge 3 m, une cible. Touché : 12 (2d6 + 5) dégâts contondants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Constitution DD 14 ou tomber malade. Cette maladie n'a aucun effet pendant 1 minute et peut être annulée par toute magie qui soigne les maladies. Après 1 minute, le teint de la créature malade devient translucide et visqueux, la créature ne peut pas récupérer de points de vie si elle n'est pas sous l'eau, et cette maladie ne peut plus être soignée que par guérison ou tout autre sort de guérison des maladies de niveau 6 ou supérieur. Lorsque la créature est en dehors d'une étendue d'eau, elle subit 6 (1d12) dégâts d'acide toutes les 10 minutes à moins que son corps ne soit humidifié avant que 10 minutes ne se soient écoulées.",
                 attaque: 9,
                 degats: "2d6 + 5",
             },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 3 m, une cible. Touché : 15 (3d6 + 5) dégâts contondants.", attaque: 9, degats: "3d6 + 5" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 3 m, une cible. Touché : 15 (3d6 + 5) dégâts contondants.", attaque: 9, degats: "3d6 + 5" },
             {
-                nom: "Asservissement (3/jour).",
+                nom: "Asservissement (3/jour)",
                 action:
                     "L'aboleth cible une créature qu'il peut voir dans un rayon de 9 mètres autour de lui. La cible doit réussir un jet de sauvegarde de Sagesse DD 14 ou être charmée magiquement par l'aboleth jusqu'à ce que l'aboleth ne meure ou se trouve sur un plan d'existence différent de celui de la cible. La cible charmée est sous le contrôle de l'aboleth et ne peut pas utiliser de réaction, de plus l'aboleth et la cible peuvent communiquer par télépathie entre eux quelle que soit la distance. Chaque fois que la cible subit des dégâts, elle peut retenter son jet de sauvegarde. Si elle le réussit, l'effet se termine. Pas plus d'une fois toutes les 24 heures, la cible peut également retenter son jet de sauvegarde lorsqu'elle se trouve à plus de 1,5 kilomètre de l'aboleth.",
             },
             {
-                nom: "L'aboleth peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "L'aboleth peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. L'aboleth récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "L'aboleth effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "L'aboleth effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "L'aboleth effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "L'aboleth effectue une attaque avec sa queue." },
             {
-                nom: "Absorption psychique (coûte 2 actions).",
+                nom: "Absorption psychique (coûte 2 actions)",
                 action: "Une créature charmée par l'aboleth subit 10 (3d6) dégâts psychiques, et l'aboleth récupère un montant de point de vie égal aux dégâts que cette créature a subis.",
             },
         ],
@@ -128,8 +128,8 @@ let monsters = [
         attributs:
             "Bond. Si l'allosaure se déplace d'au moins 9 mètres en ligne droite vers une créature, puis la touche lors d'une attaque avec ses griffes dans le même tour, la cible doit réussir un jet de sauvegarde de Force DD 13 pour ne pas tomber à terre. Si la cible est à terre, l'allosaure peut effectuer une attaque de morsure contre elle en tant qu'action bonus.",
         actions: [
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d8 + 4) dégâts tranchants.", attaque: 6, degats: "1d8 + 4" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d10 + 4) dégâts perforants.", attaque: 6, degats: "2d10 + 4" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d8 + 4) dégâts tranchants.", attaque: 6, degats: "1d8 + 4" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d10 + 4) dégâts perforants.", attaque: 6, degats: "2d10 + 4" },
         ],
         description:
             "L'allosaure est un dinosaure prédateur possédant une taille, une force et une vitesse stupéfiante. Il fonce vers sa proie en bondissant vers elle pour la déchiqueter avec ses griffes vicieuses.",
@@ -171,14 +171,14 @@ let monsters = [
             "Mouvement incorporel. L'âme en peine peut se déplacer à travers d'autres créatures ou des objets comme si elle traversait un terrain difficile. Elle subit 5 (1d10) dégâts de force si elle termine son tour à l'intérieur d'un objet.Sensibilité à la lumière du soleil. Si elle est exposée à la lumière du soleil, l'âme en peine a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
             {
-                nom: "Absorption d'énergie.",
+                nom: "Absorption d'énergie",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une créature. Touché : 21 (4d8 + 3) dégâts nécrotiques. La cible doit réussir un jet de sauvegarde de Constitution DD 14 pour ne pas subir une diminution de ses points de vie maximums égale aux dégâts subis. Cette diminution perdure jusqu'à ce que la cible termine un repos long. La cible meurt si cet effet réduit ses points de vie maximums à 0.",
                 attaque: 6,
                 degats: "4d8 + 3",
             },
             {
-                nom: "Création de spectre.",
+                nom: "Création de spectre",
                 action:
                     "L'âme en peine prend pour cible un humanoïde se trouvant à 3 mètres ou moins, décédé depuis 1 minute maximum et dont la mort fut violente. L'esprit de la cible se relève en tant que spectre, à l'endroit où se trouve le corps ou dans l'espace inoccupé le plus proche. Le spectre est sous le contrôle de l'âme en peine. L'âme en peine ne peut pas avoir plus de sept spectres sous son contrôle en même temps.",
             },
@@ -223,44 +223,44 @@ let monsters = [
         attributs:
             "Inscrutable. Le sphinx est immunisé aux effets cherchant à ressentir ses émotions ou à lire ses pensées, ainsi qu'à n'importe quel sort de divination qu'il refuse. Les jets de Sagesse (Perspicacité) réalisés pour connaître les intentions ou la sincérité du sphinx subissent un désavantage.Armes magiques. Les attaques avec une arme du sphinx sont magiques.Incantation. Le sphinx est un lanceur de sorts de niveau 12. Sa caractéristique d'incantation est la Sagesse (jet de sauvegarde contre ses sorts DD 18, +10 au toucher pour les attaques avec un sort). Il n'a pas besoin de composantes matérielles pour lancer ses sorts. Le sphinx a la liste de sorts de clerc préparée :Sorts mineurs (à volonté) : flamme sacrée, stabilisation, thaumaturgie\nNiveau 1 (4 emplacements) : détection de la magie, détection du mal et du bien, injonction\nNiveau 2 (3 emplacements) : restauration partielle, zone de vérité\nNiveau 3 (3 emplacements) : dissipation de la magie, langues\nNiveau 4 (3 emplacements) : bannissement, liberté de mouvement\nNiveau 5 (2 emplacements) : colonne de flamme, restauration supérieure\nNiveau 6 (1 emplacement) : festin des héros.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le sphinx réalise deux attaques avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le sphinx réalise deux attaques avec ses griffes." },
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 1,50 m, une cible. Touché : 17 (2d10 + 6) dégâts tranchants.",
                 attaque: 12,
                 degats: "2d10 + 6",
             },
             {
-                nom: "Rugissement (3/jour).",
+                nom: "Rugissement (3/jour)",
                 action:
                     "Le sphinx pousse un rugissement magique. Chaque fois qu'il rugit avant d'avoir terminé un repos long, le rugissement est de plus en plus fort et son effet différent, comme détaillé ci-dessous. Chaque créature se trouvant à 150 mètres du sphinx et étant capable de l'entendre doivent réaliser un jet de sauvegarde.",
             },
             {
-                nom: "Premier rugissement.",
+                nom: "Premier rugissement",
                 action:
                     "Toutes les créatures qui échouent à un jet de sauvegarde de Sagesse DD 18 sont effrayées pendant 1 minute. Une créature peut retenter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin l'effet qu'elle subit.",
             },
             {
-                nom: "Second rugissement.",
+                nom: "Second rugissement",
                 action:
                     "Toutes les créatures qui échouent à un jet de sauvegarde de Sagesse DD 18 sont assourdies et effrayées pendant 1 minute. Une créature effrayée est paralysée et peut retenter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin l'effet qu'elle subit.",
             },
             {
-                nom: "Troisième rugissement.",
+                nom: "Troisième rugissement",
                 action:
                     "Chaque créature réalise un jet de sauvegarde de Constitution DD 18. En cas d'échec, elle subit 44 (8d10) dégâts de tonnerre et est jetée à terre. En cas de réussite, elle subit la moitié des dégâts et n'est pas jetée à terre.",
             },
             {
-                nom: "Le sphinx peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le sphinx peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le sphinx récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Attaque avec les griffes.", action: "Le sphinx réalise une attaque avec ses griffes." },
+            { nom: "Attaque avec les griffes", action: "Le sphinx réalise une attaque avec ses griffes." },
             {
-                nom: "Téléportation (coûte 2 actions).",
+                nom: "Téléportation (coûte 2 actions)",
                 action: "Le sphinx se téléporte par magie, emportant avec lui l'équipement qu'il porte ou transporte, jusqu'à un espace inoccupé qu'il peut voir dans un rayon de 36 mètres.",
             },
-            { nom: "Sort (coûte 3 actions).", action: "Le sphinx lance un sort choisi parmi sa liste de sorts préparés, en utilisant un emplacement de sort normalement." },
+            { nom: "Sort (coûte 3 actions)", action: "Le sphinx lance un sort choisi parmi sa liste de sorts préparés, en utilisant un emplacement de sort normalement." },
         ],
         description: null,
         sauvegarde: { FOR: 6, DEX: 6, CON: 11, INT: 9, SAG: 10, CHA: 6 },
@@ -293,14 +293,14 @@ let monsters = [
         attributs: ".",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts tranchants + 3 (1d6) dégâts d'acide. Si a cible est de taille G ou inférieure, elle est agrippée (évasion DD 13). Tant qu'elle est agrippée, l'ankheg ne peut mordre que cette créature et a un avantage aux jets d'attaque pour cela.",
                 attaque: 5,
                 degats: "2d6 + 3",
             },
             {
-                nom: "Vaporisation d'acide (Recharge 6).",
+                nom: "Vaporisation d'acide (Recharge 6)",
                 action:
                     "L'ankheg crache de l'acide sur une ligne de 9 mètres de long et 1,50 mètre de large, à conditions qu'il n'agrippe aucune créature. Chaque créature présente sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 13, subissant 10 (3d6) dégâts d'acide en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -336,7 +336,7 @@ let monsters = [
         attributs: ".",
         actions: [
             {
-                nom: "Queue.",
+                nom: "Queue",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 18 (4d6 + 4) dégâts contondants. Si la cible est une créature, celle-ci doit réussir un jet de sauvegarde de Force DD 14 pour ne pas tomber au sol.",
                 attaque: 7,
@@ -376,7 +376,7 @@ let monsters = [
             "Saut éthérée. Par une action bonus, l'araignée peut magiquement passer du plan matériel au plan éthéré, et vice versa.Pattes d'araignée. L'araignée peut escalader des surfaces difficiles et être au plafond la tête en bas sans avoir besoin d'effectuer un jet de caractéristique.Déplacement sur la toile. L'araignée ignore les restrictions de mouvement causées par une toile d'araignée.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une créature. Touché : 7 (1d10 + 2) dégâts perforants, et la cible doit réaliser un jet de sauvegarde de Constitution DD 11, subissant 18 (4d8) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite. Si les dégâts de poison font tomber la cible à 0 point de vie, celle-ci est stable mais empoisonnée durant 1 heure, même après avoir regagné des points de vie, et est paralysée tant qu'elle est empoisonnée de cette manière.",
                 attaque: 4,
@@ -419,7 +419,7 @@ let monsters = [
         ],
         xp: 450,
         attributs: "Apparence trompeuse. Tant que l'arbre reste immobile, il ne peut être distingué d'un arbre ordinaire.",
-        actions: [{ nom: "Coup.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une cible. Touché : 14 (3d6 + 4) dégâts contondants.", attaque: 6, degats: "3d6 + 4" }],
+        actions: [{ nom: "Coup", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une cible. Touché : 14 (3d6 + 4) dégâts contondants.", attaque: 6, degats: "3d6 + 4" }],
         description: "Un arbre éveillé est un arbre ordinaire à qui une conscience et une mobilité ont été données grâce à la magie.",
         sauvegarde: { FOR: 4, DEX: -2, CON: 2, INT: 0, SAG: 0, CHA: -2 },
         player: false,
@@ -456,7 +456,7 @@ let monsters = [
         xp: 10,
         attributs: "Apparence trompeuse. Tant que l'arbuste reste immobile, il ne peut être distingué d'un arbuste ordinaire.",
         actions: [
-            { nom: "Écorchure.", action: "Attaque au corps à corps avec une arme : +1 au toucher, allonge 1,50 m, une cible. Touché : 1 (1d4 - 1) dégâts tranchants.", attaque: 1, degats: "1d4 - 1" },
+            { nom: "Écorchure", action: "Attaque au corps à corps avec une arme : +1 au toucher, allonge 1,50 m, une cible. Touché : 1 (1d4 - 1) dégâts tranchants.", attaque: 1, degats: "1d4 - 1" },
         ],
         description: "Un arbuste éveillé est un arbuste ordinaire à qui une conscience et une mobilité ont été données grâce à la magie.",
         sauvegarde: { FOR: -4, DEX: -1, CON: 0, INT: 0, SAG: 0, CHA: -2 },
@@ -499,14 +499,14 @@ let monsters = [
             "Incantation innée. La caractéristique d'incantation innée de l'arcanaloth est le Charisme (jet de sauvegarde contre ses sorts DD 15). L'arcanaloth peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : modification d'apparence, ténèbres, métal brûlant, invisibilité (personnel uniquement), projectile magique\nRésistance à la magie. L'arcanaloth a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme de l'arcanaloth sont magiques.Incantation. L'arcanaloth est un lanceur de sorts de niveau 16. Sa caractéristique d'incantation est l'Intelligence (jet de sauvegarde contre ses sorts DD 17, +9 au toucher pour les attaques avec un sort). L'arcanaloth a préparé les sorts de magicien suivants :Sorts mineurs (à volonté) : trait de feu, main de mage, illusion mineure, prestidigitation\nNiveau 1 (4 emplacements) : détection de la magie, identification, bouclier, disque flottant de Tenser\nNiveau 2 (3 emplacements) : détection des pensées, image miroir, force fantasmagorique, suggestion\nNiveau 3 (3 emplacements) : contresort, peur, boule de feu\nNiveau 4 (3 emplacements) : bannissement, porte dimensionnelle\nNiveau 5 (2 emplacements) : contact avec un autre plan, immobilisation de monstre\nNiveau 6 (1 emplacement) : chaîne d'éclairs\nNiveau 7 (1 emplacement) : doigt de mort\nNiveau 8 (1 emplacement) : esprit impénétrable.",
         actions: [
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 8 (2d4 + 3) dégâts tranchants. La cible doit effectuer un jet de sauvegarde de Constitution DD 14, subissant 10 (3d6) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
                 attaque: 7,
                 degats: "2d4 + 3",
             },
             {
-                nom: "Téléportation.",
+                nom: "Téléportation",
                 action:
                     "L'arcanaloth se téléporte magiquement, avec tout l'équipement qu'il porte ou transporte, vers un espace inoccupé qu'il peut voir et situé dans un rayon de 18 mètres autour de lui.",
             },
@@ -548,8 +548,8 @@ let monsters = [
         attributs:
             "Apparence trompeuse. Lorsque l'armure reste immobile, elle ne peut être distinguée d'une armure normale.Sensibilité à l'antimagie. L'armure se retrouve incapable d'agir lorsqu'elle se situe dans un champ antimagie. Si elle est ciblée par une dissipation de la magie, l'armure doit réussir un jet de sauvegarde de Constitution contre le DD de sort du lanceur ou tomber inconsciente pendant 1 minute.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'armure réalise deux attaques au corps à corps." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts contondants.", attaque: 4, degats: "1d6 + 2" },
+            { nom: "Attaques multiples", action: "L'armure réalise deux attaques au corps à corps." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts contondants.", attaque: 4, degats: "1d6 + 2" },
         ],
         description: "Cette armure animée par la magie grince et ferraille en se déplaçant, faisant autant de bruit que l'esprit vengeur d'un chevalier déchu.",
         sauvegarde: { FOR: 2, DEX: 0, CON: 1, INT: -5, SAG: -4, CHA: -5 },
@@ -590,7 +590,7 @@ let monsters = [
             "Corps brûlant. Une créature qui touche l'azer ou le frappe avec une attaque au corps à corps, en se trouvant à 1,50 mètre ou moins de lui, subit 5 (1d10) dégâts de feu.Armes brûlantes. Lorsque l'azer touche avec une arme de corps à corps en métal, il inflige 3 (1d6) dégâts de feu supplémentaires (inclus dans l'attaque ci-dessous).Illumination. L'azer émet une lumière vive dans un rayon de 3 mètres et une lumière faible sur 3 mètres supplémentaires.",
         actions: [
             {
-                nom: "Marteau de guerre.",
+                nom: "Marteau de guerre",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts contondants, ou 8 (1d10 + 3) dégâts contondants si utilisé à deux mains pour faire une attaque au corps à corps, plus 3 (1d6) dégâts de feu.",
                 attaque: 5,
@@ -628,16 +628,16 @@ let monsters = [
         attributs:
             "Sol aberrant. Le sol, dans un rayon de 3 mètres autour du babélien, a un aspect pâteux et est considéré comme un terrain difficile. Chaque créature qui débute son tour dans cette zone doit réussir un jet de sauvegarde de Force DD 10 ou voir sa vitesse de déplacement réduite à 0 jusqu'au début de son prochain tour.Charabia. Le babélien babille des choses incompréhensibles tant qu'il peut voir une créature et qu'il n'est pas incapable d'agir. Chaque créature qui débute son tour dans un rayon de 6 mètres du babélien et qui peut entendre son charabia doit effectuer un jet de sauvegarde de Sagesse DD 10. En cas d'échec, la créature ne peut pas utiliser de réaction jusqu'au début de son prochain tour et lance un d8 pour déterminer ce qu'elle fait pendant son tour. Sur un 1 à 4, la créature ne fait rien. Sur un 5 ou 6, la créature n'utilise aucune action ni action bonus et utilise l'intégralité de son mouvement pour se déplacer dans une direction aléatoire. Sur un 7 ou 8, la créature effectue une attaque au corps à corps contre une créature aléatoire à portée ou ne fait rien si elle ne peut pas effectuer une telle attaque.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le babélien effectue une attaque de morsure et, s'il le peut, utilise sa Salive aveuglante." },
+            { nom: "Attaques multiples", action: "Le babélien effectue une attaque de morsure et, s'il le peut, utilise sa Salive aveuglante." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une créature. Touché : 17 (5d6) dégâts perforants. Si la cible est de taille M ou inférieure, elle doit réussir un jet de sauvegarde de Force DD 10 ou être jetée à terre. Si la cible est tuée par les dégâts de cette attaque, elle est absorbée par le babélien.",
                 attaque: 2,
                 degats: "5d6",
             },
             {
-                nom: "Salive aveuglante (Recharge 5-6).",
+                nom: "Salive aveuglante (Recharge 5-6)",
                 action:
                     "Le babélien crache un projectile chimique sur un point qu'il peut voir dans un rayon de 4,50 mètres autour de lui. Le projectile explose dans un éclat de lumière aveuglant au moment de l'impact. Chaque créature se trouvant à 1,50 mètre du flash de lumière doit réussir un jet de sauvegarde de Dextérité DD 13 ou être aveuglée jusqu'à la fin du prochain tour du babélien.",
             },
@@ -681,23 +681,23 @@ let monsters = [
         attributs:
             "Spasmes d'agonie. Le balor explose lorsqu'il meurt, et toutes les créatures situées à 9 mètres ou moins de lui doivent réaliser un jet de sauvegarde de Dextérité DD 20, subissant 70 (20d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite. L'explosion embrase les objets inflammables qui ne sont pas tenus ou portés se trouvant dans la zone, et détruit les armes du balor.Aura de feu. Au début de chaque tour du balor, toute créature située à 1,50 mètre ou moins de lui subit 10 (3d6) dégâts de feu, et les objets inflammables situés dans l'aura, qui ne sont pas tenus ou portés, s'embrasent. Une créature qui touche le balor ou le frappe avec une attaque au corps à corps tout en se trouvant à 1,50 mètre ou moins de lui subit 10 (3d6) dégâts de feu.Résistance à la magie. Le balor a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme du balor sont magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le balor réalise deux attaques : une avec son épée longue et une avec son fouet." },
+            { nom: "Attaques multiples", action: "Le balor réalise deux attaques : une avec son épée longue et une avec son fouet." },
             {
-                nom: "Épée longue.",
+                nom: "Épée longue",
                 action:
                     "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 21 (3d8 + 8) dégâts tranchants + 13 (3d8) dégâts de foudre. Si le balor réalise un coup critique, il lance trois fois les dés de dégâts au lieu de deux fois.",
                 attaque: 14,
                 degats: "3d8 + 8",
             },
             {
-                nom: "Fouet.",
+                nom: "Fouet",
                 action:
                     "Attaque au corps à corps avec une arme : +14 au toucher, allonge 9 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants + 10 (3d6) dégâts de feu, et la cible doit réussir un jet de sauvegarde de Force DD 20 ou être tirée de 7,50 mètres vers le balor.",
                 attaque: 14,
                 degats: "2d6 + 8",
             },
             {
-                nom: "Téléportation.",
+                nom: "Téléportation",
                 action: "Le balor se téléporte magiquement, avec tout équipement qu'il porte ou transporte, vers un espace inoccupé qu'il peut voir et situé dans un rayon de 36 mètres autour de lui.",
             },
         ],
@@ -741,18 +741,18 @@ let monsters = [
             "Détection de la vie. Grâce à la magie, la banshie peut sentir la présence de créatures qui ne sont ni des morts-vivants ni des créatures artificielles jusqu'à 7,5 kilomètres de distance. Elle connait dans quelle direction elles se trouvent, mais pas leur localisation exacte.Mouvement incorporel. La banshie peut se déplacer à travers d'autres créatures ou des objets comme si elle traversait un terrain difficile. Elle subit 5 (1d10) dégâts de force si elle termine son tour à l'intérieur d'un objet.",
         actions: [
             {
-                nom: "Contact corrupteur.",
+                nom: "Contact corrupteur",
                 action: "Attaque au corps à corps avec un sort : +4 au toucher, allonge 1,50 m, une cible. Touché : 12 (3d6 + 2) dégâts nécrotiques.",
                 attaque: 4,
                 degats: "3d6 + 2",
             },
             {
-                nom: "Visage Effroyable.",
+                nom: "Visage Effroyable",
                 action:
                     "Chaque créature non morte-vivante se trouvant à 18 mètres de la banshie et pouvant la voir doit réussir un jet de sauvegarde de Sagesse DD 13 ou être effrayée pendant 1 minute. Une créature effrayée peut retenter le jet de sauvegarde à la fin de chacun de ses tours, avec un désavantage si la banshie est toujours visible, mettant fin à l'effet en cas de réussite. Si le jet de sauvegarde de la cible est réussi ou que l'effet qu'elle subit se termine, celle-ci devient immunisée au Visage Effroyable de la banshie pendant les prochaines 24 heures.",
             },
             {
-                nom: "Hurlement (1/jour).",
+                nom: "Hurlement (1/jour)",
                 action:
                     "La banshie pousse un hurlement plaintif, à condition de ne pas être exposée à la lumière du soleil. Les créatures artificielles et les morts-vivants sont immunisés à cet effet. Toutes les autres créatures se situant à 9 mètres d'elle et pouvant l'entendre doivent réaliser un jet de sauvegarde de Constitution DD 13. En cas d'échec, la créature tombe à 0 point de vie. En cas de réussite, elle subit 10 (3d6) dégâts psychiques.",
             },
@@ -798,9 +798,9 @@ let monsters = [
         attributs:
             "Incantation innée. La caractéristique d'incantation innée du barlgura est la Sagesse (jet de sauvegarde contre ses sorts DD 13). Le barlgura peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :1/jour chacun : enchevêtrement, force fantasmagorique\n2/jour chacun : déguisement, invisibilité (personnel uniquement)\nTéméraire. Au début de son tour, le barlgura peut obtenir un avantage à tous les jets d'attaque au corps à corps avec une arme pendant ce tour, mais les attaques contre lui ont un avantage jusqu'au début de son prochain tour.Saut avec élan. Le saut en longueur du barlgura va jusqu'à 12 mètres et son saut en hauteur jusqu'à 6 mètres quand il peut prendre son élan.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le barlgura effectue trois attaques : une de morsure et deux avec ses poings." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants.", attaque: 7, degats: "2d6 + 4" },
-            { nom: "Poing.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 9 (1d10 + 4) dégâts contondants.", attaque: 7, degats: "1d10 + 4" },
+            { nom: "Attaques multiples", action: "Le barlgura effectue trois attaques : une de morsure et deux avec ses poings." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Poing", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 9 (1d10 + 4) dégâts contondants.", attaque: 7, degats: "1d10 + 4" },
         ],
         description: null,
         sauvegarde: { FOR: 4, DEX: 5, CON: 6, INT: -2, SAG: 2, CHA: -1 },
@@ -834,7 +834,7 @@ let monsters = [
             "Regard pétrifiant. Si une créature débute son tour à 9 mètres du basilic et que chacun peut voir l'autre, le basilic peut forcer la créature à réaliser un jet de sauvegarde de Constitution DD 12, s'il n'est pas incapable d'agir. En cas d'échec, la magie commence à transformer la créature en pierre, et celle-ci est entravée. Elle doit retenter le jet de sauvegarde à la fin de son tour. En cas de réussite, l'effet se termine. En cas d'échec, la créature est pétrifiée, jusqu'à ce qu'elle soit délivrée par un sort de restauration supérieure ou par une magie similaire. Une créature qui n'est pas surprise peut éviter le regard du basilic pour ne pas tenter de jet de sauvegarde au début de son tour. Dans ce cas, elle ne pourra pas voir le basilic jusqu'au début de son prochain tour, elle pourra encore choisir à ce moment d'éviter son regard. Si elle regarde le basilic entretemps, elle devra tenter immédiatement le jet de sauvegarde. Si le basilic voit son propre reflet à 9 mètres ou moins dans des conditions de lumière vive, il se méprendra et se ciblera avec son regard, croyant être face à un rival.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts perforants + 7 (2d6) dégâts de poison.",
                 attaque: 5,
                 degats: "2d6 + 3",
@@ -877,22 +877,22 @@ let monsters = [
         xp: 7200,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le béhir réalise deux attaques : une de morsure et une d'étreinte." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 22 (3d10 + 6) dégâts perforants.", attaque: 10, degats: "3d10 + 6" },
+            { nom: "Attaques multiples", action: "Le béhir réalise deux attaques : une de morsure et une d'étreinte." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 22 (3d10 + 6) dégâts perforants.", attaque: 10, degats: "3d10 + 6" },
             {
-                nom: "Étreinte.",
+                nom: "Étreinte",
                 action:
                     "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une créature de taille G ou inférieure. Touché : 17 (2d10 + 6) dégâts contondants + 17 (2d10 + 6) dégâts tranchants. La cible est agrippée (DD 16 pour s'échapper) si le béhir n'est pas déjà en train d'étreindre une créature, et la cible est entravée tant qu'elle est agrippée.",
                 attaque: 10,
                 degats: "2d10 + 6",
             },
             {
-                nom: "Souffle de foudre (Recharge 5-6).",
+                nom: "Souffle de foudre (Recharge 5-6)",
                 action:
                     "Le béhir crache un jet de foudre sur une ligne de 6 mètres de long et de 1,50 mètre de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 16, subissant 66 (12d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Engloutissement.",
+                nom: "Engloutissement",
                 action:
                     "Le béhir effectue une attaque de morsure contre une créature de taille M ou inférieure qu'il agrippe. Si l'attaque réussit, la créature est avalée, et elle n'est plus agrippée. Une fois avalée, la créature est aveuglée et entravée, bénéficie d'un abri total contre les attaques et effets provenant de l'extérieur du béhir, et subit 21 (6d6) dégâts d'acide au début de chaque tour du béhir. Un béhir ne peut avoir en lui qu'une seule créature engloutie à la fois. Si le béhir subit 30 points de dégâts ou plus en un seul tour de la part de la créature avalée, il doit réussir un jet de sauvegarde de Constitution DD 14 à la fin du tour ou régurgiter la créature qu'il a avalée, qui se retrouve alors à terre, à 3 mètres ou moins du béhir. Si le béhir meurt, une créature avalée n'est plus entravée et peut s'échapper du cadavre en utilisant 4,50 mètres de mouvement pour se retrouver à l'extérieur et à terre.",
             },
@@ -928,9 +928,9 @@ let monsters = [
         attributs:
             "Dérobade. Si la bête éclipsante est soumise à un effet qui lui permet d'effectuer un jet de sauvegarde pour ne subir que la moitié des dégâts, elle ne subit aucun dégât si elle réussit son jet de sauvegarde, et seulement la moitié des dégâts si elle échoue.Déplacement. La bête éclipsante projette une illusion magique qui fait apparaître la bête éclipsante à quelques centimètres de sa véritable localisation ; de ce fait, les jets d'attaque qui ciblent la bête éclipsante ont un désavantage contre elle. Si elle est touchée par une attaque, ce trait est interrompu jusqu'à la fin de son prochain tour. Ce trait est également interrompu tant que la bête éclipsante est incapable d'agir ou que sa vitesse de déplacement est égale à 0 mètre.",
         actions: [
-            { nom: "Attaques multiples.", action: "La bête éclipsante effectue deux attaques avec ses tentacules." },
+            { nom: "Attaques multiples", action: "La bête éclipsante effectue deux attaques avec ses tentacules." },
             {
-                nom: "Tentacule.",
+                nom: "Tentacule",
                 action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une cible. Touché : 7 (1d6 + 4) dégâts contondants + 3 (1d6) dégâts perforants.",
                 attaque: 6,
                 degats: "1d6 + 4",
@@ -975,18 +975,13 @@ let monsters = [
             "Puanteur. Toute créature qui débute son tour à 1,50 mètre ou moins de la blême doit réussir un jet de sauvegarde de Constitution DD 10 ou être empoisonnée jusqu'au début de son prochain tour. Si elle réussit son jet de sauvegarde, la créature est immunisée à la puanteur des blêmes pour les prochaines 24 heures.Mépris du renvoi. La blême et toutes les goules situées dans un rayon de 9 mètres autour d'elle ont un avantage aux jets de sauvegarde pour résister aux effets de renvoi des morts-vivants.",
         actions: [
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts tranchants. Si la cible est une créature autre qu'un mort-vivant, elle doit réussir un jet de sauvegarde de Constitution DD 10 ou être paralysée pendant 1 minute. La cible peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
                 attaque: 5,
                 degats: "2d6 + 3",
             },
-            {
-                nom: "Morsure.",
-                action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une créature. Touché : 12 (2d8 + 3) dégâts perforants.",
-                attaque: 3,
-                degats: "2d8 + 3",
-            },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une créature. Touché : 12 (2d8 + 3) dégâts perforants.", attaque: 3, degats: "2d8 + 3" },
         ],
         description: "Les blêmes sont des goules auxquelles le prince démon Orcus imprègne plus d'énergie abyssale, ce qui entre autres les rend plus rusées.",
         sauvegarde: { FOR: 3, DEX: 3, CON: 0, INT: 0, SAG: 0, CHA: -1 },
@@ -1019,10 +1014,10 @@ let monsters = [
         attributs:
             "Amphibien. Le brutacien peut respirer aussi bien dans l'air que sous l'eau.Communication avec les grenouilles et les crapauds. Le brutacien peut communiquer des concepts simples aux crapauds et aux grenouilles lorsqu'il parle le brutacien.Camouflage dans la vase. Le brutacien a un avantage aux jets de Dextérité (Discrétion) effectués pour se cacher sur un terrain marécageux.Saut arrêté. Le brutacien peut sauter en longueur jusqu'à 6 mètres ou en hauteur jusqu'à 3 mètres, avec ou sans élan.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le brutacien effectue deux attaques au corps à corps : une de morsure et une avec la lance." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 +1) dégâts contondants.", attaque: 3, degats: "1d4 +1" },
+            { nom: "Attaques multiples", action: "Le brutacien effectue deux attaques au corps à corps : une de morsure et une avec la lance." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 +1) dégâts contondants.", attaque: 3, degats: "1d4 +1" },
             {
-                nom: "Lance.",
+                nom: "Lance",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +3 au toucher, allonge 1,50 m ou portée 6/18 m, une cible. Touché : 4 (1d6 + 1) dégâts perforants, ou 5 (1d8 + 1) dégâts perforants si utilisée à deux mains pour faire une attaque au corps à corps.",
                 attaque: 3,
@@ -1066,7 +1061,7 @@ let monsters = [
         xp: 25,
         attributs: "Apparence trompeuse. Tant que le buisson infecté reste immobile, il ne peut être distingué d'un arbuste mort.",
         actions: [
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts perforants.", attaque: 3, degats: "1d4 + 1" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts perforants.", attaque: 3, degats: "1d4 + 1" },
         ],
         description:
             "Un buisson infecté est une plante éveillée qui ressemble à un arbuste qui peut tirer ses racines hors du sol. Ses branches se tordent ensemble pour former une silhouette humanoïde avec une tête et des membres.",
@@ -1099,9 +1094,9 @@ let monsters = [
         xp: 1800,
         attributs: "Saut arrêté. La bulette peut sauter en longueur jusqu'à 9 mètres ou en hauteur jusqu'à 4,50 mètres, avec ou sans élan.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 30 (4d12 + 4) dégâts perforants.", attaque: 7, degats: "4d12 + 4" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 30 (4d12 + 4) dégâts perforants.", attaque: 7, degats: "4d12 + 4" },
             {
-                nom: "Saut implacable.",
+                nom: "Saut implacable",
                 action:
                     "Si la bulette parcourt au moins 4,50 mètres en sautant lors de son mouvement, elle peut utiliser son action pour atterrir sur un espace où se trouvent une ou plusieurs créatures. Chaque créature doit alors réussir un jet de sauvegarde de Force ou de Dextérité DD 16 (au choix de la cible) ou être jetée à terre et subir 14 (3d6 + 4) dégâts contondants + 14 (3d6 + 4) dégâts tranchants. Si le jet de sauvegarde est réussi, la créature subit la moitié des dégâts, n'est pas projetée au sol, et est poussée de 1,50 mètre hors de l'espace de la bulette (vers un espace inoccupé choisi par la créature). S'il n'y a pas d'espace libre à portée, la créature se retrouve à terre dans l'espace de la bulette.",
             },
@@ -1144,17 +1139,17 @@ let monsters = [
         attributs:
             "Faveur impie. La CA du cambion prend en compte son bonus de Charisme.Incantation innée. La caractéristique d'incantation innée du cambion est le Charisme (jet de sauvegarde contre ses sorts DD 14). Le cambion peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :3/jour chacun : détection de la magie, injonction, modification d'apparence\n1/jour : changement de plan (personnel uniquement).",
         actions: [
-            { nom: "Attaques multiples.", action: "Le cambion réalise deux attaques au corps à corps, ou utilise deux fois son Rayon de feu." },
+            { nom: "Attaques multiples", action: "Le cambion réalise deux attaques au corps à corps, ou utilise deux fois son Rayon de feu." },
             {
-                nom: "Lance.",
+                nom: "Lance",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +7 au toucher, allonge 1,50 m ou portée 6/12 m, une cible. Touché : 7 (1d6 + 4) dégâts perforants, ou 8 (1d8 + 4) dégâts perforants si utilisée à deux mains pour faire une attaque au corps à corps, plus 3 (1d6) dégâts de feu.",
                 attaque: 7,
                 degats: "1d6 + 4",
             },
-            { nom: "Rayon de feu.", action: "Attaque à distance avec un sort : +7 au toucher, portée 36 m, une cible. Touché : 10 (3d6) dégâts de feu.", attaque: 7, degats: "3d6" },
+            { nom: "Rayon de feu", action: "Attaque à distance avec un sort : +7 au toucher, portée 36 m, une cible. Touché : 10 (3d6) dégâts de feu.", attaque: 7, degats: "3d6" },
             {
-                nom: "Charme satanique.",
+                nom: "Charme satanique",
                 action:
                     "Un humanoïde situé à 9 mètres ou moins du cambion et qu'il peut voir doit réussir un jet de sauvegarde de Sagesse DD 14 ou être charmé par magie pendant 1 journée. La cible charmée obéit aux paroles du cambion. Si la cible subit des dégâts de la part du cambion ou d'une autre créature, ou reçoit un ordre suicidaire de la part du cambion, elle peut retenter le jet de sauvegarde, mettant fin à l'effet en cas de réussite. Si le jet de sauvegarde d'une créature est réussi ou que l'effet qu'elle subit se termine, celle-ci devient immunisée au Charme satanique du cambion pendant les prochaines 24 heures.",
             },
@@ -1190,10 +1185,10 @@ let monsters = [
         attributs:
             "Charge. Si le centaure se déplace d'au moins 9 mètres en ligne droite vers une cible, puis la touche lors d'une attaque avec la pique dans le même tour, la cible subit 10 (3d6) dégâts perforants supplémentaires.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le centaure réalise deux attaques : une avec la pique et une avec ses sabots, ou deux avec l'arc long." },
-            { nom: "Pique.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une cible. Touché : 9 (1d10 + 4) dégâts perforants.", attaque: 6, degats: "1d10 + 4" },
-            { nom: "Sabots.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 6, degats: "2d6 + 4" },
-            { nom: "Arc long.", action: "Attaque à distance avec une arme : +4 au toucher, portée 45/180 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants.", attaque: 4, degats: "1d8 + 2" },
+            { nom: "Attaques multiples", action: "Le centaure réalise deux attaques : une avec la pique et une avec ses sabots, ou deux avec l'arc long." },
+            { nom: "Pique", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une cible. Touché : 9 (1d10 + 4) dégâts perforants.", attaque: 6, degats: "1d10 + 4" },
+            { nom: "Sabots", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 6, degats: "2d6 + 4" },
+            { nom: "Arc long", action: "Attaque à distance avec une arme : +4 au toucher, portée 45/180 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants.", attaque: 4, degats: "1d8 + 2" },
         ],
         description:
             "Un centaure a le corps d'un large cheval surmonté d'une tête, des bras et d'un torse humanoïde. Voyageurs solitaires, ils évitent les conflits mais combattent férocement lorsqu'ils y sont obligés.",
@@ -1234,19 +1229,19 @@ let monsters = [
             "Métamorphe. Le chacalidé peut utiliser son action pour se métamorphoser en un humain de taille M ou en un hybride chacal-humanoïde, ou pour reprendre sa véritable forme (un chacal de taille P). Mise à part sa taille, ses statistiques sont les mêmes quelle que soit sa forme. L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa véritable forme s'il meurt.Odorat et ouïe aiguisés. Le chacalidé a un avantage aux jets de Sagesse (Perception) basés sur l'ouïe ou l'odorat.Tactique de groupe. Le chacalidé a un avantage aux jets d'attaque contre une créature si au moins l'un de ses alliés est à 1,50 mètre ou moins de la créature et n'est pas incapable d'agir.",
         actions: [
             {
-                nom: "Morsure (forme de chacal ou hybride uniquement).",
+                nom: "Morsure (forme de chacal ou hybride uniquement)",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants.",
                 attaque: 4,
                 degats: "1d4 + 2",
             },
             {
-                nom: "Cimeterre (forme humanoïde ou hybride uniquement).",
+                nom: "Cimeterre (forme humanoïde ou hybride uniquement)",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts tranchants.",
                 attaque: 4,
                 degats: "1d6 + 2",
             },
             {
-                nom: "Regard soporifique.",
+                nom: "Regard soporifique",
                 action:
                     "Le chacalidé fixe du regard une créature qu'il peut voir et située dans un rayon de 9 mètres autour de lui. La cible doit effectuer un jet de sauvegarde de Sagesse DD 10. Si elle l'échoue, la cible succombe à un sommeil magique, tombant inconsciente pour 10 minutes ou jusqu'à ce que quelqu'un utilise une action pour la secouer et ainsi la réveiller. Une créature qui réussit son jet de sauvegarde contre cet effet devient immunisée au regard soporifique de ce chacalidé pour les prochaines 24 heures. Les morts-vivants et les créatures immunisées aux charmes ne sont pas affectées par cet effet.",
             },
@@ -1282,15 +1277,15 @@ let monsters = [
         attributs:
             "Odorat aiguisé. Le charognard rampant a un avantage aux jets de Sagesse (Perception) basés sur l'odorat.Pattes d'araignée. Le charognard rampant peut escalader des surfaces difficiles et être au plafond la tête en bas sans avoir besoin d'effectuer un jet de caractéristique.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le charognard rampant effectue deux attaques : une avec ses tentacules et une de morsure." },
+            { nom: "Attaques multiples", action: "Le charognard rampant effectue deux attaques : une avec ses tentacules et une de morsure." },
             {
-                nom: "Tentacules.",
+                nom: "Tentacules",
                 action:
                     "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une créature. Touché : 4 (1d4 + 2) dégâts de poison, et la cible doit réussir un jet de sauvegarde de Constitution DD 13 ou être empoisonné pendant 1 minute. Jusqu'à ce que ce poison prenne fin, la cible est paralysée. La cible peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin au poison qui l'affecte.",
                 attaque: 8,
                 degats: "1d4 + 2",
             },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (2d4 + 2) dégâts perforants.", attaque: 4, degats: "2d4 + 2" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (2d4 + 2) dégâts perforants.", attaque: 4, degats: "2d4 + 2" },
         ],
         description: null,
         sauvegarde: { FOR: 2, DEX: 1, CON: 3, INT: -5, SAG: 1, CHA: -3 },
@@ -1333,7 +1328,7 @@ let monsters = [
             "Bourdonnement. Le chasme produit un horrible son bourdonnant auquel sont immunisés les démons. Toute autre créature qui débute son tour dans un rayon de 9 mètres autour du chasme doit réussir un jet de sauvegarde de Constitution DD 12 ou tomber inconsciente pendant 10 minutes. Une créature qui ne peut pas entendre le bourdonnement réussit automatiquement son jet de sauvegarde. L'effet sur une créature rendue inconsciente prend fin dès qu'elle subit des dégâts ou si une autre créature utilise son action pour l'asperger avec de l'eau bénite. Si une créature réussit son jet de sauvegarde contre cet effet ou si cet effet prend fin pour elle, elle est immunisée au bourdonnement pour les prochaines 24 heures.Résistance à la magie. Le chasme a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Pattes d'araignée. La chasme peut escalader des surfaces difficiles et être au plafond la tête en bas sans avoir besoin d'effectuer un jet de caractéristique.",
         actions: [
             {
-                nom: "Rostre.",
+                nom: "Rostre",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature. Touché : 16 (4d6 + 2) dégâts perforants + 24 (7d6) dégâts nécrotiques, et les points de vie maximums de la cible sont réduit d'un montant égal aux dégâts nécrotiques subis. Si cet effet fait tomber les points de vie maximums de la créature à 0, la créature meurt. Cette réduction des points de vie maximums de la créature est effective jusqu'à ce que la créature finisse un repos long ou soit ciblée par un sort de restauration supérieure ou tout autre effet similaire.",
                 attaque: 5,
@@ -1378,21 +1373,21 @@ let monsters = [
         attributs:
             "Résistance à la magie. Le chevalier de la mort a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Général des Morts. À moins que le chevalier de la mort soit incapable d'agir, les morts-vivants de son choix à 18 mètres ou moins de lui (lui y comprit) bénéficient d'un avantage à leurs jets de sauvegarde contre les capacités qui repoussent les morts-vivants.Nature morte-vivante. Le chevalier de la mort n'a pas besoin d'air, ni de manger, ni de boire, ni de dormir.Incantation. Le chevalier de la mort est un lanceur de sorts de niveau 19. Sa caractéristique d'incantation est le Charisme (jet de sauvegarde contre ses sorts DD 18, +10 au toucher pour les attaques avec un sort). Il a préparé les sorts de paladin suivants :Niveau 1 (4 emplacements) : châtiment ardent, duel forcé, injonction\nNiveau 2 (3 emplacements) : arme magique, immobilisation de personne\nNiveau 3 (3 emplacements) : arme élémentaire, dissipation de la magie\nNiveau 4 (3 emplacements) : bannissement, châtiment assommant\nNiveau 5 (2 emplacements) : vague destructrice (nécrotique).",
         actions: [
-            { nom: "Attaques multiples.", action: "Le chevalier de la mort réalise trois attaques avec son épée longue." },
+            { nom: "Attaques multiples", action: "Le chevalier de la mort réalise trois attaques avec son épée longue." },
             {
-                nom: "Épée longue.",
+                nom: "Épée longue",
                 action:
                     "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 9 (1d8 + 5) dégâts tranchants, ou 10 (1d10 + 5) dégâts tranchants si utilisée à deux mains, plus 18 (4d8) dégâts nécrotiques.",
                 attaque: 11,
                 degats: "1d8 + 5",
             },
             {
-                nom: "Flammes impies (1/jour).",
+                nom: "Flammes impies (1/jour)",
                 action:
                     "Le chevalier de la mort projette une boule de feu magique qui explose en un point qu'il peut voir situé dans un rayon de 36 mètres autour de lui. Chaque créature dans un rayon de 6 mètres autour du point d'impact doit lancer un jet de sauvegarde de Dextérité DD 18. La sphère se propage au-delà des coins. Une créature subit 35 (10d6) dégâts de feu et 35 (10d6) dégâts nécrotiques si le jet de sauvegarde est raté, ou la moitié en cas de réussite.",
             },
             {
-                nom: "Parade.",
+                nom: "Parade",
                 action:
                     "Le chevalier de la mort ajoute 6 à sa CA contre une attaque au corps à corps qui le toucherait. Pour ce faire, il doit voir l'attaquant et avoir en main une arme de corps à corps.",
             },
@@ -1427,9 +1422,9 @@ let monsters = [
         xp: 200,
         attributs: "Bicéphale. Le chien a un avantage aux jets de Sagesse (Perception), ainsi qu'aux jets de sauvegarde pour ne pas être assourdi, aveuglé, charmé, étourdi, inconscient ou effrayé.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le chien réalise deux attaques de morsure." },
+            { nom: "Attaques multiples", action: "Le chien réalise deux attaques de morsure." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Constitution DD 12 contre la maladie pour ne pas être empoisonnée, et ce jusqu'à ce que la maladie soit soignée. Toutes les 24 heures, la créature doit refaire le jet de sauvegarde, et réduire ses points de vie maximums de 5 (1d10) en cas d'échec. Cette réduction dure jusqu'à ce que la maladie soit soignée. La créature meurt si la maladie réduit ses points de vie à 0.",
                 attaque: 4,
@@ -1471,9 +1466,9 @@ let monsters = [
         xp: 50,
         attributs: "Odorat et ouïe aiguisés. Le chien a un avantage aux jets de Sagesse (Perception) basés sur l'odorat ou l'ouïe.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d6 + 1) dégâts perforants.", attaque: 3, degats: "1d6 + 1" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d6 + 1) dégâts perforants.", attaque: 3, degats: "1d6 + 1" },
             {
-                nom: "Téléportation (Recharge 4-6).",
+                nom: "Téléportation (Recharge 4-6)",
                 action:
                     "Le chien se téléporte par magie, emportant avec lui l'équipement qu'il porte ou transporte, jusqu'à un espace inoccupé qu'il peut voir se situant à 12 mètres maximum. Avant ou après s'être téléporté, il peut réaliser une attaque de morsure.",
             },
@@ -1515,15 +1510,15 @@ let monsters = [
         attributs: ".",
         actions: [
             {
-                nom: "Attaques multiples.",
+                nom: "Attaques multiples",
                 action:
                     "La chimère réalise trois attaques : une de morsure, une avec ses cornes et une avec ses griffes. Lorsque son souffle de feu est utilisable, elle peut l'utiliser à la place de la morsure ou des cornes.",
             },
-            { nom: "Cornes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 10 (1d12 + 4) dégâts contondants.", attaque: 7, degats: "1d12 + 4" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Cornes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 10 (1d12 + 4) dégâts contondants.", attaque: 7, degats: "1d12 + 4" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants.", attaque: 7, degats: "2d6 + 4" },
             {
-                nom: "Souffle de feu (Recharge 5-6).",
+                nom: "Souffle de feu (Recharge 5-6)",
                 action:
                     "La chimère exhale des flammes dans un cône de 4,50 mètres. Toutes les créatures dans la zone doivent réaliser un jet de sauvegarde de Dextérité DD 15, subissant 31 (7d8) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -1567,16 +1562,16 @@ let monsters = [
         attributs:
             "Amphibien. Le chuul peut respirer aussi bien dans l'air que sous l'eau.Détection de la magie. Le chuul détecte la magie dans un rayon de 36 mètres à volonté. Mis à part cela, ce trait fonctionne comme le sort détection de la magie, mais il n'est pas lui-même magique.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le chuul réalise deux attaques de pinces. Si le chuul agrippe une créature, il peut également utiliser une fois ses tentacules." },
+            { nom: "Attaques multiples", action: "Le chuul réalise deux attaques de pinces. Si le chuul agrippe une créature, il peut également utiliser une fois ses tentacules." },
             {
-                nom: "Pinces.",
+                nom: "Pinces",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants. La cible est agrippée (évasion DD 14) si elle est de taille G ou plus petite et que le chuul n'a pas déjà agrippé plus d'une autre créature.",
                 attaque: 6,
                 degats: "2d6 + 4",
             },
             {
-                nom: "Tentacules.",
+                nom: "Tentacules",
                 action:
                     "Une créature agrippée par le chuul doit réussir un jet de sauvegarde de Constitution DD 13 ou être empoisonnée pour 1 minute. Tant que le poison est actif, la cible est paralysée. La cible peut relancer le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
@@ -1612,7 +1607,7 @@ let monsters = [
         attributs: ".",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une créature. Touché : 3 (1d4 + 1) dégâts perforants, et la cible doit réussir un jet de sauvegarde de Constitution DD 11 pour ne pas être pétrifiée par magie. En cas d'échec, la magie commence à transformer la créature en pierre, et celle-ci est entravée. Elle doit retenter le jet de sauvegarde à la fin de son tour. En cas de réussite, l'effet se termine. En cas d'échec, la créature est pétrifiée pendant 24 heures.",
                 attaque: 3,
@@ -1658,21 +1653,21 @@ let monsters = [
             "Incantation innée. La caractéristique d'incantation innée du couatl est le Charisme (jet de sauvegarde contre ses sorts DD 14). Le couatl peut lancer les sorts suivants de manière innée, qui nécessitent uniquement une composante verbale :À volonté : détection du mal et du bien, détection de la magie, détection des pensées\n3/jour chacun : bénédiction, bouclier, création de nourriture et d'eau, protection contre le poison, restauration partielle, sanctuaire, soins\n1/jour chacun : restauration supérieure, scrutation, rêve\nArmes magiques. Les attaques avec une arme du couatl sont magiques.Esprit fortifié. Le couatl est immunisé à la scrutation et aux effets qui permettraient de ressentir ses émotions, lire ses pensées, ou détecter sa localisation.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d6 + 5) dégâts perforants, et la cible doit réussir un jet de Constitution DD 13 ou être empoisonnée pendant 24 heures. Jusqu'à ce que l'empoisonnement se termine, la cible est inconsciente. Une autre créature peut utiliser une action pour secouer la cible et la réveiller.",
                 attaque: 8,
                 degats: "1d6 + 5",
             },
             {
-                nom: "Étreinte.",
+                nom: "Étreinte",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une créature de taille M ou inférieure. Touché : 10 (2d6 + 3) dégâts contondants, et la cible est agrippée (DD 15 pour s'échapper). Tant qu'elle est agrippée, la cible est entravée, et le couatl ne peut pas étreindre une autre cible.",
                 attaque: 6,
                 degats: "2d6 + 3",
             },
             {
-                nom: "Changement de forme.",
+                nom: "Changement de forme",
                 action:
                     "Le couatl se métamorphose magiquement en un humanoïde ou en une bête ayant un facteur de puissance égal ou inférieur au sien, ou bien retrouve sa véritable forme. Il retrouve sa forme originale s'il meurt. L'équipement qu'il porte ou transporte est absorbé ou porté par la nouvelle forme (au choix du couatl). Dans sa nouvelle forme, le couatl garde ses statistiques de jeu et sa capacité à parler, mais sa CA, son mode de déplacement, sa Force, sa Dextérité et ses autres actions sont remplacés par ceux de la nouvelle forme, et il gagne les statistiques et capacités (sauf les capacités de classe, les actions légendaires et les actions de repère) que possède la nouvelle forme et qui lui font défaut. Si la nouvelle forme possède une attaque de morsure, le couatl peut utiliser à la place sa propre attaque de morsure.",
             },
@@ -1716,8 +1711,8 @@ let monsters = [
         attributs:
             "Illumination. Le crânefeu émet une lumière faible dans un rayon de 4,50 mètres, ou une lumière vive dans un rayon de 4,50 mètres et une lumière faible sur 4,50 mètres supplémentaires. Il peut passer d'une option à l'autre en utilisant une action.Résistance à la magie. Le crânefeu a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Reconstitution. Si le crânefeu est détruit, il récupère tous ses points de vie en 1 heure, à moins que de l'eau bénite ne soit versée sur ses restes, ou qu'un sort de dissipation de la magie ou de délivrance des malédictions ne lui soit lancé.Incantation. Le crânefeu est un lanceur de sorts de niveau 5. Sa caractéristique d'incantation est l'Intelligence (jet de sauvegarde contre ses sorts DD 13, +5 au toucher pour les attaques avec un sort). Le crâne n'a pas besoin des composantes somatiques et matérielles pour lancer ses sorts. Il a préparé les sorts de magicien suivants :Sort mineur (à volonté) : main de mage\nNiveau 1 (3 emplacements de sorts) : bouclier, projectile magique\nNiveau 2 (2 emplacements de sorts) : flou, sphère de feu\nNiveau 3 (1 emplacement de sort) : boule de feu.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le crânefeu réalise deux attaques de Rayon de feu." },
-            { nom: "Rayon de feu.", action: "Attaque à distance avec un sort : +5 au toucher, portée 9 m, une cible. Touché : 10 (3d6) dégâts de feu.", attaque: 5, degats: "3d6" },
+            { nom: "Attaques multiples", action: "Le crânefeu réalise deux attaques de Rayon de feu." },
+            { nom: "Rayon de feu", action: "Attaque à distance avec un sort : +5 au toucher, portée 9 m, une cible. Touché : 10 (3d6) dégâts de feu.", attaque: 5, degats: "3d6" },
         ],
         description:
             "Un flamboiement verdâtre et un rire dément annoncent l'arrivée d'un crânefeu. Ce crâne désincarné foudroie ses adversaires avec des rayons ardents qui jaillissent de ses orbites et d'atroces sorts sortis tout droit des sombres tréfonds de sa mémoire.",
@@ -1756,7 +1751,7 @@ let monsters = [
         attributs: "Apparence trompeuse. Tant que le criard reste immobile, il ne peut être distingué d'un champignon ordinaire.",
         actions: [
             {
-                nom: "Hurlement.",
+                nom: "Hurlement",
                 action:
                     "Lorsqu'une lumière vive ou une créature se trouve à 9 mètres ou moins du criard, il émet un hurlement audible à 90 mètres à la ronde. Le criard pousse son crie jusqu'à ce que ce qui l'a dérangé sorte de sa portée de vision aveugle et pendant les 1d4 tours qui suivent.",
             },
@@ -1797,9 +1792,9 @@ let monsters = [
         attributs:
             "Vase cubique. Le cube occupe intégralement son espace. Les autres créatures peuvent entrer dans cet espace, mais une créature le faisant est sujette à l'Engloutissement du cube et a un désavantage aux jets de sauvegarde. Les créatures à l'intérieur du cube sont visibles mais disposes d'un abri total. Une créature à 1,50 mètre du cube peut effectuer une action pour extraire une créature ou un objet du cube. Pour ce faire, elle doit réussir un jet de Force DD 12 et la créature accomplissant la tentative subit 10 (3d6) dégâts d'acide. Le cube ne peut contenir qu'une seule créature de taille G ou jusqu'à quatre créatures de taille M ou inférieur en même temps.Transparent. Y compris lorsque le cube est visible, il est nécessaire de réussir un jet de Sagesse (Perception) DD 15 pour repérer le cube s'il n'a ni bougé ni attaqué. Une créature qui tente d'entrer dans l'espace du cube sans le savoir est surprise par le cube.",
         actions: [
-            { nom: "Pseudopode.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 10 (3d6) dégâts d'acide.", attaque: 4, degats: "3d6" },
+            { nom: "Pseudopode", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 10 (3d6) dégâts d'acide.", attaque: 4, degats: "3d6" },
             {
-                nom: "Engloutissement.",
+                nom: "Engloutissement",
                 action:
                     "Le cube se déplace de sa vitesse ou moins. Ce faisant, il peut entrer dans l'espace d'une créature de taille G ou moins. Chaque fois que le cube pénètre dans l'espace d'une créature, celle-ci doit effectuer un jet de sauvegarde de Dextérité DD 12. En cas de réussite, la créature peut choisir d'être repoussée de 1,50 mètre en arrière ou sur le côté du cube. Une créature qui choisit de ne pas être repoussée subit les conséquences d'un jet de sauvegarde raté. Si le jet de sauvegarde échoue, le cube pénètre dans l'espace de la créature, et celle-ci subit 10 (3d6) dégâts d'acide et est engloutie. La créature engloutie ne peut pas respirer, est entravée, et subit 21 (6d6) dégâts d'acide au début de chacun des tours du cube. Lorsque le cube se déplace, la créature engloutie se déplace avec lui. Une créature engloutie peut tenter de se libérer en utilisant une action pour effectuer un jet de Force DD 12. En cas de réussite, la créature s'échappe et entre dans l'espace de son choix à 1,50 mètre du cube.",
             },
@@ -1834,9 +1829,9 @@ let monsters = [
         xp: 2300,
         attributs: "Faible perception du relief. Le cyclope a un désavantage à tous les jets d'attaque contre une cible située à plus de 9 mètres de lui.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le cyclope réalise deux attaques avec la massue." },
-            { nom: "Massue.", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 3 m, une cible. Touché : 19 (3d8 + 6) dégâts contondants.", attaque: 9, degats: "3d8 + 6" },
-            { nom: "Rocher.", action: "Attaque à distance avec une arme : +9 au toucher, portée 9/36 m, une cible. Touché : 28 (4d10 + 6) dégâts contondants.", attaque: 9, degats: "4d10 + 6" },
+            { nom: "Attaques multiples", action: "Le cyclope réalise deux attaques avec la massue." },
+            { nom: "Massue", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 3 m, une cible. Touché : 19 (3d8 + 6) dégâts contondants.", attaque: 9, degats: "3d8 + 6" },
+            { nom: "Rocher", action: "Attaque à distance avec une arme : +9 au toucher, portée 9/36 m, une cible. Touché : 28 (4d10 + 6) dégâts contondants.", attaque: 9, degats: "4d10 + 6" },
         ],
         description:
             "Les cyclopes sont des géants n'ayant qu'un œil au milieu du front qui subsistent comme ils peuvent dans les terres sauvages. À cause de leur taille et de leur force, ils représentent une terrible menace au combat, mais ils peuvent facilement être trompés par un adversaire astucieux.",
@@ -1876,10 +1871,10 @@ let monsters = [
         attributs:
             "Disparition élémentaire. Si le dao meurt, son corps se désintègre en une poudre cristalline, ne laissant derrière lui que l'équipement qu'il portait ou transportait.Incantation innée. La caractéristique d'incantation innée du dao est le Charisme (jet de sauvegarde contre ses sorts DD 14, +6 au toucher pour les attaques avec un sort). Il peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection de la magie, détection du mal et du bien, façonnage de la pierre\n3/jour : langues, passe-muraille, terraformage\n1/jour chacun : assassin imaginaire, changement de plan, invocation d'élémentaire (élémentaire de la terre uniquement), forme gazeuse, invisibilité, mur de pierre\nDéplacement dans la terre. Le dao peut creuser à travers la terre et la pierre non magique et non travaillée. En faisant cela, il ne dérange pas les matériaux qu'il traverse.Pieds sûrs. Le dao a un avantage aux jets de Force ou de Dextérité réalisés pour contrer des effets qui le jetteraient à terre.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dao réalise deux attaques avec ses poings, ou deux attaques avec le maillet." },
-            { nom: "Poing.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.", attaque: 10, degats: "2d8 + 6" },
+            { nom: "Attaques multiples", action: "Le dao réalise deux attaques avec ses poings, ou deux attaques avec le maillet." },
+            { nom: "Poing", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.", attaque: 10, degats: "2d8 + 6" },
             {
-                nom: "Maillet.",
+                nom: "Maillet",
                 action:
                     "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 20 (4d6 + 6) dégâts contondants. Si la cible est une créature de taille TG ou inférieure, elle doit réussir un jet de sauvegarde de Force DD 18 ou être projetée au sol.",
                 attaque: 10,
@@ -1922,28 +1917,23 @@ let monsters = [
         xp: 1800,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le vétéran réalise deux attaques à l'épée longue. S'il a dégainé son épée courte, il peut également réaliser une attaque avec cette dernière." },
+            { nom: "Attaques multiples", action: "Le vétéran réalise deux attaques à l'épée longue. S'il a dégainé son épée courte, il peut également réaliser une attaque avec cette dernière." },
             {
-                nom: "Épée longue.",
+                nom: "Épée longue",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts tranchants, ou 8 (1d10 + 3) dégâts tranchants si utilisée à deux mains.",
                 attaque: 5,
                 degats: "1d8 + 3",
             },
+            { nom: "Épée courte", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.", attaque: 5, degats: "1d6 + 3" },
             {
-                nom: "Épée courte.",
-                action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.",
-                attaque: 5,
-                degats: "1d6 + 3",
-            },
-            {
-                nom: "Arbalète lourde.",
+                nom: "Arbalète lourde",
                 action: "Attaque à distance avec une arme : +3 au toucher, portée 30/120 m, une cible. Touché : 6 (1d10 + 1) dégâts perforants.",
                 attaque: 3,
                 degats: "1d10 + 1",
             },
             {
-                nom: "Souffle de feu (Recharge 5-6).",
+                nom: "Souffle de feu (Recharge 5-6)",
                 action:
                     "Le vétéran exhale des flammes dans un cône de 4,50 mètres. Toutes les créatures dans la zone doivent réaliser un jet de sauvegarde de Dextérité DD 15, subissant 24 (7d6) dégâts de feu si le jet de sauvegarde est raté, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -1988,33 +1978,33 @@ let monsters = [
             "Dérobade. Si la demi-liche est soumise à un effet qui lui permet d'effectuer un jet de sauvegarde pour ne subir que la moitié des dégâts, elle ne subit aucun dégât si elle réussit son jet de sauvegarde, et seulement la moitié des dégâts si elle échoue.Résistance légendaire (3/jour). Si la demi-liche échoue à un jet de sauvegarde, elle peut décider de transformer cet échec en réussite.Immunité au renvoi. La demi-liche est immunisée aux effets de renvoi des morts-vivants.",
         actions: [
             {
-                nom: "Hurlement (Recharge 5-6).",
+                nom: "Hurlement (Recharge 5-6)",
                 action:
                     "La demi-liche émet un cri à glacer le sang. Chaque créature se trouvant à 9 mètres de la demi-liche et qui peut entendre le hurlement doit réussir un jet de sauvegarde de Constitution DD 15 ou tomber à 0 point de vie. En cas de jet de sauvegarde réussi, la créature est effrayée jusqu'à la fin de son prochain tour.",
             },
             {
-                nom: "Absorption vitale.",
+                nom: "Absorption vitale",
                 action:
                     "La demi-liche cible jusqu'à trois créatures qu'elle peut voir dans un rayon de 3 mètres. Chaque cible doit réussir un jet de sauvegarde de Constitution DD 19 ou subir 21 (6d6) dégâts nécrotiques, et faire récupérer à la demi-liche un nombre de points de vie égal au total des dégâts infligés à toutes les cibles.",
             },
             {
-                nom: "La demi-liche peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "La demi-liche peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. La demi-liche récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Envolée.", action: "La demi-liche s'envole de la moitié de sa vitesse de déplacement." },
+            { nom: "Envolée", action: "La demi-liche s'envole de la moitié de sa vitesse de déplacement." },
             {
-                nom: "Nuage de poussière.",
+                nom: "Nuage de poussière",
                 action:
                     "La demi-liche fait tourbillonner par magie la poussière de ses restes. Chaque créature se trouvant à 3 mètres ou moins de la demi-liche, y compris derrière les angles des murs, doit réussir un jet de sauvegarde de Constitution DD 15 ou être aveuglé jusqu'à la fin du prochain tour de la demi-liche. Une créature qui réussit son jet de sauvegarde est immunisée à cet effet jusqu'à la fin du prochain tour de la demi-liche.",
             },
             {
-                nom: "Absorption d'énergie (coûte 2 actions).",
+                nom: "Absorption d'énergie (coûte 2 actions)",
                 action:
                     "Chaque créature se trouvant dans un rayon de 9 mètres de la demi-liche doit effectuer un jet de sauvegarde de Constitution DD 15. En cas d'échec, les points de vie maximums de la créature sont réduits magiquement de 10 (3d6). Si les points de vie maximums de la créature sont réduits à 0 par cet effet, la créature meurt. Les points de vie maximums de la créature peuvent être récupérés grâce à un sort de restauration supérieure ou un effet magique similaire.",
             },
             {
-                nom: "Infâme malédiction (coûte 3 actions).",
+                nom: "Infâme malédiction (coûte 3 actions)",
                 action:
                     "La demi-liche cible une créature qu'elle peut voir et se trouvant à 9 mètres. La cible doit réussir un jet de sauvegarde de Sagesse DD 15 ou être maudite par magie. Jusqu'à ce que la malédiction prenne fin, la cible a un désavantage aux jets d'attaque et de sauvegarde. La cible peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à la malédiction en cas de réussite.",
             },
@@ -2051,14 +2041,14 @@ let monsters = [
         attributs: ".",
         actions: [
             {
-                nom: "Hache d'armes.",
+                nom: "Hache d'armes",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d8 + 3) dégâts tranchants, ou 14 (2d10 + 3) dégâts tranchants si utilisée à deux mains.",
                 attaque: 5,
                 degats: "2d8 + 3",
             },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action: "Attaque au corps à corps ou à distance avec une arme : +5 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 10 (2d6 + 3) dégâts perforants.",
                 attaque: 5,
                 degats: "2d6 + 3",
@@ -2106,7 +2096,7 @@ let monsters = [
             "Déplacement incorporel. Le démon peut se déplacer au travers d'autres créatures et objets comme s'ils étaient des terrains difficiles. Le démon subit 5 (1d10) dégâts de force s'il termine son tour à l'intérieur d'un objet.Sensibilité à la lumière. S'il est exposé à une lumière vive, le démon a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.Dissimulation dans l'ombre. S'il se trouve dans des ténèbres ou est exposé à une lumière faible, le démon peut effectuer l'action Se cacher en utilisant une action bonus.",
         actions: [
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature. Touché : 10 (2d6 + 3) dégâts psychiques ou, si le démon a un avantage à son jet d'attaque, 17 (4d6 + 3) dégâts psychiques.",
                 attaque: 5,
@@ -2145,12 +2135,12 @@ let monsters = [
             "Résistance au feu partagée. Le destrier noir peut accorder la résistance au feu à son cavalier.Illumination. Le destrier noir émet une lumière vive dans un rayon de 3 mètres et une lumière faible sur 3 mètres supplémentaire.",
         actions: [
             {
-                nom: "Sabots.",
+                nom: "Sabots",
                 action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts contondants + 7 (2d6) dégâts de feu.",
                 attaque: 6,
                 degats: "2d8 + 4",
             },
-            { nom: "Galop éthéré.", action: "Le destrier noir et jusqu'à trois créatures consentantes à 1,50 mètre de lui quittent magiquement le plan matériel pour le plan éthéré, ou l'inverse." },
+            { nom: "Galop éthéré", action: "Le destrier noir et jusqu'à trois créatures consentantes à 1,50 mètre de lui quittent magiquement le plan matériel pour le plan éthéré, ou l'inverse." },
         ],
         description: null,
         sauvegarde: { FOR: 4, DEX: 2, CON: 3, INT: 0, SAG: 1, CHA: 2 },
@@ -2191,20 +2181,20 @@ let monsters = [
         attributs:
             "Armes angéliques. Les attaques avec une arme du déva sont magiques. Lorsque le déva touche avec n'importe quelle arme, l'arme inflige 4d8 dégâts radiants supplémentaires (inclus dans l'attaque ci-dessous).Incantation innée. La caractéristique d'incantation innée du déva est le Charisme (jet de sauvegarde contre ses sorts DD 17). Le déva peut lancer les sorts suivants de manière innée, qui nécessitent uniquement une composante verbale :À volonté : détection du mal et du bien\n1/jour chacun : communion, rappel à la vie\nRésistance à la magie. Le déva a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le déva réalise deux attaques au corps à corps." },
+            { nom: "Attaques multiples", action: "Le déva réalise deux attaques au corps à corps." },
             {
-                nom: "Masse d'armes.",
+                nom: "Masse d'armes",
                 action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d6 + 4) dégâts contondants + 18 (4d8) dégâts radiants.",
                 attaque: 8,
                 degats: "1d6 + 4",
             },
             {
-                nom: "Contact guérisseur (3/jour).",
+                nom: "Contact guérisseur (3/jour)",
                 action:
                     "Le déva touche une autre créature. La cible récupère par magie 20 (4d8 + 2) points de vie et est guérie de toutes malédictions, maladies, poisons, aveuglement ou assourdissement.",
             },
             {
-                nom: "Changement de forme.",
+                nom: "Changement de forme",
                 action:
                     "Le déva se métamorphose magiquement en un humanoïde ou une bête ayant un facteur de puissance égal ou inférieur au sien, ou bien retrouve sa véritable forme. Il retrouve sa forme originale s'il meurt. L'équipement qu'il porte ou transporte est absorbé ou porté par la nouvelle forme (au choix du déva). Dans sa nouvelle forme, le déva garde ses statistiques de jeu et sa capacité à parler, mais sa CA, son mode de déplacement, sa Force, sa Dextérité et ses sens spéciaux sont remplacés par ceux de la nouvelle forme, et il gagne les statistiques et capacités (hors capacités de classe, actions légendaires et les actions de repaire) que possède la nouvelle forme et qui lui font défaut.",
             },
@@ -2247,15 +2237,15 @@ let monsters = [
         attributs:
             "Détection de la sentience. Le dévoreur d'intellect peut sentir la présence et localiser chaque créature ayant une Intelligence de 3 ou plus dans un rayon de 90 mètres, quelles que soient les barrières qui les séparent, à moins que la créature soit protégée par un sort d'esprit impénétrable.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dévoreur d'intellect réalise une attaque avec ses griffes et utilise Consommation de l'intellect." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (2d4 + 2) dégâts tranchants.", attaque: 4, degats: "2d4 + 2" },
+            { nom: "Attaques multiples", action: "Le dévoreur d'intellect réalise une attaque avec ses griffes et utilise Consommation de l'intellect." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (2d4 + 2) dégâts tranchants.", attaque: 4, degats: "2d4 + 2" },
             {
-                nom: "Consommation de l'intellect.",
+                nom: "Consommation de l'intellect",
                 action:
                     "Le dévoreur d'intellect cible une créature possédant un cerveau qu'il peut voir et qui se trouve dans un rayon de 3 mètres autour de lui. La cible doit réussir un jet de sauvegarde d'Intelligence DD 12 contre cette magie ou subir 11 (2d10) dégâts psychiques. De plus, en cas d'échec, lancez 3d6. Si le total est égal ou supérieur à la valeur d'Intelligence, cette valeur est réduite à 0. La cible est étourdie jusqu'à ce qu'elle regagne au moins un point d'Intelligence.",
             },
             {
-                nom: "Vol de corps.",
+                nom: "Vol de corps",
                 action:
                     "Le dévoreur d'intellect débute une opposition d'Intelligence contre un humanoïde incapable d'agir se trouvant à 1,50 mètre de lui et qui n'est pas protégé par une protection contre le Mal ou le Bien. S'il gagne l'opposition, le dévoreur d'intellect dévore par magie le cerveau de la cible, se téléporte à l'intérieur du crâne de la cible, et prend le contrôle de son corps. Une fois à l'intérieur d'une créature, le dévoreur d'intellect bénéficie d'un abri total contre les attaques et effets émanant de l'extérieur de son hôte. Le dévoreur d'intellect conserve ses valeurs d'Intelligence, de Sagesse et de Charisme, ainsi que sa compréhension du profond, sa télépathie, et ses traits. Pour le reste, il utilise les statistiques de la cible. Il connait tout ce que la créature savait, sorts et langages inclus. Si le corps de la cible meurt, le dévoreur d'intellect doit le quitter. Un sort de protection contre le mal et le bien lancé sur le corps oblige le dévoreur d'intellect à le quitter. Le dévoreur d'intellect est aussi forcé de sortir si la cible récupère son cerveau au moyen d'un souhait. En utilisant 1,50 mètre de mouvement, le dévoreur d'intellect peut volontairement quitter le corps, se téléportant sur le plus proche espace libre à 1,50 mètre de la cible. Le corps meurt ensuite, à moins que son cerveau lui soit restauré dans le prochain round.",
             },
@@ -2299,21 +2289,21 @@ let monsters = [
         attributs:
             "Vision de diable. Des ténèbres magiques ne gênent pas la vision dans le noir du diable.Résistance à la magie. Le diable a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le diable peut réaliser deux attaques avec ses chaînes." },
+            { nom: "Attaques multiples", action: "Le diable peut réaliser deux attaques avec ses chaînes." },
             {
-                nom: "Chaine.",
+                nom: "Chaine",
                 action:
                     "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants. La cible se retrouve agrippée (évasion DD 14) si le diable n'a pas déjà agrippé une créature. Tant qu'elle est agrippée, la cible est entravée et subit 7 (2d6) dégâts perforants au début de chacun de ses tours.",
                 attaque: 8,
                 degats: "2d6 + 4",
             },
             {
-                nom: "Animation des chaînes (Recharge après un repos court ou long).",
+                nom: "Animation des chaînes (Recharge après un repos court ou long)",
                 action:
                     "Le diable peut faire éclore des barbelées coupant sur 1 à 4 chaines qu'il voit et situées dans un rayon de 18 mètres autour de lui, les animant et les contrôlant, à condition qu'elles ne soient ni portées ni transportées par quelqu'un. Chaque chaine animée est un objet ayant une CA de 20, 20 pv, une résistance aux dégâts perforants et l'immunité aux dégâts psychiques et de tonnerre. Lorsque le diable utilise ses Attaques multiples durant son tour, il peut utiliser chaque chaîne animée pour faire une attaque supplémentaire. Une chaine animée peut agripper une créature de son choix, mais ne peut plus attaquer tant qu'elle agrippe. Une chaîne animée redevient inanimée si ses points de vie tombent à zéro ou si le diable est incapable d'agir ou meurt.",
             },
             {
-                nom: "Masque déstabilisant.",
+                nom: "Masque déstabilisant",
                 action:
                     "Quand une créature débute son tour à 9 mètres ou moins du diable et que celui-ci peut la voir, le diable peut donner l'illusion d'être un être décédé, qui était très aimé ou détesté par cette créature. Si la créature peut voir le diable, elle doit réussir un jet de sauvegarde de Sagesse DD 14 ou être effrayée jusqu'à la fin de son tour.",
             },
@@ -2358,11 +2348,11 @@ let monsters = [
         attributs:
             "Peau barbelée. Au début de chacun de ses tours, le diable barbelé inflige 5 (1d10) dégâts perforants à toute créature qu'il agrippe.Vision de diable. Des ténèbres magiques ne gênent pas la vision dans le noir du diable.Résistance à la magie. Le diable a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le diable réalise trois attaques : une avec sa queue et deux avec ses griffes. Sinon, il peut utiliser Jet de flammes deux fois." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.", attaque: 6, degats: "1d6 + 3" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts perforants.", attaque: 6, degats: "2d6 + 3" },
+            { nom: "Attaques multiples", action: "Le diable réalise trois attaques : une avec sa queue et deux avec ses griffes. Sinon, il peut utiliser Jet de flammes deux fois." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.", attaque: 6, degats: "1d6 + 3" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts perforants.", attaque: 6, degats: "2d6 + 3" },
             {
-                nom: "Jet de flammes.",
+                nom: "Jet de flammes",
                 action:
                     "Attaque à distance avec un sort : +5 au toucher, portée 45 m, une cible. Touché : 10 (3d6) dégâts de feu. Si la cible est un objet inflammable qui n'est ni porté ni tenu, elle prend feu.",
                 attaque: 5,
@@ -2408,16 +2398,16 @@ let monsters = [
         attributs:
             "Vision de diable. Des ténèbres magiques ne gênent pas la vision dans le noir du diable.Résistance à la magie. Le diable a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Inébranlable. Le diable ne peut pas être effrayé s'il peut voir une créature alliée dans un rayon de 9 mètres autour de lui.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le diable réalise deux attaques : une avec sa barbe et une avec sa coutille." },
+            { nom: "Attaques multiples", action: "Le diable réalise deux attaques : une avec sa barbe et une avec sa coutille." },
             {
-                nom: "Barbe.",
+                nom: "Barbe",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature. Touché : 6 (1d8 + 2) dégâts perforants, et la cible doit réussir un jet de sauvegarde de Constitution DD 12 ou être empoisonnée pour 1 minute. Tant qu'elle est empoisonnée de cette manière, la cible ne peut pas regagner de points de vie. La cible peut relancer le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
                 attaque: 5,
                 degats: "1d8 + 2",
             },
             {
-                nom: "Coutille.",
+                nom: "Coutille",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 3 m, une cible. Touché : 8 (1d10 + 3) dégâts tranchants. Si la cible n'est ni un mort-vivant, ni une créature artificielle, elle doit réussir un jet de sauvegarde de Constitution DD 12 ou perdre 5 (1d10) points de vie au début de chacun de ses tours à cause d'une blessure infernale. Chaque fois que le diable touche la créature blessée avec son attaque, les dégâts causés par la blessure augmentent de 5 (1d10). Toute créature peut utiliser une action pour contenir la blessure avec un jet réussi de Sagesse (Médecine) DD 12. La blessure se referme également si la cible reçoit des soins magiques.",
                 attaque: 5,
@@ -2464,20 +2454,20 @@ let monsters = [
             "Vision de diable. Des ténèbres magiques ne gênent pas la vision dans le noir du diable.Résistance à la magie. Le diable a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
             {
-                nom: "Attaques multiples.",
+                nom: "Attaques multiples",
                 action:
                     "Le diable effectue trois attaques au corps à corps : deux avec sa fourche et une avec sa queue. Il peut utiliser son Jet de flammes à la place n'importe quelle attaque au corps à corps.",
             },
-            { nom: "Fourche.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 15 (2d8 + 6) dégâts perforants.", attaque: 10, degats: "2d8 + 6" },
+            { nom: "Fourche", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 15 (2d8 + 6) dégâts perforants.", attaque: 10, degats: "2d8 + 6" },
             {
-                nom: "Queue.",
+                nom: "Queue",
                 action:
                     "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 10 (1d8 + 6) dégâts perforants. Si la cible est une créature autre qu'un mort-vivant ou une créature artificielle, elle doit réussir un jet de sauvegarde de Constitution DD 17 ou perdre 10 (3d6) points de vie au début de chacun de ses tours suivants à cause de cette plaie infernale. Chaque fois que le diable frappe la créature blessée avec cette attaque, les dégâts infligés par la plaie augmentent de 10 (3d6). N'importe quelle créature peut utiliser une action pour endiguer l'hémorragie, à condition qu'elle réussisse un jet de Sagesse (Médecine) DD 12. La plaie se referme également si la cible reçoit des soins magiques.",
                 attaque: 10,
                 degats: "1d8 + 6",
             },
             {
-                nom: "Jet de flammes.",
+                nom: "Jet de flammes",
                 action:
                     "Attaque à distance avec un sort : +7 au toucher, portée 45 m, une cible. Touché : 14 (4d6) dégâts de feu. Si la cible est un objet inflammable qui n'est pas porté ni tenu, elle prend feu.",
                 attaque: 7,
@@ -2522,11 +2512,11 @@ let monsters = [
         attributs:
             "Vision de diable. Des ténèbres magiques ne gênent pas la vision dans le noir du diable.Vol agile. Le diable épineux ne provoque pas d'attaques d'opportunité lorsqu'il quitte l'allonge d'un ennemi en volant.Épines limitées. Le diable possède douze épines caudales. Les épines utilisées repoussent après que le diable ait effectué un repos long.Résistance à la magie. Le diable épineux a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le diable effectue deux attaques : une de morsure et une avec la fourche, ou deux attaques d'épines caudales." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 5 (2d4) dégâts tranchants.", attaque: 2, degats: "2d4" },
-            { nom: "Fourche.", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d6) dégâts perforants.", attaque: 2, degats: "1d6" },
+            { nom: "Attaques multiples", action: "Le diable effectue deux attaques : une de morsure et une avec la fourche, ou deux attaques d'épines caudales." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 5 (2d4) dégâts tranchants.", attaque: 2, degats: "2d4" },
+            { nom: "Fourche", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d6) dégâts perforants.", attaque: 2, degats: "1d6" },
             {
-                nom: "Épine caudale.",
+                nom: "Épine caudale",
                 action: "Attaque à distance avec une arme : +4 au toucher, portée 6/24 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants + 3 (1d6) dégâts de feu.",
                 attaque: 4,
                 degats: "1d4 + 2",
@@ -2571,27 +2561,27 @@ let monsters = [
         attributs:
             "Vision de diable. Des ténèbres magiques ne gênent pas la vision dans le noir du diable.Résistance à la magie. Le diable a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le diable effectue trois attaques : une de morsure, une avec ses griffes et une avec sa queue." },
+            { nom: "Attaques multiples", action: "Le diable effectue trois attaques : une de morsure, une avec ses griffes et une avec sa queue." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts perforants + 10 (3d6) dégâts de froid.",
                 attaque: 10,
                 degats: "2d6 + 5",
             },
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d4 + 5) dégâts tranchants + 10 (3d6) dégâts de froid.",
                 attaque: 10,
                 degats: "2d4 + 5",
             },
             {
-                nom: "Queue.",
+                nom: "Queue",
                 action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 12 (2d6 + 5) dégâts contondants + 10 (3d6) dégâts de froid.",
                 attaque: 10,
                 degats: "2d6 + 5",
             },
             {
-                nom: "Mur de glace (Recharge 6).",
+                nom: "Mur de glace (Recharge 6)",
                 action:
                     "Le diable crée par magie un mur de glace opaque sur une surface solide qu'il peut voir dans un rayon de 18 mètres. Le mur fait 30 centimètres d'épaisseur, 9 mètres de long et 3 mètres de haut, ou bien prend la forme d'un dôme hémisphérique de 6 mètres de diamètre. Lorsque le mur apparaît, chaque créature se trouvant sur sa trajectoire est repoussée par le chemin le plus court. La créature choisit de quel côté du mur elle est repoussée, à moins qu'elle ne soit incapable d'agir. La créature effectue alors un jet de sauvegarde de Dextérité DD 17, subissant 35 (10d6) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite. Le mur reste en place pendant 1 minute ou jusqu'à ce que le diable soit incapable d'agir ou meurt. Le mur peut être endommagé, une brèche peut donc y être percée ; chaque section de 3 mètres de côté a une CA de 5, 30 points de vie, est vulnérable aux dégâts de feu, et est immunisée aux dégâts d'acide, de froid, nécrotiques, de poison, et psychiques. Si une section est détruite, elle laisse derrière elle un voile d'air glacial à l'endroit que le mur occupait. Lorsqu'une créature traverse le voile d'air glacial au cours d'un tour, que ce soit volontairement ou non, la créature doit effectuer un jet de sauvegarde de Constitution DD 17, subissant 17 (5d6) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite. Le voile d'air glacial se dissipe lorsque le reste du mur disparaît.",
             },
@@ -2636,10 +2626,10 @@ let monsters = [
         attributs:
             "Vision de diable. Des ténèbres magiques ne gênent pas la vision dans le noir du diable.Résistance à la magie. Le diable a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le diable réalise trois attaques : deux avec ses griffes et une avec son dard." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une cible. Touché : 8 (1d8 + 4) dégâts tranchants.", attaque: 8, degats: "1d8 + 4" },
+            { nom: "Attaques multiples", action: "Le diable réalise trois attaques : deux avec ses griffes et une avec son dard." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une cible. Touché : 8 (1d8 + 4) dégâts tranchants.", attaque: 8, degats: "1d8 + 4" },
             {
-                nom: "Dard.",
+                nom: "Dard",
                 action:
                     "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une cible. Touché : 13 (2d8 + 4) dégâts perforants + 17 (5d6) dégâts de poison, et la cible doit réussir un jet de sauvegarde de Constitution DD 14 ou être empoisonnée pendant 1 minute. La cible peut relancer le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
                 attaque: 8,
@@ -2686,14 +2676,14 @@ let monsters = [
             "Métamorphe. Le diablotin peut utiliser son action pour se métamorphoser en une bête qui ressemble à un rat (vitesse 6 m), un corbeau (6 m, vol 18 m) ou une araignée (6 m, escalade 6 m), ou pour reprendre sa véritable forme. Ses statistiques sont les mêmes quelle que soit sa forme, à l'exception de sa vitesse (comme indiqué précédemment). L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa véritable forme s'il meurt.Vision de diable. Des ténèbres magiques ne gênent pas la vision dans le noir du diablotin.Résistance à la magie. Le diablotin a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
             {
-                nom: "Dard (Morsure sous forme de bête).",
+                nom: "Dard (Morsure sous forme de bête)",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d4 + 3) dégâts perforants, et la cible doit effectuer un jet de sauvegarde de Constitution DD 11, subissant 10 (3d6) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
                 attaque: 5,
                 degats: "1d4 + 3",
             },
             {
-                nom: "Invisibilité.",
+                nom: "Invisibilité",
                 action:
                     "Le diablotin devient invisible par magie jusqu'à ce qu'il attaque ou que sa concentration se termine (comme s'il se concentrait sur un sort). Tout l'équipement que le diablotin porte ou transporte est également invisible.",
             },
@@ -2737,22 +2727,22 @@ let monsters = [
         attributs:
             "Aura de peur. Toute créature hostile au diantrefosse qui commence son tour à 6 mètres ou moins de lui doit effectuer un jet de sauvegarde de Sagesse DD 21, à moins que le diantrefosse ne soit incapable d'agir. En cas d'échec, la créature est effrayée jusqu'au début de son prochain tour. Si le jet de sauvegarde d'une créature est une réussite, la créature est immunisée contre l'Aura de peur du diantrefosse pour les prochaines 24 heures.Résistance à la magie. Le diantrefosse a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme du diantrefosse sont magiques.Incantation innée. La caractéristique d'incantation innée du diantrefosse est le Charisme (jet de sauvegarde contre ses sorts DD 21). Le diantrefosse peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection de la magie, boule de feu\n3/jour chacun : immobilisation de monstre, mur de feu.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le diantrefosse effectue quatre attaques : une de morsure, une avec ses griffes, une avec sa masse d'armes et une avec sa queue." },
+            { nom: "Attaques multiples", action: "Le diantrefosse effectue quatre attaques : une de morsure, une avec ses griffes, une avec sa masse d'armes et une avec sa queue." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +14 au toucher, allonge 1,50 m, une cible. Touché : 22 (4d6 + 8) dégâts perforants. La cible doit effectuer un jet de sauvegarde de Constitution DD 21 ou être empoisonnée. Tant qu'elle est empoisonnée de la sorte, la cible ne peut pas récupérer de points de vie, et elle subit 21 (6d6) dégâts de poison au début de chacun de ses tours suivants. La cible empoisonnée peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
                 attaque: 14,
                 degats: "4d6 + 8",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 17 (2d8 + 8) dégâts tranchants.", attaque: 14, degats: "2d8 + 8" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 17 (2d8 + 8) dégâts tranchants.", attaque: 14, degats: "2d8 + 8" },
             {
-                nom: "Masse d'armes.",
+                nom: "Masse d'armes",
                 action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 15 (2d6 + 8) dégâts contondants + 21 (6d6) dégâts de feu.",
                 attaque: 14,
                 degats: "2d6 + 8",
             },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 24 (3d10 + 8) dégâts contondants.", attaque: 14, degats: "3d10 + 8" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 24 (3d10 + 8) dégâts contondants.", attaque: 14, degats: "3d10 + 8" },
         ],
         description: null,
         sauvegarde: { FOR: 8, DEX: 8, CON: 13, INT: 6, SAG: 10, CHA: 7 },
@@ -2791,16 +2781,16 @@ let monsters = [
         attributs:
             "Disparition élémentaire. Si le djinn meurt, son corps se désintègre en une chaude brise, ne laissant derrière lui que l'équipement que le djinn portait ou transportait.Incantation innée. La caractéristique d'incantation innée du djinn est le Charisme (jet de sauvegarde contre ses sorts DD 17, +9 au toucher pour les attaques avec un sort). Il peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection du mal et du bien, détection de la magie, onde de choc\n3/jour chacun : création de nourriture et d'eau (peut créer du vin à la place de l'eau), langues, marche sur le vent\n1/jour chacun : invocation d'élémentaire (élémentaire de l'air uniquement), création, forme gazeuse, invisibilité, image majeure, changement de plan.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le djinn effectue trois attaques avec le cimeterre." },
+            { nom: "Attaques multiples", action: "Le djinn effectue trois attaques avec le cimeterre." },
             {
-                nom: "Cimeterre.",
+                nom: "Cimeterre",
                 action:
                     "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts tranchants + 3 (1d6) dégâts de foudre ou de tonnerre (au choix du djinn).",
                 attaque: 9,
                 degats: "2d6 + 5",
             },
             {
-                nom: "Création de tourbillon.",
+                nom: "Création de tourbillon",
                 action:
                     "Le djinn crée magiquement un tourbillon de vent de 1,50 mètre de rayon et de 9 mètres de haut, en un point situé dans un rayon de 36 mètres autour du djinn et qu'il peut voir. Le tourbillon reste tant que le djinn maintient sa concentration (comme s'il se concentrait sur un sort). Toute créature, à l'exception du djinn, qui pénètre dans le tourbillon doit réussir un jet de sauvegarde de Force DD 18 ou être entravée par les vents. Le djinn peut déplacer le tourbillon jusqu'à 18 mètres en utilisant une action, et les créatures entravées par le tourbillon se déplacent avec lui. Le tourbillon se termine si le djinn le perd de vue. Une créature peut utiliser son action pour libérer une créature entravée par le tourbillon (elle peut se libérer elle-même), en réussissant un jet de Force DD 18. En cas de réussite, la créature n'est plus entravée et se déplace à l'endroit le plus proche à l'extérieur du tourbillon.",
             },
@@ -2842,10 +2832,10 @@ let monsters = [
         attributs:
             "Métamorphe. Le doppelganger peut utiliser son action pour se métamorphoser en un humanoïde de taille P ou M qu'il a déjà vu, ou pour reprendre sa véritable forme. Ses statistiques sont les mêmes quelle que soit sa forme, à l'exception de sa taille. L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa forme véritable s'il meurt.Embuscade. Lors du premier round de combat, le doppelganger a un avantage aux jets d'attaque contre toute créature qu'il a surprise.Attaque surprise. Si le doppelganger surprend une créature et touche avec une attaque lors du premier round de combat, la cible subit 10 (3d6) dégâts supplémentaires pour cette attaque.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le doppelganger réalise deux attaques au corps à corps." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d6 + 4) dégâts contondants.", attaque: 6, degats: "1d6 + 4" },
+            { nom: "Attaques multiples", action: "Le doppelganger réalise deux attaques au corps à corps." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d6 + 4) dégâts contondants.", attaque: 6, degats: "1d6 + 4" },
             {
-                nom: "Lecture des pensées.",
+                nom: "Lecture des pensées",
                 action:
                     "Le doppelganger lit par magie les pensées de surface d'une créature située à 18 mètres ou moins de lui. Cet effet peut passer au travers d'un obstacle, mais est bloqué par 90 centimètres de bois ou de terre, 60 centimètres de pierre, 5 centimètres de métal ou une fine couche de plomb. Quand la cible est à portée, le doppelganger peut lire ses pensées tant que sa concentration n'est pas rompue (de la même manière que la concentration pour un sort). Le doppelganger a un avantage aux jets de Sagesse (Perspicacité) et de Charisme (Intimidation, Persuasion et Tromperie) contre une cible dont il lit les pensées.",
             },
@@ -2890,34 +2880,34 @@ let monsters = [
         attributs:
             "Résistance légendaire (3/jour). Si la dracoliche échoue à un jet de sauvegarde, elle peut décider de transformer cet échec en réussite.Résistance à la magie. La dracoliche a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "La dracoliche peut utiliser sa Présence terrifiante. Elle réalise ensuite trois attaques : deux avec ses griffes et une de morsure." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d6 + 7) dégâts tranchants.", attaque: 13, degats: "2d6 + 7" },
+            { nom: "Attaques multiples", action: "La dracoliche peut utiliser sa Présence terrifiante. Elle réalise ensuite trois attaques : deux avec ses griffes et une de morsure." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d6 + 7) dégâts tranchants.", attaque: 13, degats: "2d6 + 7" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 18 (2d10 + 7) dégâts perforants + 5 (1d10) dégâts de foudre.",
                 attaque: 13,
                 degats: "2d10 + 7",
             },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 4,50 m, une cible. Touché : 16 (2d8 + 7) dégâts contondants.", attaque: 13, degats: "2d8 + 7" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 4,50 m, une cible. Touché : 16 (2d8 + 7) dégâts contondants.", attaque: 13, degats: "2d8 + 7" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que la dracoliche choisit, se trouvant à 36 mètres ou moins d'elle et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 18 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte si elle réussit. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante de la dracoliche pour les prochaines 24 heures.",
             },
             {
-                nom: "Souffle de foudre (Recharge 5-6).",
+                nom: "Souffle de foudre (Recharge 5-6)",
                 action:
                     "La dracoliche crache une tempête d'éclairs sur une ligne de 27 mètres de long et de 1,50 mètre de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 20, subissant 66 (12d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "La dracoliche peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "La dracoliche peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. La dracoliche récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "La dracoliche effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "La dracoliche effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "La dracoliche effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "La dracoliche effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "La dracoliche bat des ailes. Chaque créature située à 3 mètres ou moins de la dracoliche doit réussir un jet de sauvegarde de Dextérité DD 21 ou subir 14 (2d6 + 7) dégâts contondants et être jetée à terre. La dracoliche peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -2960,34 +2950,34 @@ let monsters = [
         attributs:
             "Marche sur la glace. Le dragon peut se déplacer sur les sols gelés ou escalader les surfaces glacées sans avoir besoin d'effectuer un jet de caractéristique. De plus, les terrains difficiles formés de glace ou de neige ne lui coûtent pas de mouvement supplémentaire.Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 11, degats: "2d6 + 6" },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 11, degats: "2d6 + 6" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants + 4 (1d8) dégâts de froid.",
                 attaque: 11,
                 degats: "2d10 + 6",
             },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.", attaque: 11, degats: "2d8 + 6" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.", attaque: 11, degats: "2d8 + 6" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins du dragon et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 14 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
             {
-                nom: "Souffle de froid (Recharge 5-6).",
+                nom: "Souffle de froid (Recharge 5-6)",
                 action:
                     "Le dragon crache une tempête de glace dans un cône de 18 mètres. Chaque créature dans la zone d'effet doit effectuer un jet de sauvegarde de Constitution DD 19, subissant 54 (12d8) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 19 ou subir 13 (2d6 + 6) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -3030,34 +3020,34 @@ let monsters = [
         attributs:
             "Marche sur la glace. Le dragon peut se déplacer sur les sols gelés ou escalader les surfaces glacées sans avoir besoin d'effectuer un jet de caractéristique. De plus, les terrains difficiles formés de glace ou de neige ne lui coûtent pas de mouvement supplémentaire.Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 4,50 m, une cible. Touché : 19 (2d10 + 8) dégâts perforants + 9 (2d8) dégâts de froid.",
                 attaque: 14,
                 degats: "2d10 + 8",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 14, degats: "2d6 + 8" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 14, degats: "2d8 + 8" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 14, degats: "2d6 + 8" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 14, degats: "2d8 + 8" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins du dragon et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 16 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
             {
-                nom: "Souffle de froid (Recharge 5-6).",
+                nom: "Souffle de froid (Recharge 5-6)",
                 action:
                     "Le dragon crache une tempête de glace dans un cône de 27 mètres. Chaque créature dans la zone d'effet doit effectuer un jet de sauvegarde de Constitution DD 22, subissant 72 (16d8) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 22 ou subir 15 (2d6 + 8) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -3100,16 +3090,16 @@ let monsters = [
         attributs:
             "Marche sur la glace. Le dragon peut se déplacer sur les sols gelés ou escalader les surfaces glacées sans avoir besoin d'effectuer un jet de caractéristique. De plus, les terrains difficiles formés de glace ou de neige ne lui coûtent pas de mouvement supplémentaire.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 15 (2d10 + 4) dégâts perforants + 4 (1d8) dégâts de froid.",
                 attaque: 7,
                 degats: "2d10 + 4",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
             {
-                nom: "Souffle de froid (Recharge 5-6).",
+                nom: "Souffle de froid (Recharge 5-6)",
                 action:
                     "Le dragon crache une tempête de glace dans un cône de 9 mètres. Chaque créature dans la zone d'effet doit effectuer un jet de sauvegarde de Constitution DD 15, subissant 45 (10d8) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -3152,13 +3142,13 @@ let monsters = [
         attributs: ".",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d10 + 2) dégâts perforants + 2 (1d4) dégâts de froid.",
                 attaque: 4,
                 degats: "1d10 + 2",
             },
             {
-                nom: "Souffle de froid (Recharge 5-6).",
+                nom: "Souffle de froid (Recharge 5-6)",
                 action:
                     "Le dragon crache une tempête de glace dans un cône de 4,50 mètres. Chaque créature dans la zone d'effet doit effectuer un jet de sauvegarde de Constitution DD 12, subissant 22 (5d8) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -3200,34 +3190,34 @@ let monsters = [
         xp: 15000,
         attributs: "Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d6 + 7) dégâts tranchants.", attaque: 12, degats: "2d6 + 7" },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d6 + 7) dégâts tranchants.", attaque: 12, degats: "2d6 + 7" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 3 m, une cible. Touché : 18 (2d10 + 7) dégâts perforants + 5 (1d10) dégâts de foudre.",
                 attaque: 12,
                 degats: "2d10 + 7",
             },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 4,50 m, une cible. Touché : 16 (2d8 + 7) dégâts contondants.", attaque: 12, degats: "2d8 + 7" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 4,50 m, une cible. Touché : 16 (2d8 + 7) dégâts contondants.", attaque: 12, degats: "2d8 + 7" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins du dragon et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 17 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
             {
-                nom: "Souffle de foudre (Recharge 5-6).",
+                nom: "Souffle de foudre (Recharge 5-6)",
                 action:
                     "Le dragon crache une tempête d'éclairs sur une ligne de 27 mètres de long et de 1,50 mètre de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 19, subissant 66 (12d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 20 ou subir 14 (2d6 + 7) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -3269,34 +3259,34 @@ let monsters = [
         xp: 50000,
         attributs: "Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +16 au toucher, allonge 4,50 m, une cible. Touché : 20 (2d10 + 9) dégâts perforants + 11 (2d10) dégâts de foudre.",
                 attaque: 16,
                 degats: "2d10 + 9",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +16 au toucher, allonge 3 m, une cible. Touché : 16 (2d6 + 9) dégâts tranchants.", attaque: 16, degats: "2d6 + 9" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +16 au toucher, allonge 6 m, une cible. Touché : 18 (2d8 + 9) dégâts contondants.", attaque: 16, degats: "2d8 + 9" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +16 au toucher, allonge 3 m, une cible. Touché : 16 (2d6 + 9) dégâts tranchants.", attaque: 16, degats: "2d6 + 9" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +16 au toucher, allonge 6 m, une cible. Touché : 18 (2d8 + 9) dégâts contondants.", attaque: 16, degats: "2d8 + 9" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins du dragon et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 20 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
             {
-                nom: "Souffle de foudre (Recharge 5-6).",
+                nom: "Souffle de foudre (Recharge 5-6)",
                 action:
                     "Le dragon crache une tempête d'éclairs sur une ligne de 36 mètres de long et de 3 mètres de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 23, subissant 88 (16d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 24 ou subir 16 (2d6 + 9) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -3338,16 +3328,16 @@ let monsters = [
         xp: 5000,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 3 m, une cible. Touché : 16 (2d10 + 5) dégâts perforants + 5 (1d10) dégâts de foudre.",
                 attaque: 9,
                 degats: "2d10 + 5",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts tranchants.", attaque: 9, degats: "2d6 + 5" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts tranchants.", attaque: 9, degats: "2d6 + 5" },
             {
-                nom: "Souffle de foudre (Recharge 5-6).",
+                nom: "Souffle de foudre (Recharge 5-6)",
                 action:
                     "Le dragon crache une tempête d'éclairs sur une ligne de 18 mètres de long et de 1,50 mètre de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 16, subissant 55 (10d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -3390,13 +3380,13 @@ let monsters = [
         attributs: ".",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d10 + 3) dégâts perforants + 3 (1d6) dégâts de foudre.",
                 attaque: 5,
                 degats: "1d10 + 3",
             },
             {
-                nom: "Souffle de foudre (Recharge 5-6).",
+                nom: "Souffle de foudre (Recharge 5-6)",
                 action:
                     "Le dragon crache une tempête d'éclairs sur une ligne de 9 mètres de long et de 1,50 mètre de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 12, subissant 22 (4d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -3438,35 +3428,35 @@ let monsters = [
         xp: 10000,
         attributs: "Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants.", attaque: 11, degats: "2d10 + 6" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 11, degats: "2d6 + 6" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.", attaque: 11, degats: "2d8 + 6" },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants.", attaque: 11, degats: "2d10 + 6" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 11, degats: "2d6 + 6" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.", attaque: 11, degats: "2d8 + 6" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 16 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de feu.",
+                nom: "Souffle de feu",
                 action:
                     "Le dragon exhale des flammes sur une ligne de 18 mètres de long et de 1,50 mètre de large. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Dextérité DD 18, subissant 45 (13d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle de sommeil.",
+                nom: "Souffle de sommeil",
                 action:
                     "Le dragon exhale un gaz soporifique dans un cône de 18 mètres. Chaque créature dans cette zone doit réussir un jet de sauvegarde de Constitution DD 18 ou tomber inconsciente pendant 10 minutes. Cet effet prend fin pour une créature si elle subit des dégâts ou si quelqu'un utilise son action pour la réveiller.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 19 ou subir 13 (2d6 + 6) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -3508,45 +3498,45 @@ let monsters = [
         xp: 25000,
         attributs: "Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 4,50 m, une cible. Touché : 19 (2d10 + 8) dégâts perforants.",
                 attaque: 14,
                 degats: "2d10 + 8",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 14, degats: "2d6 + 8" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 14, degats: "2d8 + 8" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 14, degats: "2d6 + 8" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 14, degats: "2d8 + 8" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 18 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de feu.",
+                nom: "Souffle de feu",
                 action:
                     "Le dragon exhale des flammes sur une ligne de 27 mètres de long et de 3 mètres de large. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Dextérité DD 21, subissant 56 (16d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle de sommeil.",
+                nom: "Souffle de sommeil",
                 action:
                     "Le dragon exhale un gaz soporifique dans un cône de 27 mètres. Chaque créature dans cette zone doit réussir un jet de sauvegarde de Constitution DD 21 ou tomber inconsciente pendant 10 minutes. Cet effet prend fin pour une créature si elle subit des dégâts ou si quelqu'un utilise son action pour la réveiller.",
             },
             {
-                nom: "Changement de forme.",
+                nom: "Changement de forme",
                 action:
                     "Le dragon se métamorphose magiquement en un humanoïde ou en une bête d'un FP inférieur ou égal au sien, ou bien retrouve sa véritable forme. Il retrouve également sa véritable forme lorsqu'il meurt. Tout l'équipement qu'il porte ou transporte est absorbé ou porté par sa nouvelle forme (au choix du dragon). Dans sa nouvelle forme, le dragon conserve son alignement, ses points de vie, ses dés de vie, sa capacité à parler, ses maîtrises, sa résistance légendaire, ses actions de repaire, ses valeurs de caractéristique d'Intelligence, de Sagesse et de Charisme, ainsi que cette action. Ses statistiques et ses capacités sont quant à elles remplacées par celles de sa nouvelle forme, à l'exception des compétences de classe ou des actions légendaires de cette forme.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 22 ou subir 15 (2d6 + 8) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -3588,17 +3578,17 @@ let monsters = [
         xp: 2300,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 15 (2d10 + 4) dégâts perforants.", attaque: 7, degats: "2d10 + 4" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Attaques multiples", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 15 (2d10 + 4) dégâts perforants.", attaque: 7, degats: "2d10 + 4" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de feu.",
+                nom: "Souffle de feu",
                 action:
                     "Le dragon exhale des flammes sur une ligne de 12 mètres de long et de 1,50 mètre de large. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Dextérité DD 14, subissant 42 (12d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle de sommeil.",
+                nom: "Souffle de sommeil",
                 action:
                     "Le dragon exhale un gaz soporifique dans un cône de 9 mètres. Chaque créature dans cette zone doit réussir un jet de sauvegarde de Constitution DD 14 ou tomber inconsciente pendant 5 minutes. Cet effet prend fin pour une créature si elle subit des dégâts ou si quelqu'un utilise son action pour la réveiller.",
             },
@@ -3640,15 +3630,15 @@ let monsters = [
         xp: 200,
         attributs: ".",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d10 + 2) dégâts perforants.", attaque: 4, degats: "1d10 + 2" },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d10 + 2) dégâts perforants.", attaque: 4, degats: "1d10 + 2" },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de feu.",
+                nom: "Souffle de feu",
                 action:
                     "Le dragon exhale des flammes sur une ligne de 6 mètres de long et de 1,50 mètre de large. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Dextérité DD 11, subissant 14 (4d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle de sommeil.",
+                nom: "Souffle de sommeil",
                 action:
                     "Le dragon exhale un gaz soporifique dans un cône de 4,50 mètres. Chaque créature dans cette zone doit réussir un jet de sauvegarde de Constitution DD 11 ou tomber inconsciente pendant 1 minute. Cet effet prend fin pour une créature si elle subit des dégâts ou si quelqu'un utilise son action pour la réveiller.",
             },
@@ -3690,40 +3680,40 @@ let monsters = [
         xp: 15000,
         attributs: "Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 19 (2d10 + 8) dégâts perforants.", attaque: 13, degats: "2d10 + 8" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 13, degats: "2d6 + 8" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 4,50 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 13, degats: "2d8 + 8" },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 19 (2d10 + 8) dégâts perforants.", attaque: 13, degats: "2d10 + 8" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 13, degats: "2d6 + 8" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 4,50 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 13, degats: "2d8 + 8" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 18 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de froid.",
+                nom: "Souffle de froid",
                 action:
                     "Le dragon crache une tempête de glace dans un cône de 18 mètres. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Constitution DD 20, subissant 58 (13d8) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle paralysant.",
+                nom: "Souffle paralysant",
                 action:
                     "Le dragon exhale un gaz paralysant dans un cône de 18 mètres. Chaque créature présente dans la zone doit réussir un jet de sauvegarde de Constitution DD 20 ou être paralysée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite à ce nouveau jet de sauvegarde.",
             },
             {
-                nom: "Changement de forme.",
+                nom: "Changement de forme",
                 action:
                     "Le dragon se métamorphose magiquement en un humanoïde ou en une bête d'un FP inférieur ou égal au sien, ou bien retrouve sa véritable forme. Il retrouve également sa véritable forme lorsqu'il meurt. Tout l'équipement qu'il porte ou transporte est absorbé ou porté par sa nouvelle forme (au choix du dragon). Dans sa nouvelle forme, le dragon conserve son alignement, ses points de vie, ses dés de vie, sa capacité à parler, ses maîtrises, sa résistance légendaire, ses actions de repaire, ses valeurs de caractéristique d'Intelligence, de Sagesse et de Charisme, ainsi que cette action. Ses statistiques et ses capacités sont quant à elles remplacées par celles de sa nouvelle forme, à l'exception des compétences de classe ou des actions légendaires de cette forme.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 21 ou subir 15 (2d6 + 8) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -3765,45 +3755,45 @@ let monsters = [
         xp: 50000,
         attributs: "Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 4,50 m, une cible. Touché : 21 (2d10 + 10) dégâts perforants.",
                 attaque: 17,
                 degats: "2d10 + 10",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 3 m, une cible. Touché : 17 (2d6 + 10) dégâts tranchants.", attaque: 17, degats: "2d6 + 10" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 6 m, une cible. Touché : 19 (2d8 + 10) dégâts contondants.", attaque: 17, degats: "2d8 + 10" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 3 m, une cible. Touché : 17 (2d6 + 10) dégâts tranchants.", attaque: 17, degats: "2d6 + 10" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 6 m, une cible. Touché : 19 (2d8 + 10) dégâts contondants.", attaque: 17, degats: "2d8 + 10" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 21 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de froid.",
+                nom: "Souffle de froid",
                 action:
                     "Le dragon crache une tempête de glace dans un cône de 27 mètres. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Constitution DD 24, subissant 67 (15d8) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle paralysant.",
+                nom: "Souffle paralysant",
                 action:
                     "Le dragon exhale un gaz paralysant dans un cône de 27 mètres. Chaque créature présente dans la zone doit réussir un jet de sauvegarde de Constitution DD 24 ou être paralysée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite à ce nouveau jet de sauvegarde.",
             },
             {
-                nom: "Changement de forme.",
+                nom: "Changement de forme",
                 action:
                     "Le dragon se métamorphose magiquement en un humanoïde ou en une bête d'un FP inférieur ou égal au sien, ou bien retrouve sa véritable forme. Il retrouve également sa véritable forme lorsqu'il meurt. Tout l'équipement qu'il porte ou transporte est absorbé ou porté par sa nouvelle forme (au choix du dragon). Dans sa nouvelle forme, le dragon conserve son alignement, ses points de vie, ses dés de vie, sa capacité à parler, ses maîtrises, sa résistance légendaire, ses actions de repaire, ses valeurs de caractéristique d'Intelligence, de Sagesse et de Charisme, ainsi que cette action. Ses statistiques et ses capacités sont quant à elles remplacées par celles de sa nouvelle forme, à l'exception des compétences de classe ou des actions légendaires de cette forme.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 25 ou subir 17 (2d6 + 10) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -3845,17 +3835,17 @@ let monsters = [
         xp: 5000,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants.", attaque: 10, degats: "2d10 + 6" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 10, degats: "2d6 + 6" },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Attaques multiples", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants.", attaque: 10, degats: "2d10 + 6" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 10, degats: "2d6 + 6" },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de froid.",
+                nom: "Souffle de froid",
                 action:
                     "Le dragon crache une tempête de glace dans un cône de 9 mètres. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Constitution DD 17, subissant 54 (12d8) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle paralysant.",
+                nom: "Souffle paralysant",
                 action:
                     "Le dragon exhale un gaz paralysant dans un cône de 9 mètres. Chaque créature présente dans la zone doit réussir un jet de sauvegarde de Constitution DD 17 ou être paralysée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite à ce nouveau jet de sauvegarde.",
             },
@@ -3897,15 +3887,15 @@ let monsters = [
         xp: 450,
         attributs: ".",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 9 (1d10 + 4) dégâts perforants.", attaque: 6, degats: "1d10 + 4" },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 9 (1d10 + 4) dégâts perforants.", attaque: 6, degats: "1d10 + 4" },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de froid.",
+                nom: "Souffle de froid",
                 action:
                     "Le dragon crache une tempête de glace dans un cône de 4,50 mètres. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Constitution DD 13, subissant 18 (4d8) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle paralysant.",
+                nom: "Souffle paralysant",
                 action:
                     "Le dragon exhale un gaz paralysant dans un cône de 4,50 mètres. Chaque créature présente dans la zone doit réussir un jet de sauvegarde de Constitution DD 13 ou être paralysée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite à ce nouveau jet de sauvegarde.",
             },
@@ -3949,16 +3939,16 @@ let monsters = [
         attributs:
             "Ombre vivante. Tant qu'il se trouve dans une zone de lumière faible ou de ténèbres, le dragon a une résistance à tous les dégâts, exception faite des dégâts de force, psychiques, ou radiants.Discrétion d'ombre. Tant qu'il se trouve dans une zone de lumière faible ou de ténèbres, le dragon peut utiliser l'action Se cacher en dépensant une action bonus.Sensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le dragon a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon réalise trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 10, degats: "2d6 + 6" },
+            { nom: "Attaques multiples", action: "Le dragon réalise trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 10, degats: "2d6 + 6" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants + 3 (1d6) dégâts nécrotiques.",
                 attaque: 10,
                 degats: "2d10 + 6",
             },
             {
-                nom: "Souffle d'ombres (Recharge 5-6).",
+                nom: "Souffle d'ombres (Recharge 5-6)",
                 action:
                     "Le dragon exhale des flammes d'ombre dans un cône de 9 mètres. Toutes les créatures dans la zone doivent réaliser un jet de sauvegarde de Dextérité DD 18, subissant 56 (16d6) dégâts nécrotiques en cas d'échec, ou la moitié de ces dégâts en cas de réussite. Un humanoïde dont les points de vie tombent à 0 suite à ces dégâts meurt sur le champ, et une ombre morte-vivante surgit de son corps et agit immédiatement après le dragon dans l'ordre d'initiative. L'ombre est sous le contrôle du dragon.",
             },
@@ -4001,40 +3991,40 @@ let monsters = [
         attributs:
             "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 19 (2d10 + 8) dégâts perforants.", attaque: 14, degats: "2d10 + 8" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 14, degats: "2d6 + 8" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 4,50 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 14, degats: "2d8 + 8" },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 19 (2d10 + 8) dégâts perforants.", attaque: 14, degats: "2d10 + 8" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 14, degats: "2d6 + 8" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 4,50 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 14, degats: "2d8 + 8" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 21 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de feu.",
+                nom: "Souffle de feu",
                 action:
                     "Le dragon crache des flammes dans un cône de 18 mètres. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Dextérité DD 21, subissant 66 (12d10) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle affaiblissant.",
+                nom: "Souffle affaiblissant",
                 action:
                     "Le dragon exhale un gaz dans un cône de 18 mètres. Chaque créature présente dans la zone doit réussir un jet de sauvegarde de Force DD 21 ou avoir un désavantage aux jets d'attaque basés sur la Force, aux jets de Force et aux jets de sauvegarde de Force. L'effet dure 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite à ce nouveau jet de sauvegarde.",
             },
             {
-                nom: "Changement de forme.",
+                nom: "Changement de forme",
                 action:
                     "Le dragon se métamorphose magiquement en un humanoïde ou en une bête d'un FP inférieur ou égal au sien, ou bien retrouve sa véritable forme. Il retrouve également sa véritable forme lorsqu'il meurt. Tout l'équipement qu'il porte ou transporte est absorbé ou porté par sa nouvelle forme (au choix du dragon). Dans sa nouvelle forme, le dragon conserve son alignement, ses points de vie, ses dés de vie, sa capacité à parler, ses maîtrises, sa résistance légendaire, ses actions de repaire, ses valeurs de caractéristique d'Intelligence, de Sagesse et de Charisme, ainsi que cette action. Ses statistiques et ses capacités sont quant à elles remplacées par celles de sa nouvelle forme, à l'exception des compétences de classe ou des actions légendaires de cette forme.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 22 ou subir 15 (2d6 + 8) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -4077,45 +4067,45 @@ let monsters = [
         attributs:
             "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 4,50 m, une cible. Touché : 21 (2d10 + 10) dégâts perforants.",
                 attaque: 17,
                 degats: "2d10 + 10",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 3 m, une cible. Touché : 17 (2d6 + 10) dégâts tranchants.", attaque: 17, degats: "2d6 + 10" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 6 m, une cible. Touché : 19 (2d8 + 10) dégâts contondants.", attaque: 17, degats: "2d8 + 10" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 3 m, une cible. Touché : 17 (2d6 + 10) dégâts tranchants.", attaque: 17, degats: "2d6 + 10" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 6 m, une cible. Touché : 19 (2d8 + 10) dégâts contondants.", attaque: 17, degats: "2d8 + 10" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 24 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de feu.",
+                nom: "Souffle de feu",
                 action:
                     "Le dragon crache des flammes dans un cône de 27 mètres. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Dextérité DD 24, subissant 71 (13d10) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle affaiblissant.",
+                nom: "Souffle affaiblissant",
                 action:
                     "Le dragon exhale un gaz dans un cône de 27 mètres. Chaque créature présente dans la zone doit réussir un jet de sauvegarde de Force DD 24 ou avoir un désavantage aux jets d'attaque basés sur la Force, aux jets de Force et aux jets de sauvegarde de Force. L'effet dure 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite à ce nouveau jet de sauvegarde.",
             },
             {
-                nom: "Changement de forme.",
+                nom: "Changement de forme",
                 action:
                     "Le dragon se métamorphose magiquement en un humanoïde ou en une bête d'un FP inférieur ou égal au sien, ou bien retrouve sa véritable forme. Il retrouve également sa véritable forme lorsqu'il meurt. Tout l'équipement qu'il porte ou transporte est absorbé ou porté par sa nouvelle forme (au choix du dragon). Dans sa nouvelle forme, le dragon conserve son alignement, ses points de vie, ses dés de vie, sa capacité à parler, ses maîtrises, sa résistance légendaire, ses actions de repaire, ses valeurs de caractéristique d'Intelligence, de Sagesse et de Charisme, ainsi que cette action. Ses statistiques et ses capacités sont quant à elles remplacées par celles de sa nouvelle forme, à l'exception des compétences de classe ou des actions légendaires de cette forme.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 25 ou subir 17 (2d6 + 10) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -4157,17 +4147,17 @@ let monsters = [
         xp: 5900,
         attributs: "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants.", attaque: 10, degats: "2d10 + 6" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 10, degats: "2d6 + 6" },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Attaques multiples", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants.", attaque: 10, degats: "2d10 + 6" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 10, degats: "2d6 + 6" },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de feu.",
+                nom: "Souffle de feu",
                 action:
                     "Le dragon crache des flammes dans un cône de 9 mètres. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Dextérité DD 17, subissant 55 (10d10) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle affaiblissant.",
+                nom: "Souffle affaiblissant",
                 action:
                     "Le dragon exhale un gaz dans un cône de 9 mètres. Chaque créature présente dans la zone doit réussir un jet de sauvegarde de Force DD 17 ou avoir un désavantage aux jets d'attaque basés sur la Force, aux jets de Force et aux jets de sauvegarde de Force. L'effet dure 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite à ce nouveau jet de sauvegarde.",
             },
@@ -4209,15 +4199,15 @@ let monsters = [
         xp: 700,
         attributs: "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 9 (1d10 + 4) dégâts perforants.", attaque: 6, degats: "1d10 + 4" },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 9 (1d10 + 4) dégâts perforants.", attaque: 6, degats: "1d10 + 4" },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de feu.",
+                nom: "Souffle de feu",
                 action:
                     "Le dragon crache des flammes dans un cône de 4,50 mètres. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Dextérité DD 13, subissant 22 (4d10) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle affaiblissant.",
+                nom: "Souffle affaiblissant",
                 action:
                     "Le dragon exhale un gaz dans un cône de 4,50 mètres. Chaque créature présente dans la zone doit réussir un jet de sauvegarde de Force DD 13 ou avoir un désavantage aux jets d'attaque basés sur la Force, aux jets de Force, et aux jets de sauvegarde de Force. L'effet dure 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite à ce nouveau jet de sauvegarde.",
             },
@@ -4260,40 +4250,40 @@ let monsters = [
         attributs:
             "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d6 + 7) dégâts tranchants.", attaque: 12, degats: "2d6 + 7" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 3 m, une cible. Touché : 18 (2d10 + 7) dégâts perforants.", attaque: 12, degats: "2d10 + 7" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 4,50 m, une cible. Touché : 16 (2d8 + 7) dégâts contondants.", attaque: 12, degats: "2d8 + 7" },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d6 + 7) dégâts tranchants.", attaque: 12, degats: "2d6 + 7" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 3 m, une cible. Touché : 18 (2d10 + 7) dégâts perforants.", attaque: 12, degats: "2d10 + 7" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 4,50 m, une cible. Touché : 16 (2d8 + 7) dégâts contondants.", attaque: 12, degats: "2d8 + 7" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 17 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de foudre.",
+                nom: "Souffle de foudre",
                 action:
                     "Le dragon crache une tempête d'éclairs sur une ligne de 27 mètres de long et de 1,50 mètre de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 19, subissant 66 (12d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle répulsif.",
+                nom: "Souffle répulsif",
                 action:
                     "Le dragon crache une énergie répulsive dans un cône de 9 mètres. Chaque créature dans cette zone doit effectuer un jet de sauvegarde de Force DD 19. En cas d'échec, la créature est repoussée du dragon sur 18 mètres.",
             },
             {
-                nom: "Changement de forme.",
+                nom: "Changement de forme",
                 action:
                     "Le dragon se métamorphose magiquement en un humanoïde ou en une bête d'un FP inférieur ou égal au sien, ou bien retrouve sa véritable forme. Il retrouve également sa véritable forme lorsqu'il meurt. Tout l'équipement qu'il porte ou transporte est absorbé ou porté par sa nouvelle forme (au choix du dragon). Dans sa nouvelle forme, le dragon conserve son alignement, ses points de vie, ses dés de vie, sa capacité à parler, ses maîtrises, sa résistance légendaire, ses actions de repaire, ses valeurs de caractéristique d'Intelligence, de Sagesse et de Charisme, ainsi que cette action. Ses statistiques et ses capacités sont quant à elles remplacées par celles de sa nouvelle forme, à l'exception des compétences de classe ou des actions légendaires de cette forme.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 20 ou subir 14 (2d6 + 7) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -4336,45 +4326,45 @@ let monsters = [
         attributs:
             "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +16 au toucher, allonge 4,50 m, une cible. Touché : 20 (2d10 + 9) dégâts perforants.",
                 attaque: 16,
                 degats: "2d10 + 9",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +16 au toucher, allonge 3 m, une cible. Touché : 16 (2d6 + 9) dégâts tranchants.", attaque: 16, degats: "2d6 + 9" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +16 au toucher, allonge 6 m, une cible. Touché : 18 (2d8 + 9) dégâts contondants.", attaque: 16, degats: "2d8 + 9" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +16 au toucher, allonge 3 m, une cible. Touché : 16 (2d6 + 9) dégâts tranchants.", attaque: 16, degats: "2d6 + 9" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +16 au toucher, allonge 6 m, une cible. Touché : 18 (2d8 + 9) dégâts contondants.", attaque: 16, degats: "2d8 + 9" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 20 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de foudre.",
+                nom: "Souffle de foudre",
                 action:
                     "Le dragon crache une tempête d'éclairs sur une ligne de 36 mètres de long et de 3 mètres de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 23, subissant 88 (16d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle répulsif.",
+                nom: "Souffle répulsif",
                 action:
                     "Le dragon crache une énergie répulsive dans un cône de 9 mètres. Chaque créature dans cette zone doit effectuer un jet de sauvegarde de Force DD 23. En cas d'échec, la créature est repoussée du dragon sur 18 mètres.",
             },
             {
-                nom: "Changement de forme.",
+                nom: "Changement de forme",
                 action:
                     "Le dragon se métamorphose magiquement en un humanoïde ou en une bête d'un FP inférieur ou égal au sien, ou bien retrouve sa véritable forme. Il retrouve également sa véritable forme lorsqu'il meurt. Tout l'équipement qu'il porte ou transporte est absorbé ou porté par sa nouvelle forme (au choix du dragon). Dans sa nouvelle forme, le dragon conserve son alignement, ses points de vie, ses dés de vie, sa capacité à parler, ses maîtrises, sa résistance légendaire, ses actions de repaire, ses valeurs de caractéristique d'Intelligence, de Sagesse et de Charisme, ainsi que cette action. Ses statistiques et ses capacités sont quant à elles remplacées par celles de sa nouvelle forme, à l'exception des compétences de classe ou des actions légendaires de cette forme.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 24 ou subir 16 (2d6 + 9) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -4416,17 +4406,17 @@ let monsters = [
         xp: 3900,
         attributs: "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une cible. Touché : 16 (2d10 + 5) dégâts perforants.", attaque: 8, degats: "2d10 + 5" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts tranchants.", attaque: 8, degats: "2d6 + 5" },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Attaques multiples", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une cible. Touché : 16 (2d10 + 5) dégâts perforants.", attaque: 8, degats: "2d10 + 5" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts tranchants.", attaque: 8, degats: "2d6 + 5" },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de foudre.",
+                nom: "Souffle de foudre",
                 action:
                     "Le dragon crache une tempête d'éclairs sur une ligne de 18 mètres de long et de 1,50 mètre de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 15, subissant 55 (10d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle répulsif.",
+                nom: "Souffle répulsif",
                 action:
                     "Le dragon crache une énergie répulsive dans un cône de 9 mètres. Chaque créature dans cette zone doit effectuer un jet de sauvegarde de Force DD 15. En cas d'échec, la créature est repoussée du dragon sur 12 mètres.",
             },
@@ -4468,15 +4458,15 @@ let monsters = [
         xp: 450,
         attributs: "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d10 + 3) dégâts perforants.", attaque: 5, degats: "1d10 + 3" },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d10 + 3) dégâts perforants.", attaque: 5, degats: "1d10 + 3" },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle de foudre.",
+                nom: "Souffle de foudre",
                 action:
                     "Le dragon crache une tempête d'éclairs sur une ligne de 12 mètres de long et de 1,50 mètre de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 12, subissant 16 (3d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle répulsif.",
+                nom: "Souffle répulsif",
                 action:
                     "Le dragon crache une énergie répulsive dans un cône de 9 mètres. Chaque créature dans cette zone doit effectuer un jet de sauvegarde de Force DD 12. En cas d'échec, la créature est repoussée du dragon sur 9 mètres.",
             },
@@ -4518,35 +4508,35 @@ let monsters = [
         xp: 11500,
         attributs: "Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants.", attaque: 11, degats: "2d10 + 6" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 11, degats: "2d6 + 6" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.", attaque: 11, degats: "2d8 + 6" },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants.", attaque: 11, degats: "2d10 + 6" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 11, degats: "2d6 + 6" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.", attaque: 11, degats: "2d8 + 6" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 16 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle d'acide.",
+                nom: "Souffle d'acide",
                 action:
                     "Le dragon crache un jet d'acide une ligne de 18 mètres de long et de 1,50 mètre de large. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Dextérité DD 18, subissant 54 (12d8) dégâts d'acide en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle de ralentissement.",
+                nom: "Souffle de ralentissement",
                 action:
                     "Le dragon exhale un gaz dans un cône de 18 mètres. Chaque créature dans cette zone doit effectuer un jet de sauvegarde de Constitution DD 18. En cas d'échec, la créature ne peut plus utiliser de réaction, sa vitesse est réduite de moitié, et elle ne peut plus faire qu'une seule attaque par tour. De plus, la créature ne peut utiliser qu'une action ou une action bonus, mais pas les deux, pendant son tour. Cet effet reste effectif pendant 1 minute. La créature peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite à ce nouveau jet de sauvegarde.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 19 ou subir 13 (2d6 + 6) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -4588,45 +4578,45 @@ let monsters = [
         xp: 33000,
         attributs: "Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 4,50 m, une cible. Touché : 19 (2d10 + 8) dégâts perforants.",
                 attaque: 15,
                 degats: "2d10 + 8",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 3 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 15, degats: "2d6 + 8" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 15, degats: "2d8 + 8" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 3 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 15, degats: "2d6 + 8" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 15, degats: "2d8 + 8" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 19 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle d'acide.",
+                nom: "Souffle d'acide",
                 action:
                     "Le dragon crache un jet d'acide une ligne de 27 mètres de long et de 3 mètres de large. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Dextérité DD 22, subissant 63 (14d8) dégâts d'acide en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle de ralentissement.",
+                nom: "Souffle de ralentissement",
                 action:
                     "Le dragon exhale un gaz dans un cône de 27 mètres. Chaque créature dans cette zone doit effectuer un jet de sauvegarde de Constitution DD 22. En cas d'échec, la créature ne peut plus utiliser de réaction, sa vitesse est réduite de moitié, et elle ne peut plus faire qu'une seule attaque par tour. De plus, la créature ne peut utiliser qu'une action ou une action bonus, mais pas les deux, pendant son tour. Cet effet reste effectif pendant 1 minute. La créature peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite à ce nouveau jet de sauvegarde.",
             },
             {
-                nom: "Changement de forme.",
+                nom: "Changement de forme",
                 action:
                     "Le dragon se métamorphose magiquement en un humanoïde ou en une bête d'un FP inférieur ou égal au sien, ou bien retrouve sa véritable forme. Il retrouve également sa véritable forme lorsqu'il meurt. Tout l'équipement qu'il porte ou transporte est absorbé ou porté par sa nouvelle forme (au choix du dragon). Dans sa nouvelle forme, le dragon conserve son alignement, ses points de vie, ses dés de vie, sa capacité à parler, ses maîtrises, sa résistance légendaire, ses actions de repaire, ses valeurs de caractéristique d'Intelligence, de Sagesse et de Charisme, ainsi que cette action. Ses statistiques et ses capacités sont quant à elles remplacées par celles de sa nouvelle forme, à l'exception des compétences de classe ou des actions légendaires de cette forme.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 23 ou subir 15 (2d6 + 8) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -4668,17 +4658,17 @@ let monsters = [
         xp: 2900,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 15 (2d10 + 4) dégâts perforants.", attaque: 7, degats: "2d10 + 4" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Attaques multiples", action: "Le dragon effectue trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 15 (2d10 + 4) dégâts perforants.", attaque: 7, degats: "2d10 + 4" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle d'acide.",
+                nom: "Souffle d'acide",
                 action:
                     "Le dragon crache un jet d'acide une ligne de 12 mètres de long et de 1,50 mètre de large. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Dextérité DD 14, subissant 40 (9d8) dégâts d'acide en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle de ralentissement.",
+                nom: "Souffle de ralentissement",
                 action:
                     "Le dragon exhale un gaz dans un cône de 9 mètres. Chaque créature dans cette zone doit effectuer un jet de sauvegarde de Constitution DD 14. En cas d'échec, la créature ne peut plus utiliser de réaction, sa vitesse est réduite de moitié, et elle ne peut plus faire qu'une seule attaque par tour. De plus, la créature ne peut utiliser qu'une action ou une action bonus, mais pas les deux, pendant son tour. Cet effet reste effectif pendant 1 minute. La créature peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite à ce nouveau jet de sauvegarde.",
             },
@@ -4720,15 +4710,15 @@ let monsters = [
         xp: 200,
         attributs: ".",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d10 + 2) dégâts perforants.", attaque: 4, degats: "1d10 + 2" },
-            { nom: "Souffle de combat (Recharge 5-6).", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d10 + 2) dégâts perforants.", attaque: 4, degats: "1d10 + 2" },
+            { nom: "Souffle de combat (Recharge 5-6)", action: "Le dragon utilise l'un des souffles de combat présentés ci-dessous." },
             {
-                nom: "Souffle d'acide.",
+                nom: "Souffle d'acide",
                 action:
                     "Le dragon crache un jet d'acide une ligne de 6 mètres de long et de 1,50 mètre de large. Chaque créature présente dans la zone doit réaliser un jet de sauvegarde de Dextérité DD 11, subissant 18 (4d8) dégâts d'acide en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Souffle de ralentissement.",
+                nom: "Souffle de ralentissement",
                 action:
                     "Le dragon exhale un gaz dans un cône de 4,50 mètres. Chaque créature dans cette zone doit effectuer un jet de sauvegarde de Constitution DD 11. En cas d'échec, la créature ne peut plus utiliser de réaction, sa vitesse est réduite de moitié, et elle ne peut plus faire qu'une seule attaque par tour. De plus, la créature ne peut utiliser qu'une action ou une action bonus, mais pas les deux, pendant son tour. Cet effet reste effectif pendant 1 minute. La créature peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite à ce nouveau jet de sauvegarde.",
             },
@@ -4769,15 +4759,15 @@ let monsters = [
         attributs:
             "Invisibilité supérieure. En utilisant une action bonus, le dragon peut devenir invisible par magie jusqu'à ce que sa concentration s'arrête (comme s'il se concentrait sur un sort). Tout l'équipement que le dragon porte ou transporte est également invisible.Télépathie limitée. En utilisant la télépathie, le dragon peut magiquement communiquer avec d'autres dragons féeriques trouvant dans un rayon de 18 mètres autour de lui.Résistance à la magie. Le dragon a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Incantation innée. La caractéristique d'incantation innée du dragon est le Charisme (jet de sauvegarde contre ses sorts DD 13). Il peut lancer un certain nombre de sorts de manière innée, sans avoir besoin de composantes matérielles. Au fur et à mesure que le dragon grandit et change de couleur, il gagne des sorts supplémentaires, comme indiqué ci-dessous.Rouge (200 XP), 1/jour chacun : lumières dansantes, main de mage, illusion mineure\nOrange (200 XP), 1/jour : couleurs dansantes\nJaune (200 XP), 1/jour : image miroir\nVert (450 XP), 1/jour : suggestion\nBleu (450 XP), 1/jour : image majeure\nIndigo (450 XP), 1/jour : terrain hallucinatoire\nViolet (450 XP), 1/jour : métamorphose.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une créature. Touché : 1 dégât perforant.", attaque: 7, degats: "1" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une créature. Touché : 1 dégât perforant.", attaque: 7, degats: "1" },
             {
-                nom: "Souffle d'euphorie (Recharge 5-6).",
+                nom: "Souffle d'euphorie (Recharge 5-6)",
                 action:
                     "Le dragon souffle une bouffée de gaz euphorisant sur une créature se trouvant à 1,50 mètre de lui. La cible doit réussir un jet de sauvegarde de Sagesse DD 11, sinon, pendant 1 minute, la cible ne peut plus utiliser de réaction et doit lancer 1d6 au début de chacun de ses tours pour déterminer comment elle va se comporter pendant ce tour :",
             },
-            { nom: "1-4.", action: "La cible n'utilise aucune action ni action bonus et utilise tout son mouvement pour se déplacer dans une direction aléatoire." },
+            { nom: "1-4", action: "La cible n'utilise aucune action ni action bonus et utilise tout son mouvement pour se déplacer dans une direction aléatoire." },
             {
-                nom: "5-6.",
+                nom: "5-6",
                 action:
                     "La cible ne se déplace pas, et la seule chose qu'elle peut effectuer pendant son tour est un jet de sauvegarde de Sagesse DD 11, qui met fin à l'effet qui l'affecte en cas de réussite.",
             },
@@ -4820,34 +4810,34 @@ let monsters = [
         attributs:
             "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 11, degats: "2d6 + 6" },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 11, degats: "2d6 + 6" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants + 4 (1d8) dégâts d'acide.",
                 attaque: 11,
                 degats: "2d10 + 6",
             },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.", attaque: 11, degats: "2d8 + 6" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.", attaque: 11, degats: "2d8 + 6" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 16 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte si elle réussit. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
             {
-                nom: "Souffle d'acide (Recharge 5-6).",
+                nom: "Souffle d'acide (Recharge 5-6)",
                 action:
                     "Le dragon crache un jet d'acide sur une ligne de 18 mètres de long et de 1,50 mètre de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 18, subissant 54 (12d8) dégâts d'acide en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 19 ou subir 13 (2d6 + 6) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -4890,34 +4880,34 @@ let monsters = [
         attributs:
             "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Puis il réalise trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Puis il réalise trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 4,50 m, une cible. Touché : 19 (2d10 + 8) dégâts perforants + 9 (2d8) dégâts d'acide.",
                 attaque: 15,
                 degats: "2d10 + 8",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 3 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 15, degats: "2d6 + 8" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 15, degats: "2d8 + 8" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 3 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 15, degats: "2d6 + 8" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 15, degats: "2d8 + 8" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 19 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
             {
-                nom: "Souffle d'acide (Recharge 5-6).",
+                nom: "Souffle d'acide (Recharge 5-6)",
                 action:
                     "Le dragon crache un jet d'acide sur une ligne de 27 mètres de long et de 3 mètres de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 22, subissant 67 (15d8) dégâts d'acide en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 23 ou subir 15 (2d6 + 8) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -4959,16 +4949,16 @@ let monsters = [
         xp: 2900,
         attributs: "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut effectuer trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon peut effectuer trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 15 (2d10 + 4) dégâts perforants + 4 (1d8) dégâts d'acide.",
                 attaque: 7,
                 degats: "2d10 + 4",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
             {
-                nom: "Souffle d'acide (Recharge 5-6).",
+                nom: "Souffle d'acide (Recharge 5-6)",
                 action:
                     "Le dragon crache un jet d'acide sur une ligne de 9 mètres de long et de 1,50 mètre de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 14, subissant 49 (11d8) dégâts d'acide en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -5011,13 +5001,13 @@ let monsters = [
         attributs: "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'ea.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d10 + 2) dégâts perforants + 2 (1d4) dégâts d'acide.",
                 attaque: 4,
                 degats: "1d10 + 2",
             },
             {
-                nom: "Souffle d'acide (Recharge 5-6).",
+                nom: "Souffle d'acide (Recharge 5-6)",
                 action:
                     "Le dragon crache un jet d'acide sur une ligne de 4,50 mètres de long et de 1,50 mètre de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 11, subissant 22 (5d8) dégâts d'acide en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -5059,34 +5049,34 @@ let monsters = [
         xp: 18000,
         attributs: "Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence effrayante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 14, degats: "2d6 + 8" },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence effrayante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.", attaque: 14, degats: "2d6 + 8" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 19 (2d10 + 8) dégâts perforants + 7 (2d6) de feu.",
                 attaque: 14,
                 degats: "2d10 + 8",
             },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 4,50 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 14, degats: "2d8 + 8" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 4,50 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 14, degats: "2d8 + 8" },
             {
-                nom: "Présence effrayante.",
+                nom: "Présence effrayante",
                 action:
                     "Chaque créature choisit par le dragon, située à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 19 ou être effrayée pendant 1 minute. Une créature peut retenter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin l'effet qu'elle subit. Si le jet de sauvegarde d'une créature est réussi ou que l'effet qu'elle subit se termine, celle-ci devient immunisée à la Présence effrayante du dragon pendant les prochaines 24 heures.",
             },
             {
-                nom: "Souffle de feu (Recharge 5-6).",
+                nom: "Souffle de feu (Recharge 5-6)",
                 action:
                     "Le dragon exhale des flammes dans un cône de 18 mètres. Toutes les créatures dans la zone doivent réaliser un jet de sauvegarde de Dextérité DD 21, subissant 63 (18d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Attaque avec la queue.", action: "Le dragon réalise une attaque avec sa queue." },
-            { nom: "Détection.", action: "Le dragon réalise un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon réalise une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon réalise un jet de Sagesse (Perception)." },
             {
-                nom: "Attaque Ailée (coûte 2 actions).",
+                nom: "Attaque Ailée (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins de lui doit réussir un jet de sauvegarde de Dextérité DD 22 ou subir 15 (2d6 + 8) dégâts contondants et tomber à terre. Le dragon peut ensuite s'envoler et parcourir jusqu'à la moitié de son déplacement en vol.",
             },
@@ -5129,34 +5119,34 @@ let monsters = [
         xp: 62000,
         attributs: "Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence effrayante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 3 m, une cible. Touché : 17 (2d6 + 10) dégâts tranchants.", attaque: 17, degats: "2d6 + 10" },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence effrayante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 3 m, une cible. Touché : 17 (2d6 + 10) dégâts tranchants.", attaque: 17, degats: "2d6 + 10" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 4,50 m, une cible. Touché : 21 (2d10 + 10) dégâts perforants + 14 (4d6) dégâts de feu.",
                 attaque: 17,
                 degats: "2d10 + 10",
             },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 6 m, une cible. Touché : 19 (2d8 + 10) dégâts contondants.", attaque: 17, degats: "2d8 + 10" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +17 au toucher, allonge 6 m, une cible. Touché : 19 (2d8 + 10) dégâts contondants.", attaque: 17, degats: "2d8 + 10" },
             {
-                nom: "Présence effrayante.",
+                nom: "Présence effrayante",
                 action:
                     "Chaque créature choisit par le dragon, dans un rayon de 36 mètres autour de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 21 ou être effrayée pendant 1 minute. Une créature peut retenter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est réussi ou que l'effet qu'elle subit se termine, celle-ci devient immunisée à la Présence effrayante du dragon pendant les prochaines 24 heures.",
             },
             {
-                nom: "Souffle de feu (Recharge 5-6).",
+                nom: "Souffle de feu (Recharge 5-6)",
                 action:
                     "Le dragon exhale des flammes dans un cône de 27 mètres. Toutes les créatures dans la zone doivent réaliser un jet de sauvegarde de Dextérité DD 24, subissant 91 (26d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Attaque avec la queue.", action: "Le dragon réalise une attaque avec sa queue." },
-            { nom: "Détection.", action: "Le dragon réalise un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon réalise une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon réalise un jet de Sagesse (Perception)." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située dans un rayon de 4,50 mètres autour de lui doit réussir un jet de sauvegarde de Dextérité DD 25 ou subir 17 (2d6 + 10) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler et parcourir jusqu'à la moitié de son déplacement en vol.",
             },
@@ -5198,16 +5188,16 @@ let monsters = [
         xp: 5900,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon réalise trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 10, degats: "2d6 + 6" },
+            { nom: "Attaques multiples", action: "Le dragon réalise trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 10, degats: "2d6 + 6" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants + 3 (1d6) dégâts de feu.",
                 attaque: 10,
                 degats: "2d10 + 6",
             },
             {
-                nom: "Souffle de feu (Recharge 5-6).",
+                nom: "Souffle de feu (Recharge 5-6)",
                 action:
                     "Le dragon exhale des flammes dans un cône de 9 mètres. Toutes les créatures dans la zone doivent réaliser un jet de sauvegarde de Dextérité DD 17, subissant 56 (16d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -5250,13 +5240,13 @@ let monsters = [
         attributs: ".",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 9 (1d10 + 4) dégâts perforants + 3 (1d6) dégâts de feu.",
                 attaque: 6,
                 degats: "1d10 + 4",
             },
             {
-                nom: "Souffle de feu (Recharge 5-6).",
+                nom: "Souffle de feu (Recharge 5-6)",
                 action:
                     "Le dragon exhale des flammes dans un cône de 4,50 mètres. Toutes les créatures dans la zone doivent réaliser un jet de sauvegarde de Dextérité DD 13, subissant 24 (7d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -5300,34 +5290,34 @@ let monsters = [
         attributs:
             "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 3 m, une cible. Touché : 17 (2d10 + 6) dégâts perforants + 7 (2d6) dégâts de poison.",
                 attaque: 11,
                 degats: "2d10 + 6",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 11, degats: "2d6 + 6" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.", attaque: 11, degats: "2d8 + 6" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants.", attaque: 11, degats: "2d6 + 6" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 4,50 m, une cible. Touché : 15 (2d8 + 6) dégâts contondants.", attaque: 11, degats: "2d8 + 6" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins du dragon et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 16 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
             {
-                nom: "Souffle empoisonné (Recharge 5-6).",
+                nom: "Souffle empoisonné (Recharge 5-6)",
                 action:
                     "Le dragon exhale un nuage de gaz empoisonné dans un cône de 18 mètres. Chaque créature dans la zone doit réaliser un jet de sauvegarde de Constitution DD 18, subissant 56 (16d6) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 3 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 19 ou subir 13 (2d6 + 6) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -5371,34 +5361,34 @@ let monsters = [
         attributs:
             "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.Résistance légendaire (3/jour). Si le dragon échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le dragon peut utiliser sa Présence terrifiante. Il réalise ensuite trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 4,50 m, une cible. Touché : 19 (2d10 + 8) dégâts perforants + 10 (3d6) dégâts de poison.",
                 attaque: 15,
                 degats: "2d10 + 8",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 3 m, une cible. Touché : 22 (4d6 + 8) dégâts tranchants.", attaque: 15, degats: "4d6 + 8" },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 15, degats: "2d8 + 8" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 3 m, une cible. Touché : 22 (4d6 + 8) dégâts tranchants.", attaque: 15, degats: "4d6 + 8" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.", attaque: 15, degats: "2d8 + 8" },
             {
-                nom: "Présence terrifiante.",
+                nom: "Présence terrifiante",
                 action:
                     "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins du dragon et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 19 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
             },
             {
-                nom: "Souffle empoisonné (Recharge 5-6).",
+                nom: "Souffle empoisonné (Recharge 5-6)",
                 action:
                     "Le dragon exhale un nuage de gaz empoisonné dans un cône de 27 mètres. Chaque créature dans la zone doit réaliser un jet de sauvegarde de Constitution DD 22, subissant 77 (22d6) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le dragon peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le dragon récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Détection.", action: "Le dragon effectue un jet de Sagesse (Perception)." },
-            { nom: "Attaque avec la queue.", action: "Le dragon effectue une attaque avec sa queue." },
+            { nom: "Détection", action: "Le dragon effectue un jet de Sagesse (Perception)." },
+            { nom: "Attaque avec la queue", action: "Le dragon effectue une attaque avec sa queue." },
             {
-                nom: "Attaque avec les ailes (coûte 2 actions).",
+                nom: "Attaque avec les ailes (coûte 2 actions)",
                 action:
                     "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 23 ou subir 15 (2d6 + 8) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
             },
@@ -5441,16 +5431,16 @@ let monsters = [
         xp: 3900,
         attributs: "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dragon réalise trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Attaques multiples", action: "Le dragon réalise trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 15 (2d10 + 4) dégâts perforants + 7 (2d6) dégâts de poison.",
                 attaque: 7,
                 degats: "2d10 + 4",
             },
             {
-                nom: "Souffle empoisonné (Recharge 5-6).",
+                nom: "Souffle empoisonné (Recharge 5-6)",
                 action:
                     "Le dragon exhale un nuage de gaz empoisonné dans un cône de 9 mètres. Toutes les créatures dans la zone doivent réaliser un jet de sauvegarde de Constitution DD 14, subissant 42 (12d6) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -5495,13 +5485,13 @@ let monsters = [
         attributs: "Amphibien. Le dragon peut respirer aussi bien dans l'air que sous l'eau.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d10 + 2) dégâts perforants + 3 (1d6) dégâts de poison.",
                 attaque: 4,
                 degats: "1d10 + 2",
             },
             {
-                nom: "Souffle empoisonné (Recharge 5-6).",
+                nom: "Souffle empoisonné (Recharge 5-6)",
                 action:
                     "Le dragon exhale un nuage de gaz empoisonné dans un cône de 4,50 mètres. Chaque créature dans la zone doit réaliser un jet de sauvegarde de Constitution DD 11, subissant 21 (6d6) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -5543,26 +5533,26 @@ let monsters = [
         attributs: "Amphibien. Le dragon-tortue peut respirer aussi bien dans l'air que sous l'eau.",
         actions: [
             {
-                nom: "Attaques multiples.",
+                nom: "Attaques multiples",
                 action:
                     "Le dragon-tortue effectue trois attaques : une de morsure et deux avec ses griffes. Il peut effectuer une attaque avec sa queue à la place de ses deux attaques avec ses griffes.",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 16 (2d8 + 7) dégâts tranchants.", attaque: 13, degats: "2d8 + 7" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 16 (2d8 + 7) dégâts tranchants.", attaque: 13, degats: "2d8 + 7" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 4,50 m, une cible. Touché : 26 (3d12 + 7) dégâts perforants.",
                 attaque: 13,
                 degats: "3d12 + 7",
             },
             {
-                nom: "Queue.",
+                nom: "Queue",
                 action:
                     "Attaque au corps à corps avec une arme : +13 au toucher, allonge 4,50 m, une cible. Touché : 26 (3d12 + 7) dégâts contondants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 20 ou être repoussée de 3 mètres du dragon-tortue et jetée à terre.",
                 attaque: 13,
                 degats: "3d12 + 7",
             },
             {
-                nom: "Souffle de vapeur (Recharge 5-6).",
+                nom: "Souffle de vapeur (Recharge 5-6)",
                 action:
                     "Le dragon-tortue crache un souffle de la vapeur brûlante dans un cône de 18 mètres. Chaque créature présente dans cette zone doit effectuer un jet de sauvegarde de Constitution DD 18, subissant 52 (15d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite. Être sous l'eau ne confère aucune résistance contre ces dégâts.",
             },
@@ -5604,11 +5594,11 @@ let monsters = [
         xp: 50,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le dretch effectue deux attaques : une de morsure et une avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 5 (2d4) dégâts tranchants.", attaque: 2, degats: "2d4" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d6) dégâts perforants.", attaque: 2, degats: "1d6" },
+            { nom: "Attaques multiples", action: "Le dretch effectue deux attaques : une de morsure et une avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 5 (2d4) dégâts tranchants.", attaque: 2, degats: "2d4" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d6) dégâts perforants.", attaque: 2, degats: "1d6" },
             {
-                nom: "Nuage fétide (1/jour).",
+                nom: "Nuage fétide (1/jour)",
                 action:
                     "Un immonde gaz verdâtre s'échappe du dretch dans un rayon de 3 mètres. Le gaz contourne les angles, et la zone est légèrement obscurcie. Il reste présent pendant une minute ou jusqu'à ce qu'un vent fort le disperse. Toute créature qui débute son tour dans cette zone doit réussir un jet de sauvegarde de Constitution DD 11 ou être empoisonnée jusqu'au début de son prochain tour. Tant qu'elle est empoisonnée de la sorte, la cible ne peut utiliser lors de son tour qu'une action ou qu'une action bonus, mais pas les deux, et elle ne peut pas utiliser de réaction.",
             },
@@ -5650,24 +5640,24 @@ let monsters = [
             "Ascendance féerique. Le drider a un avantage aux jets de sauvegarde contre les effets de charme, et la magie ne peut pas l'endormir.Incantation innée. La caractéristique d'incantation innée du drider est la Sagesse (jet de sauvegarde contre ses sorts DD 13). Le drider peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : lumières dansantes\n1/jour chacun : ténèbres, lueurs féeriques\nPattes d'araignée. Le drider peut escalader des surfaces difficiles et être au plafond la tête en bas sans avoir besoin d'effectuer un jet de caractéristique.Sensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le drider a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.Déplacement sur la toile. Le drider ignore les restrictions de mouvement causées par une toile d'araignée.",
         actions: [
             {
-                nom: "Attaques multiples.",
+                nom: "Attaques multiples",
                 action: "Le drider effectue trois attaques, soit avec son épée longue, soit avec son arc long. Il peut remplacer l'une de ses attaques par une attaque de morsure.",
             },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une créature. Touché : 2 (1d4) dégâts perforants + 9 (2d8) dégâts de poison.",
                 attaque: 6,
                 degats: "1d4",
             },
             {
-                nom: "Épée longue.",
+                nom: "Épée longue",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts tranchants, ou 8 (1d10 + 3) dégâts tranchants si utilisée à deux mains.",
                 attaque: 6,
                 degats: "1d8 + 3",
             },
             {
-                nom: "Arc long.",
+                nom: "Arc long",
                 action: "Attaque à distance avec une arme : +6 au toucher, portée 45/180 m, une cible. Touché : 7 (1d8 + 3) dégâts perforants + 4 (1d8) dégâts de poison.",
                 attaque: 6,
                 degats: "1d8 + 3",
@@ -5709,14 +5699,9 @@ let monsters = [
         attributs:
             "Ascendance féerique. Le drow a un avantage aux jets de sauvegarde contre les effets de charme, et la magie ne peut pas l'endormir.Incantation innée. La caractéristique d'incantation innée du drow est le Charisme (jet de sauvegarde contre ses sorts DD 11). Il peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : lumières dansantes\n1/jour chacun : ténèbres, lueurs féeriques\nSensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le drow a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
+            { nom: "Épée courte", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
             {
-                nom: "Épée courte.",
-                action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.",
-                attaque: 4,
-                degats: "1d6 + 2",
-            },
-            {
-                nom: "Arbalète de poing.",
+                nom: "Arbalète de poing",
                 action:
                     "Attaque à distance avec une arme : +4 au toucher, portée 9/36 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants, et la cible doit réussir un jet de sauvegarde de Constitution DD 13 ou être empoisonnée pendant 1 heure. Si le jet de sauvegarde échoue de 5 ou plus, la cible est également inconsciente tant qu'elle est empoisonnée de cette manière. La cible se réveille si elle subit des dégâts ou si une autre créature utilise son action pour la secouer.",
                 attaque: 4,
@@ -5760,22 +5745,22 @@ let monsters = [
         attributs:
             "Ascendance féerique. Le drow a un avantage aux jets de sauvegarde contre les effets de charme, de plus il est immunisé contre le sommeil magique.Incantation innée. La caractéristique d'incantation innée du drow est le Charisme (jet de sauvegarde contre ses sorts DD 12). Il peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : lumières dansantes\n1/jour chacun : ténèbres, lueurs féeriques, lévitation (personnel uniquement)\nSensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le drow a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le drow effectue deux attaques d'épée courte." },
+            { nom: "Attaques multiples", action: "Le drow effectue deux attaques d'épée courte." },
             {
-                nom: "Épée courte.",
+                nom: "Épée courte",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d6 + 4) dégâts perforants + 10 (3d6) dégâts de poison.",
                 attaque: 7,
                 degats: "1d6 + 4",
             },
             {
-                nom: "Arbalète de poing.",
+                nom: "Arbalète de poing",
                 action:
                     "Attaque à distance avec une arme : +7 au toucher, portée 9/36 m, une cible. Touché : 7 (1d6 + 4) dégâts perforants, et la cible doit réussir un jet de sauvegarde de Constitution DD 13 ou être empoisonnée pendant 1 heure. Si le jet de sauvegarde échoue de 5 ou plus, la cible est également inconsciente tant qu'elle est empoisonnée par cette capacité. La cible se réveille si elle subit des dégâts ou si une autre créature utilise son action pour la secouer.",
                 attaque: 7,
                 degats: "1d6 + 4",
             },
             {
-                nom: "Parade.",
+                nom: "Parade",
                 action: "Le drow ajoute 3 à sa CA contre une attaque au corps à corps qui le toucherait. Pour cela, il doit voir l'attaquant et avoir en main une arme de corps à corps.",
             },
         ],
@@ -5816,14 +5801,14 @@ let monsters = [
             "Ascendance féerique. Le drow a un avantage aux jets de sauvegarde contre les effets de charme, et la magie ne peut pas l'endormir.Incantation innée. La caractéristique d'incantation innée du drow est le Charisme (jet de sauvegarde contre ses sorts DD 12). Il peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : lumières dansantes\n1/jour chacun : ténèbres, lueurs féeriques, lévitation (personnel uniquement)\nIncantation. Le drow est un lanceur de sorts de niveau 10. Sa caractéristique d'incantation est l'Intelligence (jet de sauvegarde contre ses sorts DD 14, +6 au toucher pour les attaques avec un sort). Le drow a préparé les sorts de magicien suivants :Sorts mineurs (à volonté) : main de mage, illusion mineure, vaporisation de poison, rayon de givre\nNiveau 1 (4 emplacements) : armure de mage, projectile magique, bouclier, éclair de sorcière\nNiveau 2 (3 emplacements) : modification d'apparence, pas brumeux, toile d'araignée\nNiveau 3 (3 emplacements) : vol, éclair\nNiveau 4 (3 emplacements) : tentacules noirs d'Evard, invisibilité supérieure\nNiveau 5 (2 emplacements) : nuage mortel\nSensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le drow a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
             {
-                nom: "Bâton.",
+                nom: "Bâton",
                 action:
                     "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 2 (1d6 - 1) dégâts contondants, ou 3 (1d8 - 1) dégâts contondants si utilisé à deux mains, plus 3 (1d6) dégâts de poison.",
                 attaque: 2,
                 degats: "1d6 - 1",
             },
             {
-                nom: "Invocation de démon (1/jour).",
+                nom: "Invocation de démon (1/jour)",
                 action:
                     "Le drow peut magiquement invoquer un quasit, ou tenter d'invoquer un démon d'ombre avec 50 % de chance de réussite. Le démon invoqué apparaît dans un espace inoccupé dans un rayon de 18 mètres autour de son invocateur, il agit comme un allié de l'invocateur, et ne peut pas invoquer à son tour des démons. Le démon reste présent 10 minutes, jusqu'à ce que lui ou son invocateur meure, ou jusqu'à ce que l'invocateur le renvoie en utilisant une action.",
             },
@@ -5865,15 +5850,15 @@ let monsters = [
         attributs:
             "Ascendance féerique. Le drow a un avantage aux jets de sauvegarde contre les effets de charme, de plus il est immunisé contre le sommeil magique.Incantation innée. La caractéristique d'incantation innée du drow est le Charisme (jet de sauvegarde contre ses sorts DD 15). Il peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : lumières dansantes\n1/jour chacun : ténèbres, lueurs féeriques, lévitation (personnel uniquement)\nIncantation. Le drow est un lanceur de sorts de niveau 10. Sa caractéristique d'incantation est la Sagesse (jet de sauvegarde contre ses sorts DD 14, +6 au toucher pour les attaques avec un sort). Le drow a préparé les sorts de clerc suivants :Sorts mineurs (à volonté) : assistance, thaumaturgie, vaporisation de poison, stabilisation, résistance\nNiveau 1 (4 emplacements) : amitié avec les animaux, soins, détection du poison et des maladies, rayon empoisonné\nNiveau 2 (3 emplacements) : restauration partielle, protection contre le poison, toile d'araignée\nNiveau 3 (3 emplacements) : invocation d'animaux (2 araignées géantes), dissipation de la magie\nNiveau 4 (3 emplacements) : divination, liberté de mouvement\nNiveau 5 (2 emplacements) : fléau d'insectes, soins de groupe\nSensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le drow a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le drow effectue deux attaques avec le fouet barbelé." },
+            { nom: "Attaques multiples", action: "Le drow effectue deux attaques avec le fouet barbelé." },
             {
-                nom: "Fouet barbelé.",
+                nom: "Fouet barbelé",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants + 17 (5d6) dégâts de poison.",
                 attaque: 5,
                 degats: "1d6 + 2",
             },
             {
-                nom: "Invocation de démon (1/jour).",
+                nom: "Invocation de démon (1/jour)",
                 action:
                     "Le drow peut magiquement invoquer un yochlol avec 30 % de chance de réussite. Si la tentative échoue, le drow subit 5 (1d10) dégâts psychiques. Sinon, le démon invoqué apparaît dans un espace inoccupé dans un rayon de 18 mètres autour de son invocateur, il agit comme un allié de l'invocateur, et ne peut pas invoquer à son tour d'autres démons. Le démon reste présent 10 minutes, jusqu'à ce que lui ou son invocateur meure, ou jusqu'à ce que l'invocateur le renvoie en utilisant une action.",
             },
@@ -5910,14 +5895,14 @@ let monsters = [
             "Incantation innée. La caractéristique d'incantation innée de la dryade est le Charisme (jet de sauvegarde contre ses sorts DD 14). La dryade peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : druidisme\n3/jour chacun : enchevêtrement, baies nourricières\n1/jour chacun : peau d'écorce, passage sans trace, gourdin magique\nRésistance à la magie. La dryade a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Communication avec les animaux et avec les plantes. La dryade peut communiquer avec les bêtes et les plantes comme s'ils avaient une langue en commun.Passage par les arbres. Une fois pendant son tour, la dryade peut utiliser 3 mètres de son mouvement pour magiquement pénétrer à l'intérieur d'un arbre vivant se trouvant à portée et ressortir d'un arbre vivant se trouvant à 18 mètres maximum du premier arbre, apparaissant alors dans un espace inoccupé à 1,50 mètre du deuxième arbre. Chacun des arbres doit être de taille G ou supérieure.",
         actions: [
             {
-                nom: "Gourdin.",
+                nom: "Gourdin",
                 action:
                     "Attaque au corps à corps avec une arme : +2 au toucher (+6 au toucher avec gourdin magique), allonge 1,50 m, une cible. Touché : 2 (1d4) dégâts contondants, ou 8 (1d8 + 4) dégâts contondants avec gourdin magique.",
                 attaque: 2,
                 degats: "1d4",
             },
             {
-                nom: "Charme des fées.",
+                nom: "Charme des fées",
                 action:
                     "La dryade cible un humanoïde ou une bête qu'elle peut voir et se trouvant à 9 mètres maximum d'elle. Si la cible peut voir la dryade, elle doit réussir un jet de sauvegarde de Sagesse DD 14 ou être charmée par magie. La créature charmée considère la dryade comme une amie de confiance dont elle doit tenir compte et qu'elle doit protéger. Néanmoins la créature n'est pas sous le contrôle de la dryade, mais elle prend les requêtes et les actions de la dryade de la meilleure façon qui soit. Chaque fois que la dryade ou ses alliés font quelque chose de dangereux pour la cible, elle peut retenter son jet de sauvegarde, mettant fin à l'effet qui l'affecte en cas de réussite. Sinon, l'effet prend fin au bout de 24 heures ou jusqu'à ce que la dryade meure, jusqu'à ce qu'elle soit sur un plan d'existence différent de celui de la cible, ou mette fin à l'effet en utilisant son action bonus. Si le jet de sauvegarde de la cible est une réussite, la cible est immunisée au Charme des fées de la dryade pour les prochaines 24 heures. La dryade ne peut avoir sous son charme plus d'un humanoïde et plus de trois bêtes à la fois.",
             },
@@ -5961,26 +5946,26 @@ let monsters = [
             "Résistance de duergar. Le duergar a un avantage aux jets de sauvegarde contre le poison, les sorts et les illusions, ainsi qu'aux jets de sauvegarde pour résister aux conditions charmé ou paralysé.Sensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le duergar a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
             {
-                nom: "Agrandissement (Recharge après un repos court ou long).",
+                nom: "Agrandissement (Recharge après un repos court ou long)",
                 action:
                     "Pour 1 minute, le duergar augmente magiquement sa taille, ainsi que celle de tout ce qu'il porte ou transporte. Tant qu'il est agrandi, le duergar est de taille G, double les dés de dégâts de ses attaques avec une arme basées sur la Force (inclus dans les attaques ci-dessous), et effectue les jets de Force et les jets de sauvegarde de Force avec un avantage. Si le duergar n'a pas assez de place pour atteindre la taille G, il grandit jusqu'à atteindre la taille maximum possible dans l'espace qu'il occupe.",
             },
             {
-                nom: "Pic de guerre.",
+                nom: "Pic de guerre",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants, ou 11 (2d8 + 2) dégâts perforants s'il est agrandi.",
                 attaque: 4,
                 degats: "1d8 + 2",
             },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +4 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants, ou 9 (2d6 + 2) dégâts perforants s'il est agrandi.",
                 attaque: 4,
                 degats: "1d6 + 2",
             },
             {
-                nom: "Invisibilité (Recharge après un repos court ou long).",
+                nom: "Invisibilité (Recharge après un repos court ou long)",
                 action:
                     "Le duergar devient invisible par magie jusqu'à ce qu'il attaque, lance un sort, utilise son action Agrandissement, ou que sa concentration soit brisée, pendant 1 heure maximum (comme s'il se concentrait sur un sort). Tout l'équipement que le duergar porte ou transporte est également invisible.",
             },
@@ -6016,10 +6001,10 @@ let monsters = [
         attributs:
             "Esprit axiomatique. Le duodrone ne peut être contraint à agir d'une manière contraire à sa nature ou aux instructions qu'il a reçues.Désintégration. Si le duodrone meurt, son corps se désintègre et tombe en poussière, ne derrière lui que ses armes et tout ce qu'il portait.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le duodrone effectue deux attaques de coup ou deux attaques avec la javeline." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 2 (1d4) dégâts contondants.", attaque: 2, degats: "1d4" },
+            { nom: "Attaques multiples", action: "Le duodrone effectue deux attaques de coup ou deux attaques avec la javeline." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 2 (1d4) dégâts contondants.", attaque: 2, degats: "1d4" },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action: "Attaque au corps à corps ou à distance avec une arme : +3 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 4 (1d6 + 1) dégâts perforants.",
                 attaque: 3,
                 degats: "1d6 + 1",
@@ -6062,14 +6047,14 @@ let monsters = [
         attributs:
             "Disparition élémentaire. Si l'éfrit meurt, son corps se désintègre dans un flash de feu et un nuage de fumée, ne laissant derrière lui que l'équipement qu'il portait ou transportait.Incantation innée. La caractéristique d'incantation innée de l'éfrit est le Charisme (jet de sauvegarde contre ses sorts DD 15, +7 au toucher pour les attaques avec un sort). Il peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection de la magie\n3/jour chacun : agrandissement/rapetissement, langues\n1/jour chacun : changement de plan, invocation d'élémentaire (élémentaire du feu uniquement), forme gazeuse, image majeure, invisibilité, mur de feu.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'éfrit réalise deux attaques avec le cimeterre, ou utilise son Jet de flammes deux fois." },
+            { nom: "Attaques multiples", action: "L'éfrit réalise deux attaques avec le cimeterre, ou utilise son Jet de flammes deux fois." },
             {
-                nom: "Cimeterre.",
+                nom: "Cimeterre",
                 action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants + 7 (2d6) dégâts de feu.",
                 attaque: 10,
                 degats: "2d6 + 6",
             },
-            { nom: "Jet de flammes.", action: "Attaque à distance avec un sort : +7 au toucher, portée 36 m, une cible. Touché : 17 (5d6) dégâts de feu.", attaque: 7, degats: "5d6" },
+            { nom: "Jet de flammes", action: "Attaque à distance avec un sort : +7 au toucher, portée 36 m, une cible. Touché : 17 (5d6) dégâts de feu.", attaque: 7, degats: "5d6" },
         ],
         description: null,
         sauvegarde: { FOR: 6, DEX: 1, CON: 7, INT: 7, SAG: 6, CHA: 7 },
@@ -6109,10 +6094,10 @@ let monsters = [
         attributs:
             "Forme d'Air. L'élémentaire peut pénétrer dans l'espace d'une créature hostile et y rester. Il peut se déplacer au travers d'espaces larges de 2,50 cm sans être considéré comme passant dans un espace étroit.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'élémentaire réalise deux attaques de coup." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d8 + 5) dégâts contondants.", attaque: 8, degats: "2d8 + 5" },
+            { nom: "Attaques multiples", action: "L'élémentaire réalise deux attaques de coup." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d8 + 5) dégâts contondants.", attaque: 8, degats: "2d8 + 5" },
             {
-                nom: "Cyclone (Recharge 4-6).",
+                nom: "Cyclone (Recharge 4-6)",
                 action:
                     "Chaque créature se trouvant dans l'espace de l'élémentaire doit réaliser un jet de sauvegarde de Force DD 13. En cas d'échec, la cible subit 15 (3d8 + 2) dégâts contondants, est projetée à 6 mètres de l'élémentaire dans une direction aléatoire, et se retrouve à terre. Si la cible frappe dans un obstacle, tel un mur, elle subit 3 (1d6) dégâts contondants pour chaque tranche de 3 mètres de distance qu'elle a parcourue. Si la cible est projetée vers une autre créature, celle-ci doit réussir un jet de sauvegarde de Dextérité DD 13 ou subir les mêmes dégâts et se retrouver à terre. Si le jet de sauvegarde est réussi, la cible subit la moitié des dégâts contondants et ne se retrouve ni projetée, ni à terre.",
             },
@@ -6156,10 +6141,10 @@ let monsters = [
         attributs:
             "Forme d'eau. L'élémentaire peut entrer dans l'espace d'une créature hostile et y rester. Il peut se déplacer à travers un espace aussi étroit que 2,50 cm de large sans être compressé.Congelé. Si l'élémentaire subit des dégâts de froid, il gèle partiellement ; sa vitesse est réduite de 6 mètres jusqu'à la fin de son prochain tour.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'élémentaire réalise deux attaques de coup." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts contondants.", attaque: 7, degats: "2d8 + 4" },
+            { nom: "Attaques multiples", action: "L'élémentaire réalise deux attaques de coup." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts contondants.", attaque: 7, degats: "2d8 + 4" },
             {
-                nom: "Submersion (Recharge 4-6).",
+                nom: "Submersion (Recharge 4-6)",
                 action:
                     "Chaque créature dans l'espace de l'élémentaire doit faire un jet de sauvegarde de Force DD 15. En cas d'échec, une cible subit 13 (2d8 + 4) dégâts contondants. Si elle est de taille G ou plus petite, elle est également agrippée (évasion DD 14). Tant qu'elle est agrippée, la cible est entravée et incapable de respirer à moins qu'elle puisse respirer sous l'eau. Si le jet de sauvegarde est réussi, la cible est poussée hors de l'espace de l'élémentaire. L'élémentaire peut agripper une créature de taille G ou jusqu'à deux créatures de taille M ou plus petites à la fois. Au début de chaque tour de l'élémentaire, chaque cible agrippée par l'élémentaire prend 13 (2d8 + 4) dégâts contondants. Une créature dans un rayon de 1,50 mètre autour de l'élémentaire peut lui retirer une créature ou un objet en prenant une action pour faire un jet de Force DD 14 et en le réussissant.",
             },
@@ -6204,8 +6189,8 @@ let monsters = [
         attributs:
             "Déplacement dans la terre. L'élémentaire peut creuser à travers la terre et la pierre non magique et non travaillée. Au cours de ce mouvement, il ne dérange pas les matériaux à travers lesquels il passe.Monstre de siège. L'élémentaire inflige le double des dégâts aux objets et structures qu'il attaque.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'élémentaire réalise deux attaques de coup." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une cible. Touché : 14 (2d8 + 5) dégâts contondants.", attaque: 8, degats: "2d8 + 5" },
+            { nom: "Attaques multiples", action: "L'élémentaire réalise deux attaques de coup." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une cible. Touché : 14 (2d8 + 5) dégâts contondants.", attaque: 8, degats: "2d8 + 5" },
         ],
         description:
             "Un élémentaire de la terre avance lourdement tel une colline humaine, balançant ses bras tels des massues. Sa tête et son corps sont fait de terre et de pierre, occasionnellement sertis de gros morceaux de métal, de gemmes et de minéraux luisants.",
@@ -6246,9 +6231,9 @@ let monsters = [
         attributs:
             "Forme de Feu. L'élémentaire peut se déplacer au travers d'espaces larges de 2,50 cm sans être considéré comme passant dans un espace étroit. Une créature qui touche l'élémentaire ou qui réussit à le frapper avec une attaque au corps à corps en se trouvant proche à 1,50 mètre de lui subit 5 (1d10) dégâts de feu. De plus, l'élémentaire peut pénétrer dans l'espace d'une créature hostile et y rester. La première fois qu'il pénètre dans l'espace d'une créature lors d'un tour, celle-ci subit 5 (1d10) dégâts de feu et s'enflamme, jusqu'à ce que quelqu'un utilise une action pour étouffer le feu. Une créature enflammée subit 5 (1d10) dégâts de feu au début de chacun de ses tours.Illumination. L'élémentaire émet une lumière vive dans un rayon de 9 mètres et une lumière faible sur 9 mètres supplémentaires.Susceptibilité à l'eau. Pour chaque 1,50 mètre parcouru dans de l'eau, ou pour chaque quantité de 4 litres d'eau jetée sur l'élémentaire, celui-ci subit 1 point de dégâts de froid.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'élémentaire réalise deux attaques de contact." },
+            { nom: "Attaques multiples", action: "L'élémentaire réalise deux attaques de contact." },
             {
-                nom: "Contact.",
+                nom: "Contact",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts de feu. Si la cible est une créature ou un objet inflammable, il prend feu. Jusqu'à ce que quelqu'un utilise une action pour étouffer le feu, la cible subit 5 (1d10) dégâts de feu au début de chacun de ses tours.",
                 attaque: 6,
@@ -6295,32 +6280,32 @@ let monsters = [
             "Incantation innée. La caractéristique d'incantation innée de l'empyréen est le Charisme (jet de sauvegarde contre ses sorts DD 23, +15 au toucher pour les attaques avec un sort). Il peut lancer les sorts suivants de manière innée, sans avoir besoin des composantes matérielles :À volonté : restauration supérieure, passage sans trace, respiration aquatique, marche sur l'eau\n1/jour chacun : communion, dissipation du mal et du bien, tremblement de terre, tempête de feu, changement de plan (personnel uniquement)\nRésistance légendaire (3/jour). Si l'empyréen échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.Résistance à la magie. L'empyréen a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme de l'empyréen sont magiques.",
         actions: [
             {
-                nom: "Maillet.",
+                nom: "Maillet",
                 action:
                     "Attaque au corps à corps avec une arme : +17 au toucher, allonge 3 m, une cible. Touché : 31 (6d6 +10) dégâts contondants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Constitution DD 15 ou être étourdie jusqu'à la fin du prochain tour de l'empyréen.",
                 attaque: 17,
                 degats: "6d6 +10",
             },
             {
-                nom: "Foudre.",
+                nom: "Foudre",
                 action:
                     "Attaque à distance avec un sort : +15 au toucher, portée 180 m, une cible. Touché : 24 (7d6) dégâts de l'un des types suivants (au choix de l'empyréen): acide, froid, feu, force, foudre, radiant, ou tonnerre.",
                 attaque: 15,
                 degats: "7d6",
             },
             {
-                nom: "L'empyréen peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "L'empyréen peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. L'empyréen récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Attaque.", action: "L'empyréen effectue une attaque." },
+            { nom: "Attaque", action: "L'empyréen effectue une attaque." },
             {
-                nom: "Soutien.",
+                nom: "Soutien",
                 action:
                     "L'empyréen soutient toutes les créatures non-hostiles dans un rayon de 36 mètres autour de lui jusqu'à la fin de son prochain tour. Les créatures soutenues ne peuvent pas être charmées ou effrayées, de plus elles gagnent un avantage à leurs jets de caractéristique et de sauvegarde, jusqu'à la fin du prochain tour de l'empyréen.",
             },
             {
-                nom: "Secousse (coûte 2 actions).",
+                nom: "Secousse (coûte 2 actions)",
                 action:
                     "L'empyréen frappe le sol avec son maillet, déclenchant un tremblement de terre. Toutes les autres créatures sur le sol dans un rayon de 18 mètres autour de l'empyréen doivent réussir un jet de sauvegarde de Force DD 25 ou être jetées à terre.",
             },
@@ -6356,16 +6341,16 @@ let monsters = [
         attributs:
             "Apparence trompeuse. Tant que l'enlaceur reste immobile, il ne peut être distingué d'une formation naturelle de caverne, comme une stalagmite.Filaments agrippants. L'enlaceur peut avoir jusqu'à 6 filaments à la fois. Chaque filament peut être attaqué (CA 20 ; 10 points de vie ; immunité au poison et aux dégâts psychiques). Détruire un filament n'inflige aucun dégât à l'enlaceur, qui peut faire sortir un filament de remplacement à son prochain tour. Un filament peut également être rompu si une créature utilise son action pour effectuer un jet de Force DD 15 contre elle.Pattes d'araignée. L'enlaceur peut escalader des surfaces difficiles et être au plafond la tête en bas sans avoir besoin d'effectuer un jet de caractéristique.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'enlaceur effectue quatre attaques avec ses filaments, utilise Embobiner, et effectue une attaque de morsure." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 22 (4d8 + 4) dégâts perforants.", attaque: 7, degats: "4d8 + 4" },
+            { nom: "Attaques multiples", action: "L'enlaceur effectue quatre attaques avec ses filaments, utilise Embobiner, et effectue une attaque de morsure." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 22 (4d8 + 4) dégâts perforants.", attaque: 7, degats: "4d8 + 4" },
             {
-                nom: "Filament.",
+                nom: "Filament",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 15 m, une créature. Touché : La cible est agrippée (évasion DD 15). Tant qu'elle est agrippée, la cible est entravée et a un désavantage aux jets de Force et aux jets de sauvegarde de Force, et l'enlaceur ne peut plus utiliser le même filament sur une autre cible.",
                 attaque: 7,
                 degats: null,
             },
-            { nom: "Embobiner.", action: "L'enlaceur tire à lui sur 7,50 mètres chaque créature qu'il a agrippée." },
+            { nom: "Embobiner", action: "L'enlaceur tire à lui sur 7,50 mètres chaque créature qu'il a agrippée." },
         ],
         description: null,
         sauvegarde: { FOR: 4, DEX: -1, CON: 3, INT: -2, SAG: 3, CHA: -2 },
@@ -6405,12 +6390,7 @@ let monsters = [
         attributs:
             "Apparence trompeuse. Tant que l'épée reste immobile et qu'elle ne vole pas, elle ne peut être distinguée d'une épée normale.Sensibilité à l'antimagie. L'épée est incapable d'agir lorsqu'elle se situe dans un champ antimagie. Si elle est ciblée par une dissipation de la magie, l'épée doit réussir un jet de sauvegarde de Constitution contre le DD de sort du lanceur ou tomber inconsciente pendant 1 minute.",
         actions: [
-            {
-                nom: "Épée longue.",
-                action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d8 + 1) dégâts tranchants.",
-                attaque: 3,
-                degats: "1d8 + 1",
-            },
+            { nom: "Épée longue", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d8 + 1) dégâts tranchants.", attaque: 3, degats: "1d8 + 1" },
         ],
         description: "Une épée volante animée par la magie danse dans les airs, combattant tel un guerrier qui ne peut être blessé.",
         sauvegarde: { FOR: 1, DEX: 4, CON: 0, INT: -5, SAG: -3, CHA: -5 },
@@ -6450,16 +6430,16 @@ let monsters = [
         xp: 200,
         attributs: "Apparence trompeuse. Tant que l'épouvantail reste immobile, il ne peut pas être distingué d'un épouvantail ordinaire et inanimé.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'épouvantail effectue deux attaques avec ses griffes." },
+            { nom: "Attaques multiples", action: "L'épouvantail effectue deux attaques avec ses griffes." },
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action:
                     "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 6 (2d4 + 1) dégâts tranchants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Sagesse DD 11 ou être effrayée jusqu'à la fin du prochain tour de l'épouvantail.",
                 attaque: 3,
                 degats: "2d4 + 1",
             },
             {
-                nom: "Regard terrifiant.",
+                nom: "Regard terrifiant",
                 action:
                     "L'épouvantail cible une créature qu'il peut voir et située à 9 mètres ou moins de lui. Si la cible peut voir l'épouvantail, elle doit réussir un jet de sauvegarde de Sagesse DD 11 ou être effrayée par magie jusqu'à la fin du prochain tour de l'épouvantail. La cible effrayée est également paralysée.",
             },
@@ -6503,23 +6483,23 @@ let monsters = [
         attributs:
             "Armes infernales. Les attaques avec une arme de l'érinye sont magiques et infligent 13 (3d8) dégâts de poison supplémentaires si elles touchent (inclus dans les attaques ci-dessous).Résistance à la magie. L'érinye a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'érinye effectue trois attaques." },
+            { nom: "Attaques multiples", action: "L'érinye effectue trois attaques." },
             {
-                nom: "Épée longue.",
+                nom: "Épée longue",
                 action:
                     "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d8 + 4) dégâts tranchants, ou 9 (1d10 + 4) dégâts tranchants si utilisée à deux mains, plus 13 (3d8) dégâts de poison.",
                 attaque: 8,
                 degats: "1d8 + 4",
             },
             {
-                nom: "Arc long.",
+                nom: "Arc long",
                 action:
                     "Attaque à distance avec une arme : +7 au toucher, portée 45/180 m, une cible. Touché : 7 (1d8 + 3) dégâts perforants + 13 (3d8) dégâts de poison, et la cible doit réussir un jet de sauvegarde de Constitution DD 14 ou être empoisonnée. Le poison reste jusqu'à ce qu'il soit supprimé à l'aide d'un sort de restauration partielle ou toute autre magie similaire.",
                 attaque: 7,
                 degats: "1d8 + 3",
             },
             {
-                nom: "Parade.",
+                nom: "Parade",
                 action: "L'érinye ajoute 4 à sa CA contre une attaque au corps à corps qui le toucherait. Pour ce faire, il doit voir l'attaquant et avoir en main une arme de corps à corps.",
             },
         ],
@@ -6553,21 +6533,21 @@ let monsters = [
         xp: 50,
         attributs: ".",
         actions: [
-            { nom: "Épée longue.", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 1 dégât tranchant.", attaque: 2, degats: "1" },
+            { nom: "Épée longue", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 1 dégât tranchant.", attaque: 2, degats: "1" },
             {
-                nom: "Arc court.",
+                nom: "Arc court",
                 action:
                     "Attaque à distance avec une arme : +6 au toucher, portée 12/48 m, une cible. Touché : 1 dégât perforant, et la cible doit réussir un jet de sauvegarde de Constitution DD 10 ou être empoisonnée pendant 1 minute. Si le jet de sauvegarde échoue de 5 ou plus, la cible empoisonnée tombe inconsciente pour la durée de l'empoisonnement, ou jusqu'à ce qu'elle subisse des dégâts, ou jusqu'à ce qu'une autre créature utilise son action pour la secouer et la réveiller.",
                 attaque: 6,
                 degats: "1",
             },
             {
-                nom: "Lecture du coeur.",
+                nom: "Lecture du coeur",
                 action:
                     "L'esprit follet touche une créature et en apprend magiquement l'état émotionnel. Si la cible échoue à un jet de sauvegarde de Charisme DD 10, alors l'esprit follet connaît également l'alignement de la créature. Les célestes, les fiélons, et les morts-vivants échouent automatiquement leur jet de sauvegarde.",
             },
             {
-                nom: "Invisibilité.",
+                nom: "Invisibilité",
                 action:
                     "L'esprit follet devient invisible par magie jusqu'à ce qu'il attaque, lance un sort, ou que sa concentration se termine (comme s'il se concentrait sur un sort). Tout l'équipement que l'esprit follet porte ou transporte est également invisible.",
             },
@@ -6603,17 +6583,17 @@ let monsters = [
         attributs:
             "Pattes d'araignée. L'ettercap peut escalader des surfaces difficiles et être au plafond la tête en bas sans avoir besoin d'effectuer un jet de caractéristique.Sens de la toile. Lorsqu'il est en contact avec une toile, l'ettercap connait l'emplacement exact de toutes les créatures qui sont en contact avec cette toile.Déplacement sur la toile. L'ettercap ignore les restrictions de mouvement causées par une toile d'araignée.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'ettercap effectue deux attaques : une de morsure et une avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (2d4 + 2) dégâts tranchants.", attaque: 4, degats: "2d4 + 2" },
+            { nom: "Attaques multiples", action: "L'ettercap effectue deux attaques : une de morsure et une avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (2d4 + 2) dégâts tranchants.", attaque: 4, degats: "2d4 + 2" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une créature. Touché : 6 (1d8 + 2) dégâts perforants + 4 (1d8) dégâts de poison. La cible doit réussir un jet de sauvegarde de Constitution DD 11 ou être empoisonnée pendant 1 minute. La créature peut recommencer ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
                 attaque: 4,
                 degats: "1d8 + 2",
             },
             {
-                nom: "Toile (Recharge 5-6).",
+                nom: "Toile (Recharge 5-6)",
                 action:
                     "Attaque à distance avec une arme : +4 au toucher, portée 9/18 m, une créature de taille G ou inférieure. Touché : la créature est entravée par la toile. Par une action, la créature entravée peut effectuer un jet de Force DD 11, s'échappant de la toile en cas de réussite. L'effet se termine si la toile est détruite. La toile a une CA de 10, 5 points de vie, est vulnérable aux dégâts de feu et immunisée contre les dégâts contondants, de poison et psychiques.",
                 attaque: 4,
@@ -6651,15 +6631,15 @@ let monsters = [
         attributs:
             "Bicéphale. L'ettin a un avantage aux jets de Sagesse (Perception), ainsi qu'aux jets de sauvegarde réalisés pour ne pas être assourdi, aveuglé, charmé, effrayé, étourdi ou inconscient.Alerte. Quand une des têtes de l'ettin dort, l'autre reste éveillée.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'ettin réalise deux attaques : une avec sa hache d'armes et une avec sa morgenstern." },
+            { nom: "Attaques multiples", action: "L'ettin réalise deux attaques : une avec sa hache d'armes et une avec sa morgenstern." },
             {
-                nom: "Hache d'armes.",
+                nom: "Hache d'armes",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d8 + 5) dégâts tranchants.",
                 attaque: 7,
                 degats: "2d8 + 5",
             },
             {
-                nom: "Morgenstern.",
+                nom: "Morgenstern",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d8 + 5) dégâts perforants.",
                 attaque: 7,
                 degats: "2d8 + 5",
@@ -6704,23 +6684,23 @@ let monsters = [
             "Mouvement incorporel. Le fantôme peut se déplacer à travers d'autres créatures ou des objets comme s'il traversait un terrain difficile. Il subit 5 (1d10) dégâts de force s'il termine son tour à l'intérieur d'un objet.Vision éthérée. Le fantôme peut voir à 18 mètres dans le plan éthéré lorsqu'il se trouve sur le plan matériel et inversement.",
         actions: [
             {
-                nom: "Contact flétrissant.",
+                nom: "Contact flétrissant",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 17 (4d6 + 3) dégâts nécrotiques.",
                 attaque: 5,
                 degats: "4d6 + 3",
             },
             {
-                nom: "Forme éthérée.",
+                nom: "Forme éthérée",
                 action:
                     "Le fantôme pénètre dans le plan éthéré à partir du plan matériel, ou inversement. Il est visible sur le plan matériel lorsqu'il se trouve à la Frontière éthérée, et inversement, bien qu'il ne puisse affecter ou être affecté par aucune chose venant de l'autre plan.",
             },
             {
-                nom: "Visage effroyable.",
+                nom: "Visage effroyable",
                 action:
                     "Chaque créature non morte-vivante à 18 mètres du fantôme et pouvant le voir doit réussir un jet de sauvegarde de Sagesse DD 13 ou devenir effrayée pendant 1 minute. Si le jet est raté de 5 points ou plus, la cible vieillit aussi de 1d4 x 10 ans. Une créature effrayée peut retenter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à la condition effrayée en cas de réussite. Si le jet de sauvegarde de la cible est réussi ou que l'effet qu'elle subit se termine, celle-ci devient immunisée au Visage effroyable du fantôme pendant les prochaines 24 heures. L'effet de vieillissement peut être annulé par un sort de restauration supérieure, mais seulement si le sort est lancé dans les 24 heures.",
             },
             {
-                nom: "Possession (Recharge 6).",
+                nom: "Possession (Recharge 6)",
                 action:
                     "Un humanoïde que le fantôme peut voir et se trouvant à 1,50 mètre de lui doit réussir un jet de sauvegarde de Charisme DD 13 ou être possédé par le fantôme ; le fantôme disparait alors, et la cible est incapable d'agir et perd le contrôle de son corps. Le fantôme contrôle désormais le corps de la cible, mais ne prive pas la cible de sa conscience. Le fantôme ne peut être pris pour cible par aucune attaque, sort, ou autres effets, à part ceux qui repoussent les morts-vivants, et il conserve son alignement, ses valeurs d'Intelligence, de Sagesse et de Charisme, ainsi que son immunité aux effets charmé et effrayé. Pour le reste, il utilise les statistiques de la cible, mais sans avoir accès à ses connaissances, capacités de classe et maîtrises. La possession dure jusqu'à ce que la cible tombe à 0 point de vie, que le fantôme l'annule par une action bonus, ou que le fantôme soit repoussé ou renvoyé de force par un effet similaire au sort de dissipation du mal et du bien. Lorsque la possession se termine, le fantôme réapparaît dans un espace inoccupé situé à 1,50 mètre du corps. Une cible est immunisée à la possession du fantôme pendant 24 heures si elle réussit son jet de sauvegarde ou si la possession se termine.",
             },
@@ -6764,9 +6744,9 @@ let monsters = [
         attributs:
             "Absorption de vie. Au prix d'une action bonus, le feu follet peut prendre pour cible une créature qu'il peut voir se trouvant à 1,50 mètre de lui, ayant 0 point de vie et qui est toujours vivante. La cible doit réussir un jet de sauvegarde de Constitution DD 10 contre cette magie ou mourir. Si la cible meurt, le feu follet récupère 10 (3d6) points de vie.Éphémère. Le feu follet ne peut rien porter ou ni transporter.Mouvement incorporel. Le feu follet peut se déplacer à travers d'autres créatures ou des objets comme s'il traversait un terrain difficile. Il subit 5 (1d10) dégâts de force s'il termine son tour à l'intérieur d'un objet.Illumination variable. Le feu follet émet une lumière vive dans un rayon de 1,50 à 6 mètres, et une lumière faible sur un nombre supplémentaire de mètres égal au rayon choisi. Le feu follet peut modifier le rayon par une action bonus.",
         actions: [
-            { nom: "Secousse.", action: "Attaque au corps à corps avec un sort : +4 au toucher, allonge 1,50 m, une créature. Touché : 9 (2d8) dégâts de foudre.", attaque: 4, degats: "2d8" },
+            { nom: "Secousse", action: "Attaque au corps à corps avec un sort : +4 au toucher, allonge 1,50 m, une créature. Touché : 9 (2d8) dégâts de foudre.", attaque: 4, degats: "2d8" },
             {
-                nom: "Invisibilité.",
+                nom: "Invisibilité",
                 action:
                     "Le feu follet (ainsi que son illumination) devient invisible par magie jusqu'à ce qu'il attaque, utilise son Absorption de vie, ou que sa concentration se termine (comme s'il se concentrait sur un sort).",
             },
@@ -6809,19 +6789,19 @@ let monsters = [
             "Résistance à la magie. Le flagelleur mental a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Incantation innée (psioniques). La caractéristique d'incantation innée du flagelleur mental est l'Intelligence (jet de sauvegarde contre ses sorts DD 15). Il peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection des pensées, lévitation\n1/jour chacun : domination d'humanoïde, changement de plan (personnel uniquement).",
         actions: [
             {
-                nom: "Décharge mentale (Recharge 5-6).",
+                nom: "Décharge mentale (Recharge 5-6)",
                 action:
                     "Le flagelleur mental émet une vague d'énergie psychique dans un cône de 18 mètres. Chaque créature présente dans la zone doit réussir un jet de sauvegarde d'Intelligence DD 15 ou subir 22 (4d8 + 4) dégâts psychiques et être étourdie pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "Extraction de cerveau.",
+                nom: "Extraction de cerveau",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, un humanoïde incapable d'agir et agrippé par le flagelleur mental. Touché : la cible subit 55 (10d10) dégâts perforants. Si ces dégâts font tomber les points de vie de la cible à 0, le flagelleur mental tue la cible en lui extrayant et dévorant le cerveau.",
                 attaque: 7,
                 degats: "10d10",
             },
             {
-                nom: "Tentacules.",
+                nom: "Tentacules",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une créature. Touché : 15 (2d10 + 4) dégâts psychiques. Si la cible est de taille M ou inférieure, elle est agrippée (DD 15 pour s'échapper) et doit réussir un jet de sauvegarde d'Intelligence DD 15 ou être étourdie tant qu'elle est agrippée de cette manière.",
                 attaque: 7,
@@ -6866,14 +6846,14 @@ let monsters = [
             "Télépathie avancée. Le flumph peut percevoir la teneur de toute communication télépathique établie dans un rayon de 18 mètres autour de lui, et ne peut pas être surpris par des créatures possédant une quelconque forme de télépathie.Handicap à terre. Si le flumph est mis à terre, lancez un dé. Sur un résultat impair, le flumph se retrouve à l'envers et est incapable d'agir. À la fin de chacun de ses tours, le flumph peut effectuer un jet de sauvegarde de Dextérité DD 10, se redressant alors et n'étant plus soumis à la condition incapable d'agir en cas de réussite.Voile télépathique. Le flumph est immunisé à tout effet qui pourrait percevoir ses émotions ou lire ses pensées, ainsi qu'à tous les sorts de divination.",
         actions: [
             {
-                nom: "Vrilles.",
+                nom: "Vrilles",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une créature. Touché : 4 (1d4 + 2) dégâts perforants + 2 (1d4) dégâts d'acide. À la fin de chacun de ses tours, la cible doit effectuer un jet de sauvegarde de Constitution DD 10, subissant 2 (1d4) dégâts d'acide en cas d'échec ou mettant fin aux dégâts d'acide récurrents en cas de réussite. Un sort de restauration partielle lancé sur la cible met également fin aux dégâts d'acide récurrents.",
                 attaque: 4,
                 degats: "1d4 + 2",
             },
             {
-                nom: "Vaporisation nauséabonde (1/jour).",
+                nom: "Vaporisation nauséabonde (1/jour)",
                 action:
                     "Chaque créature se trouvant dans un cône de 4,50 mètres provenant du flumph doit réussir un jet de sauvegarde de Dextérité DD 10 ou être recouverte d'un liquide puant. Une créature recouverte de ce liquide dégage une odeur horrible pendant 1d4 heures. De plus, elle est empoisonnée jusqu'à ce que l'odeur disparaisse, et les autres créatures sont empoisonnées tant qu'elles se trouvent à 1,50 mètre ou moins de la créature recouverte de liquide. Une créature peut se débarrasser de l'odeur qui l'affecte en utilisant un repos court pour se nettoyer avec de l'eau, de l'alcool, ou du vinaigre.",
             },
@@ -6908,15 +6888,15 @@ let monsters = [
         xp: 3900,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le fomorien attaque deux fois avec sa massue ou effectue une attaque avec sa massue et utilise une fois Mauvais œil." },
-            { nom: "Massue.", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 4,50 m, une cible. Touché : 19 (3d8 + 6) dégâts contondants.", attaque: 9, degats: "3d8 + 6" },
+            { nom: "Attaques multiples", action: "Le fomorien attaque deux fois avec sa massue ou effectue une attaque avec sa massue et utilise une fois Mauvais œil." },
+            { nom: "Massue", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 4,50 m, une cible. Touché : 19 (3d8 + 6) dégâts contondants.", attaque: 9, degats: "3d8 + 6" },
             {
-                nom: "Mauvais Œil.",
+                nom: "Mauvais Œil",
                 action:
                     "Le fomorien force par magie une créature qu'il peut voir dans un rayon de 18 mètres autour de lui à effectuer un jet de sauvegarde de Charisme DD 14. La créature subit 24 (6d8) dégâts psychiques en cas d'échec, ou la moitié de ses dégâts en cas de réussite.",
             },
             {
-                nom: "Malédiction du mauvais oeil (Recharge après un repos court ou long).",
+                nom: "Malédiction du mauvais oeil (Recharge après un repos court ou long)",
                 action:
                     "D'un regard, le fomorien utilise Mauvais Œil, mais en cas d'échec au jet de sauvegarde, la créature est également maudite de difformités magiques. Tant qu'elle est déformée, la créature a une vitesse divisée par deux et un désavantage aux jets de caractéristique, jets de sauvegarde et jets d'attaque basés sur la Force ou la Dextérité.",
             },
@@ -6959,9 +6939,9 @@ let monsters = [
         attributs:
             "Apparence trompeuse. Tant que le galeb duhr reste immobile, il ne peut être distingué d'un rocher normal.Charge en roulade. Si le galeb duhr roule sur au moins 6 mètres droit sur une cible, puis la touche lors d'une attaque avec son coup dans le même tour, la cible subit 7 (2d6) dégâts contondants supplémentaires. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 16 ou être jetée à terre.",
         actions: [
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts contondants.", attaque: 8, degats: "2d6 + 5" },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts contondants.", attaque: 8, degats: "2d6 + 5" },
             {
-                nom: "Animation de rochers (1/jour).",
+                nom: "Animation de rochers (1/jour)",
                 action:
                     "Le galeb duhr anime magiquement jusqu'à 2 rochers qu'il peut voir et qui se trouvent dans un rayon de 18 mètres autour de lui. Un rocher a les mêmes statistiques que le galeb duhr, à l'exception de l'Intelligence et du Charisme (le rocher à une valeur de 1 dans ces deux caractéristiques), ne peut pas être charmé ou effrayé, et ne possède pas non plus l'option d'action Animation de rochers. Un rocher reste animé aussi longtemps que le galeb duhr maintient sa concentration, jusqu'à 1 minute maximum (de la même manière que s'il se concentrait sur un sort).",
             },
@@ -7003,10 +6983,10 @@ let monsters = [
         attributs:
             "Lien. Le gardien animé est connecté magiquement à une amulette. Tant que le gardien et son amulette sont dans le même plan d'existence, le porteur de l'amulette peut appeler télépathiquement le gardien animé à le rejoindre, et le gardien sait automatiquement à quelle distance et dans quelle direction se trouve l'amulette. Si le gardien se trouve à 18 mètres ou moins du porteur de l'amulette, la moitié des dégâts que le porteur subit (arrondis au supérieur) est transférée au gardien.Régénération. Le gardien animé récupère 10 points de vie au début de son tour s'il possède au moins 1 point de vie.Réservoir de sort. Un lanceur de sorts qui porte l'amulette du gardien animé peut faire en sorte que le garde animé emmagasine un sort de niveau 4 ou inférieur. Pour ce faire, le porteur de l'amulette doit lancer le sort sur le gardien. Le sort n'a pas d'effet mais il est stocké dans le gardien. Lorsque le porteur de l'amulette le lui ordonne, ou lorsqu'une situation définie à l'avance par le lanceur de sorts survient, le gardien animé lance le sort emmagasiné avec tous les paramètres établis par le lanceur de sorts originel, et sans avoir besoin de composantes. Lorsque le sort est lancé ou lorsqu'un nouveau sort est emmagasiné, tout sort précédemment stocké est perdu.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le gardien animé effectue deux attaques avec ses poings." },
-            { nom: "Poing.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Attaques multiples", action: "Le gardien animé effectue deux attaques avec ses poings." },
+            { nom: "Poing", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 7, degats: "2d6 + 4" },
             {
-                nom: "Bouclier.",
+                nom: "Bouclier",
                 action:
                     "Lorsqu'une créature effectue une attaque contre le porteur de l'amulette, le gardien animé confère au porteur de l'amulette un bonus de +2 à la CA s'ils se trouvent à 1,50 mètre ou moins l'un de l'autre.",
             },
@@ -7048,9 +7028,9 @@ let monsters = [
         xp: 450,
         attributs: "Apparence trompeuse. Tant que la gargouille reste immobile, elle ne peut être distinguée d'une statue normale.",
         actions: [
-            { nom: "Attaques multiples.", action: "La gargouille réalise deux attaques : une de morsure et une avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts tranchants.", attaque: 4, degats: "1d6 + 2" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
+            { nom: "Attaques multiples", action: "La gargouille réalise deux attaques : une de morsure et une avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts tranchants.", attaque: 4, degats: "1d6 + 2" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
         ],
         description:
             "Ces créatures malveillantes de terre élémentaire ont l'apparence de statues grotesques et démoniaques. Une gargouille aime rôder dans les maisons en ruines pour se délecter de la terreur qu'elle produit lorsqu'elle rompt sa pose.",
@@ -7083,9 +7063,9 @@ let monsters = [
         xp: 1800,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le géant réalise deux attaques avec sa massue." },
-            { nom: "Massue.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une cible. Touché : 18 (3d8 + 5) dégâts contondants.", attaque: 8, degats: "3d8 + 5" },
-            { nom: "Rocher.", action: "Attaque à distance avec une arme : +8 au toucher, portée 18/72 m, une cible. Touché : 21 (3d10 + 5) dégâts contondants.", attaque: 8, degats: "3d10 + 5" },
+            { nom: "Attaques multiples", action: "Le géant réalise deux attaques avec sa massue." },
+            { nom: "Massue", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une cible. Touché : 18 (3d8 + 5) dégâts contondants.", attaque: 8, degats: "3d8 + 5" },
+            { nom: "Rocher", action: "Attaque à distance avec une arme : +8 au toucher, portée 18/72 m, une cible. Touché : 21 (3d10 + 5) dégâts contondants.", attaque: 8, degats: "3d10 + 5" },
         ],
         description:
             "Les géants des collines sont des brutes égoïstes et sans-cervelles qui chassent et pillent en permanence afin de trouver de la nourriture. Leur peau est bronzée du fait qu'ils passent leur vie sous le soleil, et leurs armes sont des arbres déracinés et des rochers arrachés du sol.",
@@ -7125,14 +7105,9 @@ let monsters = [
         attributs:
             "Odorat aiguisé. Le géant a un avantage aux jets de Sagesse (Perception) basés sur l'odorat.Incantation innée. La caractéristique d'incantation innée du géant est le Charisme. Il peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection de la magie, nappe de brouillard, lumière\n3/jour chacun : feuille morte, vol, pas brumeux, télékinésie\n1/jour chacun : contrôle du climat, forme gazeuse.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le géant effectue deux attaques avec la morgenstern." },
-            {
-                nom: "Morgenstern.",
-                action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 3 m, une cible. Touché : 21 (3d8 + 8) dégâts perforants.",
-                attaque: 12,
-                degats: "3d8 + 8",
-            },
-            { nom: "Rocher.", action: "Attaque à distance avec une arme : +12 au toucher, portée 18/72 m, une cible. Touché : 30 (4d10 + 8) dégâts contondants.", attaque: 12, degats: "4d10 + 8" },
+            { nom: "Attaques multiples", action: "Le géant effectue deux attaques avec la morgenstern." },
+            { nom: "Morgenstern", action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 3 m, une cible. Touché : 21 (3d8 + 8) dégâts perforants.", attaque: 12, degats: "3d8 + 8" },
+            { nom: "Rocher", action: "Attaque à distance avec une arme : +12 au toucher, portée 18/72 m, une cible. Touché : 30 (4d10 + 8) dégâts contondants.", attaque: 12, degats: "4d10 + 8" },
         ],
         description: "Un géant des nuages gagne son rang en fonction des trésors qu'il accumule, de la richesse qu'il porte sur lui, et des dons qu'il réalise à d'autres géants des nuages.",
         sauvegarde: { FOR: 8, DEX: 0, CON: 10, INT: 1, SAG: 7, CHA: 7 },
@@ -7170,17 +7145,17 @@ let monsters = [
         xp: 2900,
         attributs: "Camouflage dans les rochers. Le géant a un avantage aux jets de Dextérité (Discrétion) effectués pour se cacher sur un terrain rocailleux.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le géant effectue deux attaques avec la massue." },
-            { nom: "Massue.", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 4,50 m, une cible. Touché : 19 (3d8 + 6) dégâts contondants.", attaque: 9, degats: "3d8 + 6" },
+            { nom: "Attaques multiples", action: "Le géant effectue deux attaques avec la massue." },
+            { nom: "Massue", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 4,50 m, une cible. Touché : 19 (3d8 + 6) dégâts contondants.", attaque: 9, degats: "3d8 + 6" },
             {
-                nom: "Rocher.",
+                nom: "Rocher",
                 action:
                     "Attaque à distance avec une arme : +9 au toucher, portée 18/72 m, une cible. Touché : 28 (4d10 + 6) dégâts contondants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 17 ou être mise à terre.",
                 attaque: 9,
                 degats: "4d10 + 6",
             },
             {
-                nom: "Réception de rocher.",
+                nom: "Réception de rocher",
                 action:
                     "Si un rocher ou un objet similaire est envoyé au géant, le géant peut, s'il réussit un jet de sauvegarde de Dextérité DD 10, attraper le projectile et ainsi en éviter les dégâts contondants.",
             },
@@ -7224,16 +7199,16 @@ let monsters = [
         attributs:
             "Amphibien. Le géant peut respirer aussi bien dans l'air que sous l'eau.Incantation innée. La caractéristique d'incantation innée du géant est le Charisme (jet de sauvegarde contre ses sorts DD 17). Il peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection de la magie, feuille morte, lévitation, lumière\n3/jour chacun : contrôle du climat, respiration aquatique.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le géant effectue deux attaques d'épée à deux mains." },
+            { nom: "Attaques multiples", action: "Le géant effectue deux attaques d'épée à deux mains." },
             {
-                nom: "Épée à deux mains.",
+                nom: "Épée à deux mains",
                 action: "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 30 (6d6 + 9) dégâts tranchants.",
                 attaque: 14,
                 degats: "6d6 + 9",
             },
-            { nom: "Rocher.", action: "Attaque à distance avec une arme : +14 au toucher, portée 18/72 m, une cible. Touché : 35 (4d12 + 9) dégâts contondants.", attaque: 14, degats: "4d12 + 9" },
+            { nom: "Rocher", action: "Attaque à distance avec une arme : +14 au toucher, portée 18/72 m, une cible. Touché : 35 (4d12 + 9) dégâts contondants.", attaque: 14, degats: "4d12 + 9" },
             {
-                nom: "Lancer de foudre (Recharge 5-6).",
+                nom: "Lancer de foudre (Recharge 5-6)",
                 action:
                     "Le géant projette un éclair magique en un point qu'il peut voir dans un rayon de 150 mètres autour de lui. Chaque créature se trouvant dans un rayon de 3 mètres autour de ce point doit effectuer un jet de sauvegarde de Dextérité DD 17, subissant 54 (12d8) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -7275,14 +7250,14 @@ let monsters = [
         xp: 5000,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le géant réalise deux attaques d'épée à deux mains." },
+            { nom: "Attaques multiples", action: "Le géant réalise deux attaques d'épée à deux mains." },
             {
-                nom: "Épée à deux mains.",
+                nom: "Épée à deux mains",
                 action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 3 m, une cible. Touché : 28 (6d6 + 7) dégâts tranchants.",
                 attaque: 11,
                 degats: "6d6 + 7",
             },
-            { nom: "Rocher.", action: "Attaque à distance avec une arme : +11 au toucher, portée 18/72 m, une cible. Touché : 29 (4d10 + 7) dégâts contondants.", attaque: 11, degats: "4d10 + 7" },
+            { nom: "Rocher", action: "Attaque à distance avec une arme : +11 au toucher, portée 18/72 m, une cible. Touché : 29 (4d10 + 7) dégâts contondants.", attaque: 11, degats: "4d10 + 7" },
         ],
         description:
             "Avec leur peau sombre et leurs cheveux rouges flamboyants, les géants du feu ont une terrible réputation de soldats et conquérants. Ils demeurent au sein des volcans et des montagnes rocheuses, et sont craints pour leurs capacités à bruler, piller et détruire.",
@@ -7322,14 +7297,14 @@ let monsters = [
         xp: 3900,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le géant réalise deux attaques avec la hache à deux mains." },
+            { nom: "Attaques multiples", action: "Le géant réalise deux attaques avec la hache à deux mains." },
             {
-                nom: "Hache à deux mains.",
+                nom: "Hache à deux mains",
                 action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 3 m, une cible. Touché : 25 (3d12 + 6) dégâts tranchants.",
                 attaque: 9,
                 degats: "3d12 + 6",
             },
-            { nom: "Rocher.", action: "Attaque à distance avec une arme : +9 au toucher, portée 18/72 m, une cible. Touché : 28 (4d10 + 6) dégâts contondants.", attaque: 9, degats: "4d10 + 6" },
+            { nom: "Rocher", action: "Attaque à distance avec une arme : +9 au toucher, portée 18/72 m, une cible. Touché : 28 (4d10 + 6) dégâts contondants.", attaque: 9, degats: "4d10 + 6" },
         ],
         description:
             "Les géants du givre sont des créatures faites de glace et de neige, avec des cheveux et une barbe d'une couleur blanc pâle ou bleu clair, et la peau aussi bleue que la glace. Ils ne respectent que la force brute et le talent au combat.",
@@ -7371,13 +7346,13 @@ let monsters = [
             "Amorphe. La gelée peut se déplacer au travers d'espaces larges de 2,50 cm sans être considérée comme passant dans un espace étroit.Pattes d'araignée. La gelée peut escalader des surfaces difficiles et être au plafond la tête en bas sans avoir besoin d'effectuer un jet de caractéristique.",
         actions: [
             {
-                nom: "Pseudopode.",
+                nom: "Pseudopode",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 9 (2d6 + 2) dégâts contondants + 3 (1d6) d'acide.",
                 attaque: 4,
                 degats: "2d6 + 2",
             },
             {
-                nom: "Division.",
+                nom: "Division",
                 action:
                     "Lorsqu'une gelée de taille M ou supérieure subit des dégâts de foudre ou des dégâts tranchants, elle se divise en 2 nouvelles gelées s'il lui reste au moins 10 points de vie. Chaque nouvelle gelée possède la moitié des points de vie de l'originale, arrondis à l'entier inférieur. Les nouvelles gelées font une taille de moins que la gelée d'origine.",
             },
@@ -7413,9 +7388,9 @@ let monsters = [
         attributs:
             "Incantation innée (psioniques). La caractéristique d'incantation innée du githyanki est l'Intelligence (jet de sauvegarde contre ses sorts DD 13, +5 au toucher pour les attaques avec un sort). Il peut lancer les sorts suivants de manière innée, sans avoir besoin d'aucune composante :À volonté : main de mage (la main est invisible)\n3/jour chacun : saut, pas brumeux, non-détection (personnel uniquement), langues\n1/jour chacun : changement de plan, télékinésie.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le githyanki effectue deux attaques d'épée à deux mains en argent." },
+            { nom: "Attaques multiples", action: "Le githyanki effectue deux attaques d'épée à deux mains en argent." },
             {
-                nom: "Épée à deux mains en argent.",
+                nom: "Épée à deux mains en argent",
                 action:
                     "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d6 + 6) dégâts tranchants + 10 (3d6) dégâts psychiques. C'est une attaque avec une arme magique. En cas de coup critique contre une cible avec un corps astral (comme celui conféré par le sort projection astrale), le githyanki peut trancher le cordon argenté qui relie la cible à son corps matériel, au lieu de lui infliger des dégâts.",
                 attaque: 9,
@@ -7453,9 +7428,9 @@ let monsters = [
         attributs:
             "Incantation innée (psioniques). La caractéristique d'incantation innée du githyanki est l'Intelligence. Il peut lancer les sorts suivants de manière innée, sans avoir besoin d'aucune composante :À volonté : main de mage (la main est invisible)\n3/jour chacun : saut, pas brumeux, non-détection (personnel uniquement).",
         actions: [
-            { nom: "Attaques multiples.", action: "Le githyanki effectue deux attaques d'épée à deux mains." },
+            { nom: "Attaques multiples", action: "Le githyanki effectue deux attaques d'épée à deux mains." },
             {
-                nom: "Épée à deux mains.",
+                nom: "Épée à deux mains",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 9 (2d6 + 2) dégâts tranchants + 7 (2d6) dégâts psychiques.",
                 attaque: 4,
                 degats: "2d6 + 2",
@@ -7498,9 +7473,9 @@ let monsters = [
         attributs:
             "Incantation innée (psioniques). La caractéristique d'incantation innée du githzerai est la Sagesse. Il peut lancer les sorts suivants de manière innée, sans avoir besoin d'aucune composante :À volonté : main de mage (la main est invisible)\n3/jour chacun : feuille morte, saut, voir l'invisible, bouclier\nDéfense psychique. Tant que le githzerai ne porte pas d'armure et ne tient aucun bouclier, sa CA prend en compte son modificateur de Sagesse.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le githzerai effectue deux attaques à mains nues." },
+            { nom: "Attaques multiples", action: "Le githzerai effectue deux attaques à mains nues." },
             {
-                nom: "Mains nues.",
+                nom: "Mains nues",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d8 + 2) dégâts contondants + 9 (2d8) dégâts psychiques. C'est une attaque avec une arme magique.",
                 attaque: 4,
@@ -7544,9 +7519,9 @@ let monsters = [
         attributs:
             "Incantation innée (psioniques). La caractéristique d'incantation innée du githzerai est la Sagesse (jet de sauvegarde contre ses sorts DD 14, +6 au toucher pour les attaques avec un sort). Il peut lancer les sorts suivants de manière innée, sans avoir besoin d'aucune composante :À volonté : main de mage (la main est invisible)\n3/jour chacun : feuille morte, saut, voir l'invisible, bouclier\n1/jour chacun : assassin imaginaire, changement de plan\nDéfense psychique. Tant que le githzerai ne porte pas d'armure et ne tient aucun bouclier, sa CA prend en compte son modificateur de Sagesse.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le githzerai effectue deux attaques à mains nues." },
+            { nom: "Attaques multiples", action: "Le githzerai effectue deux attaques à mains nues." },
             {
-                nom: "Mains nues.",
+                nom: "Mains nues",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants + 13 (3d8) dégâts psychiques. C'est une attaque avec une arme magique.",
                 attaque: 7,
@@ -7593,17 +7568,17 @@ let monsters = [
             "Incantation innée. La caractéristique d'incantation innée du glabrezu est l'Intelligence (jet de sauvegarde contre ses sorts DD 16). Le glabrezu peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : ténèbres, détection de la magie, dissipation de la magie\n1/jour chacun : confusion, vol, mot de pouvoir étourdissant\nRésistance à la magie. Le glabrezu a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
             {
-                nom: "Attaques multiples.",
+                nom: "Attaques multiples",
                 action: "Le glabrezu réalise 4 attaques : deux avec ses pinces et deux avec ses poings. Il peut aussi choisir de réaliser deux attaques avec ses pinces et lancer un sort.",
             },
             {
-                nom: "Pinces.",
+                nom: "Pinces",
                 action:
                     "Attaque au corps à corps avec une arme : +9 au toucher, allonge 3 m, une cible. Touché : 16 (2d10 + 5) dégâts contondants. Si la cible est de taille M ou inférieure, elle est agrippée (DD 15 pour s'échapper). Le glabrezu possède deux pinces, chacune d'elles pouvant agripper une cible.",
                 attaque: 9,
                 degats: "2d10 + 5",
             },
-            { nom: "Poing.", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 7 (2d4 + 2) dégâts contondants.", attaque: 9, degats: "2d4 + 2" },
+            { nom: "Poing", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 7 (2d4 + 2) dégâts contondants.", attaque: 9, degats: "2d4 + 2" },
         ],
         description: null,
         sauvegarde: { FOR: 9, DEX: 2, CON: 9, INT: 4, SAG: 7, CHA: 7 },
@@ -7636,15 +7611,15 @@ let monsters = [
         attributs:
             "Déchaînement. Lorsque durant son tour le gnoll fait tomber les points de vie d'une créature à 0 avec une attaque au corps à corps, il peut utiliser une action bonus pour se déplacer de la moitié de sa vitesse et effectuer une attaque de morsure.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants.", attaque: 4, degats: "1d4 + 2" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants.", attaque: 4, degats: "1d4 + 2" },
             {
-                nom: "Lance.",
+                nom: "Lance",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +4 au toucher, allonge 1,50 m ou portée 6/18 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants, ou 6 (1d8 + 2) si utilisée à deux mains pour faire une attaque au corps à corps.",
                 attaque: 4,
                 degats: "1d6 + 2",
             },
-            { nom: "Arc long.", action: "Attaque à distance avec une arme : +3 au toucher, portée 45/180 m, une cible. Touché : 5 (1d8 + 1) dégâts perforants.", attaque: 3, degats: "1d8 + 1" },
+            { nom: "Arc long", action: "Attaque à distance avec une arme : +3 au toucher, portée 45/180 m, une cible. Touché : 5 (1d8 + 1) dégâts perforants.", attaque: 3, degats: "1d8 + 1" },
         ],
         description: "Les gnolls sont de sauvages humanoïdes à tête de hyène, attaquant sans prévenir et massacrant leurs victimes pour ensuite les dévorer.",
         sauvegarde: { FOR: 2, DEX: 1, CON: 0, INT: -2, SAG: 0, CHA: -2 },
@@ -7677,10 +7652,10 @@ let monsters = [
         attributs:
             "Déchaînement. Lorsque durant son tour le gnoll fait tomber les points de vie d'une créature à 0 avec une attaque au corps à corps, il peut utiliser une action bonus pour se déplacer de la moitié de sa vitesse et effectuer une attaque de morsure.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le gnoll effectue trois attaques : deux avec ses griffes et une de morsure." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts tranchants.", attaque: 5, degats: "1d8 + 3" },
+            { nom: "Attaques multiples", action: "Le gnoll effectue trois attaques : deux avec ses griffes et une de morsure." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts tranchants.", attaque: 5, degats: "1d8 + 3" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature. Touché : 6 (1d6 + 3) dégâts perforants, et la cible doit réussir un jet de sauvegarde de Constitution DD 12 ou subir 7 (2d6) dégâts de poison.",
                 attaque: 5,
@@ -7718,12 +7693,12 @@ let monsters = [
         attributs:
             "Déchaînement. Lorsque durant son tour le gnoll fait tomber les points de vie d'une créature à 0 avec une attaque au corps à corps, il peut utiliser une action bonus pour se déplacer de la moitié de sa vitesse et effectuer une attaque de morsure.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le gnoll effectue deux attaques, avec sa coutille ou avec son arc long, et utilise son Incitation au déchaînement s'il le peut." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature. Touché : 5 (1d4 + 3) dégâts perforants.", attaque: 5, degats: "1d4 + 3" },
-            { nom: "Coutille.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 3 m, une cible. Touché : 8 (1d10 + 3) dégâts tranchants.", attaque: 5, degats: "1d10 + 3" },
-            { nom: "Arc long.", action: "Attaque à distance avec une arme : +4 au toucher, portée 45/180 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants.", attaque: 4, degats: "1d8 + 2" },
+            { nom: "Attaques multiples", action: "Le gnoll effectue deux attaques, avec sa coutille ou avec son arc long, et utilise son Incitation au déchaînement s'il le peut." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature. Touché : 5 (1d4 + 3) dégâts perforants.", attaque: 5, degats: "1d4 + 3" },
+            { nom: "Coutille", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 3 m, une cible. Touché : 8 (1d10 + 3) dégâts tranchants.", attaque: 5, degats: "1d10 + 3" },
+            { nom: "Arc long", action: "Attaque à distance avec une arme : +4 au toucher, portée 45/180 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants.", attaque: 4, degats: "1d8 + 2" },
             {
-                nom: "Incitation au déchaînement (Recharge 5-6).",
+                nom: "Incitation au déchaînement (Recharge 5-6)",
                 action:
                     "Une créature que le gnoll peut voir dans un rayon de 9 mètres autour de lui peut utiliser sa réaction pour effectuer une attaque au corps à corps si elle peut entendre le gnoll et qu'elle possède le trait Déchaînement.",
             },
@@ -7765,13 +7740,13 @@ let monsters = [
             "Camouflage dans les rochers. Le gnome a un avantage aux jets de Dextérité (Discrétion) effectués pour se cacher sur un terrain rocailleux.Ruse de gnome. Le gnome a un avantage aux jets de sauvegarde d'Intelligence, de Sagesse et de Charisme contre la magie.Incantation innée. La caractéristique d'incantation innée du gnome est l'Intelligence (jet de sauvegarde contre ses sorts DD 11). Il peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : non-détection (personnel uniquement)\n1/jour chacun : cécité/surdité, flou, déguisement.",
         actions: [
             {
-                nom: "Pic de guerre.",
+                nom: "Pic de guerre",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants.",
                 attaque: 4,
                 degats: "1d8 + 2",
             },
             {
-                nom: "Dard empoisonné.",
+                nom: "Dard empoisonné",
                 action:
                     "Attaque à distance avec une arme : +4 au toucher, portée 9/36 m, une créature. Touché : 4 (1d4 + 2) dégâts perforants, et la cible doit réussir un jet de sauvegarde de Constitution DD 12 ou être empoisonnée pendant 1 minute. La cible peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
                 attaque: 4,
@@ -7808,8 +7783,8 @@ let monsters = [
         xp: 50,
         attributs: "Fuite agile. Le gobelin peut Se cacher ou Se désengager à chacun de ses tours en utilisant une action bonus.",
         actions: [
-            { nom: "Cimeterre.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts tranchants.", attaque: 4, degats: "1d6 + 2" },
-            { nom: "Arc court.", action: "Attaque à distance avec une arme : +4 au toucher, portée 24/96 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
+            { nom: "Cimeterre", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts tranchants.", attaque: 4, degats: "1d6 + 2" },
+            { nom: "Arc court", action: "Attaque à distance avec une arme : +4 au toucher, portée 24/96 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
         ],
         description:
             "Les gobelins sont de petits humanoïdes malveillants qui vivent dans des donjons abandonnés ou dans des taudis lugubres. Individuellement faibles, ils se rassemblent en grand nombre pour tourmenter les autres créatures.",
@@ -7842,16 +7817,16 @@ let monsters = [
         xp: 200,
         attributs: "Fuite agile. Le gobelin peut Se cacher ou Se désengager à chacun de ses tours en utilisant une action bonus.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le gobelin effectue deux attaques avec le cimeterre. La deuxième attaque a un désavantage." },
-            { nom: "Cimeterre.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts tranchants.", attaque: 4, degats: "1d6 + 2" },
+            { nom: "Attaques multiples", action: "Le gobelin effectue deux attaques avec le cimeterre. La deuxième attaque a un désavantage." },
+            { nom: "Cimeterre", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts tranchants.", attaque: 4, degats: "1d6 + 2" },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action: "Attaque au corps à corps ou à distance avec une arme : +2 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 3 (1d6) dégâts perforants.",
                 attaque: 2,
                 degats: "1d6",
             },
             {
-                nom: "Attaque redirigée.",
+                nom: "Attaque redirigée",
                 action:
                     "Lorsqu'une créature, que le gobelin peut voir, le cible avec une attaque, le gobelin choisit un autre gobelin situé à 1,50 mètre ou moins de lui. Les deux gobelins échangent leur place et le gobelin choisi devient la nouvelle cible de l'attaque.",
             },
@@ -7888,13 +7863,13 @@ let monsters = [
             "Attaque surprise. Si un gobelours surprend une créature et touche avec une attaque lors du premier round de combat, la cible subit 7 (2d6) dégâts supplémentaires pour cette attaque.Brute. Une arme de corps à corps inflige un dé de dégâts supplémentaires lorsque le gobelours réussit son attaque (inclus dans l'attaque ci-dessous).",
         actions: [
             {
-                nom: "Morgenstern.",
+                nom: "Morgenstern",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d8 + 2) dégâts perforants.",
                 attaque: 4,
                 degats: "2d8 + 2",
             },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +4 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 9 (2d6 + 2) dégâts perforants au corps à corps ou 5 (1d6 + 2) dégâts perforants à distance.",
                 attaque: 4,
@@ -7933,15 +7908,15 @@ let monsters = [
         attributs:
             "Attaque surprise. Si un gobelours surprend une créature et touche avec une attaque lors du premier round de combat, la cible subit 7 (2d6) dégâts supplémentaires pour cette attaque.Brute. Une arme de corps à corps inflige un dé de dégâts supplémentaires lorsque le gobelours réussit son attaque (inclus dans l'attaque ci-dessous).Cœur de Hruggek. Le gobelours a un avantage aux jets de sauvegarde pour résister aux conditions charmé, effrayé, paralysé, empoisonné, étourdi, ou être endormi.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le gobelours effectue deux attaques au corps à corps." },
+            { nom: "Attaques multiples", action: "Le gobelours effectue deux attaques au corps à corps." },
             {
-                nom: "Morgenstern.",
+                nom: "Morgenstern",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d8 + 3) dégâts perforants.",
                 attaque: 5,
                 degats: "2d8 + 3",
             },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +5 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 10 (2d6 + 3) dégâts perforants au corps à corps ou 6 (1d6 + 3) dégâts perforants à distance.",
                 attaque: 5,
@@ -7985,16 +7960,16 @@ let monsters = [
         attributs:
             "Absorption de l'acide. Lorsque le golem subit des dégâts d'acide, il ne subit aucun dommage et récupère un nombre de points de vie égal aux dégâts d'acide causés.Fou furieux. Chaque fois que le golem débute son tour avec 60 points de vie ou moins, lancez un d6. Sur un résultat de 6, le golem devient fou furieux. À chacun de ses tours, s'il est dans cet état, le golem attaque la créature la plus proche qu'il peut voir. Si aucune créature n'est assez proche de lui pour qu'il puisse se déplacer et l'attaquer, il attaquera un objet, de préférence plus petit que lui. Une fois fou furieux, le golem demeure dans cet état jusqu'à ce qu'il soit détruit ou jusqu'à ce qu'il récupère tous ses points de vie.Forme immuable. Le golem est immunisé aux sorts et effets qui altèreraient son apparence.Armes magiques. Les attaques avec une arme du golem sont magiques.Résistance à la magie. Le golem a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le golem réalise deux attaques de coup." },
+            { nom: "Attaques multiples", action: "Le golem réalise deux attaques de coup." },
             {
-                nom: "Coup.",
+                nom: "Coup",
                 action:
                     "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 16 (2d10 + 5) dégâts contondants. Si la cible est une créature, celle-ci doit réussir un jet de sauvegarde de Constitution DD 15 pour ne pas subir une diminution de ses points de vie maximums égale aux dégâts subis. La cible meurt si cet effet réduit ses points de vie à 0. Cette diminution perdure jusqu'à ce que la cible bénéficie d'un sort de restauration supérieure ou d'une magie similaire.",
                 attaque: 8,
                 degats: "2d10 + 5",
             },
             {
-                nom: "Hâte (Recharge 5-6).",
+                nom: "Hâte (Recharge 5-6)",
                 action:
                     "Jusqu'à la fin de son prochain tour, le golem bénéficie par magie d'un bonus de +2 à sa CA, d'un avantage aux jets de sauvegarde de Dextérité, et peut utiliser une attaque de coup en action bonus.",
             },
@@ -8036,8 +8011,8 @@ let monsters = [
         attributs:
             "Fou furieux. Chaque fois que le golem débute son tour avec 40 points de vie ou moins, lancez un d6. Sur un résultat de 6, le golem devient fou furieux. À chacun de ses tours, s'il est dans cet état, le golem attaque la créature la plus proche qu'il peut voir. Si aucune créature n'est assez proche de lui pour qu'il puisse se déplacer et l'attaquer, il attaquera un objet, de préférence plus petit que lui. Une fois fou furieux, le golem demeure dans cet état jusqu'à ce qu'il soit détruit ou jusqu'à ce qu'il récupère tous ses points de vie. Le créateur du golem, s'il se trouve à 18 mètres ou moins de lui, peut tenter de le calmer en lui parlant fermement et de manière persuasive. Le golem doit pouvoir entendre son créateur, qui doit utiliser une action pour réaliser un jet de Charisme (Persuasion) DD 15. Si le jet est réussi, le golem se calme. S'il subit des dégâts alors que ses points de vie sont à 40 ou moins, le golem peut de nouveau devenir fou furieux.Absorption de la foudre. Lorsque le golem subit des dégâts de foudre, il ne subit aucun dommage et récupère un nombre de points de vie égal aux dégâts de foudre causés.Aversion au feu. Si le golem subit des dégâts de feu, il subit un désavantage aux jets d'attaque et de caractéristiques jusqu'à la fin de son tour.Forme immuable. Le golem est immunisé aux sorts et effets qui altèreraient son apparence.Armes magiques. Les attaques avec une arme du golem sont magiques.Résistance à la magie. Le golem a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le golem réalise deux attaques de coup." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts contondants.", attaque: 7, degats: "2d8 + 4" },
+            { nom: "Attaques multiples", action: "Le golem réalise deux attaques de coup." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts contondants.", attaque: 7, degats: "2d8 + 4" },
         ],
         description:
             "Un golem de chair est le macabre assortiment de plusieurs parties de cadavres humanoïdes, cousues et vissées les unes aux autres, dans le but de créer une brute vigoureuse possédant une force prodigieuse. De puissants enchantements le protègent, repoussant les sorts et les armes courantes.",
@@ -8077,11 +8052,11 @@ let monsters = [
         attributs:
             "Absorption du feu. Chaque fois que le golem est soumis à des dégâts de feu, il ne subit aucun dégât et récupère un nombre de points de vie égal aux dégâts de feu infligés.Forme immuable. Le golem est immunisé aux sorts et effets qui altèreraient son apparence.Résistance à la magie. Le golem a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme du golem sont magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le golem effectue deux attaques au corps à corps." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 1,50 m, une cible. Touché : 20 (3d8 + 7) dégâts contondants.", attaque: 13, degats: "3d8 + 7" },
-            { nom: "Épée.", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 23 (3d10 + 7) dégâts tranchants.", attaque: 13, degats: "3d10 + 7" },
+            { nom: "Attaques multiples", action: "Le golem effectue deux attaques au corps à corps." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 1,50 m, une cible. Touché : 20 (3d8 + 7) dégâts contondants.", attaque: 13, degats: "3d8 + 7" },
+            { nom: "Épée", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 23 (3d10 + 7) dégâts tranchants.", attaque: 13, degats: "3d10 + 7" },
             {
-                nom: "Souffle empoisonné (Recharge 6).",
+                nom: "Souffle empoisonné (Recharge 6)",
                 action:
                     "Le golem crache un gaz empoisonné dans un cône de 4,50 mètres. Chaque créature dans cette zone doit effectuer un jet de sauvegarde de Constitution DD 19, subissant 45 (10d8) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -8123,10 +8098,10 @@ let monsters = [
         attributs:
             "Forme immuable. Le golem est immunisé aux sorts et effets qui altèreraient son apparence.Résistance à la magie. Le golem a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme du golem sont magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le golem réalise deux attaques de coup." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 19 (3d8 + 6) dégâts contondants.", attaque: 10, degats: "3d8 + 6" },
+            { nom: "Attaques multiples", action: "Le golem réalise deux attaques de coup." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 19 (3d8 + 6) dégâts contondants.", attaque: 10, degats: "3d8 + 6" },
             {
-                nom: "Lenteur (Recharge 5-6).",
+                nom: "Lenteur (Recharge 5-6)",
                 action:
                     "Le golem cible une ou plusieurs créatures qu'il peut voir dans un rayon de 3 mètres autour de lui. Chaque cible doit faire un jet de sauvegarde de Sagesse DD 17 contre cette magie. En cas d'échec, une cible ne peut pas utiliser de réaction, sa vitesse est réduite de moitié, et elle ne peut pas faire plus d'une attaque à son tour. En outre, la cible peut à son tour prendre une action normale ou une action bonus, mais pas les deux. Ces effets durent pendant 1 minute. Une cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours, l'effet se terminant en cas de réussite.",
             },
@@ -8163,10 +8138,10 @@ let monsters = [
         attributs:
             "Charge renversante. Si la gorgone se déplace d'au moins 6 mètres en ligne droite vers une cible, puis la touche lors d'une attaque avec sa corne dans le même tour, la cible doit réussir un jet de sauvegarde de Force DD 16 pour ne pas être jetée à terre. Si la cible est à terre, la gorgone peut réaliser une attaque avec ses sabots contre celle-ci en utilisant une action bonus.",
         actions: [
-            { nom: "Corne.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 18 (2d12 + 5) dégâts perforants.", attaque: 8, degats: "2d12 + 5" },
-            { nom: "Sabots.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 16 (2d10 + 5) dégâts contondants.", attaque: 8, degats: "2d10 + 5" },
+            { nom: "Corne", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 18 (2d12 + 5) dégâts perforants.", attaque: 8, degats: "2d12 + 5" },
+            { nom: "Sabots", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 16 (2d10 + 5) dégâts contondants.", attaque: 8, degats: "2d10 + 5" },
             {
-                nom: "Souffle pétrifiant (Recharge 5-6).",
+                nom: "Souffle pétrifiant (Recharge 5-6)",
                 action:
                     "La gorgone exhale un gaz pétrifiant dans un cône de 9 mètres. Toutes les créatures dans la zone doivent réaliser un jet de sauvegarde de Constitution DD 13. En cas d'échec, la cible commence à se transformer en pierre et est entravée. La cible entravée doit réitérer le jet de sauvegarde à la fin de son tour suivant. En cas de réussite, l'effet se termine pour la cible. En cas d'échec, la cible est pétrifiée jusqu'à ce qu'elle soit libérée par un sort de restauration supérieure ou par une magie similaire.",
             },
@@ -8211,16 +8186,16 @@ let monsters = [
         attributs:
             "Charge. Si le goristro se déplace d'au moins 4,50 mètres en ligne droite vers une cible, puis la touche lors d'une attaque avec ses cornes dans le même tour, la cible subit 38 (7d10) dégâts perforants supplémentaires. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 21 ou être repoussée sur 6 mètres et tomber à terre.Mémoire de labyrinthe. Le goristro se rappelle parfaitement des chemins qu'il a empruntés.Résistance à la magie. Le goristro a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Monstre de siège. Le goristro inflige des dégâts doublés aux objets et aux structures.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le goristro effectue trois attaques : deux avec ses poings et une avec ses sabots." },
-            { nom: "Poing.", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 20 (3d8 + 7) dégâts contondants.", attaque: 13, degats: "3d8 + 7" },
+            { nom: "Attaques multiples", action: "Le goristro effectue trois attaques : deux avec ses poings et une avec ses sabots." },
+            { nom: "Poing", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 20 (3d8 + 7) dégâts contondants.", attaque: 13, degats: "3d8 + 7" },
             {
-                nom: "Sabots.",
+                nom: "Sabots",
                 action:
                     "Attaque au corps à corps avec une arme : +13 au toucher, allonge 1,50 m, une cible. Touché : 23 (3d10 + 7) dégâts contondants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 21 ou être jetée à terre.",
                 attaque: 13,
                 degats: "3d10 + 7",
             },
-            { nom: "Cornes.", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 45 (7d10 + 7) dégâts perforants.", attaque: 13, degats: "7d10 + 7" },
+            { nom: "Cornes", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 45 (7d10 + 7) dégâts perforants.", attaque: 13, degats: "7d10 + 7" },
         ],
         description: null,
         sauvegarde: { FOR: 13, DEX: 6, CON: 13, INT: -2, SAG: 7, CHA: 2 },
@@ -8259,13 +8234,13 @@ let monsters = [
         attributs: ".",
         actions: [
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (2d4 + 2) dégâts tranchants. Si la cible est une créature autre qu'un elfe ou un mort-vivant, celle-ci doit réussir un jet de sauvegarde de Constitution DD 10 pour ne pas être paralysée pendant 1 minute. La cible peut relancer le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
                 attaque: 4,
                 degats: "2d4 + 2",
             },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une créature. Touché : 9 (2d6 + 2) dégâts perforants.", attaque: 2, degats: "2d6 + 2" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une créature. Touché : 9 (2d6 + 2) dégâts perforants.", attaque: 2, degats: "2d6 + 2" },
         ],
         description:
             "Avec leurs crocs aiguisés et leurs griffes dentelées, les goules errent en meute dans la nuit, poussées par un insatiable appétit de chair humanoïde. Les premières goules ont été créées dans les Abysses par le prince-démon Orcus.",
@@ -8305,15 +8280,15 @@ let monsters = [
         xp: 700,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le grell effectue deux attaques : une avec ses tentacules et une avec son bec." },
+            { nom: "Attaques multiples", action: "Le grell effectue deux attaques : une avec ses tentacules et une avec son bec." },
             {
-                nom: "Tentacules.",
+                nom: "Tentacules",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 3 m, une créature. Touché : 7 (1d10 + 2) dégâts perforants, et la cible doit réussir un jet de sauvegarde de Constitution DD 11 ou être empoisonnée pendant 1 minute. La cible empoisonnée est paralysée, et peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet en cas de réussite. La cible est également agrippée (évasion DD 15). Si la cible est de taille M ou inférieure, elle est également entravée jusqu'à ce qu'elle ne soit plus agrippée. Tant qu'il agrippe la cible, le grell a un avantage aux jets d'attaque effectués contre elle, mais ne peut pas utiliser l'attaque avec ses tentacules contre une autre cible. Lorsque le grell se déplace, il déplace avec lui une créature de taille M ou inférieure qu'il a agrippée.",
                 attaque: 4,
                 degats: "1d10 + 2",
             },
-            { nom: "Bec.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (2d4 + 2) dégâts perforants.", attaque: 4, degats: "2d4 + 2" },
+            { nom: "Bec", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (2d4 + 2) dégâts perforants.", attaque: 4, degats: "2d4 + 2" },
         ],
         description: null,
         sauvegarde: { FOR: 2, DEX: 2, CON: 1, INT: 1, SAG: 0, CHA: -1 },
@@ -8350,9 +8325,9 @@ let monsters = [
         xp: 450,
         attributs: "Camouflage dans les rochers. Le grick a un avantage aux jets de Dextérité (Discrétion) effectués pour se cacher sur un terrain rocailleux.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le grick réalise une attaque avec ses tentacules. Si cette attaque touche, le grick peut réaliser une attaque avec son bec contre la même cible." },
-            { nom: "Tentacules.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 9 (2d6 + 2) dégâts tranchants.", attaque: 4, degats: "2d6 + 2" },
-            { nom: "Bec.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
+            { nom: "Attaques multiples", action: "Le grick réalise une attaque avec ses tentacules. Si cette attaque touche, le grick peut réaliser une attaque avec son bec contre la même cible." },
+            { nom: "Tentacules", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 9 (2d6 + 2) dégâts tranchants.", attaque: 4, degats: "2d6 + 2" },
+            { nom: "Bec", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
         ],
         description:
             "Cette monstruosité vermiforme se confond avec la roche des cavernes qu'il hante. Quand sa proie s'approche, il déploie ses tentacules barbelés pour révéler un bec béant et affuté.",
@@ -8391,13 +8366,13 @@ let monsters = [
         attributs: "Camouflage dans les rochers. Le grick a un avantage aux jets de Dextérité (Discrétion) effectués pour se cacher sur un terrain rocailleux.",
         actions: [
             {
-                nom: "Attaques multiples.",
+                nom: "Attaques multiples",
                 action:
                     "Le grick effectue deux attaques : une avec sa queue et une avec ses tentacules. S'il touche lors d'une attaque avec ses tentacules, le grick peut effectuer une attaque avec son bec contre la même cible.",
             },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 7, degats: "2d6 + 4" },
-            { nom: "Tentacules.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 22 (4d8 + 4) dégâts tranchants.", attaque: 7, degats: "4d8 + 4" },
-            { nom: "Bec.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 13 (2d8 + 4) dégâts perforants.", attaque: 7, degats: "2d8 + 4" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Tentacules", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 22 (4d8 + 4) dégâts tranchants.", attaque: 7, degats: "4d8 + 4" },
+            { nom: "Bec", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 13 (2d8 + 4) dégâts perforants.", attaque: 7, degats: "2d8 + 4" },
         ],
         description: null,
         sauvegarde: { FOR: 4, DEX: 3, CON: 2, INT: -3, SAG: 2, CHA: -1 },
@@ -8436,7 +8411,7 @@ let monsters = [
         attributs: "Immunité au renvoi. La griffe est immunisée aux effets de renvoi des morts-vivants.",
         actions: [
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 +1) dégâts contondants ou tranchants (au choix de la griffe).",
                 attaque: 3,
                 degats: "1d4 +1",
@@ -8472,9 +8447,9 @@ let monsters = [
         xp: 450,
         attributs: "Vue aiguisée. Un griffon a un avantage aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le griffon réalise deux attaques : une avec son bec et une avec ses griffes." },
-            { nom: "Bec.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d8 + 4) dégâts perforants.", attaque: 6, degats: "1d8 + 4" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 6, degats: "2d6 + 4" },
+            { nom: "Attaques multiples", action: "Le griffon réalise deux attaques : une avec son bec et une avec ses griffes." },
+            { nom: "Bec", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d8 + 4) dégâts perforants.", attaque: 6, degats: "1d8 + 4" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 6, degats: "2d6 + 4" },
         ],
         description: "Le griffon est un féroce carnivore volant possédant le corps musclé d'un lion, ainsi que la tête, les pattes antérieures et les ailes d'un aigle.",
         sauvegarde: { FOR: 4, DEX: 2, CON: 3, INT: -4, SAG: 1, CHA: -1 },
@@ -8507,14 +8482,14 @@ let monsters = [
         attributs:
             "Amphibien. La guenaude peut respirer aussi bien dans l'air que sous l'eau.Apparence horrifique. Un humanoïde commençant son tour dans un rayon de 9 mètres autour de la guenaude, et qui peut voir sa véritable forme, doit effectuer un jet de sauvegarde de Sagesse DD 11. En cas d'échec, la créature est effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, avec un désavantage si la guenaude se trouve dans sa ligne de mire, mettant fin à l'effet en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin, la créature devient immunisée à l'apparence horrifique de la guenaude pour les 24 prochaines heures. À moins que la cible ne soit prise par surprise, ou que la révélation de la véritable forme de la guenaude soit soudaine, la cible peut détourner le regarde et ainsi éviter de faire le premier jet de sauvegarde. Jusqu'à la fin de son prochain tour, une créature qui a détourné le regard a un désavantage aux jets d'attaque effectués contre le guenaude.",
         actions: [
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts tranchants.", attaque: 5, degats: "2d6 + 3" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts tranchants.", attaque: 5, degats: "2d6 + 3" },
             {
-                nom: "Éblouissement mortel.",
+                nom: "Éblouissement mortel",
                 action:
                     "La guenaude cible une créature effrayée qu'elle peut voir et située dans un rayon de 9 mètres autour d'elle. Si la cible peut voir la guenaude, elle doit réussir un jet de sauvegarde de Sagesse DD 11 contre la magie ou tomber à 0 point de vie.",
             },
             {
-                nom: "Apparence illusoire.",
+                nom: "Apparence illusoire",
                 action:
                     "La guenaude se déguise, elle et tout ce qu'elle porte ou transporte, grâce à une illusion magique, en une créature laide de forme humanoïde et ayant à peu près sa taille. L'effet se termine si la guenaude utilise son action bonus pour y mettre fin ou si elle meurt. Les modifications corporelles apportées par cet effet ne parviennent pas à duper une inspection corporelle. Par exemple, la guenaude peut sembler ne pas avoir de griffes, mais quelqu'un touchant ses mains sentira ses griffes. Sinon, une créature doit utiliser une action pour inspecter visuellement l'illusion et réussir un jet d'Intelligence (Investigation) DD 16 pour remarquer que la guenaude est déguisée.",
             },
@@ -8558,19 +8533,19 @@ let monsters = [
             "Incantation innée. La caractéristique d'incantation innée de la guenaude est le Charisme (jet de sauvegarde contre ses sorts DD 14, +6 au toucher pour les attaques avec un sort). Elle peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection de la magie, projectile magique\n2/jour chacun : changement de plan (personnel uniquement), rayon affaiblissant, sommeil\nRésistance à la magie. La guenaude a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
             {
-                nom: "Griffes (forme de guenaude uniquement).",
+                nom: "Griffes (forme de guenaude uniquement)",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts tranchants.",
                 attaque: 7,
                 degats: "2d8 + 4",
             },
             {
-                nom: "Changement de forme.",
+                nom: "Changement de forme",
                 action:
                     "La guenaude se métamorphose magiquement en une femelle humanoïde de taille M ou P, ou bien retrouve sa véritable forme. Ses statistiques sont les mêmes quelle que soit sa forme. L'équipement qu'elle porte ou transporte n'est pas transformé. Elle retrouve sa véritable forme si elle meurt.",
             },
-            { nom: "Passage dans l'éther.", action: "La guenaude passe du plan éthéré au plan matériel, ou vice versa. Pour ce faire, la guenaude doit avoir en sa possession une cardioline." },
+            { nom: "Passage dans l'éther", action: "La guenaude passe du plan éthéré au plan matériel, ou vice versa. Pour ce faire, la guenaude doit avoir en sa possession une cardioline." },
             {
-                nom: "Invasion cauchemardesque (1/jour).",
+                nom: "Invasion cauchemardesque (1/jour)",
                 action:
                     "Tant qu'elle se trouve dans le plan éthéré, la guenaude touche par magie un humanoïde en train de dormir dans le plan matériel. Un sort de protection contre le mal et le bien lancé sur la cible empêche ce contact, comme le ferait un cercle magique. Tant qu'elle reste en contact, la créature a des visions d'épouvante. Si ces visions durent pendant au moins 1 heure, la cible ne gagne aucun bénéfice de son repos, et ses points de vie maximums sont réduits de 5 (1d10). Si cet effet réduit le nombre des points de vie maximums de la cible à 0, la cible meurt, et si la cible était mauvaise, son âme est piégée dans la besace aux âmes de la guenaude. La réduction des points de vie maximums de la cible perdure jusqu'à ce qu'elle soit annulée par un sort de restauration supérieure ou toute autre magie similaire.",
             },
@@ -8611,14 +8586,14 @@ let monsters = [
         attributs:
             "Amphibien. La guenaude peut respirer aussi bien dans l'air que sous l'eau.Incantation innée. La caractéristique d'incantation innée de la guenaude est le Charisme (jet de sauvegarde contre ses sorts DD 12). Elle peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : lumières dansantes, illusion mineure, moquerie cruelle\nImitation des sons. La guenaude peut imiter les cris des animaux et les voix des humanoïdes. Une créature qui entend ces sons peut dire qu'il s'agit d'imitations en réussissant un jet de Sagesse (Perspicacité) DD 14.",
         actions: [
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts tranchants.", attaque: 6, degats: "2d8 + 4" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts tranchants.", attaque: 6, degats: "2d8 + 4" },
             {
-                nom: "Apparence illusoire.",
+                nom: "Apparence illusoire",
                 action:
                     "Grace à une illusion magique la guenaude se déguise, elle et tout ce qu'elle porte ou transporte, en une autre créature d'une taille équivalente et de forme humanoïde. L'effet se termine si la guenaude utilise son action bonus pour y mettre fin ou si elle meurt. Les modifications corporelles apportées par cet effet ne parviennent pas à duper une inspection corporelle. Par exemple, la guenaude peut sembler avoir une peau douce et fine, mais quiconque la touche sent immédiatement sa chaire rugueuse. Sinon, une créature doit utiliser une action pour inspecter visuellement l'illusion et réussir un jet d'Intelligence (Investigation) DD 20 pour remarquer que la guenaude est déguisée.",
             },
             {
-                nom: "Passage invisible.",
+                nom: "Passage invisible",
                 action:
                     "La guenaude devient invisible par magie jusqu'à ce qu'elle attaque, lance un sort, ou jusqu'à ce que sa concentration se termine (comme si elle se concentrait sur un sort). Tant qu'elle est invisible, elle ne laisse aucune trace physique de son passage, elle ne peut donc être traquée que par magie. Tout l'équipement qu'elle porte ou transporte est également invisible.",
             },
@@ -8662,19 +8637,19 @@ let monsters = [
         attributs:
             "Inscrutable. Le sphinx est immunisé aux effets cherchant à ressentir ses émotions ou à lire ses pensées, ainsi qu'à n'importe quel sort de divination qu'il refuse. Les jets de Sagesse (Perspicacité) réalisés pour connaître les intentions ou la sincérité du sphinx subissent un désavantage.Armes magiques. Les attaques avec une arme du sphinx sont magiques.Incantation. Le sphinx est un lanceur de sorts de niveau 9. Sa caractéristique d'incantation est l'Intelligence (jet de sauvegarde contre ses sorts DD 16, +8 au toucher pour les attaques avec un sort). Il n'a pas besoin de composantes matérielles pour lancer ses sorts. Le sphinx a la liste de sorts de magicien suivante préparée :Sorts mineurs (à volonté) : illusion mineure, main de mage, prestidigitation\nNiveau 1 (4 emplacements) : bouclier, détection de la magie, identification\nNiveau 2 (3 emplacements) : localisation d'objet, ténèbres, suggestion\nNiveau 3 (3 emplacements) : délivrance des malédictions, dissipation de la magie, langues\nNiveau 4 (3 emplacements) : bannissement, invisibilité supérieure\nNiveau 5 (1 emplacement) : légende.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le sphinx réalise deux attaques avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts tranchants.", attaque: 8, degats: "2d8 + 4" },
+            { nom: "Attaques multiples", action: "Le sphinx réalise deux attaques avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts tranchants.", attaque: 8, degats: "2d8 + 4" },
             {
-                nom: "Le sphinx peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le sphinx peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le sphinx récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Attaque avec les griffes.", action: "Le sphinx réalise une attaque avec ses griffes." },
+            { nom: "Attaque avec les griffes", action: "Le sphinx réalise une attaque avec ses griffes." },
             {
-                nom: "Téléportation (coûte 2 actions).",
+                nom: "Téléportation (coûte 2 actions)",
                 action: "Le sphinx se téléporte magiquement, emportant avec lui l'équipement qu'il porte ou transporte, jusqu'à un espace inoccupé qu'il peut voir à 36 mètres maximum.",
             },
-            { nom: "Sort (coûte 3 actions).", action: "Le sphinx lance un sort choisi parmi sa liste de sorts préparés, en utilisant un emplacement de sort normalement." },
+            { nom: "Sort (coûte 3 actions)", action: "Le sphinx lance un sort choisi parmi sa liste de sorts préparés, en utilisant un emplacement de sort normalement." },
         ],
         description: null,
         sauvegarde: { FOR: 4, DEX: 2, CON: 3, INT: 4, SAG: 4, CHA: 4 },
@@ -8706,11 +8681,11 @@ let monsters = [
         xp: 200,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "La harpie réalise deux attaques : une avec ses griffes et une avec son gourdin." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 6 (2d4 + 1) dégâts tranchants.", attaque: 3, degats: "2d4 + 1" },
-            { nom: "Gourdin.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts contondants.", attaque: 3, degats: "1d4 + 1" },
+            { nom: "Attaques multiples", action: "La harpie réalise deux attaques : une avec ses griffes et une avec son gourdin." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 6 (2d4 + 1) dégâts tranchants.", attaque: 3, degats: "2d4 + 1" },
+            { nom: "Gourdin", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts contondants.", attaque: 3, degats: "1d4 + 1" },
             {
-                nom: "Chant captivant.",
+                nom: "Chant captivant",
                 action:
                     "La harpie entonne une mélodie magique. Tout humanoïde ou géant à 90 mètres maximum de la harpie et qui peut entendre le chant doit réussir un jet de sauvegarde de Sagesse DD 11 ou bien se retrouver charmé jusqu'à ce que le chant prenne fin. La harpie doit utiliser une action bonus lors de ses tours suivants pour prolonger le chant. Elle peut interrompre le chant à tout moment. Le chant s'interrompt si la harpie est incapable d'agir. Tant qu'elle est sous l'effet du charme, la cible est incapable d'agir et n'est pas affectée par le chant d'autres harpies. Si la cible charmée se trouve à plus de 1,50 mètre de la harpie, cette cible doit durant son tour se diriger vers la harpie par le chemin le plus direct. Elle ne peut éviter les attaques d'opportunité, mais peut refaire un jet de sauvegarde dès qu'elle pénètre une zone pouvant créer des dégâts (de la lave ou une fosse par exemple) ou dès qu'elle subit des dégâts provenant d'une autre source que la harpie. Une créature peut aussi relancer son jet de sauvegarde à la fin de chacun de ses tours. Lorsque le jet de sauvegarde est réussi, l'effet du charme prend fin. Une cible ayant réussi son jet de sauvegarde est immunisée contre le chant de cette harpie pour les prochaines 24 heures.",
             },
@@ -8755,9 +8730,9 @@ let monsters = [
         attributs:
             "Résistance à la magie. Le hezrou a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Puanteur. Toute créature débutant son tour dans un rayon de 3 mètres autour du hezrou doit réussir un jet de sauvegarde de Constitution DD 14 ou être empoisonnée jusqu'au début de son prochain tour. Si elle réussit son jet de sauvegarde, la créature est immunisée à la puanteur des hezrous pour les prochaines 24 heures.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le hezrou effectue trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d10 + 4) dégâts perforants.", attaque: 7, degats: "2d10 + 4" },
+            { nom: "Attaques multiples", action: "Le hezrou effectue trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d10 + 4) dégâts perforants.", attaque: 7, degats: "2d10 + 4" },
         ],
         description: null,
         sauvegarde: { FOR: 7, DEX: 3, CON: 8, INT: -3, SAG: 4, CHA: 1 },
@@ -8789,9 +8764,9 @@ let monsters = [
         xp: 200,
         attributs: "Vue aiguisée. Un hippogriffe a un avantage aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'hippogriffe réalise deux attaques : une avec son bec et une avec ses griffes." },
-            { nom: "Bec.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d10 + 3) dégâts perforants.", attaque: 5, degats: "1d10 + 3" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts tranchants.", attaque: 5, degats: "2d6 + 3" },
+            { nom: "Attaques multiples", action: "L'hippogriffe réalise deux attaques : une avec son bec et une avec ses griffes." },
+            { nom: "Bec", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d10 + 3) dégâts perforants.", attaque: 5, degats: "1d10 + 3" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts tranchants.", attaque: 5, degats: "2d6 + 3" },
         ],
         description:
             "Un hippogriffe est une créature magique composée des ailes et des membres antérieurs d'un aigle, de l'arrière train d'un cheval, et d'une tête combinant les particularités de ces deux animaux.",
@@ -8826,13 +8801,13 @@ let monsters = [
             "Avantage martial. Une fois par tour, un hobgobelin peut infliger 7 (2d6) dégâts supplémentaires à une créature s'il la touche à l'aide d'une attaque armée réussie à condition que cette créature se situe à 1,50 mètre ou moins d'un allié de l'hobgobelin qui ne soit pas incapable d'agir.",
         actions: [
             {
-                nom: "Épée longue.",
+                nom: "Épée longue",
                 action:
                     "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d8 + 1) dégâts tranchants, ou 6 (1d10 + 1) dégâts tranchants si utilisée à deux mains.",
                 attaque: 3,
                 degats: "1d8 + 1",
             },
-            { nom: "Arc long.", action: "Attaque à distance avec une arme : +3 au toucher, portée 45/180 m, une cible. Touché : 5 (1d8 + 1) dégâts perforants.", attaque: 3, degats: "1d8 + 1" },
+            { nom: "Arc long", action: "Attaque à distance avec une arme : +3 au toucher, portée 45/180 m, une cible. Touché : 5 (1d8 + 1) dégâts perforants.", attaque: 3, degats: "1d8 + 1" },
         ],
         description:
             "Les hobgobelins sont de grands gobelinoïdes à la peau noir orangée ou rouge orangée. Un hobgobelin mesure le mérite suivant la force physique et les prouesses martiales, ne se souciant de rien d'autre que de la compétence et de l'astuce dans la bataille.",
@@ -8866,21 +8841,21 @@ let monsters = [
         attributs:
             "Avantage martial. Une fois par tour, l'hobgobelin peut infliger 10 (3d6) dégâts supplémentaires à une créature qu'il touche lors d'une attaque avec une arme si cette créature se trouve à 1,50 mètre ou moins d'un allié de l'hobgobelin qui n'est pas incapable d'agir.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'hobgobelin effectue deux attaques d'épée à deux mains." },
+            { nom: "Attaques multiples", action: "L'hobgobelin effectue deux attaques d'épée à deux mains." },
             {
-                nom: "Épée à deux mains.",
+                nom: "Épée à deux mains",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 9 (2d6 + 2) dégâts perforants.",
                 attaque: 4,
                 degats: "2d6 + 2",
             },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action: "Attaque au corps à corps ou à distance avec une arme : +4 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.",
                 attaque: 4,
                 degats: "1d6 + 2",
             },
             {
-                nom: "Commandement (Recharge après un repos court ou long).",
+                nom: "Commandement (Recharge après un repos court ou long)",
                 action:
                     "Pendant 1 minute, l'hobgobelin peut lancer un avertissement ou un ordre spécial chaque fois qu'une créature non-hostile qu'il peut voir dans un rayon de 9 mètres autour de lui effectue un jet d'attaque ou de sauvegarde. La créature peut ajouter un d4 à son jet à condition qu'elle puisse entendre et comprendre l'hobgobelin. Une créature ne peut bénéficier que d'un seul dé de Commandement à la fois. Cet effet prend fin si l'hobgobelin est incapable d'agir.",
             },
@@ -8916,34 +8891,34 @@ let monsters = [
         attributs:
             "Avantage martial. Une fois par tour, l'hobgobelin peut infliger 14 (4d6) dégâts supplémentaires à une créature qu'il touche lors d'une attaque avec une arme si cette créature se trouve à 1,50 mètre ou moins d'un allié de l'hobgobelin qui n'est pas incapable d'agir.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'hobgobelin effectue trois attaques au corps à corps. Il peut sinon effectuer deux attaques à distance avec ses javelines." },
+            { nom: "Attaques multiples", action: "L'hobgobelin effectue trois attaques au corps à corps. Il peut sinon effectuer deux attaques à distance avec ses javelines." },
             {
-                nom: "Épée longue.",
+                nom: "Épée longue",
                 action:
                     "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts tranchants, ou 8 (1d10 + 3) dégâts tranchants si utilisée à deux mains.",
                 attaque: 9,
                 degats: "1d8 + 3",
             },
             {
-                nom: "Coup de bouclier.",
+                nom: "Coup de bouclier",
                 action:
                     "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une créature. Touché : 5 (1d4 + 3) dégâts contondants. Si la cible est une créature de taille G ou inférieure, elle doit réussir un jet de sauvegarde de Force DD 14 pour ne pas tomber à terre.",
                 attaque: 9,
                 degats: "1d4 + 3",
             },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action: "Attaque au corps à corps ou à distance avec une arme : +9 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.",
                 attaque: 9,
                 degats: "1d6 + 3",
             },
             {
-                nom: "Commandement (Recharge après un repos court ou long).",
+                nom: "Commandement (Recharge après un repos court ou long)",
                 action:
                     "Pendant 1 minute, l'hobgobelin peut lancer un avertissement ou un ordre spécial chaque fois qu'une créature non-hostile qu'il peut voir dans un rayon de 9 mètres autour de lui effectue un jet d'attaque ou de sauvegarde. La créature peut ajouter un d4 à son jet à condition qu'elle puisse entendre et comprendre l'hobgobelin. Une créature ne peut bénéficier que d'un seul dé de Commandement à la fois. Cet effet prend fin si l'hobgobelin est incapable d'agir.",
             },
             {
-                nom: "Parade.",
+                nom: "Parade",
                 action: "L'hobgobelin ajoute 3 à sa CA contre une attaque au corps à corps qui le toucherait. Pour ce faire, il doit voir l'attaquant et avoir en main une arme de corps à corps.",
             },
         ],
@@ -8977,22 +8952,22 @@ let monsters = [
         xp: 100,
         attributs: "Retenir son souffle. L'homme-lézard peut retenir son souffle durant 15 minutes.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'homme-lézard réalise deux attaques au corps à corps, chacune avec une arme différente." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
+            { nom: "Attaques multiples", action: "L'homme-lézard réalise deux attaques au corps à corps, chacune avec une arme différente." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
             {
-                nom: "Gourdin lesté.",
+                nom: "Gourdin lesté",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts contondants.",
                 attaque: 4,
                 degats: "1d6 + 2",
             },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action: "Attaque au corps à corps ou à distance avec une arme : +4 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.",
                 attaque: 4,
                 degats: "1d6 + 2",
             },
             {
-                nom: "Bouclier à pointe.",
+                nom: "Bouclier à pointe",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.",
                 attaque: 4,
                 degats: "1d6 + 2",
@@ -9030,22 +9005,22 @@ let monsters = [
         attributs:
             "Retenir son souffle. L'homme-lézard peut retenir son souffle durant 15 minutes.Incantation (forme d'homme-lézard uniquement). L'homme-lézard est un lanceur de sorts de niveau 5. Sa caractéristique d'incantation est la Sagesse (jet de sauvegarde contre ses sorts DD 12, +4 au toucher pour les attaques avec un sort). L'homme-lézard a préparé les sorts de druide suivants :Sorts mineurs (à volonté) : druidisme, production de flamme, fouet épineux\nNiveau 1 (4 emplacements) : enchevêtrement, nappe de brouillard\nNiveau 2 (3 emplacements) : métal brûlant, croissance d'épines\nNiveau 3 (2 emplacements) : invocation d'animaux (reptiles uniquement), croissance végétale.",
         actions: [
-            { nom: "Attaques multiples (forme d'homme-lézard uniquement).", action: "L'homme-lézard effectue deux attaques : une de morsure et une avec ses griffes." },
+            { nom: "Attaques multiples (forme d'homme-lézard uniquement)", action: "L'homme-lézard effectue deux attaques : une de morsure et une avec ses griffes." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants, ou 7 (1d10 + 2) dégâts perforants sous forme de crocodile. Si l'homme-lézard est sous forme de crocodile et que sa cible est une créature de taille G ou inférieure, la cible est agrippée (évasion DD 12). Tant qu'elle est agrippée, la cible est entravée, et l'homme-lézard ne peut plus mordre d'autres cibles. Si l'homme-lézard retourne à sa véritable forme, la cible n'est plus agrippée.",
                 attaque: 4,
                 degats: "1d6 + 2",
             },
             {
-                nom: "Griffes (forme d'homme-lézard uniquement).",
+                nom: "Griffes (forme d'homme-lézard uniquement)",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts tranchants.",
                 attaque: 4,
                 degats: "1d4 + 2",
             },
             {
-                nom: "Changement de forme (Recharge après un repos court ou long).",
+                nom: "Changement de forme (Recharge après un repos court ou long)",
                 action:
                     "L'homme-lézard se métamorphose magiquement en un crocodile et peut rester sous cette forme durant 1 heure. Il peut revenir à sa véritable forme par une action bonus. Ses statistiques, autres que sa taille, sont les mêmes que sous sa forme humanoïde. L'équipement qu'il porte ou transporte n'est pas transformé. L'homme-lézard retrouve sa forme humanoïde s'il est tué.",
             },
@@ -9081,7 +9056,7 @@ let monsters = [
         attributs: "Amphibien. L'homme-poisson peut respirer aussi bien dans l'air que sous l'eau.",
         actions: [
             {
-                nom: "Lance.",
+                nom: "Lance",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +2 au toucher, allonge 1,50 m ou portée 6/18 m, une cible. Touché : 3 (1d6) dégâts perforants, ou 4 (1d8) dégâts perforants si utilisée à deux mains pour faire une attaque au corps à corps.",
                 attaque: 2,
@@ -9126,7 +9101,7 @@ let monsters = [
             "Lien télépathique. Tant que l'homoncule se trouve sur le même plan d'existence que son maître, il peut magiquement transmettre à son maître ce qu'il perçoit, et tous deux peuvent communiquer par télépathie.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une créature. Touché : 1 dégât perforant, et la cible doit réussir un jet de sauvegarde de Constitution DD 10 ou être empoisonnée pendant 1 minute. Si le jet de sauvegarde échoue de 5 ou plus, la cible est empoisonnée durant 5 (1d10) minutes et est inconsciente tant qu'elle est empoisonnée de cette manière.",
                 attaque: 4,
@@ -9172,9 +9147,9 @@ let monsters = [
         attributs:
             "Résistance à la magie. L'horreur casquée a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Immunité aux sorts. L'horreur casquée est immunisée à 3 sorts choisis par son créateur. Les immunités les plus répandues sont celles aux sorts de boule de feu, métal brûlant et éclair.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'horreur casquée effectue deux attaques d'épée longue." },
+            { nom: "Attaques multiples", action: "L'horreur casquée effectue deux attaques d'épée longue." },
             {
-                nom: "Épée longue.",
+                nom: "Épée longue",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d8 + 4) dégâts tranchants, ou 9 (1d10 + 4) dégâts tranchants si utilisée à deux mains.",
                 attaque: 6,
@@ -9212,8 +9187,8 @@ let monsters = [
         attributs:
             "Écholocation. L'horreur crochue ne peut pas utiliser sa vision aveugle si elle est assourdie.Audition affûtée. L'horreur crochue a un avantage aux jets de Sagesse (Perception) basés sur l'ouïe.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'horreur crochue effectue deux attaques de crochet." },
-            { nom: "Crochet.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants.", attaque: 6, degats: "2d6 + 4" },
+            { nom: "Attaques multiples", action: "L'horreur crochue effectue deux attaques de crochet." },
+            { nom: "Crochet", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants.", attaque: 6, degats: "2d6 + 4" },
         ],
         description: null,
         sauvegarde: { FOR: 4, DEX: 0, CON: 2, INT: -2, SAG: 1, CHA: -2 },
@@ -9246,8 +9221,8 @@ let monsters = [
         attributs:
             "Retenir son souffle. L'hydre peut retenir son souffle durant 1 heure.Têtes multiples. L'hydre a cinq têtes. Tant qu'elle a plus d'une tête, l'hydre a un avantage aux jets de sauvegarde contre les effets pouvant causer les états aveuglé, charmé, assourdie, effrayé, étourdi ou inconscient. Dès que l'hydre prend 25 points de dégâts ou plus en un seul tour, une de ses têtes meurt. Si toutes ses têtes sont tuées, l'hydre meurt. À la fin de son tour, pour chaque tête tuée depuis son dernier tour, il en repousse deux nouvelles, à moins que l'hydre ait reçu des dégâts de feu depuis son dernier tour. L'hydre récupère 10 points de vie pour chaque tête ayant repoussée de cette façon.Têtes réactives. Pour chaque tête en plus de la première que l'hydre possède, elle obtient une réaction supplémentaire qui ne peut être utilisée que pour réaliser des attaques d'opportunité.Toujours éveillée. Lorsque l'hydre dort, elle a toujours au moins une de ses têtes qui est éveillée.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'hydre peut effectuer autant d'attaques de morsure qu'elle a de têtes." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une cible. Touché : 10 (1d10 + 5) dégâts perforants.", attaque: 8, degats: "1d10 + 5" },
+            { nom: "Attaques multiples", action: "L'hydre peut effectuer autant d'attaques de morsure qu'elle a de têtes." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une cible. Touché : 10 (1d10 + 5) dégâts perforants.", attaque: 8, degats: "1d10 + 5" },
         ],
         description:
             "L'hydre est une horreur reptilienne au corps de crocodile et aux multiples têtes qui surmontent des longs cous serpentins. Bien que ses têtes puissent être coupées, l'hydre les fait rapidement repousser de manière magique.",
@@ -9286,13 +9261,8 @@ let monsters = [
         attributs:
             "Embuscade. Lors du premier round d'un combat, le kenku a un avantage aux jets d'attaque contre toute créature qu'il a surprise.Imitation des sons. Le kenku peut reproduire tout son qu'il a entendu, dont les voix. Une créature qui entend ces sons peut dire qu'il s'agit d'imitation en réussissant un jet de Sagesse (Perspicacité) DD 14.",
         actions: [
-            {
-                nom: "Épée courte.",
-                action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.",
-                attaque: 5,
-                degats: "1d6 + 3",
-            },
-            { nom: "Arc court.", action: "Attaque à distance avec une arme : +5 au toucher, portée 24/96 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.", attaque: 5, degats: "1d6 + 3" },
+            { nom: "Épée courte", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.", attaque: 5, degats: "1d6 + 3" },
+            { nom: "Arc court", action: "Attaque à distance avec une arme : +5 au toucher, portée 24/96 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.", attaque: 5, degats: "1d6 + 3" },
         ],
         description: null,
         sauvegarde: { FOR: 0, DEX: 3, CON: 0, INT: 0, SAG: 0, CHA: 0 },
@@ -9325,8 +9295,8 @@ let monsters = [
         attributs:
             "Sensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le kobold a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.Tactique de groupe. Le kobold a un avantage aux jets d'attaque contre une créature si au moins l'un de ses alliés est à 1,50 mètre ou moins de la créature et n'est pas incapable d'agir.",
         actions: [
-            { nom: "Dague.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants.", attaque: 4, degats: "1d4 + 2" },
-            { nom: "Fronde.", action: "Attaque à distance avec une arme : +4 au toucher, portée 9/36 m, une cible. Touché : 4 (1d4 + 2) dégâts contondants.", attaque: 4, degats: "1d4 + 2" },
+            { nom: "Dague", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants.", attaque: 4, degats: "1d4 + 2" },
+            { nom: "Fronde", action: "Attaque à distance avec une arme : +4 au toucher, portée 9/36 m, une cible. Touché : 4 (1d4 + 2) dégâts contondants.", attaque: 4, degats: "1d4 + 2" },
         ],
         description:
             "Les kobolds sont de lâches humanoïdes reptiliens qui ont pour habitude d'infester les donjons. Ils compensent leur inaptitude physique par leur grand talent à tendre des pièges.",
@@ -9360,9 +9330,9 @@ let monsters = [
         attributs:
             "Sensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le kobold a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.Tactique de groupe. Le kobold a un avantage aux jets d'attaque contre une créature si au moins l'un de ses alliés est à 1,50 mètre ou moins de la créature et n'est pas incapable d'agir.",
         actions: [
-            { nom: "Dague.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d4 + 3) dégâts perforants.", attaque: 5, degats: "1d4 + 3" },
+            { nom: "Dague", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d4 + 3) dégâts perforants.", attaque: 5, degats: "1d4 + 3" },
             {
-                nom: "Chute de Pierre.",
+                nom: "Chute de Pierre",
                 action: "Attaque à distance avec une arme : +5 au toucher, une cible se trouvant directement sous le kobold. Touché : 6 (1d6 + 3) dégâts contondants.",
                 attaque: 5,
                 degats: "1d6 + 3",
@@ -9406,40 +9376,40 @@ let monsters = [
         attributs:
             "Amphibien. Le kraken peut respirer aussi bien dans l'air que sous l'eau.Liberté de mouvement. Le kraken ignore les terrains difficiles, et les effets magiques ne peuvent pas réduire sa vitesse de déplacement ou l'entraver. Il peut dépenser 1,50 mètre de son déplacement pour s'échapper des entraves non magiques ou se libérer de la condition agrippé.Monstre de siège. Le kraken inflige le double des dégâts aux objets et structures qu'il attaque.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le kraken effectue trois attaques avec ses tentacules, il peut remplacer chacune d'elles par une action Catapultage." },
+            { nom: "Attaques multiples", action: "Le kraken effectue trois attaques avec ses tentacules, il peut remplacer chacune d'elles par une action Catapultage." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +17 au toucher, allonge 1,50 m, une cible. Touché : 23 (3d8 + 10) dégâts perforants. Si la cible est une créature de taille G ou inférieure agrippée par le kraken, la créature est engloutie, et n'est plus considérée comme agrippée. Tant qu'elle est engloutie par le kraken, la créature est aveuglée et entravée, elle possède un abri total contre les attaques et tout autre effet provenant de l'extérieur du kraken, et elle subit 42 (12d6) dégâts d'acide au début de chacun des tours du kraken. Si le kraken subit 50 dégâts ou plus en un seul tour de la part d'une créature qu'il a engloutie, le kraken doit réussir un jet de sauvegarde de Constitution DD 25 à la fin de ce tour ou régurgiter toutes les créatures qu'il a avalées, lesquelles se retrouvent à terre dans un rayon de 3 mètres autour du kraken. Si le kraken meurt, une créature avalée n'est plus considérée comme entravée par le kraken et peut s'échapper de son cadavre en utilisant 4,50 mètres de déplacement, sortant à plat ventre.",
                 attaque: 17,
                 degats: "3d8 + 10",
             },
             {
-                nom: "Tentacule.",
+                nom: "Tentacule",
                 action:
                     "Attaque au corps à corps avec une arme : +17 au toucher, allonge 9 m, une cible. Touché : 20 (3d6 + 10) dégâts contondants, et la cible est agrippée (DD 18 pour s'échapper). Tant qu'elle est agrippée, la cible est entravée. Le kraken possède 10 tentacules, chacune d'entre elles pouvant agripper une cible.",
                 attaque: 17,
                 degats: "3d6 + 10",
             },
             {
-                nom: "Catapultage.",
+                nom: "Catapultage",
                 action:
                     "Une créature agrippée ou un objet tenu, de taille G ou inférieure, par le kraken est lancé à 18 mètres dans une direction aléatoire et jeté à terre. Si une cible lancée percute une surface solide, la cible subit 3 (1d6) dégâts contondants tous les 3 mètres parcourus dans les airs. Si la cible est lancée sur une autre créature, cette créature doit réussir un jet de sauvegarde de Dextérité DD 18 ou subir la même quantité de dégâts et être jetée à terre.",
             },
             {
-                nom: "Tempête d'éclairs.",
+                nom: "Tempête d'éclairs",
                 action:
                     "Le kraken peut créer par magie trois éclairs, chacun d'entre eux pouvant frapper une cible que le kraken peut voir dans un rayon de 36 mètres autour de lui. Une cible doit effectuer un jet de sauvegarde de Dextérité DD 23, subissant 22 (4d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Le kraken peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le kraken peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le kraken récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Attaque de tentacule ou Catapultage.", action: "Le kraken effectue une attaque avec ses tentacules ou utilise son Catapultage." },
-            { nom: "Tempête d'éclairs (coûte 2 actions).", action: "Le kraken utilise sa Tempête d'éclairs." },
+            { nom: "Attaque de tentacule ou Catapultage", action: "Le kraken effectue une attaque avec ses tentacules ou utilise son Catapultage." },
+            { nom: "Tempête d'éclairs (coûte 2 actions)", action: "Le kraken utilise sa Tempête d'éclairs." },
             {
-                nom: "Nuage d'encre (coûte 3 actions).",
+                nom: "Nuage d'encre (coûte 3 actions)",
                 action:
                     "Tant qu'il se trouve sous l'eau, le kraken expulse un nuage d'encre dans un rayon de 18 mètres. Le nuage contourne les angles des murs, et cette zone est fortement obscurcie pour toute créature à l'exception du kraken. Chaque créature, à l'exception du kraken, qui termine son tour dans le nuage doit effectuer un jet de sauvegarde de Constitution DD 23, subissant 16 (3d10) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite. Un courant fort disperse le nuage d'encre, qui disparaît de toute façon à la fin du prochain tour du kraken.",
             },
@@ -9475,23 +9445,23 @@ let monsters = [
         attributs:
             "Amphibien. Le kuo-toa peut respirer aussi bien dans l'air que sous l'eau.Perception d'un autre monde. Le kuo-toa peut ressentir la présence de toute créature dans un rayon de 9 mètres qui est invisible ou se trouve dans le plan éthéré. Il peut localiser de telles créatures lorsqu'elles se déplacent.Visqueux. Le kuo-toa a un avantage aux jets de caractéristique et de sauvegarde effectués pour échapper à la condition agrippé.Sensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le kuo-toa a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts perforants.", attaque: 3, degats: "1d4 + 1" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts perforants.", attaque: 3, degats: "1d4 + 1" },
             {
-                nom: "Lance.",
+                nom: "Lance",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +3 au toucher, allonge 1,50 m ou portée 6/18 m, une cible. Touché : 4 (1d6 + 1) dégâts perforants, ou 5 (1d8 + 1) dégâts perforants si utilisée à deux mains pour faire une attaque au corps à corps.",
                 attaque: 3,
                 degats: "1d6 + 1",
             },
             {
-                nom: "Filet.",
+                nom: "Filet",
                 action:
                     "Attaque à distance avec une arme : +3 au toucher, portée 1,50/4,50 m, une créature de taille G ou inférieure. Touché : la cible est entravée. Une créature peut utiliser son action pour effectuer un jet de Force DD 10 pour se libérer elle-même, ou pour libérer une autre créature prise dans le filet, mettant ainsi fin à cet effet en cas de réussite. Infliger 5 points de dégâts tranchants au filet (CA 10) libère la cible, sans la blesser, en détruisant le filet.",
                 attaque: 3,
                 degats: null,
             },
             {
-                nom: "Bouclier collant.",
+                nom: "Bouclier collant",
                 action:
                     "Lorsqu'une créature rate le kuo-toa avec une attaque au corps à corps avec une arme, le kuo-toa utilise son bouclier collant pour attraper l'arme. L'attaquant doit réussir un jet de sauvegarde de Force DD 11 ou voir son arme se coller au bouclier du kuo-toa. Si le porteur de l'arme ne peut pas, ou ne veut pas, la lâcher, il est agrippé jusqu'à ce que l'arme ne soit plus collée. Tant qu'elle adhère au bouclier, l'arme ne peut pas être utilisée. Une créature peut libérer l'arme en utilisant son action pour effectuer un jet de Force DD 11 et en le réussissant.",
             },
@@ -9527,19 +9497,14 @@ let monsters = [
         attributs:
             "Amphibien. Le kuo-toa peut respirer aussi bien dans l'air que sous l'eau.Perception d'un autre monde. Le kuo-toa peut ressentir la présence de toute créature dans un rayon de 9 mètres qui est invisible ou se trouve dans le plan éthéré. Il peut localiser de telles créatures lorsqu'elles se déplacent.Visqueux. Le kuo-toa a un avantage aux jets de caractéristique et de sauvegarde effectués pour échapper à la condition agrippé.Sensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le kuo-toa a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.Incantation. Le kuo-toa est un lanceur de sorts de niveau 10. Sa caractéristique d'incantation est la Sagesse (jet de sauvegarde contre ses sorts DD 14, +6 au toucher pour les attaques avec un sort). Le kuo-toa a préparé les sorts de clerc suivants :Sorts mineurs (à volonté) : assistance, flamme sacrée, thaumaturgie\nNiveau 1 (4 emplacements) : détection de la magie, sanctuaire, bouclier de la foi\nNiveau 2 (3 emplacements) : immobilisation de personne, arme spirituelle\nNiveau 3 (3 emplacements) : esprits gardiens, langues\nNiveau 4 (3 emplacements) : contrôle de l'eau, divination\nNiveau 5 (2 emplacements) : scrutation, soins de groupe.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le kuo-toa effectue deux attaques au corps à corps." },
+            { nom: "Attaques multiples", action: "Le kuo-toa effectue deux attaques au corps à corps." },
             {
-                nom: "Sceptre.",
+                nom: "Sceptre",
                 action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts contondants + 14 (4d6) dégâts de foudre.",
                 attaque: 6,
                 degats: "1d6 + 3",
             },
-            {
-                nom: "Mains nues.",
-                action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d4 + 3) dégâts contondants.",
-                attaque: 6,
-                degats: "1d4 + 3",
-            },
+            { nom: "Mains nues", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d4 + 3) dégâts contondants.", attaque: 6, degats: "1d4 + 3" },
         ],
         description: null,
         sauvegarde: { FOR: 3, DEX: 2, CON: 3, INT: 1, SAG: 3, CHA: 2 },
@@ -9572,10 +9537,10 @@ let monsters = [
         attributs:
             "Amphibien. Le kuo-toa peut respirer aussi bien dans l'air que sous l'eau.Perception d'un autre monde. Le kuo-toa peut ressentir la présence de toute créature dans un rayon de 9 mètres qui est invisible ou se trouve dans le plan éthéré. Il peut localiser de telles créatures lorsqu'elles se déplacent.Visqueux. Le kuo-toa a un avantage aux jets de caractéristique et de sauvegarde effectués pour échapper à la condition agrippé.Sensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le kuo-toa a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.Incantation. Le kuo-toa est un lanceur de sorts de niveau 2. Sa caractéristique d'incantation est la Sagesse (jet de sauvegarde contre ses sorts DD 12, +4 au toucher pour les attaques avec un sort). Le kuo-toa a préparé les sorts de clerc suivants :Sorts mineurs (à volonté) : flamme sacrée, thaumaturgie\nNiveau 1 (3 emplacements) : bouclier de la foi, fléau.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le kuo-toa effectue deux attaques : une de morsure et une avec le bâton à pinces." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants.", attaque: 4, degats: "1d4 + 2" },
+            { nom: "Attaques multiples", action: "Le kuo-toa effectue deux attaques : une de morsure et une avec le bâton à pinces." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants.", attaque: 4, degats: "1d4 + 2" },
             {
-                nom: "Bâton à pinces.",
+                nom: "Bâton à pinces",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 3 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants. Si la cible est une créature de taille M ou inférieure, elle est agrippée (évasion DD 14). Jusqu'à ce que la cible ne soit plus agrippée, le kuo-toa ne peut pas utiliser son bâton à pinces contre une autre cible.",
                 attaque: 4,
@@ -9618,11 +9583,11 @@ let monsters = [
         attributs:
             "Incantation innée. La caractéristique d'incantation innée de la lamie est le Charisme (jet de sauvegarde contre ses sorts DD 13). Elle peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : déguisement (n'importe quelle forme humanoïde), image majeure\n3/jour : charme-personne, image miroir, scrutation, suggestion\n1/jour : mission.",
         actions: [
-            { nom: "Attaques multiples.", action: "La lamie effectue deux attaques : une avec ses griffes et une avec sa dague ou Contact enivrant." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d10 + 3) dégâts tranchants.", attaque: 5, degats: "2d10 + 3" },
-            { nom: "Dague.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d4 + 3) dégâts perforants.", attaque: 5, degats: "1d4 + 3" },
+            { nom: "Attaques multiples", action: "La lamie effectue deux attaques : une avec ses griffes et une avec sa dague ou Contact enivrant." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d10 + 3) dégâts tranchants.", attaque: 5, degats: "2d10 + 3" },
+            { nom: "Dague", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d4 + 3) dégâts perforants.", attaque: 5, degats: "1d4 + 3" },
             {
-                nom: "Contact enivrant.",
+                nom: "Contact enivrant",
                 action:
                     "Attaque au corps à corps avec un sort : +5 au toucher, allonge 1,50 m, une créature. Touché : la cible est maudite par magie pendant 1 heure. Jusqu'à ce que la malédiction prenne fin, la cible a un désavantage aux jets de sauvegarde de Sagesse et à tous les jets de caractéristique.",
                 attaque: 5,
@@ -9666,7 +9631,7 @@ let monsters = [
         xp: 10,
         attributs:
             "Vision de diable. Des ténèbres magiques ne gênent pas la vision dans le noir du lémure.Reconstitution infernale. Le lémure qui meurt dans les Neuf enfers revient à la vie avec tous ses points de vie en 1d10 jours à moins qu'il n'ait été tué par une créature d'alignement Bon sous l'effet du sort bénédiction ou que son cadavre ait été aspergé d'eau bénite.",
-        actions: [{ nom: "Coup.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 2 (1d4) dégâts contondants.", attaque: 3, degats: "1d4" }],
+        actions: [{ nom: "Coup", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 2 (1d4) dégâts contondants.", attaque: 3, degats: "1d4" }],
         description: null,
         sauvegarde: { FOR: 0, DEX: -3, CON: 0, INT: -5, SAG: 0, CHA: -4 },
         player: false,
@@ -9708,26 +9673,26 @@ let monsters = [
             "Résistance légendaire (3/jour). Si la liche échoue à un jet de sauvegarde, elle peut décider de transformer cet échec en réussite.Reconstitution. Si elle a un phylactère, une liche détruite récupère un nouveau corps au bout de 1d10 jours, regagnant ainsi tous ses points de vie et redevenant active. Le nouveau corps apparaît à 1,50 mètre autour du phylactère.Incantation. La liche est un lanceur de sorts de niveau 18. Sa caractéristique d'incantation est l'Intelligence (jet de sauvegarde contre ses sorts DD 20, +12 au toucher pour les attaques avec un sort). La liche a préparé les sorts de magicien suivants :Sorts mineurs (à volonté) : main de mage, prestidigitation, rayon de givre\nNiveau 1 (4 emplacements) : détection de la magie, projectile magique, bouclier, onde de choc\nNiveau 2 (3 emplacements) : détection des pensées, invisibilité, flèche acide de Melf, image miroir\nNiveau 3 (3 emplacements) : animation des morts, contresort, dissipation de la magie, boule de feu\nNiveau 4 (3 emplacements) : flétrissement, porte dimensionnelle\nNiveau 5 (3 emplacements) : nuage mortel, scrutation\nNiveau 6 (1 emplacement) : désintégration, globe d'invulnérabilité\nNiveau 7 (1 emplacement) : doigt de mort, changement de plan\nNiveau 8 (1 emplacement) : domination de monstre, mot de pouvoir étourdissant\nNiveau 9 (1 emplacement) : mot de pouvoir mortel\nRésistance au renvoi. La liche a un avantage aux jets de sauvegarde pour résister aux effets de renvoi des morts-vivants.",
         actions: [
             {
-                nom: "Contact paralysant.",
+                nom: "Contact paralysant",
                 action:
                     "Attaque au corps à corps avec un sort : +12 au toucher, allonge 1,50 m, une créature. Touché : 10 (3d6) dégâts de froid. La cible doit réussir un jet de sauvegarde de Constitution DD 18 ou être paralysée pendant 1 minute. La cible peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à cet effet de paralysie qui l'affecte si elle le réussit.",
                 attaque: 12,
                 degats: "3d6",
             },
             {
-                nom: "La liche peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "La liche peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. La liche récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Sort mineur.", action: "La liche lance un sort mineur." },
-            { nom: "Contact paralysant (coûte 2 actions).", action: "La liche utilise son Contact paralysant." },
+            { nom: "Sort mineur", action: "La liche lance un sort mineur." },
+            { nom: "Contact paralysant (coûte 2 actions)", action: "La liche utilise son Contact paralysant." },
             {
-                nom: "Regard effrayant (coûte 2 actions).",
+                nom: "Regard effrayant (coûte 2 actions)",
                 action:
                     "La liche fixe du regard une créature qu'elle peut voir dans un rayon de 3 mètres autour d'elle. La cible doit réussir un jet de sauvegarde de Sagesse DD 18 contre la magie ou être effrayée pendant 1 minute. La cible effrayée peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde de la cible est une réussite, ou si l'effet se termine pour elle, la cible est immunisée au regard de la liche pour les prochaines 24 heures.",
             },
             {
-                nom: "Perturbation de la vie (coûte 3 actions).",
+                nom: "Perturbation de la vie (coûte 3 actions)",
                 action:
                     "Toute créature non morte-vivante située dans un rayon de 6 mètres autour de la liche doit effectuer un jet de sauvegarde de Constitution DD 18 contre la magie , subissant 21 (6d6) dégâts nécrotiques en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -9769,31 +9734,31 @@ let monsters = [
         attributs:
             "Charge. Si la licorne se déplace d'au moins 6 mètres en ligne droite vers une cible, puis la touche lors d'une attaque avec sa corne dans le même tour, la cible subit 9 (2d8) dégâts supplémentaires de type perforant. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 15 ou tomber à terre.Incantation innée. La caractéristique d'incantation innée de la licorne est le Charisme (jet de sauvegarde contre ses sorts DD 14). La licorne peut lancer les sorts suivants de manière innée, sans avoir besoin d'aucune composante :À volonté : détection du mal et du bien, druidisme, passage sans trace\n1/jour chacun : apaisement des émotions, enchevêtrement, dissipation du mal et du bien\nRésistance à la magie. La licorne a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme de la licorne sont magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "La licorne réalise deux attaques : une avec ses sabots et une avec sa corne." },
-            { nom: "Sabots.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 7, degats: "2d6 + 4" },
-            { nom: "Corne.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d8 + 4) dégâts perforants.", attaque: 7, degats: "1d8 + 4" },
+            { nom: "Attaques multiples", action: "La licorne réalise deux attaques : une avec ses sabots et une avec sa corne." },
+            { nom: "Sabots", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Corne", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d8 + 4) dégâts perforants.", attaque: 7, degats: "1d8 + 4" },
             {
-                nom: "Contact guérisseur (3/jour).",
+                nom: "Contact guérisseur (3/jour)",
                 action:
                     "La licorne touche une autre créature avec sa corne. La cible récupère magiquement 11 (2d8 + 2) points de vie. De plus, le toucher soigne toutes les maladies et neutralise tous les poisons affectant la cible.",
             },
             {
-                nom: "Téléportation (1/jour).",
+                nom: "Téléportation (1/jour)",
                 action:
                     "La licorne se téléporte magiquement ainsi que jusqu'à trois créatures consentantes qu'elle peut voir à 1,50 mètre d'elle, y compris tous les équipements qu'ils revêtent ou transportent, dans un lieu dont la licorne est familière, à une distance maximale de 1,5 kilomètre.",
             },
             {
-                nom: "La licorne peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "La licorne peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. La licorne récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Sabots.", action: "La licorne effectue une attaque avec ses sabots." },
+            { nom: "Sabots", action: "La licorne effectue une attaque avec ses sabots." },
             {
-                nom: "Boucliers scintillant (coûte 2 actions).",
+                nom: "Boucliers scintillant (coûte 2 actions)",
                 action:
                     "La licorne crée un champ magique scintillant autour d'elle ou d'une autre créature qu'elle peut voir à 18 m d'elle. La cible gagne un bonus de +2 à sa CA jusqu'à la fin du prochain tour de la licorne.",
             },
-            { nom: "Soin personnel (coûte 3 actions).", action: "La licorne récupère magiquement 11 (2d8 + 2) points de vie." },
+            { nom: "Soin personnel (coûte 3 actions)", action: "La licorne récupère magiquement 11 (2d8 + 2) points de vie." },
         ],
         description: null,
         sauvegarde: { FOR: 4, DEX: 2, CON: 2, INT: 0, SAG: 3, CHA: 3 },
@@ -9832,14 +9797,14 @@ let monsters = [
         attributs: "Apparence trompeuse. Tant que le lierre infecté reste immobile, il ne peut être distingué d'un entrelacs de plantes grimpantes.",
         actions: [
             {
-                nom: "Étreinte.",
+                nom: "Étreinte",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 3 m, une cible. Touché : 9 (2d6 + 2) dégâts contondants, et une cible de taille G ou inférieure est agrippée (DD 12 pour s'échapper). Tant qu'elle est agrippée, la cible est entravée, et le lierre infecté ne peut pas effectuer une attaque d'étreinte contre une autre cible.",
                 attaque: 4,
                 degats: "2d6 + 2",
             },
             {
-                nom: "Enchevêtrement des plantes (Recharge 5-6).",
+                nom: "Enchevêtrement des plantes (Recharge 5-6)",
                 action:
                     "Des lianes et des racines entortillées poussent dans un rayon de 4,50 mètres centré sur le lierre infecté, et se flétrissent au bout de 1 minute. Pendant toute la durée de l'effet, cette zone est considérée comme un terrain difficile pour les créatures qui ne sont pas de type plante. De plus, toute créature présente dans la zone lorsque les plantes poussent, et que le lierre infecté choisit, doit réussir un jet de sauvegarde de Force DD 12 ou être entravée. Une créature peut utiliser son action pour effectuer un jet de Force DD 12, se libérant elle, ou libérant une autre créature entravée à portée, en cas de réussite.",
             },
@@ -9882,14 +9847,14 @@ let monsters = [
             "Odorat et ouïe aiguisés. Le loup a un avantage aux jets de Sagesse (Perception) basés sur l'odorat ou l'ouïe.Tactique de groupe. Le loup a un avantage aux jets d'attaque contre une créature si au moins l'un de ses alliés est à 1,50 mètre ou moins de la créature et n'est pas incapable d'agir.Camouflage dans la neige. Le loup a un avantage aux jets de Dextérité (Discrétion) effectués pour se cacher sur un terrain enneigé.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 14 pour ne pas tomber à terre.",
                 attaque: 6,
                 degats: "2d6 + 4",
             },
             {
-                nom: "Souffle glacé (Recharge 5-6).",
+                nom: "Souffle glacé (Recharge 5-6)",
                 action:
                     "Le loup exhale un souffle de vent glacial dans un cône de 4,50 mètres. Toute créature dans cette zone doit effectuer un jet de sauvegarde de Dextérité DD 12, subissant 18 (4d8) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -9932,24 +9897,24 @@ let monsters = [
             "Métamorphe. Le loup-garou peut utiliser son action pour se métamorphoser en un hybride loup-humanoïde ou en un loup, ou pour reprendre sa véritable forme (la forme humanoïde). Ses statistiques, sauf la CA, sont identiques quelle que soit sa forme. L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa forme véritable s'il meurt.Odorat et ouïe aiguisés. Le loup-garou a un avantage aux jets de Sagesse (Perception) basés sur l'odorat ou l'ouïe.",
         actions: [
             {
-                nom: "Attaques multiples (forme humanoïde ou hybride uniquement).",
+                nom: "Attaques multiples (forme humanoïde ou hybride uniquement)",
                 action: "Le loup-garou réalise deux attaques : deux avec sa lance (forme humanoïde) ou une de morsure et une avec ses griffes (forme hybride).",
             },
             {
-                nom: "Morsure (forme de loup ou hybride uniquement).",
+                nom: "Morsure (forme de loup ou hybride uniquement)",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants. Si la cible est un humanoïde, elle doit réussir un jet de sauvegarde de Constitution DD 12 ou être atteinte de la lycanthropie du loup-garou.",
                 attaque: 4,
                 degats: "1d8 + 2",
             },
             {
-                nom: "Griffes (forme hybride uniquement).",
+                nom: "Griffes (forme hybride uniquement)",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une créature. Touché : 7 (2d4 + 2) dégâts tranchants.",
                 attaque: 4,
                 degats: "2d4 + 2",
             },
             {
-                nom: "Lance (forme humanoïde uniquement).",
+                nom: "Lance (forme humanoïde uniquement)",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +4 au toucher, allonge 1,50 m ou portée 6/18 m, une créature. Touché : 5 (1d6 + 2) dégâts perforants, ou 6 (1d8 + 2) dégâts perforants si utilisée à deux mains pour faire une attaque au corps à corps.",
                 attaque: 4,
@@ -9995,7 +9960,7 @@ let monsters = [
             "Mort explosive. Lorsque le magmatique est tué, il éclate dans une explosion de feu et de magma. Chaque créature située dans un rayon de 3 mètres autour de lui doit effectuer un jet de sauvegarde de Dextérité DD 11, subissant 7 (2d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite. Les objets inflammables qui ne sont pas portés ou transportés et situés dans la zone prennent feu.Illumination enflammée. Par une action bonus, le magmatique peut s'auto-enflammer ou éteindre ses flammes. Tant qu'il brûle, le magmatique émet une lumière vive dans un rayon de 3 mètres et une lumière faible sur 3 mètres supplémentaires.",
         actions: [
             {
-                nom: "Contact.",
+                nom: "Contact",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 7 (2d6) dégâts de feu. Si la cible est une créature ou un objet inflammable, elle s'embrase. Jusqu'à ce qu'une créature utilise son action pour éteindre les flammes, la cible subit 3 (1d6) dégâts de feu à la fin de chacun de ses tours.",
                 attaque: 4,
@@ -10038,7 +10003,7 @@ let monsters = [
         ],
         xp: 25,
         attributs: ".",
-        actions: [{ nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 5 (2d4) dégâts tranchants.", attaque: 2, degats: "2d4" }],
+        actions: [{ nom: "Griffes", action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 5 (2d4) dégâts tranchants.", attaque: 2, degats: "2d4" }],
         description: null,
         sauvegarde: { FOR: 0, DEX: -1, CON: 1, INT: -4, SAG: -1, CHA: -3 },
         player: false,
@@ -10071,14 +10036,14 @@ let monsters = [
             "Écholocation. La mante obscure ne peut pas utiliser sa vision aveugle si elle est assourdie.Apparence trompeuse. Tant que la mante obscure reste immobile, elle ne peut être distinguée d'un relief caverneux de type stalagmite ou stalactite.",
         actions: [
             {
-                nom: "Écrasement.",
+                nom: "Écrasement",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature. Touché : 6 (1d6 + 3) dégâts contondants, et la mante obscure s'attache à la cible. Si la cible est une créature de taille M ou inférieure et que la mante obscure a un avantage à son jet d'attaque, elle s'attache à la cible en avalant sa tête, et la cible est également aveuglée et incapable de respirer tant que la mante est attachée de la sorte. Tant qu'elle est attachée à la cible, la mante obscure ne peut attaquer aucune autre créature que celle sur laquelle elle est fixée, mais elle obtient un avantage aux jets d'attaque contre cette créature. La vitesse de la mante obscure tombe également à 0 et elle ne peut bénéficier d'un bonus à la vitesse de déplacement, cependant elle se déplace en même temps que la cible. Une créature peut détacher la mante obscure par une action en réussissant un jet de Force DD 13. Lors de son tour, la mante obscure peut se détacher d'elle-même de la cible en utilisant 1,50 mètre de son mouvement.",
                 attaque: 5,
                 degats: "1d6 + 3",
             },
             {
-                nom: "Aura ténébreuse (1/jour).",
+                nom: "Aura ténébreuse (1/jour)",
                 action:
                     "Des ténèbres magiques s'étendent dans un rayon de 4,50 mètres autour de la mante obscure, se déplaçant avec elle et contournant les angles de mur. Les ténèbres restent tant que la mante obscure maintient sa concentration, jusqu'à 10 minutes (comme si elle se concentrait sur un sort). La vision dans le noir ne peut pas pénétrer ces ténèbres, et aucune lumière naturelle ne peut les percer. Si une partie des ténèbres rencontre une zone de lumière créée à partir d'un sort de niveau 2 ou inférieur, le sort produisant la lumière est dissipé.",
             },
@@ -10114,22 +10079,22 @@ let monsters = [
         attributs:
             "Transfert de dégâts. Tant qu'il est attaché à une créature, le manteleur ne subit que la moitié des dégâts qui lui sont infligés (arrondis à l'entier inférieur), et la créature subit l'autre moitié.Apparence trompeuse. Tant que le manteleur reste immobile et que sa face ventrale n'est pas exposée, il ne peut être distingué d'un manteau de cuir noir.Sensibilité à la lumière. S'il est exposé à une lumière vive, le manteleur a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
-            { nom: "Attaques multiples.", action: "La manteleur effectue deux attaques : une de morsure et une avec sa queue." },
+            { nom: "Attaques multiples", action: "La manteleur effectue deux attaques : une de morsure et une avec sa queue." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une créature. Touché : 10 (2d6 + 3) dégâts perforants, et si la cible est de taille G ou inférieure, la manteleur s'attache à elle. Si le manteleur a un avantage à son jet d'attaque, il s'attache à la cible en avalant sa tête, ainsi la cible est également aveuglée et incapable de respirer tant que le manteleur est attaché. Tant qu'il est attaché à la cible, le manteleur ne peut effectuer cette attaque que contre cette cible, mais il obtient un avantage aux jets d'attaque contre cette créature. Une créature, dont la cible, peut détacher le manteleur par une action en réussissant un jet de Force DD 16. Lors de son tour, le manteleur peut se détacher de lui-même de la cible en utilisant 1,50 mètre de son mouvement.",
                 attaque: 6,
                 degats: "2d6 + 3",
             },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une créature. Touché : 7 (1d8 + 3) dégâts tranchants.", attaque: 6, degats: "1d8 + 3" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une créature. Touché : 7 (1d8 + 3) dégâts tranchants.", attaque: 6, degats: "1d8 + 3" },
             {
-                nom: "Gémissement.",
+                nom: "Gémissement",
                 action:
                     "Toute créature située dans un rayon de 18 mètres autour du manteleur, qui peut l'entendre et qui n'est pas une aberration, doit réussir un jet de sauvegarde de Sagesse DD 13 ou être effrayée jusqu'à la fin du prochain tour du manteleur. Si une créature réussit son jet de sauvegarde, elle devient immunisée au gémissement du manteleur pour les prochaines 24 heures.",
             },
             {
-                nom: "Fantasmes (Recharge après un repos court ou long).",
+                nom: "Fantasmes (Recharge après un repos court ou long)",
                 action:
                     "Le manteleur crée magiquement trois copies illusoires de lui-même s'il n'est pas dans une zone de lumière vive. Les copies se déplacent avec lui et imitent ses actions, modifiant leurs positions de sorte que chaque copie paraisse être le véritable manteleur. Si le manteleur pénètre une zone de lumière vive, les copies disparaissent. Chaque fois qu'une créature cible le manteleur avec une attaque ou un sort nuisible alors qu'il reste des copies, la créature fait un jet aléatoire pour déterminer si elle cible le manteleur ou l'une de ses copies. Une créature n'est pas affectée par cet effet si elle ne peut pas voir ou si elle se sert d'un autre sens que la vue. Une copie a la même CA que le manteleur et utilise ses modificateurs de sauvegarde. Si une attaque touche une copie, ou si une copie échoue son jet de sauvegarde contre un effet qui inflige des dégâts, la copie disparaît.",
             },
@@ -10164,10 +10129,10 @@ let monsters = [
         xp: 700,
         attributs: "Refloraison de piquants. La manticore possède une queue dotée de 24 piquants. Les piquants utilisés repoussent lorsque la manticore termine un repos long.",
         actions: [
-            { nom: "Attaques multiples.", action: "La manticore réalise trois attaques : une de morsure et deux avec ses griffes, ou trois avec sa queue." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.", attaque: 5, degats: "1d6 + 3" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts perforants.", attaque: 5, degats: "1d8 + 3" },
-            { nom: "Piquant.", action: "Attaque à distance avec une arme : +5 au toucher, portée 30/60 m, une cible. Touché : 7 (1d8 + 3) dégâts perforants.", attaque: 5, degats: "1d8 + 3" },
+            { nom: "Attaques multiples", action: "La manticore réalise trois attaques : une de morsure et deux avec ses griffes, ou trois avec sa queue." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.", attaque: 5, degats: "1d6 + 3" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts perforants.", attaque: 5, degats: "1d8 + 3" },
+            { nom: "Piquant", action: "Attaque à distance avec une arme : +5 au toucher, portée 30/60 m, une cible. Touché : 7 (1d8 + 3) dégâts perforants.", attaque: 5, degats: "1d8 + 3" },
         ],
         description:
             "Une manticore possède une tête vaguement humanoïde, le corps d'un lion et les ailes d'un dragon. Sa longue queue se termine en une grappe de piquants mortels pouvant empaler une proie depuis une distance impressionnante.",
@@ -10207,16 +10172,16 @@ let monsters = [
         attributs:
             "Amphibien. Le maride peut respirer aussi bien dans l'air que sous l'eau.Disparition élémentaire. Si le maride meurt, son corps se désintègre en une explosion d'eau et d'écume, ne laissant derrière lui que l'équipement qu'il portait ou transportait.Incantation innée. La caractéristique d'incantation innée du maride est le Charisme (jet de sauvegarde contre ses sorts DD 16, +8 au toucher pour les attaques avec un sort). Il peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : création ou destruction d'eau, détection du mal et du bien, détection de la magie, nappe de brouillard, purification de nourriture et d'eau\n3/jour chacun : langues, respiration aquatique, marche sur l'eau\n1/jour chacun : invocation d'élémentaire (élémentaire de l'eau uniquement), contrôle de l'eau, forme gazeuse, invisibilité, changement de plan.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le maride effectue deux attaques avec le trident." },
+            { nom: "Attaques multiples", action: "Le maride effectue deux attaques avec le trident." },
             {
-                nom: "Trident.",
+                nom: "Trident",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +10 au toucher, allonge 1,50 m ou portée 6/18 m, une cible. Touché : 13 (2d6 + 6) dégâts perforants, ou 15 (2d8 + 6) dégâts perforants si utilisé à deux mains pour effectuer une attaque au corps à corps.",
                 attaque: 10,
                 degats: "2d6 + 6",
             },
             {
-                nom: "Jet d'eau.",
+                nom: "Jet d'eau",
                 action:
                     "Le maride projette par magie de l'eau sur une ligne de 18 mètres de long et de 1,50 mètre de large. Chaque créature se trouvant sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 16. En cas d'échec, une cible subit 21 (6d6) dégâts contondants et, si elle est de taille TG ou inférieure, est repoussée de 6 mètres puis jetée à terre. En cas de réussite, une cible ne subit que la moitié des dégâts contondants et elle n'est ni repoussée ni jetée à terre.",
             },
@@ -10260,27 +10225,27 @@ let monsters = [
         attributs:
             "Résistance à la magie. La marilith a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme de la marilith sont magiques.Réactif. La marilith peut utiliser une réaction par tour de combat.",
         actions: [
-            { nom: "Attaques multiples.", action: "La marilith réalise sept attaques : six avec ses épées longues et une avec sa queue." },
+            { nom: "Attaques multiples", action: "La marilith réalise sept attaques : six avec ses épées longues et une avec sa queue." },
             {
-                nom: "Épée longue.",
+                nom: "Épée longue",
                 action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts tranchants.",
                 attaque: 9,
                 degats: "2d8 + 4",
             },
             {
-                nom: "Queue.",
+                nom: "Queue",
                 action:
                     "Attaque au corps à corps avec une arme : +9 au toucher, allonge 3 m, une créature. Touché : 15 (2d10 + 4) dégâts contondants. Si la cible est de taille M ou inférieure, elle est agrippée (DD 19 pour s'échapper). Tant qu'elle est agrippée, la cible est sous la condition entravée, et la marilith peut toucher automatiquement sa cible avec sa queue, mais ne peut pas attaquer d'autres cibles.",
                 attaque: 9,
                 degats: "2d10 + 4",
             },
             {
-                nom: "Téléportation.",
+                nom: "Téléportation",
                 action:
                     "La marilith se téléporte magiquement, avec tout équipement qu'elle porte ou transporte, vers un espace inoccupé qu'elle peut voir et situé dans un rayon de 36 mètres autour d'elle.",
             },
             {
-                nom: "Parade.",
+                nom: "Parade",
                 action: "La marilith ajoute 5 à sa CA contre une attaque au corps à corps qui la toucherait. Pour ce faire, elle doit voir l'attaquant et avoir en main une arme de corps à corps.",
             },
         ],
@@ -10315,14 +10280,9 @@ let monsters = [
         attributs:
             "Regard déstabilisant. Lorsqu'une créature débute son tour en étant à 9 mètres ou moins du mastodonte des ombres et est capable de voir son regard, le mastodonte des ombres peut la forcer par magie à effectuer un jet de sauvegarde de Charisme DD 15, à moins que le mastodonte des ombres soit incapable d'agir. En cas d'échec, la créature ne peut pas utiliser de réactions jusqu'au début de son tour suivant et lance un d8 pour déterminer ce qu'elle fait pendant ce round. De 1 à 4, la créature ne fait rien. Sur un 5 ou un 6, la créature ne réalise aucune action mais se déplace de la totalité de son mouvement dans une direction aléatoire. Sur un 7 ou un 8, la créature réalise une attaque au corps à corps contre une créature choisie au hasard, ou elle ne fait rien si aucune créature n'est à portée. À moins d'être surprise, une créature peut éviter le regard du mastodonte des ombres pour ne pas tenter de jet de sauvegarde au début de son tour. Dans ce cas, elle ne pourra pas voir le mastodonte des ombres jusqu'au début de son prochain tour, et pourra encore choisir à ce moment d'éviter son regard. Si elle regarde le mastodonte des ombres entretemps, elle devra effectuer immédiatement le jet de sauvegarde.Tunnelier. Le mastodonte des ombres peut creuser à travers la roche en se déplaçant à la moitié de sa vitesse de déplacement et laisser sur son passage un tunnel large de 1,50 mètre et haut de 2,40 mètres sur son passage.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le mastodonte des ombres réalise trois attaques : deux avec ses griffes et une avec ses mandibules." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 9 (1d8 + 5) dégâts tranchants.", attaque: 8, degats: "1d8 + 5" },
-            {
-                nom: "Mandibules.",
-                action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d8 + 5) dégâts tranchants.",
-                attaque: 8,
-                degats: "2d8 + 5",
-            },
+            { nom: "Attaques multiples", action: "Le mastodonte des ombres réalise trois attaques : deux avec ses griffes et une avec ses mandibules." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 9 (1d8 + 5) dégâts tranchants.", attaque: 8, degats: "1d8 + 5" },
+            { nom: "Mandibules", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d8 + 5) dégâts tranchants.", attaque: 8, degats: "2d8 + 5" },
         ],
         description: null,
         sauvegarde: { FOR: 5, DEX: 1, CON: 3, INT: -1, SAG: 0, CHA: 0 },
@@ -10361,23 +10321,18 @@ let monsters = [
             "Regard pétrifiant. Si une créature débute son tour à 9 mètres ou moins de la méduse et que chacun peut voir l'autre, la méduse (si elle n'est pas incapable d'agir) peut forcer la créature à réaliser un jet de sauvegarde de Constitution DD 14. En cas d'échec de 5 points ou plus, la créature est immédiatement pétrifiée. En cas de simple échec, elle commence à se changer en pierre et est entravée. Elle doit retenter le jet de sauvegarde à la fin de son prochain tour. En cas de réussite, l'effet se termine. En cas d'échec, la créature est pétrifiée, jusqu'à ce qu'elle soit délivrée par un sort de restauration supérieure ou par une magie similaire. À moins qu'elle ne soit surprise, une créature peut éviter le regard de la méduse pour éviter un jet de sauvegarde au début de son tour. Dans ce cas, elle ne pourra pas voir la méduse jusqu'au début de son prochain tour, et pourra encore choisir à ce moment d'éviter son regard. Si elle regarde la méduse entretemps, elle devra tenter immédiatement le jet de sauvegarde. Si la méduse voit son propre reflet à 9 mètres ou moins dans des conditions de lumière vive, la méduse, du fait de sa malédiction, sera affectée par son propre regard.",
         actions: [
             {
-                nom: "Attaques multiples.",
+                nom: "Attaques multiples",
                 action: "La méduse réalise soit trois attaques au corps à corps (une avec sa chevelure venimeuse et deux avec son épée courte), soit deux attaques à distance avec son arc long.",
             },
             {
-                nom: "Chevelure venimeuse.",
+                nom: "Chevelure venimeuse",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature. Touché : 4 (1d4 + 2) dégâts perforants + 14 (4d6) de poison.",
                 attaque: 5,
                 degats: "1d4 + 2",
             },
+            { nom: "Épée courte", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 5, degats: "1d6 + 2" },
             {
-                nom: "Épée courte.",
-                action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.",
-                attaque: 5,
-                degats: "1d6 + 2",
-            },
-            {
-                nom: "Arc Long.",
+                nom: "Arc Long",
                 action: "Attaque à distance avec une arme : +5 au toucher, portée 45/180 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants + 7 (2d6) de poison.",
                 attaque: 5,
                 degats: "1d8 + 2",
@@ -10422,9 +10377,9 @@ let monsters = [
         attributs:
             "Mort explosive. Lorsque le méphite meurt, il éclate dans une explosion de boue gluante. Chaque créature de taille M ou inférieure présente dans un rayon de 1,50 mètre autour du méphite doit réussir un jet de sauvegarde de Dextérité DD 11 ou être entravée jusqu'à la fin de son prochain tour.Apparence trompeuse. Tant que le méphite reste immobile, il ne peut être distingué d'un tas de boue ordinaire.",
         actions: [
-            { nom: "Poing.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une créature. Touché : 4 (1d6 + 1) dégâts contondants.", attaque: 3, degats: "1d6 + 1" },
+            { nom: "Poing", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une créature. Touché : 4 (1d6 + 1) dégâts contondants.", attaque: 3, degats: "1d6 + 1" },
             {
-                nom: "Souffle boueux (Recharge 6).",
+                nom: "Souffle boueux (Recharge 6)",
                 action:
                     "Le méphite éructe une boue visqueuse en direction d'une créature située à 1,50 mètre ou moins de lui. Si la cible est de taille M ou inférieure, elle doit réussir un jet de sauvegarde de Dextérité DD 11 ou être entravée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
@@ -10467,9 +10422,9 @@ let monsters = [
         attributs:
             "Mort explosive. Lorsque le méphite meurt, il laisse derrière lui un nuage de fumée qui remplit une sphère de 1,50 mètre de rayon centrée sur sa position. La zone sphérique est énormément obscurcie. Le vent disperse ce nuage, qui reste sinon en place pendant 1 minute.Incantation innée (1/jour). Le méphite peut lancer de manière innée le sort lumières dansantes, sans avoir besoin de composantes matérielles. Le Charisme est sa caractéristique d'incantation innée.",
         actions: [
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une créature. Touché : 4 (1d4 + 2) dégâts tranchants.", attaque: 4, degats: "1d4 + 2" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une créature. Touché : 4 (1d4 + 2) dégâts tranchants.", attaque: 4, degats: "1d4 + 2" },
             {
-                nom: "Souffle de cendre (Recharge 6).",
+                nom: "Souffle de cendre (Recharge 6)",
                 action:
                     "Le méphite crache un cône de 4,50 mètres de cendres fumantes. Chaque créature dans la zone doit réussir un jet de sauvegarde de Dextérité DD 10 ou être aveuglée jusqu'à la fin du prochain tour du méphite.",
             },
@@ -10514,13 +10469,13 @@ let monsters = [
             "Mort explosive. Lorsque le méphite meurt, il éclate dans une explosion d'éclats de glace. Chaque créature présente dans un rayon de 1,50 mètre autour du méphite doit effectuer un jet de sauvegarde de Dextérité DD 10, subissant 4 (1d8) dégâts tranchants en cas d'échec, ou la moitié de ces dégâts en cas de réussite.Apparence trompeuse. Tant que le méphite reste immobile, il ne peut être distingué d'un morceau de glace ordinaire.Incantation innée (1/jour). Le méphite peut lancer de manière innée le sort nappe de brouillard, sans avoir besoin de composantes matérielles. Le Charisme est sa caractéristique d'incantation innée.",
         actions: [
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une créature. Touché : 3 (1d4 + 1) dégâts tranchants + 2 (1d4) dégâts de froid.",
                 attaque: 3,
                 degats: "1d4 + 1",
             },
             {
-                nom: "Souffle de givre (Recharge 6).",
+                nom: "Souffle de givre (Recharge 6)",
                 action:
                     "Le méphite crache un cône de 4,50 mètres d'air glacial. Chaque créature dans la zone doit effectuer un jet de sauvegarde de Dextérité DD 10, subissant 5 (2d4) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -10565,13 +10520,13 @@ let monsters = [
             "Mort explosive. Lorsque le méphite meurt, il éclate dans une explosion de lave. Chaque créature présente dans un rayon de 1,50 mètre autour du méphite doit effectuer un jet de sauvegarde de Dextérité DD 11, subissant 7 (2d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.Apparence trompeuse. Tant que le méphite reste immobile, il ne peut être distingué d'un monticule de lave ordinaire.Incantation innée (1/jour). Le méphite peut lancer de manière innée le sort métal brûlant (jet de sauvegarde contre ses sorts DD 10), sans avoir besoin de composantes matérielles. Le Charisme est sa caractéristique d'incantation innée.",
         actions: [
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une créature. Touché : 3 (1d4 + 1) dégâts tranchants + 2 (1d4) dégâts de feu.",
                 attaque: 3,
                 degats: "1d4 + 1",
             },
             {
-                nom: "Souffle de feu (Recharge 6).",
+                nom: "Souffle de feu (Recharge 6)",
                 action:
                     "Le méphite crache un cône de 4,50 mètres de flammes. Chaque créature dans la zone doit effectuer un jet de sauvegarde de Dextérité DD 11, subissant 7 (2d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -10615,9 +10570,9 @@ let monsters = [
         attributs:
             "Mort explosive. Lorsque le méphite meurt, il éclate dans une explosion de poussière. Chaque créature présente dans un rayon de 1,50 mètre autour du méphite doit réussir un jet de sauvegarde de Constitution DD 10 ou être aveuglée pendant 1 minute. Une créature aveuglée peut retenter son jet de sauvegarde à chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.Incantation innée (1/jour). Le méphite peut lancer de manière innée le sort sommeil, sans avoir besoin de composantes matérielles. Le Charisme est sa caractéristique d'incantation innée.",
         actions: [
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une créature. Touché : 4 (1d4 + 2) dégâts tranchants.", attaque: 4, degats: "1d4 + 2" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une créature. Touché : 4 (1d4 + 2) dégâts tranchants.", attaque: 4, degats: "1d4 + 2" },
             {
-                nom: "Souffle aveuglant (Recharge 6).",
+                nom: "Souffle aveuglant (Recharge 6)",
                 action:
                     "Le méphite crache un cône de 4,50 mètres de poussière aveuglante. Chaque créature dans la zone doit réussir un jet de sauvegarde de Dextérité DD 10 ou être aveuglée pendant 1 minute. Une créature aveuglée peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet que l'affecte en cas de réussite.",
             },
@@ -10660,13 +10615,13 @@ let monsters = [
             "Mort explosive. Lorsque le méphite meurt, il explose en un nuage de vapeur. Chaque créature présente dans un rayon de 1,50 mètre autour du méphite doit réussir un jet de sauvegarde de Dextérité DD 10 ou subir 4 (1d8) dégâts de feu.Incantation innée (1/jour). Le méphite peut lancer de manière innée le sort flou, sans avoir besoin de composantes matérielles. Le Charisme est sa caractéristique d'incantation innée.",
         actions: [
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une créature. Touché : 2 (1d4) dégâts tranchants + 2 (1d4) dégâts de feu.",
                 attaque: 2,
                 degats: "1d4",
             },
             {
-                nom: "Souffle vaporeux (Recharge 6).",
+                nom: "Souffle vaporeux (Recharge 6)",
                 action:
                     "Le méphite crache un cône de 4,50 mètres de vapeur brûlante. Chaque créature dans la zone doit effectuer un jet de sauvegarde de Dextérité DD 10, subissant 4 (1d8) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -10701,11 +10656,11 @@ let monsters = [
         xp: 450,
         attributs: "Amphibien. Le merrow peut respirer aussi bien dans l'air que sous l'eau.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le merrow réalise deux attaques : une de morsure et une avec ses griffes ou avec le harpon." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 9 (2d4 + 4) dégâts tranchants.", attaque: 6, degats: "2d4 + 4" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d8 + 4) dégâts perforants.", attaque: 6, degats: "1d8 + 4" },
+            { nom: "Attaques multiples", action: "Le merrow réalise deux attaques : une de morsure et une avec ses griffes ou avec le harpon." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 9 (2d4 + 4) dégâts tranchants.", attaque: 6, degats: "2d4 + 4" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d8 + 4) dégâts perforants.", attaque: 6, degats: "1d8 + 4" },
             {
-                nom: "Harpon.",
+                nom: "Harpon",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +6 au toucher, allonge 1,50 m ou portée 6/18 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants. Si la cible est de taille TG ou inférieure, elle doit réussir un jet de Force contre le merrow ou être tirée de 6 mètres vers le merrow.",
                 attaque: 6,
@@ -10751,17 +10706,17 @@ let monsters = [
         attributs:
             "Incantation innée. La caractéristique d'incantation innée du mezzoloth est le Charisme (jet de sauvegarde contre ses sorts DD 11). Le mezzoloth peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :2/jour chacun : ténèbres, dissipation de la magie\n1/jour : nuage mortel\nRésistance à la magie. Le mezzoloth a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme du mezzoloth sont magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le mezzoloth effectue deux attaques au corps à corps : une avec ses griffes et une avec le trident." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 9 (2d4 + 4) dégâts tranchants.", attaque: 7, degats: "2d4 + 4" },
+            { nom: "Attaques multiples", action: "Le mezzoloth effectue deux attaques au corps à corps : une avec ses griffes et une avec le trident." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 9 (2d4 + 4) dégâts tranchants.", attaque: 7, degats: "2d4 + 4" },
             {
-                nom: "Trident.",
+                nom: "Trident",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +7 au toucher, allonge 1,50 m ou portée 6/18 m, une cible. Touché : 7 (1d6 + 4) dégâts perforants, ou 8 (1d8 + 4) dégâts perforants si utilisé à deux mains pour faire une attaque au corps à corps.",
                 attaque: 7,
                 degats: "1d6 + 4",
             },
             {
-                nom: "Téléportation.",
+                nom: "Téléportation",
                 action:
                     "Le mezzoloth se téléporte magiquement, avec tout l'équipement qu'il porte ou transporte, vers un espace inoccupé qu'il peut voir et situé dans un rayon de 18 mètres autour de lui.",
             },
@@ -10805,14 +10760,14 @@ let monsters = [
             "Métamorphe. La mimique peut utiliser son action pour se métamorphoser en un objet, ou pour reprendre sa véritable forme (un aspect informe). Ses statistiques sont les mêmes quelle que soit sa forme. L'équipement qu'elle porte ou transporte ne se transforme pas. Elle retrouve sa véritable forme lorsqu'elle meurt.Substance adhésive (forme d'objet uniquement). La mimique adhère à tout ce qui la touche. Une créature de taille TG ou inférieure collée à la mimique est également agrippée par elle (DD 13 pour s'échapper). Les jets de caractéristique effectués pour s'échapper de cette prise ont un désavantage.Apparence trompeuse (forme d'objet uniquement). Tant que la mimique reste immobile, elle ne peut être distinguée d'un objet ordinaire.Lutteur. La mimique a un avantage aux jets d'attaque effectués contre une créature qu'elle agrippe.",
         actions: [
             {
-                nom: "Pseudopode.",
+                nom: "Pseudopode",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts contondants. Si la mimique est sous forme d'objet, la cible est affectée par le trait Substance adhésive.",
                 attaque: 5,
                 degats: "1d8 + 3",
             },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts perforants + 4 (1d8) dégâts d'acide.",
                 attaque: 5,
                 degats: "1d8 + 3",
@@ -10850,12 +10805,12 @@ let monsters = [
             "Charge. Si le minotaure se déplace d'au moins 3 mètres en ligne droite vers une cible, puis la touche lors d'une attaque avec sa corne dans le même tour, la cible subit 9 (2d8) dégâts perforants supplémentaires. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 14 ou être repoussée de 3 mètres et tomber à terre.Mémoire de labyrinthe. Le minotaure se souvient parfaitement des chemins qu'il a empruntés.Téméraire. Au début de son tour, le minotaure peut obtenir un avantage à tous les jets d'attaque au corps à corps avec une arme pendant ce tour, mais les attaques contre lui ont un avantage jusqu'au début de son prochain tour.",
         actions: [
             {
-                nom: "Hache à deux mains.",
+                nom: "Hache à deux mains",
                 action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 17 (2d12 + 4) dégâts tranchants.",
                 attaque: 6,
                 degats: "2d12 + 4",
             },
-            { nom: "Corne.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts perforants.", attaque: 6, degats: "2d8 + 4" },
+            { nom: "Corne", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts perforants.", attaque: 6, degats: "2d8 + 4" },
         ],
         description:
             "Avec leurs fourrures tachées du sang des ennemis qu'ils ont vaincus, les minotaures sont d'imposants humanoïdes à tête de taureau dont les rugissements sont des cris de guerre qui terrifient le monde civilisé.",
@@ -10893,9 +10848,9 @@ let monsters = [
         xp: 50,
         attributs: "Apparence trompeuse. Tant que la moisissure violette reste immobile, elle ne peut être distinguée d'un champignon ordinaire.",
         actions: [
-            { nom: "Attaques multiples.", action: "La moisissure effectue 1d4 attaques de Contact pourrissant." },
+            { nom: "Attaques multiples", action: "La moisissure effectue 1d4 attaques de Contact pourrissant." },
             {
-                nom: "Contact pourrissant.",
+                nom: "Contact pourrissant",
                 action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 3 m, une créature. Touché : 4 (1d8) dégâts nécrotiques.",
                 attaque: 2,
                 degats: "1d8",
@@ -10939,13 +10894,13 @@ let monsters = [
             "Odorat et ouïe aiguisés. Le molosse a un avantage aux jets de Sagesse (Perception) basés sur l'odorat ou l'ouïe.Tactique de groupe. Le molosse a un avantage aux jets d'attaque contre une créature si au moins l'un de ses alliés est à 1,50 mètre ou moins de la créature et n'est pas incapable d'agir.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts perforants + 7 (2d6) de feu.",
                 attaque: 5,
                 degats: "1d8 + 3",
             },
             {
-                nom: "Souffle de feu (Recharge 5-6).",
+                nom: "Souffle de feu (Recharge 5-6)",
                 action:
                     "Le molosse exhale des flammes dans un cône de 4,50 mètres. Toutes les créatures dans la zone doivent réaliser un jet de sauvegarde de Dextérité DD 12, subissant 21 (6d6) dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -10990,16 +10945,16 @@ let monsters = [
         xp: 700,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le seigneur momie peut utiliser son Regard d'épouvante et réaliser une attaque avec ses poings putréfiants." },
+            { nom: "Attaques multiples", action: "Le seigneur momie peut utiliser son Regard d'épouvante et réaliser une attaque avec ses poings putréfiants." },
             {
-                nom: "Poings putréfiants.",
+                nom: "Poings putréfiants",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts contondants + 10 (3d6) dégâts nécrotiques. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Constitution DD 12 ou être frappée par la malédiction de la putréfaction de la momie. La cible de la malédiction ne peut pas regagner de points de vie, et ses points de vie maximums sont réduits de 10 (3d6) chaque 24 heures qui s'écoulent. Si la malédiction réduit les points de vie maximums de la cible à 0, la cible meurt et son corps devient poussière. La malédiction dure jusqu'à ce qu'elle soit supprimée par un sort de délivrance des malédictions ou autre magie.",
                 attaque: 5,
                 degats: "2d6 + 3",
             },
             {
-                nom: "Regard d'épouvante.",
+                nom: "Regard d'épouvante",
                 action:
                     "La momie cible une créature qu'elle peut voir dans les 18 mètres autour d'elle. Si la cible peut voir la momie, elle doit réussir un jet de sauvegarde de Sagesse DD 11 contre cette magie ou devenir effrayée jusqu'à la fin du prochain tour de la momie. Si le jet de sauvegarde échoue de 5 ou plus, la cible est de plus paralysée pour la même durée. Une cible qui réussit le jet de sauvegarde est immunisée du Regard d'épouvante de toutes les momies (mais pas des seigneurs momies) pour les prochaines 24 heures.",
             },
@@ -11036,9 +10991,9 @@ let monsters = [
         attributs:
             "Esprit axiomatique. Le monodrone ne peut être contraint à agir d'une manière contraire à sa nature ou aux instructions qu'il a reçues.Désintégration. Si le monodrone meurt, son corps se désintègre et tombe en poussière, ne laissant derrière lui que ses armes et tout ce qu'il portait.",
         actions: [
-            { nom: "Dague.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts perforants.", attaque: 3, degats: "1d4 + 1" },
+            { nom: "Dague", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts perforants.", attaque: 3, degats: "1d4 + 1" },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action: "Attaque au corps à corps ou à distance avec une arme : +2 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 3 (1d6) dégâts perforants.",
                 attaque: 2,
                 degats: "1d6",
@@ -11076,18 +11031,18 @@ let monsters = [
             "Spores de détresse. Lorsque le myconide subit des dégâts, tous les autres myconides à 72 mètres à la ronde peuvent ressentir sa douleur.Maladie solaire. Lorsqu'il se trouve exposé à la lumière du soleil, le myconide a un désavantage aux jets de caractéristique, jets d'attaque et jets de sauvegarde. Le myconide meurt s'il est exposé directement à la lumière du soleil pendant plus d'une heure.",
         actions: [
             {
-                nom: "Coup.",
+                nom: "Coup",
                 action: "Attaque au corps à corps avec une arme : +2 au toucher, allonge 1,50 m, une cible. Touché : 5 (2d4) dégâts contondants + 5 (2d4) dégâts de poison.",
                 attaque: 2,
                 degats: "2d4",
             },
             {
-                nom: "Spores de pacification (3/jour).",
+                nom: "Spores de pacification (3/jour)",
                 action:
                     "Le myconide projette des spores sur une créature qu'il peut voir et se trouvant à 1,50 mètre de lui. La cible doit réussir un jet de sauvegarde de Constitution DD 11 ou être étourdie pendant 1 minute. La cible peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "Spores de rapport (3/jour).",
+                nom: "Spores de rapport (3/jour)",
                 action:
                     "Des spores sont envoyées dans toutes les directions dans un rayon de 6 mètres autour du myconide. Ces spores contournent les angles de mur et n'affectent que les créatures possédant une valeur d'Intelligence de 2 ou supérieure et qui ne sont ni des morts-vivants, ni des créatures artificielles, ni des élémentaires. Les créatures affectées peuvent communiquer par télépathie avec une autre créature affectée tant qu'elles se trouvent à 9 mètres ou moins l'une de l'autre. Cet effet reste effectif pendant 1 heure.",
             },
@@ -11124,13 +11079,13 @@ let monsters = [
             "Spores de détresse. Lorsque le myconide subit des dégâts, tous les autres myconides à 72 mètres à la ronde peuvent ressentir sa douleur.Maladie solaire. Lorsqu'il se trouve exposé à la lumière du soleil, le myconide a un désavantage aux jets de caractéristique, jets d'attaque et jets de sauvegarde. Le myconide meurt s'il est exposé directement à la lumière du soleil pendant plus d'une heure.",
         actions: [
             {
-                nom: "Coup.",
+                nom: "Coup",
                 action: "Attaque au corps à corps avec une arme : +1 au toucher, allonge 1,50 m, une cible. Touché : 1 (1d4 - 1) dégâts contondants + 2 (1d4) dégâts de poison.",
                 attaque: 1,
                 degats: "1d4 - 1",
             },
             {
-                nom: "Spores de rapport (3/jour).",
+                nom: "Spores de rapport (3/jour)",
                 action:
                     "Des spores sont envoyées dans toutes les directions dans un rayon de 3 mètres autour du myconide. Ces spores contournent les angles de mur et n'affectent que les créatures possédant une valeur d'Intelligence de 2 ou supérieure et qui ne sont ni des morts-vivants, ni des créatures artificielles, ni des élémentaires. Les créatures affectées peuvent communiquer par télépathie avec une autre créature affectée tant qu'elles se trouvent à 9 mètres ou moins l'une de l'autre. Cet effet reste effectif pendant 1 heure.",
             },
@@ -11166,30 +11121,30 @@ let monsters = [
         attributs:
             "Spores de détresse. Lorsque le myconide subit des dégâts, tous les autres myconides à 72 mètres à la ronde peuvent ressentir sa douleur.Maladie solaire. Lorsqu'il se trouve exposé à la lumière du soleil, le myconide a un désavantage aux jets de caractéristique, jets d'attaque et jets de sauvegarde. Le myconide meurt s'il est exposé directement à la lumière du soleil pendant plus d'une heure.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le myconide utilise soit ses Spores Hallucinatoires soit ses Spores de Pacification, puis effectue une attaque de coup." },
+            { nom: "Attaques multiples", action: "Le myconide utilise soit ses Spores Hallucinatoires soit ses Spores de Pacification, puis effectue une attaque de coup." },
             {
-                nom: "Coup.",
+                nom: "Coup",
                 action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 8 (3d4 + 1) dégâts contondants + 7 (3d4) dégâts de poison.",
                 attaque: 3,
                 degats: "3d4 + 1",
             },
             {
-                nom: "Spores d'animation (3/jour).",
+                nom: "Spores d'animation (3/jour)",
                 action:
                     "Le myconide cible le cadavre d'un humanoïde ou d'une bête de taille G ou inférieure et se trouvant à 1,50 mètre de lui maximum et déverse des spores sur cette dépouille. En 24 heures, le cadavre se relève et devient un serviteur des spores. Le cadavre reste animé pendant 1d4 + 1 semaines ou jusqu'à ce qu'il soit détruit, et ne peut plus être réanimé par ce procédé.",
             },
             {
-                nom: "Spores hallucinatoires.",
+                nom: "Spores hallucinatoires",
                 action:
                     "Le myconide projette les spores sur une créature qu'il peut voir et se trouvant à 1,50 mètre de lui. La cible doit réussir un jet de sauvegarde de Constitution DD 12 ou être empoisonnée pendant 1 minute. Une cible empoisonnée de la sorte est incapable d'agir tant qu'elle est sous l'emprise de ces hallucinations. La cible peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "Spores de pacification.",
+                nom: "Spores de pacification",
                 action:
                     "Le myconide projette des spores sur une créature qu'il peut voir et se trouvant à 1,50 mètre de lui. La cible doit réussir un jet de sauvegarde de Constitution DD 12 ou être étourdie pendant 1 minute. La cible peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "Spores de rapport.",
+                nom: "Spores de rapport",
                 action:
                     "Des spores sont envoyées dans toutes les directions dans un rayon de 9 mètres autour du myconide. Ces spores contournent les angles de mur et n'affectent que les créatures possédant une valeur d'Intelligence de 2 ou supérieure et qui ne sont ni des morts-vivants, ni des créatures artificielles, ni des élémentaires. Les créatures affectées peuvent communiquer par télépathie avec une autre créature affectée tant qu'elles se trouvent à 9 mètres ou moins l'une de l'autre. Cet effet reste effectif pendant 1 heure.",
             },
@@ -11233,7 +11188,7 @@ let monsters = [
             "Reconstitution. S'il meurt, le naga revient à la vie en 1d6 jours et retrouve tous ses points de vie. Seul un sort de souhait peut empêcher ce trait de fonctionner.Incantation. Le naga est un lanceur de sorts de niveau 10. Sa caractéristique d'incantation est l'Intelligence (jet de sauvegarde contre ses sorts DD 14, +6 au toucher pour les attaques avec un sort). Le naga n'a besoin que des composantes verbales pour lancer ses sorts. Il a préparé les sorts de magicien suivants :Sorts mineurs (à volonté) : main de mage, illusion mineure, rayon de givre\nNiveau 1 (4 emplacements) : charme-personne, détection de la magie, sommeil\nNiveau 2 (3 emplacements) : détection des pensées, immobilisation de personne\nNiveau 3 (3 emplacements) : éclair, respiration aquatique\nNiveau 4 (3 emplacements) : flétrissement, porte dimensionnelle\nNiveau 5 (2 emplacements) : domination d'humanoïde.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une créature. Touché : 7 (1d6 + 4) dégâts perforants, et la cible doit effectuer un jet de sauvegarde de Constitution DD 13, subissant 31 (7d8) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
                 attaque: 7,
@@ -11279,14 +11234,14 @@ let monsters = [
             "Reconstitution. S'il meurt, le naga revient à la vie en 1d6 jours et retrouve tous ses points de vie. Seul un sort de souhait peut empêcher ce trait de fonctionner.Incantation. Le naga est un lanceur de sorts de niveau 11. Sa caractéristique d'incantation est la Sagesse (jet de sauvegarde contre ses sorts DD 16, +8 au toucher pour les attaques avec un sort). Le naga n'a besoin que des composantes verbales pour lancer ses sorts. Il a préparé les sorts de clerc suivants :Sorts mineurs (à volonté) : réparation, flamme sacrée, thaumaturgie\nNiveau 1 (4 emplacements) : injonction, soins, bouclier de la foi\nNiveau 2 (3 emplacements) : apaisement des émotions, immobilisation de personne\nNiveau 3 (3 emplacements) : malédiction, clairvoyance\nNiveau 4 (3 emplacements) : bannissement, liberté de mouvement\nNiveau 5 (2 emplacements) : colonne de flamme, mission\nNiveau 6 (1 emplacement) : vision suprême.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +8 au toucher, allonge 3 m, une créature. Touché : 8 (1d8 + 4) dégâts perforants, et la cible doit effectuer un jet de sauvegarde de Constitution DD 15, subissant 45 (10d8) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
                 attaque: 8,
                 degats: "1d8 + 4",
             },
             {
-                nom: "Crachat empoisonné.",
+                nom: "Crachat empoisonné",
                 action:
                     "Attaque à distance avec une arme : +8 au toucher, portée 4,50/9 m, une créature. Touché : la cible doit effectuer un jet de sauvegarde de Constitution DD 15, subissant 45 (10d8) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
                 attaque: 8,
@@ -11331,7 +11286,7 @@ let monsters = [
             "Incantation. Le naga est un lanceur de sorts de niveau 5 (jet de sauvegarde contre ses sorts DD 12, +4 au toucher pour les attaques avec un sort) qui n'a besoin que des composantes verbales pour lancer ses sorts.Si le naga était un naga gardien lorsqu'il était en vie, sa caractéristique d'incantation est la Sagesse, et il a préparé les sorts de clerc suivants :\nSorts mineurs (à volonté) : réparation, flamme sacrée, thaumaturgie\nNiveau 1 (4 emplacements) : injonction, bouclier de la foi\nNiveau 2 (3 emplacements) : apaisement des émotions, immobilisation de personne\nNiveau 3 (2 emplacements) : malédiction\nSi le naga était un naga corrupteur lorsqu'il était en vie, sa caractéristique d'incantation est l'Intelligence, et il a préparé les sorts de magicien suivants :\nSorts mineurs (à volonté) : main de mage, illusion mineure, rayon de givre\nNiveau 1 (4 emplacements) : charme-personne, sommeil\nNiveau 2 (3 emplacements) : détection des pensées, immobilisation de personne\nNiveau 3 (2 emplacements) : éclair.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 3 m, une créature. Touché : 10 (2d6 + 3) dégâts perforants + 10 (3d6) dégâts de poison.",
                 attaque: 5,
                 degats: "2d6 + 3",
@@ -11375,21 +11330,21 @@ let monsters = [
         xp: 10000,
         attributs: "Résistance à la magie. La nalfeshnie a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "La nalfeshnie utilise Nimbe d'horreur si elle le peut. Elle réalise alors trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 15 (3d6 + 5) dégâts tranchants.", attaque: 10, degats: "3d6 + 5" },
+            { nom: "Attaques multiples", action: "La nalfeshnie utilise Nimbe d'horreur si elle le peut. Elle réalise alors trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 15 (3d6 + 5) dégâts tranchants.", attaque: 10, degats: "3d6 + 5" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 32 (5d10 + 5) dégâts perforants.",
                 attaque: 10,
                 degats: "5d10 + 5",
             },
             {
-                nom: "Nimbe d'horreur (Recharge 5-6).",
+                nom: "Nimbe d'horreur (Recharge 5-6)",
                 action:
                     "La nalfeshnie émet magiquement une lumière multicolore et scintillante. Toute créature située à 4,50 mètres ou moins de la nalfeshnie et qui peut voir cette lumière doit réussir un jet de sauvegarde de Sagesse DD 15 ou être effrayée pendant 1 minute. Les créatures affectées peuvent relancer le jet de sauvegarde à la fin de chacun de leurs tours, une réussite mettant fin à l'effet. Si une créature réussit son jet de sauvegarde ou si l'effet se termine pour elle, cette créature est immunisée aux effets de la Nimbe d'horreur de la nalfeshnie pour les 24 heures suivantes.",
             },
             {
-                nom: "Téléportation.",
+                nom: "Téléportation",
                 action:
                     "La nalfeshnie se téléporte magiquement, avec tout équipement qu'elle porte ou transporte, vers un espace inoccupé qu'elle peut voir et situé dans un rayon de 36 mètres autour d'elle.",
             },
@@ -11434,24 +11389,24 @@ let monsters = [
             "Sensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le nécrophage a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
             {
-                nom: "Attaques multiples.",
+                nom: "Attaques multiples",
                 action: "Le nécrophage réalise deux attaques à l'épée longue ou deux attaques à l'arc long. Il peut utiliser Absorption d'énergie à la place d'une attaque à l'épée longue.",
             },
             {
-                nom: "Absorption d'énergie.",
+                nom: "Absorption d'énergie",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une créature. Touché : 5 (1d6 + 2) dégâts nécrotiques. La cible doit réussir un jet de sauvegarde de Constitution DD 13 pour ne pas subir une diminution de ses points de vie maximums égale aux dégâts subis. Cette diminution perdure jusqu'à ce que la cible termine un repos long. La cible meurt si cet effet réduit ses points de vie maximums à 0. Un humanoïde tué par cette attaque se relève 24 heures plus tard comme un zombi sous le contrôle du nécrophage, à moins que l'humanoïde ne soit ramené à la vie ou que son corps ne soit détruit. Le nécrophage ne peut avoir plus de douze zombis sous son contrôle à un moment donné.",
                 attaque: 4,
                 degats: "1d6 + 2",
             },
             {
-                nom: "Épée longue.",
+                nom: "Épée longue",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d8 + 2) dégâts tranchants, ou 7 (1d10 + 2) dégâts tranchants si utilisée à deux mains.",
                 attaque: 4,
                 degats: "1d8 + 2",
             },
-            { nom: "Arc long.", action: "Attaque à distance avec une arme : +4 au toucher, portée 45/180 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants.", attaque: 4, degats: "1d8 + 2" },
+            { nom: "Arc long", action: "Attaque à distance avec une arme : +4 au toucher, portée 45/180 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants.", attaque: 4, degats: "1d8 + 2" },
         ],
         description:
             "Les nécrophages sont des morts-vivants humanoïdes intelligents qui ressemblent à des cadavres armés en armures. Généralement ce sont des individus avides et sombres qui, au moment de leur mort, ont fait appel à Orcus ou à une autre entité et lui ont promis de mener une guerre éternelle contre les vivants en échange de la non-mort.",
@@ -11489,15 +11444,15 @@ let monsters = [
         xp: 450,
         attributs: "Vue aiguisée. Le nothic a un avantage aux jets de Sagesse (Perception) faisant appel à la vue.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le nothic réalise deux attaques avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.", attaque: 4, degats: "1d6 + 3" },
+            { nom: "Attaques multiples", action: "Le nothic réalise deux attaques avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.", attaque: 4, degats: "1d6 + 3" },
             {
-                nom: "Regard de putréfaction.",
+                nom: "Regard de putréfaction",
                 action:
                     "Le nothic prend pour cible une créature qu'il peut voir dans un rayon de 9 mètres autour de lui. La cible doit réussir un jet de sauvegarde de Constitution DD 12 contre cette magie ou prendre 10 (3d6) dégâts nécrotiques.",
             },
             {
-                nom: "Intuition mystérieuse.",
+                nom: "Intuition mystérieuse",
                 action:
                     "Le nothic prend pour cible une créature qu'il peut voir dans un rayon de 9 mètres autour de lui. La cible doit faire un jet de Charisme (Tromperie) contre un jet de Sagesse (Perspicacité) du nothic. Si le nothic l'emporte, il apprend par magie un fait ou un secret de la cible. Si la cible est immunisée aux charmes, elle remporte automatiquement l'opposition.",
             },
@@ -11542,22 +11497,22 @@ let monsters = [
         attributs:
             "Incantation innée. La caractéristique d'incantation innée du nycaloth est le Charisme. Le nycaloth peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : ténèbres, détection de la magie, dissipation de la magie, invisibilité (personnel uniquement), image miroir\nRésistance à la magie. Le nycaloth a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme du nycaloth sont magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le nycaloth effectue deux attaques au corps à corps, ou effectue une attaque au corps à corps et une téléportation avant ou après avoir attaqué." },
+            { nom: "Attaques multiples", action: "Le nycaloth effectue deux attaques au corps à corps, ou effectue une attaque au corps à corps et une téléportation avant ou après avoir attaqué." },
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action:
                     "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts tranchants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Constitution DD 16 ou subir 5 (2d4) dégâts tranchants au début de chacun de ses tours à cause de cette blessure fiélone. Chaque fois que le nycaloth touche avec cette attaque la cible blessée, les dégâts qu'elle subit à chaque tour augmentent de 5 (2d4). Toute créature peut utiliser son action pour soigner la blessure en réussissant un jet de Sagesse (Médecine) DD 13. La blessure se referme également si la cible reçoit des soins magiques.",
                 attaque: 9,
                 degats: "2d6 + 5",
             },
             {
-                nom: "Hache à deux mains.",
+                nom: "Hache à deux mains",
                 action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 18 (2d12 + 5) dégâts tranchants.",
                 attaque: 9,
                 degats: "2d12 + 5",
             },
             {
-                nom: "Téléportation.",
+                nom: "Téléportation",
                 action:
                     "Le nycaloth se téléporte magiquement, avec tout l'équipement qu'il porte ou transporte, vers un espace inoccupé qu'il peut voir et situé dans un rayon de 18 mètres autour de lui.",
             },
@@ -11592,9 +11547,9 @@ let monsters = [
         xp: 450,
         attributs: ".",
         actions: [
-            { nom: "Massue.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts contondants.", attaque: 6, degats: "2d8 + 4" },
+            { nom: "Massue", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts contondants.", attaque: 6, degats: "2d8 + 4" },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action: "Attaque au corps à corps ou à distance avec une arme : +6 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants.",
                 attaque: 6,
                 degats: "2d6 + 4",
@@ -11642,7 +11597,7 @@ let monsters = [
             "Amorphe. L'ombre peut se déplacer au travers d'espaces larges de 2,50 cm sans être considérée comme passant dans un espace étroit.Dissimulation dans l'ombre. Si elle se trouve dans des ténèbres ou est exposée à une lumière faible, l'ombre peut effectuer l'action Se cacher en utilisant une action bonus.Impuissance face à la lumière du soleil. Si elle est exposée à la lumière du soleil, l'ombre a un désavantage aux jets d'attaque, de caractéristique et de sauvegarde.",
         actions: [
             {
-                nom: "Absorption de Force.",
+                nom: "Absorption de Force",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une créature. Touché : 9 (2d6 + 2) dégâts nécrotiques, et la valeur de Force de la cible est réduite de 1d4. La cible meurt si cet effet réduit sa Force à 0. Sinon, la réduction de Force dure jusqu'à ce que la cible termine un repos court ou long. Si un humanoïde non mauvais meurt de cette attaque, une nouvelle ombre surgit de son corps 1d4 heures plus tard.",
                 attaque: 4,
@@ -11686,22 +11641,22 @@ let monsters = [
         attributs:
             "Incantation innée. La caractéristique d'incantation innée de l'oni est le Charisme (jet de sauvegarde contre ses sorts DD 13). L'oni peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : ténèbres, invisibilité\n1/jour chacun : charme-personne, cône de froid, forme gazeuse, sommeil\nArmes magiques. Les attaques avec une arme de l'oni sont magiques.Régénération. L'oni récupère 10 points de vie au début de son tour s'il possède au moins 1 point de vie.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'oni effectue deux attaques, avec ses griffes ou avec sa coutille." },
+            { nom: "Attaques multiples", action: "L'oni effectue deux attaques, avec ses griffes ou avec sa coutille." },
             {
-                nom: "Griffes (forme d'oni uniquement).",
+                nom: "Griffes (forme d'oni uniquement)",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d8 + 4) dégâts tranchants.",
                 attaque: 7,
                 degats: "1d8 + 4",
             },
             {
-                nom: "Coutille.",
+                nom: "Coutille",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 15 (2d10 + 4) dégâts tranchants, ou 9 (1d10 + 4) dégâts tranchants sous forme de taille M ou P.",
                 attaque: 7,
                 degats: "2d10 + 4",
             },
             {
-                nom: "Changement de forme.",
+                nom: "Changement de forme",
                 action:
                     "L'oni se métamorphose magiquement en un humanoïde de taille P ou M, en un géant de taille G, ou bien retrouve sa véritable forme. Mise à part sa taille, ses statistiques restent les mêmes quelle que soit sa forme. La seule partie de son équipement qui est également transformée est sa coutille, qui se rétrécit avec lui et peut donc lui servir sous forme humanoïde. Si l'oni meurt, il retrouve sa véritable forme, et sa coutille retrouve sa taille normale.",
             },
@@ -11736,15 +11691,15 @@ let monsters = [
         xp: 450,
         attributs: "Agressif. Par une action bonus, l'orog peut se déplacer de sa vitesse vers une créature hostile qu'il peut voir.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'orog effectue deux attaques avec la hache à deux mains." },
+            { nom: "Attaques multiples", action: "L'orog effectue deux attaques avec la hache à deux mains." },
             {
-                nom: "Hache à deux mains.",
+                nom: "Hache à deux mains",
                 action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 10 (1d12 + 4) dégâts tranchants.",
                 attaque: 6,
                 degats: "1d12 + 4",
             },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action: "Attaque au corps à corps ou à distance avec une arme : +6 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 7 (1d6 + 4) dégâts perforants.",
                 attaque: 6,
                 degats: "1d6 + 4",
@@ -11781,13 +11736,13 @@ let monsters = [
         attributs: "Agressif. Par une action bonus, l'orque peut se déplacer de sa vitesse vers une créature hostile qu'il peut voir.",
         actions: [
             {
-                nom: "Hache à deux mains.",
+                nom: "Hache à deux mains",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 9 (1d12 + 3) dégâts tranchants.",
                 attaque: 5,
                 degats: "1d12 + 3",
             },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action: "Attaque au corps à corps ou à distance avec une arme : +5 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.",
                 attaque: 5,
                 degats: "1d6 + 3",
@@ -11831,22 +11786,22 @@ let monsters = [
         attributs:
             "Agressif. Par une action bonus, l'orque peut se déplacer de sa vitesse vers une créature hostile qu'il peut voir.Furie de Gruumsh. L'orque inflige 4 (1d8) dégâts supplémentaires lorsqu'il touche une cible lors d'une attaque avec une arme (ce bonus est inclus ci-dessous).",
         actions: [
-            { nom: "Attaques multiples.", action: "L'orque effectue deux attaques avec la hache à deux mains ou la lance." },
+            { nom: "Attaques multiples", action: "L'orque effectue deux attaques avec la hache à deux mains ou la lance." },
             {
-                nom: "Hache à deux mains.",
+                nom: "Hache à deux mains",
                 action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 15 (1d12 + 4 plus 1d8) dégâts tranchants.",
                 attaque: 6,
                 degats: "1d12 + 4 plus 1d8",
             },
             {
-                nom: "Lance.",
+                nom: "Lance",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +6 au toucher, allonge 1,50 m ou portée 6/18 m une cible. Touché : 12 (1d6 + 4 plus 1d8) dégâts perforants, ou 13 (2d8 + 4) dégâts perforants si utilisée à deux mains pour effectuer une attaque au corps à corps.",
                 attaque: 6,
                 degats: "1d6 + 4 plus 1d8",
             },
             {
-                nom: "Cri de guerre (1/jour).",
+                nom: "Cri de guerre (1/jour)",
                 action:
                     "Chaque créature que le chef de guerre choisie et qui se trouve à 9 mètres ou moins de lui, qui peut l'entendre, et qui n'est pas déjà affectée par un Cri de guerre, gagne un avantage aux jets d'attaque jusqu'au début du prochain tour du chef de guerre. Le chef de guerre peut ensuite effectuer une attaque en utilisant son action bonus.",
             },
@@ -11883,7 +11838,7 @@ let monsters = [
             "Agressif. Par une action bonus, l'orque peut se déplacer de sa vitesse vers une créature hostile qu'il peut voir.Furie de Gruumsh. L'orque inflige 4 (1d8) dégâts supplémentaires lorsqu'il touche une cible lors d'une attaque avec une arme (inclus dans l'attaque ci-dessous).Incantation. L'orque est un lanceur de sorts de niveau 3. Sa caractéristique d'incantation est la Sagesse (jet de sauvegarde contre ses sorts DD 11, +3 au toucher pour les attaques avec un sort). L'orque a préparé les sorts de clerc suivants :Sorts mineurs (à volonté) : assistance, résistance, thaumaturgie\nNiveau 1 (4 emplacements) : bénédiction, injonction\nNiveau 2 (2 emplacements) : augure, arme spirituelle (lance).",
         actions: [
             {
-                nom: "Lance.",
+                nom: "Lance",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +5 au toucher, allonge 1,50 m ou portée 6/18 m, une cible. Touché : 11 (1d6 + 3 + 1d8) dégâts perforants, ou 12 (2d8 + 3) dégâts perforants si utilisée à deux mains pour faire une attaque au corps à corps.",
                 attaque: 5,
@@ -11921,23 +11876,23 @@ let monsters = [
         attributs:
             "Télépathie limitée. L'otyugh peut transmettre par magie des messages et des images simples à toute créature capable de comprendre un langage dans un rayon de 36 mètres autour de lui. Cette forme de télépathie ne permet pas à la créature qui reçoit le message de répondre télépathiquement.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'otyugh effectue trois attaques : une de morsure et deux avec ses tentacules." },
+            { nom: "Attaques multiples", action: "L'otyugh effectue trois attaques : une de morsure et deux avec ses tentacules." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d8 + 3) dégâts perforants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Constitution DD 15 contre la maladie ou être empoisonnée jusqu'à ce que la maladie soit soignée. Chaque fois que 24 heures viennent de s'écouler, la cible doit relancer ce jet de sauvegarde, réduisant ses points de vie maximums de 5 (1d10) en cas d'échec. Cette maladie est soignée en cas de réussite. La cible meurt si la maladie réduit ses points de vie maximums à 0. Cette réduction des points de vie maximums de la cible est effective jusqu'à ce que la maladie soit soignée.",
                 attaque: 6,
                 degats: "2d8 + 3",
             },
             {
-                nom: "Tentacule.",
+                nom: "Tentacule",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une cible. Touché : 7 (1d8 + 3) dégâts contondants + 4 (1d8) dégâts perforants. Si la cible est de taille M ou inférieure, elle est agrippée (évasion DD 13) et entravée jusqu'à ce qu'elle ne soit plus agrippée. L'otyugh a deux tentacules, chacune d'elle peut agripper une cible.",
                 attaque: 6,
                 degats: "1d8 + 3",
             },
             {
-                nom: "Frappe tentaculaire.",
+                nom: "Frappe tentaculaire",
                 action:
                     "L'otyugh frappe les créatures agrippées entre elles ou sur une surface solide. Chaque créature doit réussir un jet de sauvegarde de Constitution DD 14, ou subir 10 (2d6 + 3) dégâts contondants et être étourdie jusqu'à la fin du prochain tour de l'otyugh. En cas de jet de sauvegarde réussi, les cibles ne subissent que la moitié des dégâts contondants et ne sont pas étourdies.",
             },
@@ -11980,25 +11935,25 @@ let monsters = [
             "Métamorphe. L'ours-garou peut utiliser son action pour se métamorphoser en un hybride ours-humanoïde de taille G ou en un ours de taille G, ou pour reprendre sa véritable forme (la forme humanoïde). Ses statistiques, autres que sa CA et sa taille, sont les mêmes quelle que soit sa forme. L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa véritable forme s'il meurt.Odorat aiguisé. L'ours-garou a un avantage aux jets de Sagesse (Perception) basés sur l'odorat.",
         actions: [
             {
-                nom: "Attaques multiples.",
+                nom: "Attaques multiples",
                 action:
                     "Sous forme d'ours, l'ours garou effectue deux attaques avec ses griffes. Sous forme humanoïde, il effectue deux attaques avec la hache à deux mains. Sous forme hybride, il peut attaquer comme un ours ou comme un humanoïde.",
             },
             {
-                nom: "Morsure (forme d'ours ou hybride uniquement).",
+                nom: "Morsure (forme d'ours ou hybride uniquement)",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 15 (2d10 + 4) dégâts perforants. Si la cible est un humanoïde, elle doit réussir un jet de sauvegarde de Constitution DD 14 ou être atteinte de la lycanthropie d'ours-garou.",
                 attaque: 7,
                 degats: "2d10 + 4",
             },
             {
-                nom: "Griffes (forme d'ours ou hybride uniquement).",
+                nom: "Griffes (forme d'ours ou hybride uniquement)",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts tranchants.",
                 attaque: 7,
                 degats: "2d8 + 4",
             },
             {
-                nom: "Hache à deux mains (forme humanoïde ou hybride uniquement).",
+                nom: "Hache à deux mains (forme humanoïde ou hybride uniquement)",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 10 (1d12 + 4) dégâts tranchants.",
                 attaque: 7,
                 degats: "1d12 + 4",
@@ -12034,9 +11989,9 @@ let monsters = [
         xp: 700,
         attributs: "Vue et odorat aiguisés. L'ours-hibou a un avantage aux jets de Sagesse (Perception) basés sur la vue ou l'odorat.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'ours-hibou réalise deux attaques : une avec son bec et une avec ses griffes." },
-            { nom: "Bec.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une créature. Touché : 10 (1d10 + 5) dégâts perforants.", attaque: 7, degats: "1d10 + 5" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d8 + 5) dégâts tranchants.", attaque: 7, degats: "2d8 + 5" },
+            { nom: "Attaques multiples", action: "L'ours-hibou réalise deux attaques : une avec son bec et une avec ses griffes." },
+            { nom: "Bec", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une créature. Touché : 10 (1d10 + 5) dégâts perforants.", attaque: 7, degats: "1d10 + 5" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d8 + 5) dégâts tranchants.", attaque: 7, degats: "2d8 + 5" },
         ],
         description:
             "Croisement monstrueux entre un ours et un hibou géant, l'ours-hibou est réputé pour sa férocité et son agressivité, qui en font l'un des prédateurs les plus redoutés de la nature.",
@@ -12070,9 +12025,9 @@ let monsters = [
         attributs:
             "Odorat ferreux. Grâce à son odorat, l'oxydeur peut localiser avec précision les métaux ferreux se situant dans un rayon de 9 mètres autour de lui.Oxydation. Toute arme non magique constituée de métal qui touche l'oxydeur se met à rouiller. Après avoir infligé les dégâts, l'arme subit une pénalité permanente et cumulative de -1 aux jets de dégâts. Si la pénalité arrive à -5, l'arme est détruite. Les munitions non magiques constituées de métal qui touchent l'oxydeur sont détruites après avoir infligé leurs dégâts.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d8 + 1) dégâts perforants.", attaque: 3, degats: "1d8 + 1" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d8 + 1) dégâts perforants.", attaque: 3, degats: "1d8 + 1" },
             {
-                nom: "Antennes.",
+                nom: "Antennes",
                 action:
                     "L'oxydeur corrode un objet ferreux non magique qu'il peut voir se trouvant à 1,50 de lui. Si l'objet n'est pas porté ou transporté, le contact de ses antennes détruit 30 cm cube de celui-ci. Si l'objet est porté ou transporté par une créature, celle-ci peut réaliser un jet de sauvegarde de Dextérité DD 11 pour éviter le contact de l'oxydeur. Si l'objet touché est une armure ou un bouclier de métal porté ou transporté, il subit une pénalité permanente et cumulative de -1 à la CA qu'il offre. Une armure réduite à une CA de 10 ou un bouclier qui offre un bonus de +0 est détruit. Si l'objet touché est une arme métallique tenue en main, elle rouille comme décrit dans le trait Oxydation.",
             },
@@ -12113,7 +12068,7 @@ let monsters = [
         xp: 450,
         attributs: ".",
         actions: [
-            { nom: "Sabots.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 6, degats: "2d6 + 4" },
+            { nom: "Sabots", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 6, degats: "2d6 + 4" },
         ],
         description: "Les chevaux ailés blancs connus sous le nom de pégase s'élèvent à travers les cieux, offrant une vision de grâce et de majesté.",
         sauvegarde: { FOR: 4, DEX: 4, CON: 3, INT: 0, SAG: 4, CHA: 3 },
@@ -12146,10 +12101,10 @@ let monsters = [
         attributs:
             "Esprit axiomatique. Le pentadrone ne peut être contraint à agir d'une manière contraire à sa nature ou aux instructions qu'il a reçues.Désintégration. Si le pentadrone meurt, son corps se désintègre et tombe en poussière, ne derrière lui que ses armes et tout ce qu'il portait.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le pentadrone effectue cinq attaques d'appendice." },
-            { nom: "Appendice.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts contondants.", attaque: 4, degats: "1d6 + 2" },
+            { nom: "Attaques multiples", action: "Le pentadrone effectue cinq attaques d'appendice." },
+            { nom: "Appendice", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts contondants.", attaque: 4, degats: "1d6 + 2" },
             {
-                nom: "Gaz paralysant (Recharge 5-6).",
+                nom: "Gaz paralysant (Recharge 5-6)",
                 action:
                     "Le pentadrone exhale du gaz dans un cône de 9 mètres. Chaque créature présente dans cette zone doit réussir un jet de sauvegarde de Constitution DD 11 ou être paralysée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
@@ -12186,7 +12141,7 @@ let monsters = [
             "Apparence trompeuse. Tant que le perceur reste immobile au plafond, il ne peut être distingué d'une stalactite normale.Pattes d'araignée. Le perceur peut escalader des surfaces difficiles et être au plafond la tête en bas sans avoir besoin d'effectuer un jet de caractéristique.",
         actions: [
             {
-                nom: "Plongeon.",
+                nom: "Plongeon",
                 action:
                     "Attaque au corps à corps avec une arme : +3 au toucher, une créature située directement au-dessous du perceur. Touché : 3 (1d6) dégâts perforants tous les 3 mètres de chute, jusqu'à 21 (6d6). Échec : le perceur subit la moitié des dégâts normaux qu'une créature devrait subir pour une distance de chute équivalente.",
                 attaque: 3,
@@ -12230,9 +12185,9 @@ let monsters = [
         attributs:
             "Attaque en piquée. Si le péryton est en train de voler et pique droit sur une cible située à au moins 9 mètres et la touche avec une attaque au corps à corps avec une arme, alors l'attaque inflige 9 (2d8) dégâts supplémentaires à la cible.Vol agile. Le péryton ne provoque pas d'attaques d'opportunité lorsqu'il quitte l'allonge d'un ennemi en volant.Odorat et vue aiguisés. Le péryton a un avantage aux jets de Sagesse (Perception) basés sur la vue ou l'odorat.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le péryton effectue une attaque avec sa corne et une attaque avec ses serres." },
-            { nom: "Corne.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 +3) dégâts perforants.", attaque: 5, degats: "1d8 +3" },
-            { nom: "Serres.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 8 (2d4 + 3) dégâts perforants.", attaque: 5, degats: "2d4 + 3" },
+            { nom: "Attaques multiples", action: "Le péryton effectue une attaque avec sa corne et une attaque avec ses serres." },
+            { nom: "Corne", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 +3) dégâts perforants.", attaque: 5, degats: "1d8 +3" },
+            { nom: "Serres", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 8 (2d4 + 3) dégâts perforants.", attaque: 5, degats: "2d4 + 3" },
         ],
         description: null,
         sauvegarde: { FOR: 3, DEX: 1, CON: 1, INT: -1, SAG: 1, CHA: 0 },
@@ -12266,7 +12221,7 @@ let monsters = [
             "Résistance à la magie. La pixie a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Incantation innée. La caractéristique d'incantation innée de la pixie est le Charisme (jet de sauvegarde contre ses sorts DD 12). Elle peut lancer les sorts suivants de manière innée, mais n'a besoin que de poussière de pixie comme composante matérielle :À volonté : druidisme\n1/jour chacun : confusion, lumières dansantes, détection du mal et du bien, détection des pensées, dissipation de la magie, enchevêtrement, vol, force fantasmagorique, métamorphose, sommeil.",
         actions: [
             {
-                nom: "Invisibilité supérieure.",
+                nom: "Invisibilité supérieure",
                 action:
                     "La pixie devient invisible par magie jusqu'à ce que sa concentration s'arrête (comme si elle se concentrait sur un sort). Tout l'équipement que la pixie porte ou transporte est également invisible.",
             },
@@ -12310,15 +12265,15 @@ let monsters = [
         attributs:
             "Armes angéliques. Les attaques avec une arme du planétar sont magiques. Lorsque le planétar touche avec n'importe quelle arme, l'arme inflige 5d8 dégâts radiants supplémentaires (inclus dans l'attaque ci-dessous).Conscience divine. Le planétar sait quand il entend un mensonge.Incantation innée. La caractéristique d'incantation innée du planétar est le Charisme (jet de sauvegarde contre ses sorts DD 20). Le planétar peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection du mal et du bien, invisibilité (personnel uniquement)\n3/jour chacun : barrière de lames, colonne de flamme, dissipation du mal et du bien, rappel à la vie\n1/jour chacun : communion, contrôle du climat, fléau d'insectes\nRésistance à la magie. Le planétar a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le planétar réalise deux attaques au corps à corps." },
+            { nom: "Attaques multiples", action: "Le planétar réalise deux attaques au corps à corps." },
             {
-                nom: "Épée à deux mains.",
+                nom: "Épée à deux mains",
                 action: "Attaque au corps à corps avec une arme : +12 au toucher, allonge 1,50 m, une cible. Touché : 21 (4d6 + 7) dégâts tranchants + 22 (5d8) dégâts radiants.",
                 attaque: 12,
                 degats: "4d6 + 7",
             },
             {
-                nom: "Contact guérisseur (4/jour).",
+                nom: "Contact guérisseur (4/jour)",
                 action:
                     "Le planétar touche une autre créature. La cible récupère par magie 30 (6d8 + 3) points de vie et est guérie de toutes malédictions, maladies, poisons, aveuglement ou assourdissement.",
             },
@@ -12353,7 +12308,7 @@ let monsters = [
         xp: 450,
         attributs: "Retenir son souffle. Le plésiosaure peut retenir son souffle durant 1 heure.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une cible. Touché : 14 (3d6 + 4) dégâts perforants.", attaque: 6, degats: "3d6 + 4" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 3 m, une cible. Touché : 14 (3d6 + 4) dégâts perforants.", attaque: 6, degats: "3d6 + 4" },
         ],
         description:
             "Ce prédateur marin, reptile cousin des dinosaures, attaque toute créature qu'il rencontre. Son long cou flexible peut se balancer dans toutes les directions et infliger une puissante morsure.",
@@ -12394,14 +12349,14 @@ let monsters = [
             "Amorphe. Le pouding peut se déplacer au travers d'espaces larges de 2,50 cm sans être considéré comme passant dans un espace étroit.Forme corrosive. Une créature qui touche le pouding ou le frappe au corps à corps, et se trouvant à 1,50 mètre ou moins de lui, subit 4 (1d8) dégâts d'acide. Toute arme non magique faite de métal ou de bois qui touche le pouding se corrode. Après avoir infligé ses dégâts, l'arme subit une diminution permanente et cumulable de -1 aux dégâts. Si sa diminution atteint -5, l'arme est détruite. Une munition non magique faite de métal ou de bois et qui touche le pouding est détruite après avoir infligé ses dégâts. Le pouding peut absorber jusqu'à 5 cm d'épaisseur de bois ou de métal non magique en 1 tour.Pattes d'araignée. Le pouding peut escalader des surfaces difficiles et être au plafond la tête en bas sans avoir besoin d'effectuer un jet de caractéristique.",
         actions: [
             {
-                nom: "Pseudopode.",
+                nom: "Pseudopode",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts contondants + 18 (4d8) dégâts d'acide. De plus, une armure non magique portée par la cible est en partie dissoute et subit une diminution permanente et cumulable de -1 à la CA qu'elle confère. L'armure est détruite si la diminution de CA fait tomber la CA de l'armure à 10.",
                 attaque: 5,
                 degats: "1d6 + 3",
             },
             {
-                nom: "Division.",
+                nom: "Division",
                 action:
                     "Lorsqu'un pouding de taille M ou supérieure subit des dégâts de foudre ou des dégâts tranchants, il se divise en 2 nouveaux poudings s'il lui reste au moins 10 points de vie. Chaque nouveau pouding possède la moitié des points de vie de l'original, arrondis à l'entier inférieur. Les nouveaux poudings font une taille de moins que le pouding original.",
             },
@@ -12442,9 +12397,9 @@ let monsters = [
         attributs:
             "Sens aiguisés. Le pseudodragon a un avantage aux jets de Sagesse (Perception) basés sur la vue, l'ouïe ou l'odorat.Résistance à la magie. Le pseudodragon a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Télépathie limitée. Le pseudodragon peut communiquer par magie des idées, des émotions, et des images simples par télépathie à toute créature capable de comprendre un langage dans un rayon de 30 mètres autour de lui.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts tranchants.", attaque: 4, degats: "1d4 + 2" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts tranchants.", attaque: 4, degats: "1d4 + 2" },
             {
-                nom: "Dard.",
+                nom: "Dard",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une créature. Touché : 4 (1d4 + 2) dégâts perforants, et la cible doit réussir un jet de sauvegarde de Constitution DD 11 ou être empoisonnée pendant 1 heure. Si le jet de sauvegarde échoue de 5 ou plus, la cible tombe inconsciente pour la même durée, ou jusqu'à ce qu'elle subisse des dégâts ou qu'une autre créature utilise une action pour la réveiller.",
                 attaque: 4,
@@ -12481,7 +12436,7 @@ let monsters = [
         xp: 50,
         attributs: "Vol agile. Le ptéranodon ne provoque pas d'attaques d'opportunité lorsqu'il quitte l'allonge d'un ennemi en volant.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : + 3 au toucher, allonge 1,50 m, une cible. Touché : 6 (2d4 + 1) dégâts perforants.", attaque: 3, degats: "2d4 + 1" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : + 3 au toucher, allonge 1,50 m, une cible. Touché : 6 (2d4 + 1) dégâts perforants.", attaque: 3, degats: "2d4 + 1" },
         ],
         description: "Ce reptile volant, cousin des dinosaures, n'a pas de dent, mais utilise à la place son bec pointu pour frapper une proie qui serait trop grosse à avaler d'un coup.",
         sauvegarde: { FOR: 1, DEX: 2, CON: 0, INT: -4, SAG: -1, CHA: -3 },
@@ -12514,9 +12469,9 @@ let monsters = [
         attributs:
             "Esprit axiomatique. Le quadrone ne peut être contraint à agir d'une manière contraire à sa nature ou aux instructions qu'il a reçues.Désintégration. Si le quadrone meurt, son corps se désintègre et tombe en poussière, ne laissant derrière lui que ses armes et tout ce qu'il portait.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le quadrone effectue deux attaques de coup ou quatre attaques avec l'arc court." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts contondants.", attaque: 3, degats: "1d4 + 1" },
-            { nom: "Arc court.", action: "Attaque à distance avec une arme : +4 au toucher, portée 24/96 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
+            { nom: "Attaques multiples", action: "Le quadrone effectue deux attaques de coup ou quatre attaques avec l'arc court." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts contondants.", attaque: 3, degats: "1d4 + 1" },
+            { nom: "Arc court", action: "Attaque à distance avec une arme : +4 au toucher, portée 24/96 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
         ],
         description: null,
         sauvegarde: { FOR: 1, DEX: 2, CON: 1, INT: 0, SAG: 0, CHA: 0 },
@@ -12556,8 +12511,8 @@ let monsters = [
         attributs:
             "Fureur du blessé. Tant qu'il est à 10 points de vie ou moins, le qaggoth a un avantage aux jets d'attaque. De plus, il inflige 7 (2d6) dégâts supplémentaires à chaque cible qu'il touche avec une attaque au corps à corps.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le quaggoth effectue deux attaques avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.", attaque: 5, degats: "1d6 + 3" },
+            { nom: "Attaques multiples", action: "Le quaggoth effectue deux attaques avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.", attaque: 5, degats: "1d6 + 3" },
         ],
         description: null,
         sauvegarde: { FOR: 3, DEX: 1, CON: 3, INT: -2, SAG: 1, CHA: -2 },
@@ -12595,8 +12550,8 @@ let monsters = [
         xp: 200,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le serviteur des spores effectue deux attaques avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.", attaque: 5, degats: "1d6 + 3" },
+            { nom: "Attaques multiples", action: "Le serviteur des spores effectue deux attaques avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.", attaque: 5, degats: "1d6 + 3" },
         ],
         description: null,
         sauvegarde: { FOR: 3, DEX: 1, CON: 3, INT: -4, SAG: -2, CHA: -5 },
@@ -12638,19 +12593,19 @@ let monsters = [
             "Métamorphe. Le quasit peut utiliser son action pour se métamorphoser en une bête qui ressemble à une chauve-souris (vitesse 3 m, vol 12 m), un mille-pattes (12 m, escalade 12 m) ou un crapaud (12 m, nage 12 m), ou pour reprendre sa véritable forme. Ses statistiques sont les mêmes quelle que soit sa forme, à l'exception de sa vitesse (comme indiqué précédemment). L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa véritable forme s'il meurt.Résistance à la magie. Le quasit a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
             {
-                nom: "Griffes (Morsure sous forme de bête).",
+                nom: "Griffes (Morsure sous forme de bête)",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d4 + 3) dégâts perforants, et la cible doit réussir un jet de sauvegarde de Constitution DD 10 ou subir 5 (2d4) dégâts de poison et être empoisonné pendant 1 minute. La cible peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
                 attaque: 4,
                 degats: "1d4 + 3",
             },
             {
-                nom: "Frayeur (1/jour).",
+                nom: "Frayeur (1/jour)",
                 action:
                     "Une créature que le quasit choisit, se trouvant dans un rayon de 6 mètres, doit réussir un jet de sauvegarde de Sagesse DD 10 ou être effrayée pendant 1 minute. La cible peut retenter son jet de sauvegarde à la fin de chacun de ses tours, avec un désavantage si le quasit est dans sa ligne de mire, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "Invisibilité.",
+                nom: "Invisibilité",
                 action:
                     "Le quasit devient invisible par magie jusqu'à ce qu'il attaque, utilise sa Frayeur, ou que sa concentration se termine (comme s'il se concentrait sur un sort). Tout l'équipement qu'il porte ou transporte est également invisible.",
             },
@@ -12693,9 +12648,9 @@ let monsters = [
         attributs:
             "Immunité magique partielle. Le rakshasa ne peut pas être affecté ou détecté par des sorts de niveaux 6 ou moins sauf s'il souhaite l'être. Il a un avantage aux jets de sauvegarde contre tous les autres sorts et effets magiques.Incantation innée. La caractéristique d'incantation innée du rakshasa est le Charisme (jet de sauvegarde contre ses sorts DD 18, +10 au toucher pour les attaques avec un sort). Le rakshasa peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : déguisement, détection des pensées, illusion mineure, main de mage\n3/jour chacun : charme-personne, détection de la magie, image majeure, invisibilité, suggestion\n1/jour chacun : changement de plan, domination d'humanoïde, vision suprême, vol.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le rakshasa réalise deux attaques avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le rakshasa réalise deux attaques avec ses griffes." },
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 9 (2d6 + 2) dégâts tranchants, et si la cible est une créature elle est maudite. La malédiction magique prend effet chaque fois que la cible effectue un repos court ou long, remplissant les pensées de la cible de visions et de songes horrifiques. La cible maudite ne tire aucun bénéfice à l'issue de son repos court ou long. La malédiction perdure jusqu'à ce qu'elle soit levée par un sort de délivrance des malédictions ou une magie équivalente.",
                 attaque: 7,
@@ -12739,22 +12694,22 @@ let monsters = [
         attributs:
             "Métamorphe. Le rat-garou peut utiliser son action pour se métamorphoser en un hybride rat-humanoïde ou en un rat géant, ou pour reprendre sa véritable forme (la forme humanoïde). Ses statistiques, autres que sa taille, sont les mêmes quelle que soit sa forme. L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa véritable forme s'il meurt.Odorat aiguisé. Le rat-garou a un avantage aux jets de Sagesse (Perception) basés sur l'odorat.",
         actions: [
-            { nom: "Attaques multiples (forme humanoïde ou hybride uniquement).", action: "Le rat-garou effectue deux attaques, une seule des deux peut être une attaque de morsure." },
+            { nom: "Attaques multiples (forme humanoïde ou hybride uniquement)", action: "Le rat-garou effectue deux attaques, une seule des deux peut être une attaque de morsure." },
             {
-                nom: "Morsure (forme de rat ou hybride uniquement).",
+                nom: "Morsure (forme de rat ou hybride uniquement)",
                 action:
                     "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants. Si la cible est un humanoïde, elle doit réussir un jet de sauvegarde de Constitution DD 11 ou être atteinte de la lycanthropie de rat-garou.",
                 attaque: 4,
                 degats: "1d4 + 2",
             },
             {
-                nom: "Épée courte (forme humanoïde ou hybride uniquement).",
+                nom: "Épée courte (forme humanoïde ou hybride uniquement)",
                 action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.",
                 attaque: 4,
                 degats: "1d6 + 2",
             },
             {
-                nom: "Arbalète de poing (forme humanoïde ou hybride uniquement).",
+                nom: "Arbalète de poing (forme humanoïde ou hybride uniquement)",
                 action: "Attaque à distance avec une arme : +4 au toucher, portée 9/36 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.",
                 attaque: 4,
                 degats: "1d6 + 2",
@@ -12791,14 +12746,14 @@ let monsters = [
         attributs: "Corps brûlant. Une créature se trouvant à 1,50 mètre ou moins de la rémorhaz qui la touche ou réussit une attaque au corps à corps contre elle subit 10 (3d6) dégâts de feu.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +11 au toucher, allonge 3 m, une cible. Touché : 40 (6d10 + 7) dégâts perforants + 10 (3d6) dégâts de feu. Si la cible est une créature, elle est agrippée (évasion DD 17). Tant qu'elle est agrippée, la cible est entravée, et la rémorhaz ne peut pas mordre une autre cible.",
                 attaque: 11,
                 degats: "6d10 + 7",
             },
             {
-                nom: "Engloutissement.",
+                nom: "Engloutissement",
                 action:
                     "La rémorhaz effectue une attaque de morsure contre une créature de taille M ou inférieure qu'elle agrippe. Si l'attaque réussit, la créature subit les dégâts de la morsure et est avalée, et elle n'est plus agrippée. Une fois avalée, la créature est aveuglée et entravée, bénéficie d'un abri total contre les attaques et effets provenant de l'extérieur de la rémorhaz, et subit 21 (6d6) dégâts d'acide au début de chaque tour de la rémorhaz. Si la rémorhaz subit 30 points de dégâts ou plus en un seul tour de la part d'une créature avalée, la rémorhaz doit réussir un jet de sauvegarde de Constitution DD 15 à la fin de ce tour ou régurgiter toutes les créatures qu'elle a avalées, qui se retrouveront alors à terre, à 3 mètres ou moins de la rémorhaz. Si la rémorhaz meurt, une créature avalée n'est plus entravée et peut s'échapper du cadavre en utilisant 4,50 mètres de mouvement pour se retrouver à l'extérieur et à terre.",
             },
@@ -12834,7 +12789,7 @@ let monsters = [
         attributs: "Corps brûlant. Une créature qui touche la rémorhaz, ou qui la frappe tout en se trouvant à 1,50 mètre ou moins d'elle, subit 7 (2d6) dégâts de feu.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 20 (3d10 + 4) dégâts perforants + 7 (2d6) dégâts de feu.",
                 attaque: 6,
                 degats: "3d10 + 4",
@@ -12875,8 +12830,8 @@ let monsters = [
         xp: 50,
         attributs: ".",
         actions: [
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 6 (2d4 + 1) dégâts perforants.", attaque: 3, degats: "2d4 + 1" },
-            { nom: "Épines.", action: "Attaque à distance avec une arme : +3 au toucher, portée 9/18 m, une cible. Touché : 8 (2d6 + 1) dégâts perforants.", attaque: 3, degats: "2d6 + 1" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 6 (2d4 + 1) dégâts perforants.", attaque: 3, degats: "2d4 + 1" },
+            { nom: "Épines", action: "Attaque à distance avec une arme : +3 au toucher, portée 9/18 m, une cible. Touché : 8 (2d6 + 1) dégâts perforants.", attaque: 3, degats: "2d6 + 1" },
         ],
         description: null,
         sauvegarde: { FOR: 1, DEX: 1, CON: 1, INT: -3, SAG: -1, CHA: -4 },
@@ -12917,16 +12872,16 @@ let monsters = [
         attributs:
             "Régénération. Le revenant récupère 10 points de vie au début de son tour. Si le revenant subit des dégâts de feu ou des dégâts radiants, ce trait ne fonctionne pas au début de son prochain tour. Le corps du revenant n'est détruit que s'il débute son tour avec 0 point de vie et qu'il ne se régénère pas.Reconstitution. Lorsque le corps du revenant est détruit, son âme subsiste. Au bout de 24 heures, l'âme habite et anime un autre corps humanoïde sur le même plan d'existence et récupère tous ses points de vie. Tant que l'âme n'est pas dans son nouveau corps, un sort de souhait peut être utilisé pour la forcer à passer dans l'au-delà et ne pas en revenir.Immunité au renvoi. Le revenant est immunisé aux effets de renvoi des morts-vivants.Traqueur rancunier. Le revenant connaît la direction et la distance qui le sépare de toutes les créatures contre lesquelles il est venu réclamer vengeance, même si la créature et le revenant sont sur des plans d'existence différents. Si la créature traquée par le revenant meurt, le revenant l'apprend.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le revenant effectue deux attaques avec ses poings." },
+            { nom: "Attaques multiples", action: "Le revenant effectue deux attaques avec ses poings." },
             {
-                nom: "Poing.",
+                nom: "Poing",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants. Si la cible est une créature contre laquelle le revenant a juré vengeance, la cible subit 14 (4d6) dégâts contondants supplémentaires. Plutôt que d'infliger des dégâts, le revenant peut agripper la cible (évasion DD 14) à condition que la cible soit de taille G ou inférieure.",
                 attaque: 7,
                 degats: "2d6 + 4",
             },
             {
-                nom: "Éblouissement vengeur.",
+                nom: "Éblouissement vengeur",
                 action:
                     "Le revenant cible une créature qu'il peut voir et se trouvant à 9 mètres ou moins de lui et contre laquelle il a juré vengeance. La cible doit effectuer un jet de sauvegarde de Sagesse DD 15. En cas d'échec, la cible est paralysée jusqu'à ce que le revenant lui inflige des dégâts, ou jusqu'à la fin du prochain tour du revenant. Lorsque la paralysie se termine, la cible est effrayée par le revenant pendant 1 minute. La cible effrayée peut retenter son jet de sauvegarde à la fin de chacun de ses tours, avec un désavantage si elle peut voir le revenant, mettant fin à cette condition en cas de réussite.",
             },
@@ -12962,10 +12917,10 @@ let monsters = [
         xp: 7200,
         attributs: "Vue aiguisée. Le roc a un avantage aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le roc réalise deux attaques : une avec son bec et une avec ses serres." },
-            { nom: "Bec.", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 27 (4d8 + 9) dégâts perforants.", attaque: 13, degats: "4d8 + 9" },
+            { nom: "Attaques multiples", action: "Le roc réalise deux attaques : une avec son bec et une avec ses serres." },
+            { nom: "Bec", action: "Attaque au corps à corps avec une arme : +13 au toucher, allonge 3 m, une cible. Touché : 27 (4d8 + 9) dégâts perforants.", attaque: 13, degats: "4d8 + 9" },
             {
-                nom: "Serres.",
+                nom: "Serres",
                 action:
                     "Attaque au corps à corps avec une arme : +13 au toucher, allonge 1,50 m, une cible. Touché : 23 (4d6 + 9) dégâts tranchants, et la cible est agrippée (évasion DD 19). Tant qu'elle est agrippée, la cible est entravée, et le roc ne peut pas utiliser son attaque avec ses serres contre une autre cible.",
                 attaque: 13,
@@ -13010,11 +12965,11 @@ let monsters = [
         attributs:
             "Retenir son souffle. Le roi lézard peut retenir son souffle durant 15 minutes.Embrocher. Une fois par tour, lorsque le roi lézard effectue une attaque au corps à corps avec son trident et touche, la cible subit 10 (3d6) dégâts supplémentaires, et le roi lézard gagne un nombre de points de vie temporaires égal au montant de ces dégâts supplémentaires.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le roi lézard effectue deux attaques : une de morsure et une avec ses griffes ou avec le trident, ou deux attaques avec le trident." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.", attaque: 5, degats: "1d6 + 3" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d4 + 3) dégâts tranchants.", attaque: 5, degats: "1d4 + 3" },
+            { nom: "Attaques multiples", action: "Le roi lézard effectue deux attaques : une de morsure et une avec ses griffes ou avec le trident, ou deux attaques avec le trident." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.", attaque: 5, degats: "1d6 + 3" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d4 + 3) dégâts tranchants.", attaque: 5, degats: "1d4 + 3" },
             {
-                nom: "Trident.",
+                nom: "Trident",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +5 au toucher, allonge 1,50 m ou portée 6/18 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants, ou 7 (1d8 + 3) dégâts perforants si utilisé à deux mains pour faire une attaque au corps à corps.",
                 attaque: 5,
@@ -13052,11 +13007,11 @@ let monsters = [
         attributs:
             "Frénésie sanguinaire. Le sahuagin a un avantage aux jets d'attaque au corps à corps contre une créature qui n'a pas tous ses points de vie.Amphibie limitée. Le sahuagin peut respirer sur terre ou dans l'eau, mais il a besoin d'être immergé au moins une fois toutes les 4 heures pour éviter de s'étouffer.Télépathie avec les requins. Le sahuagin peut prendre magiquement le contrôle de n'importe quel requin dans un rayon de 36 mètres autour de lui, en utilisant une forme limitée de télépathie.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le sahuagin réalise deux attaques : une de morsure et une avec ses griffes ou sa lance." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts perforants.", attaque: 3, degats: "1d4 + 1" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts tranchants.", attaque: 3, degats: "1d4 + 1" },
+            { nom: "Attaques multiples", action: "Le sahuagin réalise deux attaques : une de morsure et une avec ses griffes ou sa lance." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts perforants.", attaque: 3, degats: "1d4 + 1" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts tranchants.", attaque: 3, degats: "1d4 + 1" },
             {
-                nom: "Lance.",
+                nom: "Lance",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +3 au toucher, allonge 1,50 m ou portée 6/18 m, une cible. Touché : 4 (1d6 + 1) dégâts perforants, ou 5 (1d8 + 1) dégâts perforants si utilisée à deux mains pour faire une attaque au corps à corps.",
                 attaque: 3,
@@ -13100,11 +13055,11 @@ let monsters = [
         attributs:
             "Frénésie sanguinaire. Le sahuagin a un avantage aux jets d'attaque au corps à corps contre une créature qui n'a pas tous ses points de vie.Amphibie limitée. Le sahuagin peut respirer sur terre ou dans l'eau, mais il a besoin d'être immergé au moins une fois toutes les 4 heures pour éviter de s'étouffer.Télépathie avec les requins. Le sahuagin peut prendre magiquement le contrôle de n'importe quel requin dans un rayon de 36 mètres autour de lui, en utilisant une forme limitée de télépathie.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le sahuagin effectue trois attaques : une de morsure et deux avec ses griffes ou avec le trident." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 9 (2d4 + 4) dégâts perforants.", attaque: 7, degats: "2d4 + 4" },
+            { nom: "Attaques multiples", action: "Le sahuagin effectue trois attaques : une de morsure et deux avec ses griffes ou avec le trident." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 9 (2d4 + 4) dégâts perforants.", attaque: 7, degats: "2d4 + 4" },
             {
-                nom: "Trident.",
+                nom: "Trident",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +7 au toucher, allonge 1,50 m ou portée 6/18 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants, ou 13 (2d8 + 4) dégâts perforants si utilisé à deux mains pour effectuer une attaque au corps à corps.",
                 attaque: 7,
@@ -13142,9 +13097,9 @@ let monsters = [
         attributs:
             "Frénésie sanguinaire. Le sahuagin a un avantage aux jets d'attaque au corps à corps contre une créature qui n'a pas tous ses points de vie.Amphibie limitée. Le sahuagin peut respirer sur terre ou dans l'eau, mais il a besoin d'être immergé au moins une fois toutes les 4 heures pour éviter de s'étouffer.Télépathie avec les requins. Le sahuagin peut prendre magiquement le contrôle de n'importe quel requin dans un rayon de 36 mètres autour de lui, en utilisant une forme limitée de télépathie.Incantation. Le sahuagin est un lanceur de sorts de niveau 6. Sa caractéristique d'incantation est la Sagesse (jet de sauvegarde contre ses sorts DD 12, +4 au toucher pour les attaques avec un sort). Il a préparé les sorts de clerc suivants :Sorts mineurs (à volonté) : assistance, thaumaturgie\nNiveau 1 (4 emplacements) : bénédiction, détection de la magie, éclair traçant\nNiveau 2 (3 emplacements) : immobilisation de personne, arme spirituelle (trident)\nNiveau 3 (3 emplacements) : mot de guérison de groupe, langues.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le sahuagin effectue deux attaques : une de morsure et une avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts tranchants.", attaque: 3, degats: "1d4 + 1" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts perforants.", attaque: 3, degats: "1d4 + 1" },
+            { nom: "Attaques multiples", action: "Le sahuagin effectue deux attaques : une de morsure et une avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts tranchants.", attaque: 3, degats: "1d4 + 1" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts perforants.", attaque: 3, degats: "1d4 + 1" },
         ],
         description: null,
         sauvegarde: { FOR: 1, DEX: 0, CON: 1, INT: 1, SAG: 2, CHA: 1 },
@@ -13184,16 +13139,16 @@ let monsters = [
         attributs:
             "Corps brûlant. Une créature qui touche la salamandre ou la frappe lors d'une attaque au corps à corps en étant à 1,50 mètre ou moins de la salamandre subit 7 (2d6) dégâts de feu.Armes brûlantes. Toute arme de corps à corps en métal que brandit la salamandre inflige 3 (1d6) dégâts de feu supplémentaires (inclus dans l'attaque ci-dessous).",
         actions: [
-            { nom: "Attaques multiples.", action: "La salamandre effectue deux attaques : une avec la lance et une avec sa queue." },
+            { nom: "Attaques multiples", action: "La salamandre effectue deux attaques : une avec la lance et une avec sa queue." },
             {
-                nom: "Lance.",
+                nom: "Lance",
                 action:
                     "Attaque au corps à corps ou à distance avec une arme : +7 au toucher, allonge 1,50 m ou portée 6/18 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants, ou 13 (2d8 + 4) dégâts perforants si utilisée à deux mains pour faire une attaque au corps à corps, plus 3 (1d6) dégâts de feu.",
                 attaque: 7,
                 degats: "2d6 + 4",
             },
             {
-                nom: "Queue.",
+                nom: "Queue",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants + 7 (2d6) dégâts de feu, et la cible est agrippée (évasion DD 14). Tant qu'elle est agrippée, la cible est entravée, la salamandre peut automatiquement toucher la cible avec sa queue, et la salamandre ne peut plus effectuer d'attaque avec sa queue contre d'autres cibles.",
                 attaque: 7,
@@ -13237,18 +13192,15 @@ let monsters = [
         attributs:
             "Métamorphe. Le sanglier-garou peut utiliser son action pour se métamorphoser en un hybride sanglier-humanoïde ou en un sanglier, ou pour reprendre sa véritable forme (la forme humanoïde). Ses statistiques, autres que la CA, sont les mêmes pour chaque forme. L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa forme véritable s'il meurt.Charge (forme de sanglier ou hybride uniquement). Si le sanglier-garou se déplace d'au moins 4,50 mètres en ligne droite vers une cible, puis la touche lors d'une attaque avec ses défenses dans le même tour, la cible subit 7 (2d6) dégâts tranchants supplémentaires. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 13 ou être jetée à terre.Férocité implacable (Recharge après un repos court ou long). Si le sanglier-garou tombe à 0 point de vie après avoir subi 14 points de dégâts ou moins, il passe à 1 point de vie à la place.",
         actions: [
+            { nom: "Attaques multiples (forme humanoïde ou hybride uniquement)", action: "Le sanglier-garou effectue deux attaques, mais une seule des deux peut être une attaque avec ses défenses." },
             {
-                nom: "Attaques multiples (forme humanoïde ou hybride uniquement).",
-                action: "Le sanglier-garou effectue deux attaques, mais une seule des deux peut être une attaque avec ses défenses.",
-            },
-            {
-                nom: "Maillet (forme humanoïde ou hybride uniquement).",
+                nom: "Maillet (forme humanoïde ou hybride uniquement)",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts contondants.",
                 attaque: 5,
                 degats: "2d6 + 3",
             },
             {
-                nom: "Défenses (forme de sanglier ou hybride uniquement).",
+                nom: "Défenses (forme de sanglier ou hybride uniquement)",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts tranchants. Si la cible est un humanoïde, elle doit réussir un jet de sauvegarde de Constitution DD 12 ou être atteinte de la lycanthropie de sanglier-garou.",
                 attaque: 5,
@@ -13286,18 +13238,18 @@ let monsters = [
         attributs: "Résistance à la magie. Le satyre a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
             {
-                nom: "Coup de tête.",
+                nom: "Coup de tête",
                 action: "Attaque au corps à corps avec une arme : + 3 au toucher, allonge 1,50 m, une cible. Touché : 6 (2d4 + 1) dégâts contondants.",
                 attaque: 3,
                 degats: "2d4 + 1",
             },
             {
-                nom: "Épée courte.",
+                nom: "Épée courte",
                 action: "Attaque au corps à corps avec une arme : + 5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.",
                 attaque: 5,
                 degats: "1d6 + 3",
             },
-            { nom: "Arc court.", action: "Attaque à distance avec une arme : +5 au toucher, portée 24/96 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.", attaque: 5, degats: "1d6 + 3" },
+            { nom: "Arc court", action: "Attaque à distance avec une arme : +5 au toucher, portée 24/96 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.", attaque: 5, degats: "1d6 + 3" },
         ],
         description:
             "Les satyres sont des fées bruyantes qui ressemblent à des humains corpulents, mais dont les membres inférieurs sont couverts de fourrure et les pieds sont des sabots fendus comme ceux d'une chèvre. Ils batifolent au sein des forêts sauvages, conduits par la curiosité et l'hédonisme à parts égales.",
@@ -13340,42 +13292,42 @@ let monsters = [
         attributs:
             "Résistance à la magie. Le seigneur momie a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Reconstitution. Le seigneur momie détruit retrouve un nouveau corps en 24 heures si son coeur est intact, récupérant tous ses points de vie et redevenant ainsi actif. Le nouveau corps apparaît à 1,50 mètre du coeur du seigneur momie.Incantation. Le seigneur momie est un lanceur de sorts de niveau 10. Sa caractéristique d'incantation est la Sagesse (jet de sauvegarde contre ses sorts DD 17, +9 au toucher pour les attaques avec un sort). Le seigneur momie a la liste suivante de sorts de clerc préparée :Sorts mineurs (à volonté) : flamme sacrée, thaumaturgie\nNiveau 1 (4 emplacements) : bouclier de la foi, éclair traçant, injonction\nNiveau 2 (3 emplacements) : arme spirituelle, immobilisation de personne, silence\nNiveau 3 (3 emplacements) : animation des morts, dissipation de la magie\nNiveau 4 (3 emplacements) : divination, gardien de la foi\nNiveau 5 (2 emplacements) : contagion, fléau d'insectes\nNiveau 6 (1 emplacement) : contamination.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le seigneur momie peut utiliser son Regard d'épouvante et réaliser une attaque avec ses poings putréfiants." },
+            { nom: "Attaques multiples", action: "Le seigneur momie peut utiliser son Regard d'épouvante et réaliser une attaque avec ses poings putréfiants." },
             {
-                nom: "Poings putréfiants.",
+                nom: "Poings putréfiants",
                 action:
                     "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 14 (3d6 + 4) dégâts contondants + 21 (6d6) dégâts nécrotiques. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Constitution DD 16 ou être frappée par la malédiction de la putréfaction de la momie. La cible de la malédiction ne peut pas regagner de points de vie, et ses points de vie maximums sont réduits de 10 (3d6) chaque 24 heures qui s'écoulent. Si la malédiction réduit les points de vie maximums de la cible à 0, la cible meurt et son corps devient poussière. La malédiction dure jusqu'à ce qu'elle soit supprimée par un sort de délivrance des malédictions ou autre magie.",
                 attaque: 9,
                 degats: "3d6 + 4",
             },
             {
-                nom: "Regard d'épouvante.",
+                nom: "Regard d'épouvante",
                 action:
                     "La momie cible une créature qu'elle peut voir dans les 18 mètres autour d'elle. Si la cible peut voir la momie, elle doit réussir un jet de sauvegarde de Sagesse DD 16 contre cette magie ou devenir effrayée jusqu'à la fin du prochain tour de la momie. Si le jet de sauvegarde échoue de 5 ou plus, la cible est de plus paralysée pour la même durée. Une cible qui réussit le jet de sauvegarde est immunisée du Regard d'épouvante de toutes les momies (mais pas des seigneurs momies) pour les prochaines 24 heures.",
             },
             {
-                nom: "Le seigneur momie peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le seigneur momie peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le seigneur momie récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Attaques.", action: "Le seigneur momie réalise une attaque avec ses poings putréfiants ou son Regard d'épouvante." },
+            { nom: "Attaques", action: "Le seigneur momie réalise une attaque avec ses poings putréfiants ou son Regard d'épouvante." },
             {
-                nom: "Poussière aveuglante.",
+                nom: "Poussière aveuglante",
                 action:
                     "De la poussière et du sable se mettent à tourbillonner par magie autour du seigneur momie. Toutes les créatures se trouvant à 1,50 mètre ou moins du seigneur momie doivent réussir un jet de sauvegarde de Constitution DD 16 ou être aveuglées jusqu'à la fin de leur tour suivant.",
             },
             {
-                nom: "Blasphème (coûte 2 actions).",
+                nom: "Blasphème (coûte 2 actions)",
                 action:
                     "Le seigneur momie profère une parole blasphématoire. Chaque créature non morte-vivante se trouvant à 3 mètres ou moins du seigneur momie et étant capable d'entendre la parole magique doit réussir un jet de sauvegarde de Constitution DD 16 ou être étourdie jusqu'à la fin du tour suivant du seigneur momie.",
             },
             {
-                nom: "Canalisation d'énergie négative (coûte 2 actions).",
+                nom: "Canalisation d'énergie négative (coûte 2 actions)",
                 action:
                     "Le seigneur momie déchaine par magie un torrent d'énergie négative. Les créatures se trouvant dans un rayon de 18 mètres autour du seigneur momie, incluant celles derrière des coins ou des barrières, ne peuvent pas récupérer de points de vie jusqu'à la fin du tour suivant du seigneur momie.",
             },
             {
-                nom: "Tourbillon de sable (coûte 2 actions).",
+                nom: "Tourbillon de sable (coûte 2 actions)",
                 action:
                     "Le seigneur momie se transforme par magie en un tourbillon de sable, se déplace de 18 mètres, et retrouve sa forme originelle. Lorsqu'il est transformé en tourbillon, le seigneur momie est immunisé contre tous les dégâts, et il ne peut pas être agrippé, entravé, jeté à terre, étourdi, ou pétrifié. L'équipement porté ou transporté par le seigneur momie reste en sa possession.",
             },
@@ -13419,7 +13371,7 @@ let monsters = [
             "Invisible dans l'eau. La sentinelle d'eau est invisible tant qu'elle est complètement immergée dans l'eau.Connexion à l'eau. La sentinelle d'eau meurt si elle quitte l'eau à laquelle elle est unie ou si cette eau est détruite.",
         actions: [
             {
-                nom: "Étreinte.",
+                nom: "Étreinte",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 3 m, une créature. Touché : 13 (3d6 + 3) dégâts contondants. Si la cible est de taille M ou inférieure, elle est agrippée (évasion DD 13) et attirée de 1,50 mètre vers la sentinelle d'eau. Tant qu'elle est agrippée, la cible est entravée, la sentinelle d'eau tente de la noyer et ne peut pas étreindre une autre cible.",
                 attaque: 5,
@@ -13463,15 +13415,15 @@ let monsters = [
         xp: 200,
         attributs: "Corps brûlant. Une créature qui touche le serpent (lors d'un simple contact ou d'une attaque au corps à corps à 1,50 mètre ou moins de lui) subit 3 (1d6) dégâts de feu.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le serpent effectue deux attaques : une de morsure et une avec sa queue." },
+            { nom: "Attaques multiples", action: "Le serpent effectue deux attaques : une de morsure et une avec sa queue." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts perforants + 3 (1d6) dégâts de feu.",
                 attaque: 3,
                 degats: "1d4 + 1",
             },
             {
-                nom: "Queue.",
+                nom: "Queue",
                 action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts contondants + 3 (1d6) dégâts de feu.",
                 attaque: 3,
                 degats: "1d4 + 1",
@@ -13514,15 +13466,15 @@ let monsters = [
         attributs:
             "Résistance à la magie. Le slaad a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Régénération. Le slaad récupère 10 points de vie au début de son tour s'il possède au moins 1 point de vie.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le slaad effectue trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le slaad effectue trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action:
                     "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts tranchants. Si la cible est un humanoïde, elle doit réussir un jet de sauvegarde de Constitution DD 15 ou être infectée par une maladie appelée chaos-phage. Tant qu'elle est infectée par cette maladie, la cible ne peut pas récupérer de point de vie, et ses points de vie maximums sont réduits de 10 (3d6) toutes les 24 heures. Si la maladie réduit les points de vie maximums de la cible à 0, la cible se transforme instantanément en slaad rouge ou, si elle possède la capacité de lancer des sorts de niveau 3 ou supérieurs, en slaad vert. Seul un sort de souhait peut inverser la transformation.",
                 attaque: 8,
                 degats: "2d6 + 5",
             },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts perforants.", attaque: 8, degats: "2d6 + 5" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts perforants.", attaque: 8, degats: "2d6 + 5" },
         ],
         description: null,
         sauvegarde: { FOR: 5, DEX: 2, CON: 4, INT: -2, SAG: -2, CHA: -1 },
@@ -13561,21 +13513,21 @@ let monsters = [
         attributs:
             "Métamorphe. Le slaad peut utiliser son action pour se métamorphoser en un humanoïde de taille P ou M, ou pour reprendre sa véritable forme. Ses statistiques, autres que sa taille, sont les mêmes quelle que soit sa forme. L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa véritable forme s'il meurt.Incantation innée. La caractéristique d'incantation innée du slaad est le Charisme (jet de sauvegarde contre ses sorts DD 15, +7 au toucher pour les attaques avec un sort). Le slaad peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection de la magie, détection des pensées, invisibilité (personnel uniquement), main de mage, image majeure\n2/jour chacun : peur, vol, boule de feu, langues\n1/jour chacun : nuage mortel, changement de plan\nRésistance à la magie. Le slaad a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme du slaad sont magiques.Régénération. Le slaad récupère 10 points de vie au début de son tour s'il possède au moins 1 point de vie.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le slaad effectue trois attaques : une morsure et deux avec ses griffes ou avec l'épée à deux mains." },
+            { nom: "Attaques multiples", action: "Le slaad effectue trois attaques : une morsure et deux avec ses griffes ou avec l'épée à deux mains." },
             {
-                nom: "Morsure (sous forme de slaad uniquement).",
+                nom: "Morsure (sous forme de slaad uniquement)",
                 action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 9 (1d8 + 5) dégâts perforants + 7 (2d6) dégâts nécrotiques.",
                 attaque: 9,
                 degats: "1d8 + 5",
             },
             {
-                nom: "Griffes (sous forme de slaad uniquement).",
+                nom: "Griffes (sous forme de slaad uniquement)",
                 action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 10 (1d10 + 5) dégâts tranchants + 7 (2d6) dégâts nécrotiques.",
                 attaque: 9,
                 degats: "1d10 + 5",
             },
             {
-                nom: "Épée à deux mains.",
+                nom: "Épée à deux mains",
                 action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 12 (2d6 + 5) dégâts tranchants + 7 (2d6) dégâts nécrotiques.",
                 attaque: 9,
                 degats: "2d6 + 5",
@@ -13618,21 +13570,21 @@ let monsters = [
         attributs:
             "Métamorphe. Le slaad peut utiliser son action pour se métamorphoser en un humanoïde de taille P ou M, ou pour reprendre sa véritable forme. Ses statistiques, autres que sa taille, sont les mêmes quelle que soit sa forme. L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa véritable forme s'il meurt.Incantation innée. La caractéristique d'incantation innée du slaad est le Charisme (jet de sauvegarde contre ses sorts DD 14). Le slaad peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection de la magie, détection des pensées, invisibilité (personnel uniquement), main de mage, image majeure\n2/jour chacun : peur, vol, boule de feu, langues\n1/jour : changement de plan (personnel uniquement)\nRésistance à la magie. Le slaad a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme du slaad sont magiques.Régénération. Le slaad récupère 10 points de vie au début de son tour s'il possède au moins 1 point de vie.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le slaad effectue trois attaques : une de morsure et deux avec ses griffes ou avec l'épée à deux mains." },
+            { nom: "Attaques multiples", action: "Le slaad effectue trois attaques : une de morsure et deux avec ses griffes ou avec l'épée à deux mains." },
             {
-                nom: "Morsure (sous forme de slaad uniquement).",
+                nom: "Morsure (sous forme de slaad uniquement)",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts perforants.",
                 attaque: 7,
                 degats: "1d6 + 3",
             },
             {
-                nom: "Griffes (sous forme de slaad uniquement).",
+                nom: "Griffes (sous forme de slaad uniquement)",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d10 + 3) dégâts tranchants.",
                 attaque: 7,
                 degats: "1d10 + 3",
             },
             {
-                nom: "Épée à deux mains.",
+                nom: "Épée à deux mains",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts tranchants.",
                 attaque: 7,
                 degats: "2d6 + 3",
@@ -13675,15 +13627,15 @@ let monsters = [
         attributs:
             "Résistance à la magie. Le slaad a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Régénération. Le slaad récupère 10 points de vie au début de son tour s'il possède au moins 1 point de vie.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le slaad effectue trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le slaad effectue trois attaques : une de morsure et deux avec ses griffes." },
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts tranchants. Si la cible est un humanoïde, elle doit réussir un jet de sauvegarde de Constitution DD 14 ou être infectée par une maladie, un minuscule œuf de slaad. Un hôte humanoïde ne peut être porteur que d'un seul œuf de slaad à la fois. Au cours des trois mois qui suivent, l'œuf se déplace jusqu'à thorax, y reste en gestation, et se transforme en têtard de slaad. Pendant les 24 heures qui précèdent la naissance, l'hôte commence à se sentir souffrant, sa vitesse de déplacement est réduite de moitié, et il a un désavantage aux jets d'attaque, de caractéristique et de sauvegarde. À l'instant de la naissance, le têtard se fraie en 1 round un chemin de la cage thoracique vers l'extérieur en dévorant les organes vitaux son hôte, ce qui tue l'hôte. Si la maladie est soignée avant que le têtard n'émerge, le slaad à naître est désintégré.",
                 attaque: 6,
                 degats: "1d8 + 3",
             },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 8 (2d4 + 3) dégâts perforants.", attaque: 6, degats: "2d4 + 3" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 8 (2d4 + 3) dégâts perforants.", attaque: 6, degats: "2d4 + 3" },
         ],
         description: null,
         sauvegarde: { FOR: 3, DEX: 1, CON: 3, INT: -2, SAG: -2, CHA: -2 },
@@ -13722,22 +13674,22 @@ let monsters = [
         attributs:
             "Métamorphe. Le slaad peut utiliser son action pour se métamorphoser en un humanoïde de taille P ou M, ou pour reprendre sa véritable forme. Ses statistiques, autres que sa taille, sont les mêmes quelle que soit sa forme. L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa véritable forme s'il meurt.Incantation innée. La caractéristique d'incantation innée du slaad est le Charisme (jet de sauvegarde contre ses sorts DD 12). Le slaad peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection de la magie, détection des pensées, main de mage\n2/jour chacun : peur, invisibilité (personnel)\n1/jour : boule de feu\nRésistance à la magie. Le slaad a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Régénération. Le slaad récupère 10 points de vie au début de son tour s'il possède au moins 1 point de vie.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le slaad effectue trois attaques : une de morsure et deux avec ses griffes ou avec le bâton. Il peut sinon utiliser son Jet de flammes deux fois." },
+            { nom: "Attaques multiples", action: "Le slaad effectue trois attaques : une de morsure et deux avec ses griffes ou avec le bâton. Il peut sinon utiliser son Jet de flammes deux fois." },
             {
-                nom: "Morsure (sous forme de slaad uniquement).",
+                nom: "Morsure (sous forme de slaad uniquement)",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants.",
                 attaque: 7,
                 degats: "2d6 + 4",
             },
             {
-                nom: "Griffes (sous forme de slaad uniquement).",
+                nom: "Griffes (sous forme de slaad uniquement)",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d6 + 4) dégâts tranchants.",
                 attaque: 7,
                 degats: "1d6 + 4",
             },
-            { nom: "Bâton.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Bâton", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 7, degats: "2d6 + 4" },
             {
-                nom: "Jet de flammes.",
+                nom: "Jet de flammes",
                 action:
                     "Attaque à distance avec un sort : +4 au toucher, portée 18 m, une cible. Touché : 10 (3d6) dégâts de feu. Si la cible est un objet inflammable qui n'est ni porté ni transporté, il prend feu.",
                 attaque: 4,
@@ -13780,7 +13732,7 @@ let monsters = [
         xp: 25,
         attributs: "Résistance à la magie. Le slaad a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants.", attaque: 4, degats: "1d4 + 2" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants.", attaque: 4, degats: "1d4 + 2" },
         ],
         description: null,
         sauvegarde: { FOR: -2, DEX: 2, CON: 0, INT: -4, SAG: -3, CHA: -4 },
@@ -13822,47 +13774,47 @@ let monsters = [
         attributs:
             "Armes angéliques. Les attaques avec une arme du solar sont magiques. Lorsque le solar touche avec n'importe quelle arme, l'arme inflige 6d8 dégâts radiants supplémentaires (inclus dans l'attaque ci-dessous).Conscience divine. Le solar sait quand il entend un mensonge.Incantation innée. La caractéristique d'incantation innée du solar est le Charisme (jet de sauvegarde contre ses sorts DD 25). Le solar peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection du mal et du bien, invisibilité (personnel uniquement)\n3/jour chacun : barrière de lames, dissipation du mal et du bien, résurrection\n1/jour chacun : communion, contrôle du climat\nRésistance à la magie. Le solar a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le solar réalise deux attaques d'épée à deux mains." },
+            { nom: "Attaques multiples", action: "Le solar réalise deux attaques d'épée à deux mains." },
             {
-                nom: "Épée à deux mains.",
+                nom: "Épée à deux mains",
                 action: "Attaque au corps à corps avec une arme : +15 au toucher, allonge 1,50 m, une cible. Touché : 22 (4d6 + 8) dégâts tranchants + 27 (6d8) dégâts radiants.",
                 attaque: 15,
                 degats: "4d6 + 8",
             },
             {
-                nom: "Arc long Tueur.",
+                nom: "Arc long Tueur",
                 action:
                     "Attaque à distance avec une arme : +13 au toucher, portée 45/180 m, une cible. Touché : 15 (2d8 + 6) dégâts perforants + 27 (6d8) dégâts radiants. Si la cible est une créature qui a 100 points de vie ou moins, elle doit réussir un jet de sauvegarde de Constitution DD 15 ou mourir.",
                 attaque: 13,
                 degats: "2d8 + 6",
             },
             {
-                nom: "Épée volante.",
+                nom: "Épée volante",
                 action:
                     "Le solar lâche son épée à deux mains pour qu'elle flotte dans un espace inoccupé à 1,50 mètre de lui. Si le solar peut voir l'épée, il peut la commander mentalement en utilisant une action bonus pour qu'elle vole jusqu'à une distance de 15 mètres et réalise une attaque contre une cible ou retourne dans la main du solar. Si l'épée volante est ciblée par un effet, le solar est considéré comme étant en train de la tenir. L'épée volante tombe au sol si le solar meurt.",
             },
             {
-                nom: "Contact guérisseur (4/jour).",
+                nom: "Contact guérisseur (4/jour)",
                 action:
                     "Le solar touche une autre créature. La cible récupère par magie 40 (8d8 + 4) points de vie et est guérie de toutes malédictions, maladies, poisons, aveuglement ou assourdissement.",
             },
             {
-                nom: "Le solar peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le solar peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le solar récupère les actions légendaires dépensées au début de son tour.",
             },
             {
-                nom: "Téléportation.",
+                nom: "Téléportation",
                 action:
                     "Le solar se téléporte magiquement, avec tout l'équipement qu'il porte ou transporte, vers un espace inoccupé qu'il peut voir et situé dans un rayon de 36 mètres autour de lui.",
             },
             {
-                nom: "Explosion brûlante (coûte 2 actions).",
+                nom: "Explosion brûlante (coûte 2 actions)",
                 action:
                     "Le solar émet une énergie magique et divine. Toutes les créatures de son choix dans un rayon de 3 mètres doivent réaliser un jet de sauvegarde de Dextérité DD 23, subissant 14 (4d6) dégâts de feu plus 14 (4d6) dégâts radiants en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "Regard aveuglant (coûte 3 actions).",
+                nom: "Regard aveuglant (coûte 3 actions)",
                 action:
                     "Le solar prend pour cible une créature qu'il peut voir et qui se trouve à 9 mètres ou moins de lui. Si la cible peut voir, celle-ci doit réussir un jet de sauvegarde de Constitution DD 15 ou être aveuglée, jusqu'à ce qu'une magie, comme un sort de restauration partielle, lui restaure la vue.",
             },
@@ -13903,34 +13855,34 @@ let monsters = [
         xp: 700,
         attributs: ".",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : + 1 au toucher, allonge 1,50 m, une cible. Touché : 2 (1d6 - 1) dégâts perforants.", attaque: 1, degats: "1d6 - 1" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : + 1 au toucher, allonge 1,50 m, une cible. Touché : 2 (1d6 - 1) dégâts perforants.", attaque: 1, degats: "1d6 - 1" },
             {
-                nom: "Rayons oculaires.",
+                nom: "Rayons oculaires",
                 action:
                     "Le spectateur tire jusqu'à deux rayons oculaires magiques suivants sur une ou deux créatures qu'il peut voir dans un rayon de 27 mètres. Chaque rayon ne peut être utilisé qu'une seule fois par tour.",
             },
             {
-                nom: "1- Rayon de confusion.",
+                nom: "1- Rayon de confusion",
                 action:
                     "La cible doit réussir un jet de sauvegarde de Sagesse DD 13 ou bien elle ne peut plus utiliser de réaction jusqu'à la fin de son prochain tour. Durant son tour, la cible ne peut se déplacer et utilise son action pour faire une attaque au corps à corps ou à distance contre une créature choisie au hasard et qui est à sa portée. Si la cible ne peut attaquer, elle ne fait rien durant son tour.",
             },
             {
-                nom: "2- Rayon paralysant.",
+                nom: "2- Rayon paralysant",
                 action:
                     "La cible doit réussir un jet de sauvegarde de Constitution DD 13 ou bien être paralysée pendant 1 minute. La cible peut relancer le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "3- Rayon de peur.",
+                nom: "3- Rayon de peur",
                 action:
                     "La cible doit réussir un jet de sauvegarde de Sagesse DD 13 ou bien être effrayée durant 1 minute. La cible peut relancer son jet de sauvegarde à la fin de chacun de ses tours, avec un désavantage si le spectateur peut être vu par la cible, l'effet s'interrompant pour la cible en cas de réussite.",
             },
             {
-                nom: "4- Rayon de blessure.",
+                nom: "4- Rayon de blessure",
                 action: "La cible doit réaliser un jet de sauvegarde de Constitution DD 13, subissant 16 (3d10) dégâts nécrotiques en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
-            { nom: "Création d'eau et de nourriture.", action: "Le spectateur peut créer magiquement suffisamment d'eau et de nourriture pour se sustenter durant 24 heures." },
+            { nom: "Création d'eau et de nourriture", action: "Le spectateur peut créer magiquement suffisamment d'eau et de nourriture pour se sustenter durant 24 heures." },
             {
-                nom: "Renvoi de sort.",
+                nom: "Renvoi de sort",
                 action:
                     "Si le spectateur réussit un jet de sauvegarde contre un sort, ou si une attaque magique le manque, le spectateur peut choisir une autre créature (dont celle qui a lancé le sort) qu'il peut voir dans un rayon de 9 mètres autour de lui. Le sort cible alors cette créature à la place du spectateur. Si le sort demandait un jet de sauvegarde, la créature doit en faire un. Si le sort était une attaque, un jet d'attaque est lancé contre la créature ciblée.",
             },
@@ -13975,7 +13927,7 @@ let monsters = [
             "Déplacement incorporel. Le spectre peut se déplacer au travers d'autres créatures et objets comme s'ils étaient des terrains difficiles. Le spectre subit 5 (1d10) dégâts de force s'il termine son tour à l'intérieur d'un objet.Sensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le spectre a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
             {
-                nom: "Absorption d'énergie.",
+                nom: "Absorption d'énergie",
                 action:
                     "Attaque au corps à corps avec un sort : +4 au toucher, allonge 1,50 m, une créature. Touché : 10 (3d6) dégâts nécrotiques. La cible doit réussir un jet de sauvegarde de Constitution DD 10 pour ne pas subir une diminution de ses points de vie maximums égale aux dégâts subis. Cette réduction perdure jusqu'à ce que la créature termine un repos long. La cible meurt si cet effet réduit ses points de vie maximums à 0.",
                 attaque: 4,
@@ -14021,7 +13973,7 @@ let monsters = [
             "Mort explosive. Lorsqu'elle tombe à 0 point de vie, la spore gazeuse explose. Chaque créature présente dans un rayon de 6 mètres autour d'elle doit réussir un jet de sauvegarde de Constitution DD 15 ou subir 10 (3d6) dégâts de poison et être infectée par une maladie. Les créatures immunisées à la condition empoisonné sont immunisées à cette maladie. Les spores envahissent le corps de la créature infectée, la tuant en un nombre d'heures égal à 1d12 + valeur de Constitution de la créature, à moins que la maladie ne soit guérie. Une fois la moitié du compte à rebours écoulée, la créature est empoisonnée pour le reste de la durée. Après que la créature soit décédée, 2d4 spores gazeuses de taille TP germent et atteignent leur taille finale en 7 jours.Sinistre ressemblance. La spore gazeuse ressemble à un tyrannoeil. Une créature qui peut voir la spore gazeuse peut déterminer sa véritable nature en réussissant un jet d'Intelligence (Nature) DD 15.",
         actions: [
             {
-                nom: "Contact.",
+                nom: "Contact",
                 action:
                     "Attaque au corps à corps avec une arme : +0 au toucher, allonge 1,50 m, une créature. Touché : 1 dégâts de poison, et la créature doit réussir un jet de sauvegarde de Constitution DD 10 ou être infectée par la maladie décrite dans le trait Mort explosive.",
                 attaque: 0,
@@ -14065,13 +14017,8 @@ let monsters = [
         xp: 50,
         attributs: ".",
         actions: [
-            {
-                nom: "Épée courte.",
-                action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.",
-                attaque: 4,
-                degats: "1d6 + 2",
-            },
-            { nom: "Arc court.", action: "Attaque à distance avec une arme : +4 au toucher, portée 24/96 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
+            { nom: "Épée courte", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
+            { nom: "Arc court", action: "Attaque à distance avec une arme : +4 au toucher, portée 24/96 m, une cible. Touché : 5 (1d6 + 2) dégâts perforants.", attaque: 4, degats: "1d6 + 2" },
         ],
         description:
             "Un squelette est le résultat obéissant d'une magie nécromantique lancée dans le but de réanimer des ossements le plus souvent humanoïdes. Parfois un squelette se relève aussi tout seul s'il se trouve dans un lieu fortement imprégné d'une aura de mort ou d'énergie nécromantique.",
@@ -14111,7 +14058,7 @@ let monsters = [
         xp: 100,
         attributs: ".",
         actions: [
-            { nom: "Sabots.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 6, degats: "2d6 + 4" },
+            { nom: "Sabots", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants.", attaque: 6, degats: "2d6 + 4" },
         ],
         description: null,
         sauvegarde: { FOR: 4, DEX: 1, CON: 2, INT: -4, SAG: -1, CHA: -3 },
@@ -14152,12 +14099,12 @@ let monsters = [
             "Charge. Si le squelette se déplace d'au moins 3 mètres en ligne droite vers une cible, puis la touche lors d'une attaque avec sa corne dans le même tour, la cible subit 9 (2d8) dégâts perforants supplémentaires. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 14 ou être repoussée de 3 mètres et tomber à terre.",
         actions: [
             {
-                nom: "Hache à deux mains.",
+                nom: "Hache à deux mains",
                 action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 17 (2d12 + 4) dégâts tranchants.",
                 attaque: 6,
                 degats: "2d12 + 4",
             },
-            { nom: "Corne.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts perforants.", attaque: 6, degats: "2d8 + 4" },
+            { nom: "Corne", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts perforants.", attaque: 6, degats: "2d8 + 4" },
         ],
         description: null,
         sauvegarde: { FOR: 4, DEX: 0, CON: 2, INT: -2, SAG: -1, CHA: -3 },
@@ -14190,7 +14137,7 @@ let monsters = [
         attributs: ".",
         actions: [
             {
-                nom: "Absorption de sang.",
+                nom: "Absorption de sang",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature. Touché : 5 (1d4 + 3) dégâts perforants, et la stirge reste attachée à sa cible. Tant qu'elle est attachée, la stirge n'attaque pas mais au début de chaque tour de la stirge, la cible perd 5 (1d4 + 3) point de vie du fait qu'elle perde son sang. La stirge peut se détacher en dépensant 1,50 mètre de mouvement, ce qu'elle fait une fois qu'elle a absorbé 10 points de vie de sang de la cible, ou lorsque cette dernière est morte. Toute créature, dont la cible, peut utiliser son action pour détacher la stirge.",
                 attaque: 5,
@@ -14236,22 +14183,22 @@ let monsters = [
             "Lien télépathique. Le fiélon ignore la restriction de portée de sa télépathie quand il communique avec une créature qu'il a charmée. Les deux individus n'ont même pas besoin d'être sur le même plan d'existence.Métamorphe. Le fiélon peut utiliser son action pour se métamorphoser en un humanoïde de taille P ou M, ou pour reprendre sa véritable forme. Sans ses ailes, le fiélon perd sa vitesse de vol. À part sa taille et sa vitesse, ses statistiques sont les mêmes pour chaque forme. L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa forme véritable s'il meurt.",
         actions: [
             {
-                nom: "Griffes (forme fiélone uniquement).",
+                nom: "Griffes (forme fiélone uniquement)",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.",
                 attaque: 5,
                 degats: "1d6 + 3",
             },
             {
-                nom: "Charme.",
+                nom: "Charme",
                 action:
                     "Un humanoïde que le fiélon peut voir et situé à 9 mètres ou moins de lui doit réussir un jet de sauvegarde de Sagesse DD 15 ou être charmé par magie pendant 1 journée. La cible charmée obéit aux commandes verbales ou télépathiques du fiélon. Si la cible subit des dégâts ou reçoit un ordre suicidaire, celle-ci peut retenter le jet de sauvegarde, mettant fin à l'effet en cas de réussite. Si le jet de sauvegarde de la créature est réussi ou que l'effet qu'elle subit se termine, celle-ci devient immunisée au Charme du fiélon pendant les prochaines 24 heures. Le fiélon ne peut avoir qu'une cible charmée à la fois. S'il charme une autre cible, l'effet se termine.",
             },
             {
-                nom: "Baiser corrupteur.",
+                nom: "Baiser corrupteur",
                 action:
                     "Le fiélon embrasse une créature qu'il a charmée ou une créature consentante. La cible doit réaliser un jet de sauvegarde de Constitution DD 15 contre cette magie, subissant 32 (5d10 + 5) dégâts psychiques en cas d'échec, ou la moitié de ces dégâts en cas de réussite. Les points de vie maximums de la cible sont diminués d'un montant égal aux dégâts subis. Cette diminution perdure jusqu'à ce que la cible termine un repos long. La cible meurt si cet effet réduit ses points de vie maximums à 0.",
             },
-            { nom: "Forme éthérée.", action: "Le fiélon pénètre dans le plan éthéré à partir du plan matériel, ou inversement." },
+            { nom: "Forme éthérée", action: "Le fiélon pénètre dans le plan éthéré à partir du plan matériel, ou inversement." },
         ],
         description: null,
         sauvegarde: { FOR: -1, DEX: 3, CON: 1, INT: 2, SAG: 1, CHA: 5 },
@@ -14290,11 +14237,11 @@ let monsters = [
         attributs:
             "Apparence trompeuse. Tant que le sylvanien reste immobile, il ne peut être distingué d'un arbre ordinaire.Monstre de siège. Le sylvanien inflige le double des dégâts aux objets et structures qu'il attaque.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le sylvanien réalise deux attaques de coup." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 16 (3d6 + 6) dégâts contondants.", attaque: 10, degats: "3d6 + 6" },
-            { nom: "Rocher.", action: "Attaque à distance avec une arme : +10 au toucher, portée 18/54 m, une cible. Touché : 28 (4d10 + 6) dégâts contondants.", attaque: 10, degats: "4d10 + 6" },
+            { nom: "Attaques multiples", action: "Le sylvanien réalise deux attaques de coup." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 1,50 m, une cible. Touché : 16 (3d6 + 6) dégâts contondants.", attaque: 10, degats: "3d6 + 6" },
+            { nom: "Rocher", action: "Attaque à distance avec une arme : +10 au toucher, portée 18/54 m, une cible. Touché : 28 (4d10 + 6) dégâts contondants.", attaque: 10, degats: "4d10 + 6" },
             {
-                nom: "Animation des arbres (1/jour).",
+                nom: "Animation des arbres (1/jour)",
                 action:
                     "Le sylvanien anime magiquement un ou deux arbres qu'il peut voir à 18 m de lui. Ces arbres ont les mêmes statistiques que le sylvanien, hormis qu'ils ont une Intelligence et une Sagesse de 1, qu'ils ne peuvent pas parler, et qu'ils ne disposent que de l'action Coup. Un arbre animé agit comme un allié du sylvanien. L'arbre reste animé pendant 1 jour ou jusqu'à ce qu'il meure ; jusqu'à ce que le sylvanien meure ou qu'il soit à plus de 36 mètres de l'arbre ; ou jusqu'à ce que le sylvanien utilise une action bonus pour le transformer à nouveau en arbre inanimé. Dans ce cas l'arbre s'enracine s'il en a la possibilité.",
             },
@@ -14337,7 +14284,7 @@ let monsters = [
             "Sensibilité à l'antimagie. Le tapis est incapable d'agir tant qu'il se trouve dans un champ antimagie. S'il est ciblé par une dissipation de la magie, le tapis doit réussir un jet de sauvegarde de Constitution contre le DD de sort du lanceur de sorts ou tomber inconscient pendant 1 minute.Transfert de dégâts. Tant qu'il agrippe une créature, le tapis ne subit que la moitié des dégâts qui lui sont infligés, et la créature agrippée par le tapis en subit l'autre moitié.Apparence trompeuse. Tant que le tapis reste immobile, il ne peut être distingué d'un tapis normal.",
         actions: [
             {
-                nom: "Étouffement.",
+                nom: "Étouffement",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature de taille M ou inférieure. Touché : la créature est agrippée (évasion DD 13). Tant qu'elle est agrippée, la cible est entravée, aveuglée, a un risque d'asphyxie, et le tapis ne peut pas tenter d'étouffer une autre cible. De plus, au début de chacun des tours de la cible, la cible subit 10 (2d6 + 3) dégâts contondants.",
                 attaque: 5,
@@ -14384,49 +14331,49 @@ let monsters = [
             "Résistance légendaire (3/jour). Si la tarasque échoue à un jet de sauvegarde, elle peut décider de transformer cet échec en réussite.Résistance à la magie. La tarasque a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Carapace réfléchissante. Chaque fois que la tarasque est ciblée par un sort de projectile magique, un sort dont la zone d'effet est une ligne, ou un sort requérant un jet d'attaque à distance, lancez un d6. De 1 à 5, la tarasque n'est pas affectée. Sur un 6, la tarasque n'est pas affectée, et l'effet est renvoyé vers le lanceur de sorts comme s'il provenait de la tarasque, le lanceur devenant donc la cible.Monstre de siège. La tarasque inflige le double des dégâts aux objets et structures qu'elle attaque.",
         actions: [
             {
-                nom: "Attaques multiples.",
+                nom: "Attaques multiples",
                 action:
                     "La tarasque peut utiliser sa Présence effrayante. Elle réalise ensuite cinq attaques : une de morsure, deux avec ses griffes, une avec ses cornes, et une avec sa queue. Elle peut utiliser Engloutissement à la place de sa morsure.",
             },
-            { nom: "Cornes.", action: "Attaque au corps à corps avec une arme : +19 au toucher, allonge 3 m, une cible. Touché : 32 (4d10 + 10) dégâts perforants.", attaque: 19, degats: "4d10 + 10" },
+            { nom: "Cornes", action: "Attaque au corps à corps avec une arme : +19 au toucher, allonge 3 m, une cible. Touché : 32 (4d10 + 10) dégâts perforants.", attaque: 19, degats: "4d10 + 10" },
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action: "Attaque au corps à corps avec une arme : +19 au toucher, allonge 4,50 m, une cible. Touché : 28 (4d8 + 10) dégâts tranchants.",
                 attaque: 19,
                 degats: "4d8 + 10",
             },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +19 au toucher, allonge 3 m, une cible. Touché : 36 (4d12 + 10) dégâts perforants. Si la cible est une créature, elle est agrippée (évasion DD 20). Tant qu'elle est agrippée, la créature est entravée, et la tarasque ne peut pas mordre une autre cible.",
                 attaque: 19,
                 degats: "4d12 + 10",
             },
             {
-                nom: "Queue.",
+                nom: "Queue",
                 action:
                     "Attaque au corps à corps avec une arme : +19 au toucher, allonge 6 m, une cible. Touché : 24 (4d6 + 10) dégâts contondants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 20 ou être jetée à terre.",
                 attaque: 19,
                 degats: "4d6 + 10",
             },
             {
-                nom: "Présence effrayante.",
+                nom: "Présence effrayante",
                 action:
                     "Chaque créature choisie par la tarasque, se trouvant à 36 mètres d'elle et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 17 ou être effrayée pendant 1 minute. Une créature peut retenter le jet de sauvegarde à la fin de chacun de ses tours, avec un désavantage si la tarasque est dans la ligne de vue, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est réussi ou que l'effet qu'elle subit prend fin, celle-ci devient immunisée à la Présence effrayante de la tarasque pendant les prochaines 24 heures.",
             },
             {
-                nom: "Engloutissement.",
+                nom: "Engloutissement",
                 action:
                     "La tarasque effectue une attaque de morsure contre une créature de taille G ou inférieure qu'elle agrippe. Si l'attaque réussit, la créature subit les dégâts de la morsure et est avalée, et elle n'est plus agrippée. Une fois avalée, la créature est aveuglée et entravée, bénéficie d'un abri total contre les attaques et effets provenant de l'extérieur de la tarasque, et subit 56 (16d6) dégâts d'acide au début de chaque tour de la tarasque. Si la tarasque subit 60 points de dégâts ou plus en un seul tour de la part d'une créature avalée, la tarasque doit réussir un jet de sauvegarde de Constitution DD 20 à la fin de ce tour ou régurgiter toutes les créatures qu'elle a avalées, qui se retrouveront alors à terre, à 3 mètres ou moins de la tarasque. Si la tarasque meurt, une créature avalée n'est plus entravée et peut s'échapper du cadavre en utilisant 9 mètres de mouvement pour se retrouver à l'extérieur et à terre.",
             },
             {
-                nom: "La tarasque peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "La tarasque peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. La tarasque récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Attaque.", action: "La tarasque réalise une attaque avec ses griffes ou avec sa queue." },
-            { nom: "Déplacement.", action: "La tarasque se déplace de la moitié de sa vitesse." },
-            { nom: "Mastication (coûte 2 actions).", action: "La tarasque réalise une attaque de morsure ou utilise Engloutissement." },
+            { nom: "Attaque", action: "La tarasque réalise une attaque avec ses griffes ou avec sa queue." },
+            { nom: "Déplacement", action: "La tarasque se déplace de la moitié de sa vitesse." },
+            { nom: "Mastication (coûte 2 actions)", action: "La tarasque réalise une attaque de morsure ou utilise Engloutissement." },
         ],
         description:
             "La légendaire tarasque est probablement le monstre le plus redouté du plan matériel. Il est largement admis qu'une seule de ces créatures existe, même si personne ne peut prédire où et quand elle va frapper. Bipède et couverte d'écailles, la tarasque mesure quinze mètres de haut et vingt mètres de long, et pèse plusieurs centaines de tonnes. Elle se tient tel un oiseau de proie, penchée en avant et utilisant sa queue puissante pour maintenir son équilibre.",
@@ -14469,13 +14416,13 @@ let monsters = [
             "Absorption de foudre. Lorsque le tertre errant est affecté par des dégâts de foudre, il ne subit aucun dégât et récupère un nombre de points de vie égal au montant des dégâts de foudre.",
         actions: [
             {
-                nom: "Attaques multiples.",
+                nom: "Attaques multiples",
                 action:
                     "Le tertre errant effectue deux attaques de coup. Si ces deux attaques touchent une cible de taille M ou inférieure, la cible est agrippée (évasion DD 14) et le tertre errant utilise son Engloutissement sur la cible.",
             },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts contondants.", attaque: 7, degats: "2d8 + 4" },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts contondants.", attaque: 7, degats: "2d8 + 4" },
             {
-                nom: "Engloutissement.",
+                nom: "Engloutissement",
                 action:
                     "Le tertre errant engloutit une créature de taille M ou inférieure qu'il a agrippée. La cible engloutie est aveuglée, entravée, incapable de respirer, et elle doit réussir un jet de sauvegarde de Constitution DD 14 au début de chacun des tours du tertre errant ou subir 13 (2d8 + 4) dégâts contondants. Si le tertre errant se déplace, la cible engloutie se déplace avec lui. Le tertre errant ne peut contenir qu'une seule créature engloutie à la fois.",
             },
@@ -14511,10 +14458,10 @@ let monsters = [
         attributs:
             "Carapace caméléon. Le thri-kreen peut modifier la couleur de sa carapace pour s'adapter aux teintes et aux textures de son environnement. Cela lui permet de bénéficier d'un avantage aux jets de Dextérité (Discrétion) lorsqu'il se cache.Saut arrêté. Le thri-kreen peut sauter en longueur jusqu'à 9 mètres ou en hauteur jusqu'à 4,50 mètres, avec ou sans élan.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le thri-kreen réalise deux attaques : une de morsure et une avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 6 (2d4 + 1) dégâts tranchants.", attaque: 3, degats: "2d4 + 1" },
+            { nom: "Attaques multiples", action: "Le thri-kreen réalise deux attaques : une de morsure et une avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 6 (2d4 + 1) dégâts tranchants.", attaque: 3, degats: "2d4 + 1" },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une créature. Touché : 4 (1d6 + 1) dégâts perforants, et la cible doit réussir un jet de sauvegarde de Constitution DD 11 ou être empoisonnée pendant 1 minute. Si le jet de sauvegarde est raté de 5 points ou plus, la cible est aussi paralysée pendant la même durée. La cible empoisonnée peut retenter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet en cas de réussite.",
                 attaque: 3,
@@ -14559,31 +14506,31 @@ let monsters = [
             "Métamorphe. Le tigre-garou peut utiliser son action pour se métamorphoser en un hybride tigre-humanoïde ou en un tigre, ou pour reprendre sa véritable forme (la forme humanoïde). Ses statistiques, autres que sa taille, sont les mêmes quelle que soit sa forme. L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa véritable forme s'il meurt.Odorat et ouïe aiguisés. Le tigre-garou a un avantage aux jets de Sagesse (Perception) basés sur l'odorat ou l'ouïe.Bond (forme de tigre ou hybride uniquement). Si le tigre-garou se déplace d'au moins 4,50 mètres en ligne droite vers une créature, puis la touche lors d'une attaque avec ses griffes dans le même tour, la cible doit réussir un jet de sauvegarde de Force DD 14 pour ne pas tomber à terre. Si la cible est à terre, le tigre-garou peut effectuer une attaque de morsure contre elle en tant qu'action bonus.",
         actions: [
             {
-                nom: "Attaques multiples (forme humanoïde ou hybride uniquement).",
+                nom: "Attaques multiples (forme humanoïde ou hybride uniquement)",
                 action:
                     "Sous forme d'humanoïde, le tigre-garou effectue deux attaques avec le cimeterre ou deux attaques avec l'arc long. Sous forme hybride, il peut agir comme en forme humanoïde ou effectuer deux attaques avec ses griffes.",
             },
             {
-                nom: "Morsure (forme de tigre ou hybride uniquement).",
+                nom: "Morsure (forme de tigre ou hybride uniquement)",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 8 (1d10 + 3) dégâts perforants. Si la cible est un humanoïde, elle doit réussir un jet de sauvegarde de Constitution DD 13 ou être atteinte de la lycanthropie de tigre-garou.",
                 attaque: 5,
                 degats: "1d10 + 3",
             },
             {
-                nom: "Griffes (forme de tigre ou hybride uniquement).",
+                nom: "Griffes (forme de tigre ou hybride uniquement)",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts tranchants.",
                 attaque: 5,
                 degats: "1d8 + 3",
             },
             {
-                nom: "Cimeterre (forme humanoïde ou hybride uniquement).",
+                nom: "Cimeterre (forme humanoïde ou hybride uniquement)",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.",
                 attaque: 5,
                 degats: "1d6 + 3",
             },
             {
-                nom: "Arc long (forme humanoïde ou hybride uniquement).",
+                nom: "Arc long (forme humanoïde ou hybride uniquement)",
                 action: "Attaque à distance avec une arme : +4 au toucher, portée 45/180 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants.",
                 attaque: 4,
                 degats: "1d8 + 2",
@@ -14627,7 +14574,7 @@ let monsters = [
             "Sens aveugles. Le torve ne peut pas utiliser sa vision aveugle tant qu'il est assourdi et a perdu son odorat.Odorat et ouïe aiguisés. Le torve a un avantage aux jets de Sagesse (Perception) basés sur l'odorat ou l'ouïe.Camouflage dans les rochers. Le torve a un avantage aux jets de Dextérité (Discrétion) effectués pour se cacher sur un terrain rocailleux.",
         actions: [
             {
-                nom: "Gourdin d'os hérissé de pointes.",
+                nom: "Gourdin d'os hérissé de pointes",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 5 (1d4 + 3) dégâts contondants + 2 (1d4) dégâts perforants.",
                 attaque: 5,
                 degats: "1d4 + 3",
@@ -14672,8 +14619,8 @@ let monsters = [
         attributs:
             "Invisibilité. Le traqueur est invisible.Traqueur irréprochable. Le traqueur reçoit une cible de la part de son invocateur. Le traqueur connaît la direction et la distance qui le sépare de sa cible tant qu'ils se trouvent tous les deux dans le même plan d'existence. Le traqueur sait également où se trouve son invocateur.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le traqueur invisible effectue deux attaques de coup." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts contondants.", attaque: 6, degats: "2d6 + 3" },
+            { nom: "Attaques multiples", action: "Le traqueur invisible effectue deux attaques de coup." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts contondants.", attaque: 6, degats: "2d6 + 3" },
         ],
         description: null,
         sauvegarde: { FOR: 3, DEX: 4, CON: 2, INT: 0, SAG: 2, CHA: 0 },
@@ -14706,9 +14653,9 @@ let monsters = [
         attributs:
             "Charge renversante. Si le tricératops se déplace d'au moins 6 mètres en ligne droite vers une créature, puis la touche lors d'une attaque avec sa corne dans le même tour, la cible doit réussir un jet de sauvegarde de Force DD 13 pour ne pas être jetée à terre. Si la cible est à terre, le tricératops peut faire une attaque de piétinement contre celle-ci par une action bonus.",
         actions: [
-            { nom: "Corne.", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 24 (4d8 + 6) dégâts perforants.", attaque: 9, degats: "4d8 + 6" },
+            { nom: "Corne", action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une cible. Touché : 24 (4d8 + 6) dégâts perforants.", attaque: 9, degats: "4d8 + 6" },
             {
-                nom: "Piétinement.",
+                nom: "Piétinement",
                 action: "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une créature à terre. Touché : 22 (3d10 + 6) dégâts contondants.",
                 attaque: 9,
                 degats: "3d10 + 6",
@@ -14745,10 +14692,10 @@ let monsters = [
         attributs:
             "Esprit axiomatique. Le tridrone ne peut être contraint à agir d'une manière contraire à sa nature ou aux instructions qu'il a reçues.Désintégration. Si le tridrone meurt, son corps se désintègre et tombe en poussière, ne derrière lui que ses armes et tout ce qu'il portait.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le tridrone effectue trois attaques de coup ou trois attaques avec la javeline." },
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts contondants.", attaque: 3, degats: "1d4 + 1" },
+            { nom: "Attaques multiples", action: "Le tridrone effectue trois attaques de coup ou trois attaques avec la javeline." },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 3 (1d4 + 1) dégâts contondants.", attaque: 3, degats: "1d4 + 1" },
             {
-                nom: "Javeline.",
+                nom: "Javeline",
                 action: "Attaque au corps à corps ou à distance avec une arme : +3 au toucher, allonge 1,50 m ou portée 9/36 m, une cible. Touché : 4 (1d6 + 1) dégâts perforants.",
                 attaque: 3,
                 degats: "1d6 + 1",
@@ -14785,9 +14732,9 @@ let monsters = [
         attributs:
             "Peau de caméléon. Le troglodyte a un avantage aux jets de Dextérité (Discrétion) effectués pour se cacher.Puanteur. Une créature, autre qu'un troglodyte, qui commence son tour à 1,50 mètre du troglodyte doit réussir un jet de sauvegarde de Constitution DD 12 ou être empoisonnée jusqu'au début de son prochain tour. En cas de jet de sauvegarde réussi, la créature est immunisée à la puanteur de tous les troglodytes pendant 1 heure.Sensibilité à la lumière du soleil. S'il est exposé à la lumière du soleil, le troglodyte a un désavantage aux jets d'attaque et aux jets de Sagesse (Perception) basés sur la vue.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le troglodyte effectue trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants.", attaque: 4, degats: "1d4 + 2" },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts tranchants.", attaque: 4, degats: "1d4 + 2" },
+            { nom: "Attaques multiples", action: "Le troglodyte effectue trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts perforants.", attaque: 4, degats: "1d4 + 2" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +4 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d4 + 2) dégâts tranchants.", attaque: 4, degats: "1d4 + 2" },
         ],
         description: null,
         sauvegarde: { FOR: 2, DEX: 0, CON: 2, INT: -2, SAG: 0, CHA: -2 },
@@ -14820,9 +14767,9 @@ let monsters = [
         attributs:
             "Odorat aiguisé. Le troll a un avantage aux jets de Sagesse (Perception) basés sur l'odorat.Régénération. Le troll régénère 10 points de vie au début de son tour. Si le troll subit des dégâts d'acide ou de feu, ce trait ne fonctionne pas au début de son prochain tour. Le troll ne meurt que s'il débute son tour avec 0 point de vie et qu'il ne se régénère pas.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le troll réalise trois attaques : une de morsure et deux avec ses griffes." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d6 + 4) dégâts perforants.", attaque: 7, degats: "1d6 + 4" },
+            { nom: "Attaques multiples", action: "Le troll réalise trois attaques : une de morsure et deux avec ses griffes." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d6 + 4) dégâts perforants.", attaque: 7, degats: "1d6 + 4" },
         ],
         description:
             "Redoutables géants à la peau verte, les trolls mangent tout ce qu'ils peuvent attraper et dévorer. Seuls l'acide et le feu peuvent arrêter les propriétés régénératrices de la chair d'un troll.",
@@ -14864,67 +14811,67 @@ let monsters = [
         attributs:
             "Cône d'énergie négative. L'œil central du tyramort émet de l'énergie négative dans un invisible cône magique de 45 mètres. Au début de chacun de ses tours, le tyramort décide de quel côté il tourne ce cône et s'il active ce cône. Aucune créature dans la zone ne peut récupérer de point de vie. Tout humanoïde qui meurt dans la zone devient un zombi sous le contrôle du tyramort. Un humanoïde mort conserve son tour dans l'ordre d'initiative et s'anime au début de son tour suivant, à condition que son corps n'ait pas été complètement détruit.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 14 (4d6) dégâts perforants.", attaque: 5, degats: "4d6" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 14 (4d6) dégâts perforants.", attaque: 5, degats: "4d6" },
             {
-                nom: "Rayons oculaires.",
+                nom: "Rayons oculaires",
                 action:
                     "Le tyramort tire aléatoirement trois des rayons oculaires magiques suivants (relancez les jets identiques) sur une à trois cibles qu'il peut voir dans un rayon de 36 mètres :",
             },
             {
-                nom: "1- Rayon de charme.",
+                nom: "1- Rayon de charme",
                 action: "La créature ciblée doit réussir un jet de sauvegarde de Sagesse DD 17 ou être charmée par le tyramort pendant 1 heure, ou jusqu'à ce que le tyramort nuise à la créature.",
             },
             {
-                nom: "2- Rayon paralysant.",
+                nom: "2- Rayon paralysant",
                 action:
                     "La créature ciblée doit réussir un jet de sauvegarde de Constitution DD 17 ou être paralysée pendant 1 minute. La cible peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "3- Rayon de peur.",
+                nom: "3- Rayon de peur",
                 action:
                     "La créature ciblée doit réussir un jet de sauvegarde de Sagesse DD 17 ou être effrayée pendant 1 minute. La cible peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "4- Rayon de lenteur.",
+                nom: "4- Rayon de lenteur",
                 action:
                     "La créature ciblée doit réussir un jet de sauvegarde de Dextérité DD 17. En cas d'échec, la vitesse de déplacement de la cible est diminuée de moitié pendant 1 minute. De plus, la créature ne peut pas utiliser de réaction, ne peut utiliser qu'une action ou qu'une action bonus pendant son tour, mais pas les deux. La créature peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "5- Rayon affaiblissant.",
+                nom: "5- Rayon affaiblissant",
                 action:
                     "La créature ciblée doit effectuer un jet de sauvegarde de Constitution DD 17, subissant 36 (8d8) dégâts nécrotiques en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "6- Rayon télékinétique.",
+                nom: "6- Rayon télékinétique",
                 action:
                     "Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 17 ou être déplacée par le tyramort sur 9 mètres dans n'importe quelle direction. Elle est entravée par la prise du rayon télékinétique jusqu'au début du prochain tour du tyramort ou jusqu'à ce que le tyramort soit incapable d'agir. Si la cible est un objet, pesant 150 kg ou moins, qui n'est pas tenu ni porté, il est déplacé de 9 mètres dans n'importe quelle direction. Le tyramort peut également exercer un contrôle très fin sur les objets grâce à ce rayon, comme manipuler un simple outil ou ouvrir une porte ou un contenant.",
             },
             {
-                nom: "7- Rayon de sommeil.",
+                nom: "7- Rayon de sommeil",
                 action:
                     "La créature ciblée doit réussir un jet de sauvegarde de Sagesse DD 17 ou être endormie et rester inconsciente pendant 1 minute. La cible se réveille si elle subit des dégâts ou si une autre créature utilise une action pour la réveiller. Ce rayon n'a aucun effet sur les morts-vivants et les créatures artificielles.",
             },
             {
-                nom: "8- Rayon de pétrification.",
+                nom: "8- Rayon de pétrification",
                 action:
                     "La créature ciblée doit effectuer un jet de sauvegarde de Dextérité DD 17. En cas d'échec au jet, la créature commence à se transformer en pierre et est entravée. Elle doit retenter ce jet de sauvegarde à la fin de son prochain tour. En cas de réussite, l'effet prend fin. En cas d'échec, la créature est pétrifiée jusqu'à ce qu'elle soit libérée par un sort de restauration supérieure ou une autre magie.",
             },
             {
-                nom: "9- Rayon de désintégration.",
+                nom: "9- Rayon de désintégration",
                 action:
                     "Si la cible est une créature, elle doit réussir un jet de sauvegarde de Dextérité DD 17 ou subir 45 (10d8) dégâts de force. Si les dégâts font tomber les points de vie d'une créature à 0, son corps se transforme en un petit monticule de fine poussière grise. Si la cible est un objet non magique, ou la création d'une force magique, de taille G ou inférieure, il est désintégré sans jet de sauvegarde. Si la cible est un objet, ou la création d'une force magique, de taille TG ou supérieure, le rayon en désintègre un cube de 3 mètres d'arête.",
             },
             {
-                nom: "10- Rayon de mort.",
+                nom: "10- Rayon de mort",
                 action:
                     "La créature ciblée doit réussir un jet de sauvegarde de Dextérité DD 17 ou subir 55 (10d10) dégâts nécrotiques. La créature meurt si le rayon la fait tomber à 0 point de vie.",
             },
             {
-                nom: "Le tyramort peut effectuer 3 actions légendaires, utilisant à chaque fois l'option Rayon oculaire ci-dessous.",
+                nom: "Le tyramort peut effectuer 3 actions légendaires, utilisant à chaque fois l'option Rayon oculaire ci-dessous",
                 action:
                     "Il ne peut utiliser qu'une seule action légendaire à la fois, et seulement à la fin du tour d'une créature. Le tyramort récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Rayon oculaire.", action: "Le tyramort utilise un rayon oculaire aléatoire." },
+            { nom: "Rayon oculaire", action: "Le tyramort utilise un rayon oculaire aléatoire." },
         ],
         description: null,
         sauvegarde: { FOR: 5, DEX: 2, CON: 7, INT: 9, SAG: 7, CHA: 9 },
@@ -14964,67 +14911,67 @@ let monsters = [
         attributs:
             "Cône d'antimagie. L'œil central du tyrannoeil crée une zone d'antimagie, comme un sort de champ antimagie, dans un cône de 45 mètres. Au début de chacun de ses tours, le tyrannoeil décide de l'orientation du cône et s'il active ce cône. La zone fonctionne également contre les rayons oculaires de ce tyrannoeil.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 14 (4d6) dégâts perforants.", attaque: 5, degats: "4d6" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 14 (4d6) dégâts perforants.", attaque: 5, degats: "4d6" },
             {
-                nom: "Rayons oculaires.",
+                nom: "Rayons oculaires",
                 action:
                     "Le tyrannoeil tire aléatoirement trois des rayons oculaires magiques suivants (relancez les jets identiques) sur une à trois cibles qu'il peut voir dans un rayon de 36 mètres :",
             },
             {
-                nom: "1- Rayon de charme.",
+                nom: "1- Rayon de charme",
                 action: "La créature ciblée doit réussir un jet de sauvegarde de Sagesse DD 16 ou être charmée par le tyrannoeil pendant 1 heure, ou jusqu'à ce que le tyrannoeil nuise à la créature.",
             },
             {
-                nom: "2- Rayon paralysant.",
+                nom: "2- Rayon paralysant",
                 action:
                     "La créature ciblée doit réussir un jet de sauvegarde de Constitution DD 16 ou être paralysée pendant 1 minute. La cible peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "3- Rayon de peur.",
+                nom: "3- Rayon de peur",
                 action:
                     "La créature ciblée doit réussir un jet de sauvegarde de Sagesse DD 16 ou être effrayée pendant 1 minute. La cible peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "4- Rayon de lenteur.",
+                nom: "4- Rayon de lenteur",
                 action:
                     "La créature ciblée doit réussir un jet de sauvegarde de Dextérité DD 16. En cas d'échec, la vitesse de déplacement de la cible est diminuée de moitié pendant 1 minute. De plus, la créature ne peut pas utiliser de réaction, ne peut utiliser qu'une action ou qu'une action bonus pendant son tour, mais pas les deux. La créature peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "5- Rayon affaiblissant.",
+                nom: "5- Rayon affaiblissant",
                 action:
                     "La créature ciblée doit effectuer un jet de sauvegarde de Constitution DD 16, subissant 36 (8d8) dégâts nécrotiques en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "6- Rayon télékinétique.",
+                nom: "6- Rayon télékinétique",
                 action:
                     "Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 16 ou être déplacée par le tyrannoeil sur 9 mètres dans n'importe quelle direction. Elle est entravée par la prise du rayon télékinétique jusqu'au début du prochain tour du tyrannoeil ou jusqu'à ce que le tyrannoeil soit incapable d'agir. Si la cible est un objet, pesant 150 kg ou moins, qui n'est pas tenu ni porté, il est déplacé de 9 mètres dans n'importe quelle direction. Le tyrannoeil peut également exercer un contrôle très fin sur les objets grâce à ce rayon, comme manipuler un simple outil ou ouvrir une porte ou un contenant.",
             },
             {
-                nom: "7- Rayon de sommeil.",
+                nom: "7- Rayon de sommeil",
                 action:
                     "La créature ciblée doit réussir un jet de sauvegarde de Sagesse DD 16 ou être endormie et rester inconsciente pendant 1 minute. La cible se réveille si elle subit des dégâts ou si une autre créature utilise une action pour la réveiller. Ce rayon n'a aucun effet sur les morts-vivants et les créatures artificielles.",
             },
             {
-                nom: "8- Rayon de pétrification.",
+                nom: "8- Rayon de pétrification",
                 action:
                     "La créature ciblée doit effectuer un jet de sauvegarde de Dextérité DD 16. En cas d'échec au jet, la créature commence à se transformer en pierre et est entravée. Elle doit retenter ce jet de sauvegarde à la fin de son prochain tour. En cas de réussite, l'effet prend fin. En cas d'échec, la créature est pétrifiée jusqu'à ce qu'elle soit libérée par un sort de restauration supérieure ou une autre magie.",
             },
             {
-                nom: "9- Rayon de désintégration.",
+                nom: "9- Rayon de désintégration",
                 action:
                     "Si la cible est une créature, elle doit réussir un jet de sauvegarde de Dextérité DD 16 ou subir 45 (10d8) dégâts de force. Si les dégâts font tomber les points de vie d'une créature à 0, son corps se transforme en un petit monticule de fine poussière grise. Si la cible est un objet non magique, ou la création d'une force magique, de taille G ou inférieure, il est désintégré sans jet de sauvegarde. Si la cible est un objet, ou la création d'une force magique, de taille TG ou supérieure, le rayon en désintègre un cube de 3 mètres d'arête.",
             },
             {
-                nom: "10- Rayon de mort.",
+                nom: "10- Rayon de mort",
                 action:
                     "La créature ciblée doit réussir un jet de sauvegarde de Dextérité DD 16 ou subir 55 (10d10) dégâts nécrotiques. La créature meurt si le rayon la fait tomber à 0 point de vie.",
             },
             {
-                nom: "Le tyrannoeil peut effectuer 3 actions légendaires, utilisant à chaque fois l'option Rayon oculaire ci-dessous.",
+                nom: "Le tyrannoeil peut effectuer 3 actions légendaires, utilisant à chaque fois l'option Rayon oculaire ci-dessous",
                 action:
                     "Il ne peut utiliser qu'une seule action légendaire à la fois, et seulement à la fin du tour d'une créature. Le tyrannoeil récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Rayon oculaire.", action: "Le tyrannoeil utilise un rayon oculaire aléatoire." },
+            { nom: "Rayon oculaire", action: "Le tyrannoeil utilise un rayon oculaire aléatoire." },
         ],
         description: null,
         sauvegarde: { FOR: 0, DEX: 2, CON: 4, INT: 8, SAG: 7, CHA: 8 },
@@ -15056,15 +15003,15 @@ let monsters = [
         xp: 3900,
         attributs: ".",
         actions: [
-            { nom: "Attaques multiples.", action: "Le tyrannosaure réalise deux attaques : une de morsure et une avec sa queue. Il ne peut pas faire les deux attaques contre la même cible." },
+            { nom: "Attaques multiples", action: "Le tyrannosaure réalise deux attaques : une de morsure et une avec sa queue. Il ne peut pas faire les deux attaques contre la même cible." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 33 (4d12 + 7) dégâts perforants. Si la cible est une créature de taille M ou plus petite, elle est agrippée (évasion DD 17). Tant qu'elle est agrippée, la cible est entravée, et le tyrannosaure ne peut pas mordre une autre cible.",
                 attaque: 10,
                 degats: "4d12 + 7",
             },
-            { nom: "Queue.", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 20 (3d8 + 7) dégâts contondants.", attaque: 10, degats: "3d8 + 7" },
+            { nom: "Queue", action: "Attaque au corps à corps avec une arme : +10 au toucher, allonge 3 m, une cible. Touché : 20 (3d8 + 7) dégâts contondants.", attaque: 10, degats: "3d8 + 7" },
         ],
         description:
             "Cet énorme dinosaure prédateur terrorise toutes les autres créatures sur son territoire. Il poursuit tout ce qu'il pense pouvoir manger, et il y a peu de créatures qu'il n'essayera pas de dévorer entière.",
@@ -15106,21 +15053,21 @@ let monsters = [
         attributs:
             "Incantation innée. La caractéristique d'incantation innée de l'ultroloth est le Charisme (jet de sauvegarde contre ses sorts DD 17). L'ultroloth peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : modification d'apparence, clairvoyance, ténèbres, détection de la magie, détection des pensées, dissipation de la magie, invisibilité (personnel uniquement), suggestion\n3/jour chacun : porte dimensionnelle, peur, mur de feu\n1/jour chacun : tempête de feu, suggestion de groupe\nRésistance à la magie. L'ultroloth a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Armes magiques. Les attaques avec une arme de l'ultroloth sont magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "L'ultroloth peut utiliser son regard hypnotique et effectuer trois attaques au corps à corps." },
+            { nom: "Attaques multiples", action: "L'ultroloth peut utiliser son regard hypnotique et effectuer trois attaques au corps à corps." },
             {
-                nom: "Épée longue.",
+                nom: "Épée longue",
                 action:
                     "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d8 + 3) dégâts tranchants, ou 8 (1d10 + 3) dégâts tranchants si elle est utilisée à deux mains.",
                 attaque: 8,
                 degats: "1d8 + 3",
             },
             {
-                nom: "Regard hypnotique.",
+                nom: "Regard hypnotique",
                 action:
                     "Les yeux de l'ultroloth scintillent d'une lueur opalescente tandis qu'il cible une créature qu'il peut voir dans un rayon de 9 mètres autour de lui. Si la cible peut voir l'ultroloth, elle doit réussir un jet de sauvegarde de Sagesse DD 17 contre ce pouvoir magique ou être charmée jusqu'à la fin du prochain tour de l'ultroloth. La cible charmée est étourdie. Si le jet de sauvegarde de la cible est une réussite, la cible est immunisée au regard des ultroloth pour les prochaines 24 heures.",
             },
             {
-                nom: "Téléportation.",
+                nom: "Téléportation",
                 action:
                     "L'ultroloth se téléporte magiquement, avec tout l'équipement qu'il porte ou transporte, vers un espace inoccupé qu'il peut voir et situé dans un rayon de 18 mètres autour de lui.",
             },
@@ -15163,39 +15110,39 @@ let monsters = [
         attributs:
             "Métamorphe. Si le vampire n'est pas exposé à la lumière du soleil ou dans une étendue d'eau courante, il peut utiliser son action pour se métamorphoser en une chauve-souris de taille TP ou en un nuage de brouillard de taille M, ou pour reprendre sa véritable forme. Tant qu'il est sous forme de chauve-souris, le vampire ne peut pas parler, sa vitesse de déplacement au sol tombe à 1,50 m, mais il obtient une vitesse de vol de 9 mètres. Ses statistiques, autres que sa taille et sa vitesse, restent inchangées. Tout ce qu'il porte sur lui est transformé avec lui, contrairement à ce qu'il transporte. Il retrouve sa véritable forme s'il meurt. Tant qu'il est sous forme brumeuse, le vampire ne peut effectuer aucune action, parler ou manipuler un objet. Il est en apesanteur, obtient une vitesse de vol de 6 mètres, peut rester en vol stationnaire, pénétrer dans l'espace d'une créature hostile et s'y arrêter. De plus, si de l'air peut passer par un petit espace, le nuage de brume le peut également sans être considéré comme passant dans un espace étroit. Le nuage ne peut pas pénétrer dans l'eau. Il a un avantage aux jets de sauvegarde de Force, Dextérité et Constitution, et est immunisé à tous les dégâts non magiques, à l'exception des dégâts qu'il subit du soleil.Résistance légendaire (3/jour). Si le vampire échoue à un jet de sauvegarde, il peut décider de transformer cet échec en réussite.Évasion brumeuse. Lorsqu'il tombe à 0 point de vie en dehors de sa tombe, le vampire se transforme en un nuage de brume (comme avec le trait Métamorphe) plutôt que de tomber inconscient, à condition qu'il ne soit pas exposé à la lumière du soleil ou dans une étendue d'eau courante. S'il ne peut pas se transformer, il est détruit. Tant qu'il est à 0 point de vie sous forme brumeuse, il ne peut pas retrouver sa forme de vampire, il doit impérativement atteindre sa tombe dans les 2 heures, ou être détruit. Dès qu'il atteint sa tombe, il retrouve sa forme vampirique. Il est alors paralysé jusqu'à ce qu'il récupère au moins 1 point de vie. Après être resté 1 heure dans sa tombe avec 0 point de vie, le vampire récupère 1 point de vie.Régénération. Le vampire récupère 20 points de vie au début de son tour s'il possède au moins 1 point de vie et qu'il n'est ni exposé à la lumière du soleil ou dans une étendue d'eau courante. Si le vampire subit des dégâts radiants ou des dégâts via de l'eau bénite, ce trait ne fonctionne pas au début de son prochain tour.Pattes d'araignée. Le vampire peut escalader des surfaces difficiles et être au plafond la tête en bas sans avoir besoin d'effectuer un jet de caractéristique.Faiblesses de vampire. Le vampire a les faiblesses suivantes :Interdiction. Le vampire ne peut pas entrer dans une résidence sans y avoir été invité par l'un de ses occupants.Détruit par les étendues d'eau courante. Le vampire subit 20 dégâts d'acide lorsqu'il termine son tour au sein d'une étendue d'eau courante.Un pieu dans le cœur. Si une arme perforante faite de bois est enfoncée dans son cœur alors qu'il est incapable d'agir dans sa tombe, le vampire devient paralysé jusqu'à ce que ce pieu soit retiré.Hypersensibilité à la lumière du soleil. Le vampire subit 20 dégâts radiants lorsqu'il débute son tour à la lumière du soleil. S'il est exposé à la lumière du soleil, il a un désavantage aux jets d'attaque et de caractéristique.",
         actions: [
-            { nom: "Attaques multiples (forme de vampire uniquement).", action: "Le vampire effectue deux attaques, mais seule l'une des deux peut être une attaque de morsure." },
+            { nom: "Attaques multiples (forme de vampire uniquement)", action: "Le vampire effectue deux attaques, mais seule l'une des deux peut être une attaque de morsure." },
             {
-                nom: "Mains nues (forme de vampire uniquement).",
+                nom: "Mains nues (forme de vampire uniquement)",
                 action:
                     "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une créature. Touché : 8 (1d8 + 4) dégâts contondants. Plutôt que d'infliger des dégâts, le vampire peut agripper la cible (évasion DD 18)",
                 attaque: 9,
                 degats: "1d8 + 4",
             },
             {
-                nom: "Morsure (forme de vampire ou de chauve-souris uniquement).",
+                nom: "Morsure (forme de vampire ou de chauve-souris uniquement)",
                 action:
                     "Attaque au corps à corps avec une arme : +9 au toucher, allonge 1,50 m, une créature consentante ou une créature agrippée par le vampire, incapable d'agir ou entravée. Touché : 7 (1d6 + 4) dégâts perforants + 10 (3d6) dégâts nécrotiques. Les points de vie maximums de la cible sont réduits d'un montant égal à la quantité de dégâts nécrotiques subis, et le vampire récupère un nombre de points de vie équivalent. Cette réduction perdure jusqu'à ce que la cible termine un repos long. La cible meurt si cet effet réduit ses points de vie maximums à 0. Un humanoïde abattu de la sorte puis enterré se relève la nuit suivante en tant que vampirien sous le contrôle du vampire.",
                 attaque: 9,
                 degats: "1d6 + 4",
             },
             {
-                nom: "Charme.",
+                nom: "Charme",
                 action:
                     "Le vampire cible un humanoïde qu'il peut voir et à 9 mètres maximum de lui. Si la cible peut voir le vampire, elle doit réussir un jet de sauvegarde de Sagesse DD 17 contre cette capacité magique ou être charmée par le vampire. Une fois charmée, la cible voit le vampire comme un véritable ami qu'elle doit écouter et protéger. Bien que la cible ne soit pas sous le contrôle du vampire, elle prend les requêtes et les actions du vampire de la façon la plus favorable qui soit, et elle est une cible consentante pour l'attaque de morsure du vampire. Chaque fois que le vampire ou un compagnon du vampire fait quelque chose de nuisible à la cible, elle peut retenter un jet de sauvegarde, mettant fin à l'effet qui l'affecte en cas de réussite. Sinon l'effet dure 24 heures ou jusqu'à ce que le vampire soit détruit, sur un autre plan d'existence que celui de la cible, ou utilise une action bonus pour mettre fin à l'effet.",
             },
             {
-                nom: "Enfants de la nuit (1/jour).",
+                nom: "Enfants de la nuit (1/jour)",
                 action:
                     "Le vampire appelle magiquement à lui 2d4 nuées de chauves-souris ou de rats, à condition que le soleil ne soit pas encore levé. S'il est à l'extérieur, le vampire peut choisir d'appeler à la place 3d6 loups. Les créatures appelées arrivent en 1d4 tours, agissant tels des alliés du vampire et obéissant à ses commandes verbales. Les bêtes restent 1 heure, jusqu'à ce que le vampire meure, ou jusqu'à ce que le vampire utilise une action bonus pour les congédier.",
             },
             {
-                nom: "Le vampire peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes.",
+                nom: "Le vampire peut effectuer 3 actions légendaires, en choisissant parmi les options suivantes",
                 action:
                     "Une seule action légendaire peut être utilisée à la fois, et seulement à la fin du tour d'une autre créature. Le vampire récupère les actions légendaires dépensées au début de son tour.",
             },
-            { nom: "Déplacement.", action: "Le vampire se déplace de sa vitesse sans provoquer d'attaque d'opportunité." },
-            { nom: "Mains nues.", action: "Le vampire effectue une attaque à mains nues." },
-            { nom: "Morsure (coûte 2 actions).", action: "Le vampire effectue une attaque de morsure." },
+            { nom: "Déplacement", action: "Le vampire se déplace de sa vitesse sans provoquer d'attaque d'opportunité." },
+            { nom: "Mains nues", action: "Le vampire effectue une attaque à mains nues." },
+            { nom: "Morsure (coûte 2 actions)", action: "Le vampire effectue une attaque de morsure." },
         ],
         description:
             "La victime de la morsure d'un vampire, si elle est enterrée, devient la nuit suivante un vampirien sous son contrôle. Mais lorsque ce vampire meurt ou, plus rarement, s'il permet à son vampirien de boire son sang, le vampirien se convertit en vampire à part entière, libre de ses actes mais toujours condamné à la nuit éternelle.",
@@ -15236,16 +15183,16 @@ let monsters = [
         attributs:
             "Régénération. Le vampirien récupère 10 points de vie au début de son tour s'il possède au moins 1 point de vie et qu'il n'est pas exposé à la lumière du soleil ou dans une étendue d'eau courante. Si le vampirien subit des dégâts radiants ou des dégâts via de l'eau bénite, ce trait ne fonctionne pas au début de son prochain tour.Pattes d'araignée. Le vampirien peut escalader des surfaces difficiles et être au plafond la tête en bas sans avoir besoin d'effectuer un jet de caractéristique.Faiblesses de vampire. Le vampirien a les faiblesses suivantes :Interdiction. Le vampirien ne peut pas entrer dans une résidence sans y avoir été invité par l'un de ses occupants.Détruit par les étendues d'eau courante. Le vampirien subit 20 dégâts d'acide lorsqu'il termine son tour au sein d'une étendue d'eau courante.Un pieu dans le cœur. Le vampirien est détruit si une arme perforante faite de bois est enfoncée dans son cœur alors qu'il est incapable d'agir dans sa tombe.Hypersensibilité à la lumière du soleil. Le vampirien subit 20 dégâts radiants lorsqu'il débute son tour à la lumière du soleil. S'il est exposé à la lumière du soleil, il a un désavantage aux jets d'attaque et de caractéristique.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le vampirien effectue deux attaques, mais seule l'une des deux peut être une attaque de morsure." },
+            { nom: "Attaques multiples", action: "Le vampirien effectue deux attaques, mais seule l'une des deux peut être une attaque de morsure." },
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une créature. Touché : 8 (2d4 + 3) dégâts tranchants. Plutôt que d'infliger des dégâts, le vampirien peut agripper la cible (évasion DD 13)",
                 attaque: 6,
                 degats: "2d4 + 3",
             },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une créature consentante ou une créature agrippée par le vampirien, incapable d'agir ou entravée. Touché : 6 (1d6 + 3) dégâts perforants + 7 (2d6) dégâts nécrotiques. Les points de vie maximums de la cible sont réduits d'un montant égal à la quantité de dégâts nécrotiques subis, et le vampirien récupère un nombre de points de vie équivalent. Cette réduction perdure jusqu'à ce que la cible termine un repos long. La cible meurt si cet effet réduit ses points de vie maximums à 0.",
                 attaque: 6,
@@ -15291,7 +15238,7 @@ let monsters = [
             "Amorphe. La vase peut se déplacer au travers d'espaces larges de 2,50 cm sans être considérée comme passant dans un espace étroit.Corrosion du métal. Toute arme non magique faite de métal qui touche la vase se corrode. Après avoir infligé ses dégâts, l'arme subit un malus permanent et cumulable de -1 aux jets de dégâts. Si la pénalité atteint -5, l'arme est détruite. Des munitions non magiques faites de métal qui touchent la vase sont détruites après avoir infligé leurs dégâts. La vase peut ingurgiter jusqu'à 5 centimètres d'épaisseur de métal non magique en 1 tour.Apparence trompeuse. Tant que la vase reste immobile, elle ne peut être distinguée d'une flaque d'huile ou d'un rocher humide.",
         actions: [
             {
-                nom: "Pseudopode.",
+                nom: "Pseudopode",
                 action:
                     "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d6 + 1) dégâts contondants + 7 (2d6) dégâts d'acide, et si la cible porte une armure métallique non magique, cette armure est en partie corrodée et subit une pénalité permanente et cumulable de -1 à la CA qu'elle confère. L'armure est détruite si les pénalités réduisent la CA de l'armure à 10.",
                 attaque: 3,
@@ -15329,16 +15276,16 @@ let monsters = [
         attributs:
             "Tunnelier. Le ver pourpre peut creuser à travers la roche solide en se déplaçant à la moitié de sa vitesse de déplacement et laisser sur son passage un tunnel de 3 mètres de diamètre.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le vers effectue deux attaques : une de morsure et une avec son dard." },
+            { nom: "Attaques multiples", action: "Le vers effectue deux attaques : une de morsure et une avec son dard." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une cible. Touché : 22 (3d8 + 9) dégâts perforants. Si la cible est une créature de taille G ou inférieure, elle doit réussir un jet de sauvegarde de Dextérité DD 19 ou être engloutie par le vers. Une créature engloutie est aveuglée et entravée, a un abri total contre les attaques et les autres effets provenant de l'extérieur du vers, et elle subit 21 (6d6) dégâts d'acide au début de chacun des tours du vers. Si le vers subit 30 points de dégâts ou plus en un tour de la part de la créature qu'il a ingurgitée, le vers doit réussir un jet de sauvegarde de Constitution DD 21 à la fin de ce tour ou régurgiter toutes les créatures qu'il a avalées, qui tombent alors par terre dans un rayon de 3 mètres autour du vers. Si le vers meurt, une créature engloutie n'est plus entravée par le vers et peut s'échapper de son cadavre en utilisant 6 mètres de déplacement, s'extirpant ainsi en rampant sur le sol.",
                 attaque: 14,
                 degats: "3d8 + 9",
             },
             {
-                nom: "Dard.",
+                nom: "Dard",
                 action:
                     "Attaque au corps à corps avec une arme : +14 au toucher, allonge 3 m, une créature. Touché : 19 (3d6 + 9) dégâts perforants, et la cible doit effectuer un jet de sauvegarde de Constitution DD 19, subissant 42 (12d6) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
                 attaque: 14,
@@ -15383,16 +15330,16 @@ let monsters = [
         xp: 2300,
         attributs: "Résistance à la magie. Le vrock a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le vrock effectue deux attaques : une avec son bec et une avec ses serres." },
-            { nom: "Bec.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts perforants", attaque: 6, degats: "2d6 + 3" },
-            { nom: "Serres.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d10 + 3) dégâts tranchants.", attaque: 6, degats: "2d10 + 3" },
+            { nom: "Attaques multiples", action: "Le vrock effectue deux attaques : une avec son bec et une avec ses serres." },
+            { nom: "Bec", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts perforants", attaque: 6, degats: "2d6 + 3" },
+            { nom: "Serres", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d10 + 3) dégâts tranchants.", attaque: 6, degats: "2d10 + 3" },
             {
-                nom: "Spores (Recharge 6).",
+                nom: "Spores (Recharge 6)",
                 action:
                     "Un nuage de spores toxiques se répand du vrock dans un rayon de 4,50 mètres. Les spores contournent les angles de murs. Chaque créature qui se trouve dans la zone d'effet doit réussir un jet de sauvegarde de Constitution DD 14 ou être empoisonnée. Tant qu'elle est empoisonnée de cette manière, la cible subit 5 (1d10) dégâts de poison au début de chacun de ses tours. Une cible peut retenter un jet de sauvegarde à la fin de chacun de ses tours, mettant ainsi fin à son empoisonnement en cas de réussite. Vider une fiole d'eau bénite sur la cible met également fin à cet effet d'empoisonnement.",
             },
             {
-                nom: "Cri étourdissant (1/jour).",
+                nom: "Cri étourdissant (1/jour)",
                 action:
                     "Le vrock émet un cri horrible. Chaque créature dans un rayon de 6 mètres autour du vrock, qui peut l'entendre et n'est pas un démon, doit réussir un jet de sauvegarde de Constitution DD 14 ou être étourdie jusqu'à la fin du prochain tour du vrock.",
             },
@@ -15428,18 +15375,18 @@ let monsters = [
         attributs: ".",
         actions: [
             {
-                nom: "Attaques multiples.",
+                nom: "Attaques multiples",
                 action: "La wiverne réalise deux attaques : une de morsure et une avec son dard. Lorsqu'elle vole, elle peut utiliser ses griffes à la place d'une des attaques.",
             },
             {
-                nom: "Dard.",
+                nom: "Dard",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 11 (2d6 + 4) dégâts perforants. La cible doit réussir un jet de sauvegarde de Constitution DD 15, subissant 24 (7d6) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
                 attaque: 7,
                 degats: "2d6 + 4",
             },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts tranchants.", attaque: 7, degats: "2d8 + 4" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une créature. Touché : 11 (2d6 + 4) dégâts perforants.", attaque: 7, degats: "2d6 + 4" },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts tranchants.", attaque: 7, degats: "2d8 + 4" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une créature. Touché : 11 (2d6 + 4) dégâts perforants.", attaque: 7, degats: "2d6 + 4" },
         ],
         description:
             "Cousines des grands dragons, les wivernes possèdent deux pattes écailleuses, des ailes de cuir et une queue musclée surmontée d'un dard empoisonné pouvant tuer une créature en quelques secondes.",
@@ -15473,7 +15420,7 @@ let monsters = [
         attributs: "Odorat et ouïe aiguisés. Le worg a un avantage aux jets de Sagesse (Perception) basés sur l'odorat ou l'ouïe.",
         actions: [
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts perforants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DD 13 pour ne pas tomber à terre.",
                 attaque: 5,
@@ -15517,9 +15464,9 @@ let monsters = [
         attributs:
             "Déplacement dans la terre. Le xorn peut creuser la pierre et la terre brutes et non magiques. Ce faisant, le xorn ne produit pas d'ondes de choc ni ne laisse de galerie derrière lui dans la matière qu'il creuse.Camouflage dans les rochers. Le xorn a un avantage aux jets de Dextérité (Discrétion) effectués pour se cacher sur un terrain rocailleux.Perception des trésors. Le xorn peut localiser, à l'odorat, la position de métaux précieux et de pierres précieuses, telles que les pièces d'or et les gemmes, qui se situent dans un rayon de 18 mètres autour de lui.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le xorn réalise trois attaques avec ses griffes et une attaque de morsure." },
-            { nom: "Griffes.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.", attaque: 6, degats: "1d6 + 3" },
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 13 (3d6 + 3) dégâts perforants.", attaque: 6, degats: "3d6 + 3" },
+            { nom: "Attaques multiples", action: "Le xorn réalise trois attaques avec ses griffes et une attaque de morsure." },
+            { nom: "Griffes", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.", attaque: 6, degats: "1d6 + 3" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 13 (3d6 + 3) dégâts perforants.", attaque: 6, degats: "3d6 + 3" },
         ],
         description: null,
         sauvegarde: { FOR: 3, DEX: 0, CON: 6, INT: 0, SAG: 0, CHA: 0 },
@@ -15558,15 +15505,15 @@ let monsters = [
         attributs:
             "Camouflage dans la neige. Le yéti a un avantage aux jets de Dextérité (Discrétion) effectués pour se cacher sur un terrain enneigé.Crainte du feu. Si le yéti subit des dégâts de feu, il subit un désavantage aux jets d'attaque et de caractéristique jusqu'à la fin de son tour suivant.Odorat aiguisé. Le yéti a un avantage aux jets de Sagesse (Perception) basés sur l'odorat.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le yéti peut utiliser son Regard givrant et réaliser deux attaques avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le yéti peut utiliser son Regard givrant et réaliser deux attaques avec ses griffes." },
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d6 + 4) dégâts tranchants + 3 (1d6) dégâts de froid.",
                 attaque: 6,
                 degats: "1d6 + 4",
             },
             {
-                nom: "Regard givrant.",
+                nom: "Regard givrant",
                 action:
                     "Le yéti prend pour cible une créature qu'il peut voir et qui se trouve à 9 mètres ou moins de lui. Si la cible peut voir le yéti, elle doit réussir un jet de sauvegarde de Constitution DD 13 ou subir 10 (3d6) dégâts de froid et être paralysée pendant 1 minute, à moins d'être immunisée aux dégâts de froid. La cible peut relancer le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde est réussi, ou si l'effet se termine, la cible est dès lors immunisée au Regard givrant de tous les yétis (mais pas des abominables yétis) pendant 1 heure.",
             },
@@ -15609,20 +15556,20 @@ let monsters = [
         attributs:
             "Camouflage dans la neige. Le yéti a un avantage aux jets de Dextérité (Discrétion) effectués pour se cacher sur un terrain enneigé.Crainte du feu. Si le yéti subit des dégâts de feu, il subit un désavantage aux jets d'attaque et de caractéristique jusqu'à la fin de son tour suivant.Odorat aiguisé. Le yéti a un avantage aux jets de Sagesse (Perception) basés sur l'odorat.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le yéti peut utiliser son Regard givrant et réaliser deux attaques avec ses griffes." },
+            { nom: "Attaques multiples", action: "Le yéti peut utiliser son Regard givrant et réaliser deux attaques avec ses griffes." },
             {
-                nom: "Griffes.",
+                nom: "Griffes",
                 action: "Attaque au corps à corps avec une arme : +11 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d6 + 7) dégâts tranchants + 7 (2d6) dégâts de froid.",
                 attaque: 11,
                 degats: "2d6 + 7",
             },
             {
-                nom: "Regard givrant.",
+                nom: "Regard givrant",
                 action:
                     "Le yéti prend pour cible une créature qu'il peut voir et qui se trouve à 9 mètres ou moins de lui. Si la cible peut voir le yéti, elle doit réussir un jet de sauvegarde de Constitution DD 18 ou subir 21 (6d6) dégâts de froid et être paralysée pendant 1 minute, à moins d'être immunisée aux dégâts de froid. La cible peut relancer le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde est réussi, ou si l'effet se termine, la cible devient immunisée au Regard givrant de ce yéti pendant 1 heure.",
             },
             {
-                nom: "Souffle de froid (Recharge 6).",
+                nom: "Souffle de froid (Recharge 6)",
                 action:
                     "Le yéti exhale de l'air glacial dans un cône de 9 mètres. Chaque créature présente dans la zone doit effectuer un jet de sauvegarde de Constitution DD 18, subissant 45 (10d8) dégâts de froid en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
@@ -15667,16 +15614,16 @@ let monsters = [
         attributs:
             "Métamorphe. Le yochlol peut utiliser son action pour se métamorphoser en une forme qui ressemble à une femelle drow ou à une araignée géante, ou pour reprendre sa véritable forme. Ses statistiques sont les mêmes sous chacune de ces formes. L'équipement qu'il porte ou transporte ne se transforme pas. Il retrouve sa véritable forme s'il meurt.Résistance à la magie. Le yochlol a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Pattes d'araignée. La yochlol peut escalader des surfaces difficiles et être au plafond la tête en bas sans avoir besoin d'effectuer un jet de caractéristique.Incantation innée. La caractéristique d'incantation innée du yochlol est le Charisme (jet de sauvegarde contre ses sorts DD 14). Le yochlol peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : détection des pensées, toile d'araignée\n1/jour : domination d'humanoïde\nDéplacement sur la toile. Le yochlol ignore les restrictions de mouvement causées par une toile d'araignée.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le yochlol effectue deux attaques au corps à corps." },
+            { nom: "Attaques multiples", action: "Le yochlol effectue deux attaques au corps à corps." },
             {
-                nom: "Coup (Morsure sous forme d'araignée).",
+                nom: "Coup (Morsure sous forme d'araignée)",
                 action:
                     "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m (3 m sous forme de démon), une cible. Touché : 5 (1d6 + 2) dégâts contondants (perforants sous forme d'araignée) + 21 (6d6) dégâts de poison.",
                 attaque: 6,
                 degats: "1d6 + 2",
             },
             {
-                nom: "Forme brumeuse.",
+                nom: "Forme brumeuse",
                 action:
                     "Le yochlol se transforme en un nuage de brume toxique, ou reprend sa véritable forme. L'équipement qu'il porte et transporte est transformé avec lui. Il retrouve sa véritable forme s'il meurt. Tant qu'il est sous forme de brume, le yochlol est incapable d'agir et ne peut pas parler. Il possède une vitesse de vol de 9 mètres, peut faire du vol stationnaire, et peut passer au travers de toute zone qui n'est pas hermétique à l'air. Il possède un avantage aux jets de sauvegarde de Force, de Dextérité, et de Constitution, et est immunisé aux dégâts non magiques. Tant qu'il se trouve sous forme gazeuse, le yochlol peut entrer dans l'espace d'une créature et s'y arrête. Chaque fois qu'une créature débute son tour dans l'espace occupé par le yochlol, la créature doit réussir un jet de sauvegarde de Constitution DD 14 ou être empoisonnée jusqu'au début de son prochain tour. Tant qu'elle est empoisonnée de la sorte, la cible est incapable d'agir.",
             },
@@ -15720,30 +15667,30 @@ let monsters = [
             "Métamorphe. Le yuan-ti peut utiliser son action pour se métamorphoser en un serpent de taille G, ou pour reprendre sa véritable forme. Ses statistiques sont les mêmes pour chaque forme. L'équipement qu'il porte ou transporte ne se transforme pas. Il ne change pas de forme s'il meurt.Incantation innée (forme d'abomination uniquement). La caractéristique d'incantation innée du yuan-ti est le Charisme (jet de sauvegarde contre ses sorts DD 15). Le yuan-ti peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : amitié avec les animaux (serpents uniquement)\n3/jour : suggestion\n1/jour : peur\nRésistance à la magie. Le yuan-ti a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
             {
-                nom: "Attaques multiples (forme d'abomination uniquement).",
+                nom: "Attaques multiples (forme d'abomination uniquement)",
                 action: "Le yuan-ti réalise deux attaques à distance ou trois attaques au corps à corps, mais il ne peut utiliser les attaques de morsure et l'étreinte qu'une fois chacune.",
             },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 7 (1d6 + 4) dégâts perforants + 10 (3d6) dégâts de poison.",
                 attaque: 7,
                 degats: "1d6 + 4",
             },
             {
-                nom: "Étreinte.",
+                nom: "Étreinte",
                 action:
                     "Attaque au corps à corps avec une arme : +7 au toucher, allonge 3 m, une cible. Touché : 11 (2d6 + 4) dégâts contondants, et la cible est agrippée (DD 14 pour s'échapper). Tant qu'elle est agrippée, la créature est entravée, et le yuan-ti ne peut pas étreindre une autre cible.",
                 attaque: 7,
                 degats: "2d6 + 4",
             },
             {
-                nom: "Cimeterre (forme d'abomination uniquement).",
+                nom: "Cimeterre (forme d'abomination uniquement)",
                 action: "Attaque au corps à corps avec une arme : +7 au toucher, allonge 1,50 m, une cible. Touché : 11 (2d6 + 4) dégâts tranchants.",
                 attaque: 7,
                 degats: "2d6 + 4",
             },
             {
-                nom: "Arc long (forme d'abomination uniquement).",
+                nom: "Arc long (forme d'abomination uniquement)",
                 action: "Attaque à distance avec une arme : +6 au toucher, portée 45/180 m, une cible. Touché : 12 (2d8 + 3) dégâts perforants + 10 (3d6) dégâts de poison.",
                 attaque: 6,
                 degats: "2d8 + 3",
@@ -15788,59 +15735,59 @@ let monsters = [
             "Métamorphe. Le yuan-ti peut utiliser son action pour se métamorphoser en un serpent de taille M, ou pour reprendre sa véritable forme. Ses statistiques sont les mêmes pour chaque forme. L'équipement qu'il porte ou transporte ne se transforme pas. Il ne change pas de forme s'il meurt.Incantation innée (forme de yuan-ti uniquement). La caractéristique d'incantation innée du yuan-ti est le Charisme (jet de sauvegarde contre ses sorts DD 13). Le yuan-ti peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : amitié avec les animaux (serpents uniquement)\n3/jour : suggestion\nRésistance à la magie. Le yuan-ti a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.Type de malison. Le yuan-ti possède un des types suivants :Type 1 : Corps humain et tête de serpent.\nType 2 : Tête humaine et des serpents à la place des bras.\nType 3 : Tête et buste humain avec un corps de serpent à la place des jambes..",
         actions: [
             {
-                nom: "Attaques multiples (forme de yuan-ti uniquement).",
+                nom: "Attaques multiples (forme de yuan-ti uniquement)",
                 action: "Le yuan-ti réalise deux attaques à distance ou deux attaques au corps à corps, mais il ne peut utiliser son attaque de morsure qu'une fois.",
             },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature. Touché : 5 (1d4 + 3) dégâts perforants + 7 (2d6) dégâts de poison.",
                 attaque: 5,
                 degats: "1d4 + 3",
             },
             {
-                nom: "Cimeterre (forme de yuan-ti uniquement).",
+                nom: "Cimeterre (forme de yuan-ti uniquement)",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.",
                 attaque: 5,
                 degats: "1d6 + 3",
             },
             {
-                nom: "Arc long (forme de yuan-ti uniquement).",
+                nom: "Arc long (forme de yuan-ti uniquement)",
                 action: "Attaque à distance avec une arme : +4 au toucher, portée 45/180 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants + 7 (2d6) dégâts de poison.",
                 attaque: 4,
                 degats: "1d8 + 2",
             },
-            { nom: "Attaques multiples (forme de yuan-ti uniquement).", action: "Le yuan-ti réalise deux attaques de morsure avec ses bras serpents." },
+            { nom: "Attaques multiples (forme de yuan-ti uniquement)", action: "Le yuan-ti réalise deux attaques de morsure avec ses bras serpents." },
             {
-                nom: "Morsure.",
+                nom: "Morsure",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature. Touché : 5 (1d4 + 3) dégâts perforants + 7 (2d6) dégâts de poison.",
                 attaque: 5,
                 degats: "1d4 + 3",
             },
             {
-                nom: "Attaques multiples (forme de yuan-ti uniquement).",
+                nom: "Attaques multiples (forme de yuan-ti uniquement)",
                 action: "Le yuan-ti réalise deux attaques à distance ou deux attaques au corps à corps, mais il ne peut utiliser son attaque d'étreinte qu'une fois.",
             },
             {
-                nom: "Morsure (forme de serpent uniquement).",
+                nom: "Morsure (forme de serpent uniquement)",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une créature. Touché : 5 (1d4 + 3) dégâts perforants + 7 (2d6) dégâts de poison.",
                 attaque: 5,
                 degats: "1d4 + 3",
             },
             {
-                nom: "Étreinte.",
+                nom: "Étreinte",
                 action:
                     "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 10 (2d6 + 3) dégâts contondants, et la cible est agrippée (DD 13 pour s'échapper). Tant qu'elle est agrippée, la créature est entravée, et le yuan-ti ne peut pas étreindre une autre cible.",
                 attaque: 5,
                 degats: "2d6 + 3",
             },
             {
-                nom: "Cimeterre (forme de yuan-ti uniquement).",
+                nom: "Cimeterre (forme de yuan-ti uniquement)",
                 action: "Attaque au corps à corps avec une arme : +5 au toucher, allonge 1,50 m, une cible. Touché : 6 (1d6 + 3) dégâts tranchants.",
                 attaque: 5,
                 degats: "1d6 + 3",
             },
             {
-                nom: "Arc long (forme de yuan-ti uniquement).",
+                nom: "Arc long (forme de yuan-ti uniquement)",
                 action: "Attaque à distance avec une arme : +4 au toucher, portée 45/180 m, une cible. Touché : 6 (1d8 + 2) dégâts perforants.",
                 attaque: 4,
                 degats: "1d8 + 2",
@@ -15884,10 +15831,10 @@ let monsters = [
         attributs:
             "Incantation innée. La caractéristique d'incantation innée du yuan-ti est le Charisme (jet de sauvegarde contre ses sorts DD 12). Le yuan-ti peut lancer les sorts suivants de manière innée, sans avoir besoin de composantes matérielles :À volonté : amitié avec les animaux (serpents uniquement)\n3/jour chacun : suggestion, vaporisation de poison\nRésistance à la magie. Le yuan-ti a un avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
         actions: [
-            { nom: "Attaques multiples.", action: "Le yuan-ti réalise deux attaques au corps à corps." },
-            { nom: "Cimeterre.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d6 + 1) dégâts tranchants.", attaque: 3, degats: "1d6 + 1" },
+            { nom: "Attaques multiples", action: "Le yuan-ti réalise deux attaques au corps à corps." },
+            { nom: "Cimeterre", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d6 + 1) dégâts tranchants.", attaque: 3, degats: "1d6 + 1" },
             {
-                nom: "Arc court.",
+                nom: "Arc court",
                 action: "Attaque à distance avec une arme : +3 au toucher, portée 24/96 m, une cible. Touché : 4 (1d6 + 1) dégâts perforants + 7 (2d6) dégâts de poison.",
                 attaque: 3,
                 degats: "1d6 + 1",
@@ -15931,7 +15878,7 @@ let monsters = [
         attributs:
             "Détermination de mort-vivant. Si des dégâts font tomber le zombi à 0 point de vie, celui-ci doit effectuer un jet de sauvegarde de Constitution DD 5 + les dégâts subis, sauf en cas de dégâts radiants ou coup critique. En cas de réussite, il tombe à 1 point de vie à la place.",
         actions: [
-            { nom: "Coup.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d6 + 1) dégâts contondants.", attaque: 3, degats: "1d6 + 1" },
+            { nom: "Coup", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 4 (1d6 + 1) dégâts contondants.", attaque: 3, degats: "1d6 + 1" },
         ],
         description:
             "Un zombi est le résultat obéissant d'une magie nécromantique lancée dans le but de réanimer un cadavre le plus souvent humanoïde. Parfois un zombi se relève aussi tout seul s'il se trouve dans un lieu fortement imprégné d'une aura de mort ou d'énergie nécromantique. Les zombis se déplacent d'une démarche saccadée et inégale, vêtus des habits maintenant moisis qu'ils portaient lors de leur mort. Ils sécrètent une puanteur nauséabonde.",
@@ -15973,7 +15920,7 @@ let monsters = [
             "Détermination de mort-vivant. Si des dégâts font tomber le zombi à 0 point de vie, celui-ci doit effectuer un jet de sauvegarde de Constitution DD 5 + les dégâts subis, sauf en cas de dégâts radiants ou de coup critique. En cas de réussite, il tombe à 1 point de vie à la place.",
         actions: [
             {
-                nom: "Morgenstern.",
+                nom: "Morgenstern",
                 action: "Attaque au corps à corps avec une arme : +6 au toucher, allonge 1,50 m, une cible. Touché : 13 (2d8 + 4) dégâts contondants.",
                 attaque: 6,
                 degats: "2d8 + 4",
@@ -16017,25 +15964,25 @@ let monsters = [
         attributs:
             "Détermination de mort-vivant. Si des dégâts font tomber le zombi à 0 point de vie, celui-ci doit effectuer un jet de sauvegarde de Constitution DD 5 + les dégâts subis, sauf en cas de dégâts radiants ou coup critique. En cas de réussite, il tombe à 1 point de vie à la place.",
         actions: [
-            { nom: "Morsure.", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 14 (4d6) dégâts perforants.", attaque: 3, degats: "4d6" },
-            { nom: "Rayons oculaires.", action: "Le zombi tire aléatoirement un des rayons oculaires magiques suivants sur une cible qu'il peut voir dans un rayon de 18 mètres :" },
+            { nom: "Morsure", action: "Attaque au corps à corps avec une arme : +3 au toucher, allonge 1,50 m, une cible. Touché : 14 (4d6) dégâts perforants.", attaque: 3, degats: "4d6" },
+            { nom: "Rayons oculaires", action: "Le zombi tire aléatoirement un des rayons oculaires magiques suivants sur une cible qu'il peut voir dans un rayon de 18 mètres :" },
             {
-                nom: "1- Rayon paralysant.",
+                nom: "1- Rayon paralysant",
                 action:
                     "La créature ciblée doit réussir un jet de sauvegarde de Constitution DD 14 ou être paralysée pendant 1 minute. La cible peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "2- Rayon de peur.",
+                nom: "2- Rayon de peur",
                 action:
                     "La créature ciblée doit réussir un jet de sauvegarde de Sagesse DD 14 ou être effrayée pendant 1 minute. La cible peut retenter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite.",
             },
             {
-                nom: "3- Rayon affaiblissant.",
+                nom: "3- Rayon affaiblissant",
                 action:
                     "La créature ciblée doit effectuer un jet de sauvegarde de Constitution DD 14, subissant 36 (8d8) dégâts nécrotiques en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
             },
             {
-                nom: "4- Rayon de désintégration.",
+                nom: "4- Rayon de désintégration",
                 action:
                     "Si la cible est une créature, elle doit réussir un jet de sauvegarde de Dextérité DD 14 ou subir 45 (10d8) dégâts de force. Si les dégâts font tomber les points de vie d'une créature à 0, son corps se transforme en un petit monticule de fine poussière grise. Si la cible est un objet non magique, ou la création d'une force magique, de taille G ou inférieure, il est désintégré sans jet de sauvegarde. Si la cible est un objet, ou la création d'une force magique, de taille TG ou supérieure, le rayon en désintègre un cube de 3 mètres d'arête.",
             },
