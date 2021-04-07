@@ -46,7 +46,7 @@ async function get_rencontre(req, resp) {
                     if (alignement[1] == monster.alignement[1] || alignement[1] == "A") {
                         if (types.length > 0) {
                             if (types.includes(monster.type)) {
-                                candidates.push([monster.nom, monster.FP, monster.type]);
+                                candidates.push(monster);
                             }
                         }
                     }
