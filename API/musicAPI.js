@@ -96,6 +96,14 @@ async function get_audio(req, resp) {
 }
 
 async function get_search_results(req, resp) {
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        resp.setHeader("Access-Control-Allow-Origin", origin);
+    }
+    resp.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
+    resp.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type");
+    resp.setHeader("Access-Control-Allow-Credentials", true);
+
     let body = await rp("https://www.youtube.com/results?search_query=" + decodeURI(req.query.search));
 
     start = body.indexOf("var ytInitialData = ");
