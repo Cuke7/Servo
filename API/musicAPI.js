@@ -6,11 +6,12 @@ const request = require("request");
 const ytdl = require("ytdl-core");
 const sendSeekable = require("send-seekable");
 
-const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app"];
+const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://auditere.netlify.app"];
 
 // Endpoints
 router.route("/get_playlist").get(get_playlist);
 router.route("/get_audio").get(get_audio);
+router.route("/get_search_results").get(get_search_results);
 
 // Get playlist object from playlist url
 async function get_playlist(req, resp) {
@@ -92,6 +93,58 @@ async function get_audio(req, resp) {
         type: type,
         length: size,
     });
+}
+
+async function get_search_results(req, resp) {
+    let body = await rp("https://www.youtube.com/results?search_query=" + decodeURI(req.query.search));
+
+    start = body.indexOf("var ytInitialData = ");
+    end = body.indexOf("</script>", start);
+
+    let obj = body.substring(start + 20, end - 1);
+    let data = JSON.parse(obj);
+
+    //let data2 = data.contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents[0].itemSectionRenderer.contents;
+
+    let contents = data.contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents;
+
+    for (const content of contents) {
+        if (content.hasOwnProperty("itemSectionRenderer")) {
+            if (content.itemSectionRenderer.contents.length > 1) {
+                data2 = content.itemSectionRenderer.contents;
+            }
+        }
+    }
+
+    let results = [];
+
+    for (const item of data2) {
+        if (item.hasOwnProperty("videoRenderer")) {
+            if (item.videoRenderer.lengthText) {
+                if (getDuration(item.videoRenderer.lengthText.simpleText) < 400) {
+                    results.push({
+                        title: item.videoRenderer.title.runs[0].text,
+                        thumbnail: item.videoRenderer.thumbnail.thumbnails[0].url,
+                        id: item.videoRenderer.videoId,
+                        duration: item.videoRenderer.lengthText.simpleText,
+                        artist: item.videoRenderer.ownerText.runs[0].text,
+                    });
+                }
+            }
+        }
+    }
+    //console.log(results)
+    resp.json(results);
+}
+
+function getDuration(duration) {
+    let times = duration.split(":");
+
+    if (times.length == 2) {
+        return Number(times[0]) * 60 + Number(times[1]);
+    } else {
+        return 9999;
+    }
 }
 
 module.exports = router;
