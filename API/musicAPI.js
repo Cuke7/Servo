@@ -34,6 +34,11 @@ async function get_playlist(req, resp) {
 
         let ytdata = JSON.parse(obj);
 
+        if(ytdata.contents == undefined){
+            resp.json(null)
+            return
+        }
+
         let data = ytdata.contents.twoColumnBrowseResultsRenderer.tabs[0].tabRenderer.content.sectionListRenderer.contents[0].itemSectionRenderer.contents[0].playlistVideoListRenderer.contents;
 
         let playlist = [];
