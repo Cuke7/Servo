@@ -18,7 +18,7 @@ function return_weather(req, resp) {
         console.log(data.hourly[2].temp);
         let weather = data.hourly[2].weather;
         console.log(weather)
-        resp.send('\"'+Math.round(data.hourly[2].temp)+"° "+weather[0].description+";"+weather[0].icon+'\"');
+        resp.send(Math.round(data.hourly[2].temp)+"° "+weather[0].description+";"+weather[0].icon);
     });
 }
 module.exports = router;
