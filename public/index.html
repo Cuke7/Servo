@@ -18,26 +18,39 @@
 
     <h2>P8 watch</h2>
     <div id="P8watchStatus"></div>
+
+    <h2>Music API</h2>
+    <div id="musicAPIStatus"></div>
+    <div id="musicAPIStatus2"></div>
 </body>
 
 <script>
     // TRAM API
 
     (async () => {
-        //await test_endpoint("TramAPI/get_station_times?station='Roustaing'", "tramAPIStatus", data => data.length == 2 ? true : false);
-        //await test_endpoint("QuotidieAPI/get_evangile", "quotidieStatus1", data => data.title ? true : false);
-        //await test_endpoint("QuotidieAPI/get_saint", "quotidieStatus2", data => data.title ? true : false);
-        await test_endpoint("P8watchAPI/weather", "P8watchStatus", data => data.lenght > 0 ? true : false);
+        await test_endpoint("TramAPI/get_station_times?station='Roustaing'", "tramAPIStatus", data => data.length == 2 ? true : false);
+        await test_endpoint("QuotidieAPI/get_evangile", "quotidieStatus1", data => data.title ? true : false);
+        await test_endpoint("QuotidieAPI/get_saint", "quotidieStatus2", data => data.title ? true : false);
+        await test_endpoint("P8watchAPI/weather", "P8watchStatus", data => data.length > 0 ? true : false);
+        await test_endpoint("musicAPI/get_playlist?url="+encodeURIComponent("https://www.youtube.com/playlist?list=PLY80CRqvcxEXtmbMSJDqIK4uk_FB3j5I8"), "musicAPIStatus", data => data.name ? true : false);
+        await test_endpoint("musicAPI/get_search_results?search=centuries", "musicAPIStatus2",  data => data.length > 0 ? true : false);
     })();
 
 
 
     async function test_endpoint(url, id, fun) {
-        document.getElementById(id).innerHTML = url
+        document.getElementById(id).innerHTML = url + " : " + "⚙️";
         try {
             let resp = await fetch("https://my-servo.herokuapp.com/" + url);
-            let data = await resp.json();
-            let state = fun(data);
+            let data_txt = await resp.text();
+            let state;
+            console.log(url, data_txt)
+            if (data_txt[0] == '{' || data_txt[0] == "[") {
+                state = fun(JSON.parse(data_txt));
+            } else {
+                state = fun(data_txt);
+            }
+
             if (state) {
                 document.getElementById(id).innerHTML = url + " : " + "✔️";
             } else {
