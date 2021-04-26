@@ -1,1 +1,54 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>DnD</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"><link href="/css/app.7cd70fe9.css" rel="preload" as="style"><link href="/css/chunk-vendors.d0ebabbb.css" rel="preload" as="style"><link href="/js/app.173a3da7.js" rel="preload" as="script"><link href="/js/chunk-vendors.217622b6.js" rel="preload" as="script"><link href="/css/chunk-vendors.d0ebabbb.css" rel="stylesheet"><link href="/css/app.7cd70fe9.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but dnd-app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.217622b6.js"></script><script src="/js/app.173a3da7.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Servo-home</title>
+</head>
+
+<body>
+    <h2>Tram API</h2>
+    <div id="tramAPIStatus"></div>
+
+    <h2>Quotidie</h2>
+    <div id="quotidieStatus1"></div>
+    <div id="quotidieStatus2"></div>
+
+    <h2>P8 watch</h2>
+    <div id="P8watchStatus"></div>
+</body>
+
+<script>
+    // TRAM API
+
+    (async () => {
+        //await test_endpoint("TramAPI/get_station_times?station='Roustaing'", "tramAPIStatus", data => data.length == 2 ? true : false);
+        //await test_endpoint("QuotidieAPI/get_evangile", "quotidieStatus1", data => data.title ? true : false);
+        //await test_endpoint("QuotidieAPI/get_saint", "quotidieStatus2", data => data.title ? true : false);
+        await test_endpoint("P8watchAPI/weather", "P8watchStatus", data => data.lenght > 0 ? true : false);
+    })();
+
+
+
+    async function test_endpoint(url, id, fun) {
+        document.getElementById(id).innerHTML = url
+        try {
+            let resp = await fetch("https://my-servo.herokuapp.com/" + url);
+            let data = await resp.json();
+            let state = fun(data);
+            if (state) {
+                document.getElementById(id).innerHTML = url + " : " + "✔️";
+            } else {
+                throw "err"
+            }
+        }
+        catch {
+            document.getElementById(id).innerHTML = url + " : " + "❌";
+        }
+    }
+
+</script>
+
+</html>
