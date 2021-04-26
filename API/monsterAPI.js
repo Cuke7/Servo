@@ -5,7 +5,7 @@ var data = require("../Data/monstersData.js");
 
 let monsters = data.monsters;
 
-const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app", "https://dnd-app.netlify.app"];
+const allowedOrigins = ["http://192.168.1.18:8080","http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app", "https://dnd-app.netlify.app"];
 
 // Endpoints
 router.route("/get_rencontre").get(get_rencontre);

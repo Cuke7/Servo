@@ -14,11 +14,11 @@ function return_weather(req, resp) {
     // Allow CORS stuff
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
-        res.setHeader("Access-Control-Allow-Origin", origin);
+        resp.setHeader("Access-Control-Allow-Origin", origin);
     }
-    res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
-    res.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type");
-    res.setHeader("Access-Control-Allow-Credentials", true);
+    resp.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
+    resp.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type");
+    resp.setHeader("Access-Control-Allow-Credentials", true);
     request(url, function (error, response, body) {
         //console.error("error:", error); // Print the error if one occurred
         //console.log("statusCode:", response && response.statusCode); // Print the response status code if a response was received
