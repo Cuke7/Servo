@@ -6,7 +6,7 @@ const request = require("request");
 const ytdl = require("ytdl-core");
 const sendSeekable = require("send-seekable");
 
-const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://auditere.netlify.app"];
+const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://auditere.netlify.app", "http://127.0.0.1:3000"];
 
 // Endpoints
 router.route("/get_playlist").get(get_playlist);
