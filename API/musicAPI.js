@@ -34,9 +34,9 @@ async function get_playlist(req, resp) {
 
         let ytdata = JSON.parse(obj);
 
-        if(ytdata.contents == undefined){
-            resp.json(null)
-            return
+        if (ytdata.contents == undefined) {
+            resp.json(null);
+            return;
         }
 
         let data = ytdata.contents.twoColumnBrowseResultsRenderer.tabs[0].tabRenderer.content.sectionListRenderer.contents[0].itemSectionRenderer.contents[0].playlistVideoListRenderer.contents;
@@ -134,14 +134,15 @@ async function get_search_results(req, resp) {
     for (const item of data2) {
         if (item.hasOwnProperty("videoRenderer")) {
             if (item.videoRenderer.lengthText) {
-                if (getDuration(item.videoRenderer.lengthText.simpleText) < 400) {
-                    results.push({
-                        title: item.videoRenderer.title.runs[0].text,
-                        thumbnail: item.videoRenderer.thumbnail.thumbnails[0].url,
-                        id: item.videoRenderer.videoId,
-                        duration: item.videoRenderer.lengthText.simpleText,
-                        artist: item.videoRenderer.ownerText.runs[0].text,
-                    });
+                if (item.videoRenderer.ownerBadges) {
+                    if (item.videoRenderer.ownerBadges[0].metadataBadgeRenderer.icon.iconType == "OFFICIAL_ARTIST_BADGE")
+                        results.push({
+                            title: item.videoRenderer.title.runs[0].text,
+                            thumbnail: item.videoRenderer.thumbnail.thumbnails[0].url,
+                            id: item.videoRenderer.videoId,
+                            duration: item.videoRenderer.lengthText.simpleText,
+                            artist: item.videoRenderer.ownerText.runs[0].text,
+                        });
                 }
             }
         }
