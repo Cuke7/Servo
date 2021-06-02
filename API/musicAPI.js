@@ -13,6 +13,34 @@ const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https
 router.route("/get_playlist").get(get_playlist);
 router.route("/get_audio").get(get_audio);
 router.route("/get_search_results").get(get_search_results);
+router.route("/get_refinements").get(get_refinements);
+
+// Get youtube search suggestions
+async function get_refinements(req, resp) {
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        resp.setHeader("Access-Control-Allow-Origin", origin);
+    }
+    resp.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
+    resp.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type");
+    resp.setHeader("Access-Control-Allow-Credentials", true);
+
+    let body = await rp("https://www.youtube.com/results?search_query=" + decodeURI(req.query.search));
+
+    start = body.indexOf("var ytInitialData = ");
+    end = body.indexOf("</script>", start);
+
+    let obj = body.substring(start + 20, end - 1);
+    let data = JSON.parse(obj);
+
+    //let data2 = data.contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents[0].itemSectionRenderer.contents;
+
+    let refinements = data.refinements;
+    console.log(refinements);
+
+    //console.log(results)
+    resp.json(refinements);
+}
 
 // Get playlist object from playlist url
 async function get_playlist(req, resp) {
