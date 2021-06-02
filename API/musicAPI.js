@@ -36,7 +36,10 @@ async function get_refinements(req, resp) {
     //let data2 = data.contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents[0].itemSectionRenderer.contents;
 
     let refinements = data.refinements;
-    console.log(refinements);
+
+    if (refinements == undefined) {
+        refinements = [];
+    }
 
     //console.log(results)
     resp.json(refinements);
