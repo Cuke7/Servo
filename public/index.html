@@ -35,7 +35,7 @@
         await test_endpoint("P8watchAPI/weather", "P8watchStatus", data => data.length > 0 ? true : false);
         await test_endpoint("musicAPI/get_playlist?url=" + encodeURIComponent("https://www.youtube.com/playlist?list=PLY80CRqvcxEXtmbMSJDqIK4uk_FB3j5I8"), "musicAPIStatus", data => data.name ? true : false);
         await test_endpoint("musicAPI/get_search_results?search=centuries", "musicAPIStatus2", data => data.length > 0 ? true : false);
-        await test_endpoint("musicAPI/get_audio?id=LBr7kECsjcQ", "musicAPIStatus3", data => console.log(data));
+        await test_endpoint("musicAPI/get_audio?id=LBr7kECsjcQ", "musicAPIStatus3", data => data.length > 200 ? true : false);
     })();
 
 
