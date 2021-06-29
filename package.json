@@ -23,6 +23,6 @@
     "rss-parser": "^3.12.0",
     "send-seekable": "^1.0.4",
     "web-push": "^3.4.4",
-    "ytdl-core": "^4.5.0"
+    "ytdl-core": "^4.8.3"
   }
 }

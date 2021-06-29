@@ -116,6 +116,7 @@ async function get_audio(req, resp) {
     let url = "https://www.youtube.com/watch?v=" + id;
 
     let info = await ytdl.getInfo(id);
+
     let format = ytdl.chooseFormat(info.formats, { quality: "highestaudio" });
     let type = "audio/mpeg";
     let size = format.contentLength;
@@ -126,6 +127,7 @@ async function get_audio(req, resp) {
             headers: DEFAULT_HEADERS,
         },
     });
+
     resp.sendSeekable(stream, {
         type: type,
         length: size,

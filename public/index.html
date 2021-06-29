@@ -22,6 +22,7 @@
     <h2>Music API</h2>
     <div id="musicAPIStatus"></div>
     <div id="musicAPIStatus2"></div>
+    <div id="musicAPIStatus3"></div>
 </body>
 
 <script>
@@ -32,8 +33,9 @@
         await test_endpoint("QuotidieAPI/get_evangile", "quotidieStatus1", data => data.title ? true : false);
         await test_endpoint("QuotidieAPI/get_saint", "quotidieStatus2", data => data.title ? true : false);
         await test_endpoint("P8watchAPI/weather", "P8watchStatus", data => data.length > 0 ? true : false);
-        await test_endpoint("musicAPI/get_playlist?url="+encodeURIComponent("https://www.youtube.com/playlist?list=PLY80CRqvcxEXtmbMSJDqIK4uk_FB3j5I8"), "musicAPIStatus", data => data.name ? true : false);
-        await test_endpoint("musicAPI/get_search_results?search=centuries", "musicAPIStatus2",  data => data.length > 0 ? true : false);
+        await test_endpoint("musicAPI/get_playlist?url=" + encodeURIComponent("https://www.youtube.com/playlist?list=PLY80CRqvcxEXtmbMSJDqIK4uk_FB3j5I8"), "musicAPIStatus", data => data.name ? true : false);
+        await test_endpoint("musicAPI/get_search_results?search=centuries", "musicAPIStatus2", data => data.length > 0 ? true : false);
+        await test_endpoint("musicAPI/get_audio?id=LBr7kECsjcQ", "musicAPIStatus3", data => console.log(data));
     })();
 
 

@@ -8,5 +8,6 @@ router.use("/monsterAPI", require("./monsterAPI.js"));
 router.use("/quotidieAPI", require("./quotidieAPI.js"));
 router.use("/jarvisAPI", require("./jarvisAPI.js"));
 router.use("/P8watchAPI", require("./P8watchAPI.js"));
+router.use("/notificationsAPI", require("./notificationsAPI.js"));
 
 module.exports = router;

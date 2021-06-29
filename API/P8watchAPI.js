@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 
 // Endpoints
-router.route("/weather").get(return_weather);
+router.route("/send_notification").get(send_notification);
 
 const request = require("request");
 
@@ -10,7 +10,7 @@ const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https
 
 let url = "https://api.openweathermap.org/data/2.5/onecall?lat=44.493179&lon=-0.63952&exclude=current,minutely,daily,alerts&appid=5079817a0f73cd7ba5f93db4dab118c9&units=metric";
 
-function return_weather(req, resp) {
+function send_notification(req, resp) {
     // Allow CORS stuff
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
