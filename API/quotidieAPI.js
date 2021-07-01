@@ -6,7 +6,6 @@ router.route("/get_evangile").get(return_evangile_API);
 router.route("/get_saint").get(return_saint_API);
 router.route("/send_notifs").get(send_notifs);
 
-
 const firebase = require("firebase");
 const webpush = require("web-push");
 const rp = require("request-promise");
@@ -15,7 +14,7 @@ const request = require("request");
 const Parser = require("rss-parser");
 let parser = new Parser();
 
-const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app"];
+const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app", "http://127.0.0.1:3000"];
 
 // Firebase config
 let config = {
@@ -136,11 +135,11 @@ function get_saint_promise() {
     let url = "https://fr.aleteia.org/daily-prayer/" + url2 + "/";
 
     return new Promise(function (resolve, reject) {
-        console.log(url)
+        console.log(url);
         rp(url)
             .then(function (body) {
                 const $ = cheerio.load(body);
-                console.log($(".css-1tmjk0q")["0"])
+                console.log($(".css-1tmjk0q")["0"]);
                 let saint = {};
                 saint.title = $(".css-18agi3i")["0"].children[0].data;
                 saint.subtitle = $(".css-ygkx0p")["0"].children[0].data;
