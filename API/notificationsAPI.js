@@ -1,8 +1,7 @@
 var express = require("express");
 var router = express.Router();
 
-const rp = require("request-promise");
-const webpush = require("web-push");
+const fetch = require("node-fetch");
 
 const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app"];
 
@@ -18,53 +17,38 @@ async function send_notification(req, resp) {
     resp.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
     resp.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type");
     resp.setHeader("Access-Control-Allow-Credentials", true);
-    let ID = req.query.ID;
-    let text = req.query.text;
 
-    // var message = {
-    //     app_id: "749c8162-608c-4937-bb4f-0747f4e845a2",
-    //     contents: { en: "English Message" },
-    //     include_player_ids: ["fc8fc6fa-8235-4674-a694-390ee5fd5fe9"],
-    // };
+    var key = "AAAAeMkD2uw:APA91bHrKm9ow64TBkJEUDv_NNn-BnIm0sgC9WA7TEz5zKNyQONv2HS8iIHJ1XMuRR7-Pd4lSt2NBtkrUn7b5tEcQqi30z1WnfYj1nTh8hDDAvxXWEeIIo5fwbA-p916draSrpw_qO8f";
 
-    var message = {
-        app_id: "749c8162-608c-4937-bb4f-0747f4e845a2",
-        contents: { en: text },
-        include_player_ids: [ID],
+    var to = req.query.to;
+
+    //var to = "fH6SY_jXHqsKmYh4YK9YsU:APA91bHDp2DuEM89L68XofFdlYR3ebqPiCMqGxeeTE3c7s6bHma3gJYCBRrIpgB1Sb3vx2pL5pys1v-rnJe9CywWbqgxhqKRjODuZiS4cam0CWiYoF27KzRuf5_65KQk6GmKyz26ktse";
+    var notification = {
+        title: "Portugal vs. Denmark",
+        body: "5 to 1",
+        icon: "firebase-logo.png",
+        click_action: "http://localhost:8081",
     };
 
-    sendNotification(message);
-    resp.json("The notification may have been sent.");
-}
-
-var sendNotification = function (data) {
-    var headers = {
-        "Content-Type": "application/json; charset=utf-8",
-    };
-
-    var options = {
-        host: "onesignal.com",
-        port: 443,
-        path: "/api/v1/notifications",
+    fetch("https://fcm.googleapis.com/fcm/send", {
         method: "POST",
-        headers: headers,
-    };
-
-    var https = require("https");
-    var req = https.request(options, function (res) {
-        res.on("data", function (data) {
-            // console.log("Response:");
-            // console.log(JSON.parse(data));
+        headers: {
+            Authorization: "key=" + key,
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            notification: notification,
+            to: to,
+        }),
+    })
+        .then(function (response) {
+           //console.log(response);
+        })
+        .catch(function (error) {
+            console.error(error);
         });
-    });
 
-    req.on("error", function (e) {
-        console.log("ERROR:");
-        console.log(e);
-    });
-
-    req.write(JSON.stringify(data));
-    req.end();
-};
+    resp.send("Hello world!")
+}
 
 module.exports = router;
