@@ -4,10 +4,7 @@ var router = express.Router();
 // Endpoints
 router.route("/get_evangile").get(return_evangile_API);
 router.route("/get_saint").get(return_saint_API);
-router.route("/send_notifs").get(send_notifs);
 
-const firebase = require("firebase");
-const webpush = require("web-push");
 const rp = require("request-promise");
 const cheerio = require("cheerio");
 const request = require("request");
@@ -16,61 +13,11 @@ let parser = new Parser();
 
 const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app", "http://127.0.0.1:3000", "https://quotidiev2.netlify.app"];
 
-// Firebase config
-let config = {
-    apiKey: "AIzaSyCgOPJ_ovnHss3uUDvITCM6OvylqWzXBNg",
-    authDomain: "quotidie-7b0e6.firebaseapp.com",
-    databaseURL: "https://quotidie-7b0e6.firebaseio.com",
-    projectId: "quotidie-7b0e6",
-    storageBucket: "",
-    messagingSenderId: "630900411241",
-    appId: "1:630900411241:web:b0b6961a0396176d20cbf8",
-};
-firebase.initializeApp(config);
-
 // For the get_saint API
 const days = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
 const months = ["janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "decembre"];
 
 // send notifs to user stored in firebase
-function send_notifs(req, resp) {
-    let error = "no error";
-    let notif_data = "Lisons l'évangile !";
-    let url = "https://rss.aelf.org/evangile";
-    parser
-        .parseURL(url)
-        .then((feed) => {
-            notif_data = feed.items[0].title.substring(11) + ".";
-        })
-        .catch((err) => {
-            console.log(err);
-            error = err;
-            resp.json(error);
-        });
-    firebase
-        .database()
-        .ref("PWA_users")
-        .once("value")
-        .then(function (data) {
-            if (data.val() == null) {
-                console.log("no data");
-            } else {
-                console.log("Got data");
-                data = data.val();
-                let notifs = Object.values(data);
-                webpush.setVapidDetails(
-                    "mailto:example@yourdomain.org",
-                    "BNgw-Zyf0z8cX2-b45_L60or_52GbSy02Nw4bp_SAJt_M6e0Y_6W4E8u7XzDCcmkGRmkjDRL53acllyHqS7B0fs",
-                    "uTXl_C56pDr7cDWIcorCRMsX6BUYuKS7HrO1aqfRuzQ"
-                );
-                notifs.forEach((notif, i) => {
-                    webpush.sendNotification(JSON.parse(notif), notif_data);
-                });
-            }
-        })
-        .catch((err) => console.error(err));
-    return resp.json("Hello notifications!");
-}
 
 function return_evangile_API(req, resp) {
     // Allow CORS stuff

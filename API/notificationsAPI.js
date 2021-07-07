@@ -3,6 +3,22 @@ var router = express.Router();
 
 const fetch = require("node-fetch");
 
+const Parser = require("rss-parser");
+let parser = new Parser();
+
+const firebase = require("firebase");
+// Firebase config
+let config = {
+    apiKey: "AIzaSyDciTaq_4JN4uhy29PDTqCx36ukF6F290U",
+    authDomain: "quotidiev2.firebaseapp.com",
+    projectId: "quotidiev2",
+    storageBucket: "quotidiev2.appspot.com",
+    messagingSenderId: "518768548588",
+    appId: "1:518768548588:web:ae8a64816d43a1eeab63c9",
+    databaseURL: "https://quotidiev2-default-rtdb.europe-west1.firebasedatabase.app/",
+};
+firebase.initializeApp(config);
+
 const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app"];
 
 //Endpoints
@@ -18,17 +34,52 @@ async function send_notification(req, resp) {
     resp.setHeader("Access-Control-Allow-Headers", "X-Requested-With,content-type");
     resp.setHeader("Access-Control-Allow-Credentials", true);
 
-    var key = "AAAAeMkD2uw:APA91bHrKm9ow64TBkJEUDv_NNn-BnIm0sgC9WA7TEz5zKNyQONv2HS8iIHJ1XMuRR7-Pd4lSt2NBtkrUn7b5tEcQqi30z1WnfYj1nTh8hDDAvxXWEeIIo5fwbA-p916draSrpw_qO8f";
+    let feed = await parser.parseURL("https://rss.aelf.org/evangile");
+    let evangile = {};
+    evangile.title = "Title not found.";
+    evangile.text = "Text not found.";
+    if (feed.items.length == 1 || feed.items.length == 2) {
+        evangile.title = feed.items[0].title;
+        evangile.text = feed.items[0].content;
+    } else {
+        evangile.title = feed.items[3].title;
+        evangile.text = feed.items[3].content;
+    }
 
-    var to = req.query.to;
-
-    //var to = "fH6SY_jXHqsKmYh4YK9YsU:APA91bHDp2DuEM89L68XofFdlYR3ebqPiCMqGxeeTE3c7s6bHma3gJYCBRrIpgB1Sb3vx2pL5pys1v-rnJe9CywWbqgxhqKRjODuZiS4cam0CWiYoF27KzRuf5_65KQk6GmKyz26ktse";
     var notification = {
-        title: "Portugal vs. Denmark",
-        body: "5 to 1",
-        icon: "firebase-logo.png",
-        click_action: "http://localhost:8081",
+        title: "Évangile du jour",
+        body: evangile.title.substring(11),
+        icon: "./quotidieIcon.png",
+        click_action: "https://quotidiev2.netlify.app/lectures",
     };
+
+    //sendNotification(to);
+
+    firebase
+        .database()
+        .ref("users")
+        .once("value")
+        .then(function (data) {
+            if (data.val() == null) {
+                console.log("no data");
+            } else {
+                console.log("Got data");
+                data = Object.values(data.val());
+
+                for (const person of data) {
+                    if (person.notifications) {
+                        sendNotification(person.key, notification);
+                    }
+                }
+            }
+        })
+        .catch((err) => console.error(err));
+
+    resp.send("Hello world!");
+}
+
+function sendNotification(to, notification) {
+    var key = "AAAAeMkD2uw:APA91bHrKm9ow64TBkJEUDv_NNn-BnIm0sgC9WA7TEz5zKNyQONv2HS8iIHJ1XMuRR7-Pd4lSt2NBtkrUn7b5tEcQqi30z1WnfYj1nTh8hDDAvxXWEeIIo5fwbA-p916draSrpw_qO8f";
 
     fetch("https://fcm.googleapis.com/fcm/send", {
         method: "POST",
@@ -42,13 +93,11 @@ async function send_notification(req, resp) {
         }),
     })
         .then(function (response) {
-           //console.log(response);
+            //console.log(response);
         })
         .catch(function (error) {
             console.error(error);
         });
-
-    resp.send("Hello world!")
 }
 
 module.exports = router;
