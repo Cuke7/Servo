@@ -11,7 +11,7 @@ const request = require("request");
 const Parser = require("rss-parser");
 let parser = new Parser();
 
-const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app", "http://127.0.0.1:3000", "https://quotidiev2.netlify.app"];
+const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app", "http://127.0.0.1:3000", "https://quotidiev2.netlify.app", "https://quotidie.fr/"];
 
 // For the get_saint API
 const days = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];

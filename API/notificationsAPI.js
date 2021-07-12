@@ -19,7 +19,7 @@ let config = {
 };
 firebase.initializeApp(config);
 
-const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app"];
+const allowedOrigins = ["http://127.0.0.1:8000", "http://127.0.0.1:8080", "https://quotidie.netlify.app", "https://quotidie.fr/"];
 
 //Endpoints
 router.route("/send_notification").get(send_notification);
