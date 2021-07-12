@@ -50,7 +50,7 @@ async function send_notification(req, resp) {
         title: "Évangile du jour",
         body: evangile.title.substring(11),
         icon: "./quotidieIcon.png",
-        click_action: "https://quotidiev2.netlify.app/lectures",
+        click_action: "https://quotidie.fr/lectures",
     };
 
     //sendNotification(to);
